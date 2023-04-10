@@ -1,0 +1,12 @@
+// Transitions and animations
+// #####################################################################
+
+$enable-transitions: true;
+
+$default-transition-delay: .5s;
+
+$transition-base:		all .2s ease-in-out;
+$transition-fade:		opacity .15s linear;
+$transition-collapse:	height .35s ease;
+
+$btn-transition:		all .15s ease-in-out;

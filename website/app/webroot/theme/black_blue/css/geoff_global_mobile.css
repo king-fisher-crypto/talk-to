@@ -1,0 +1,2048 @@
+@media screen and (max-width: 767px) {
+  /*—————————————————————————————————
+        BEGIN Rate COMPONENT
+  —————————————————————————————————*/
+  /* Base setup */
+  /* Ratings widget */
+  .utilities .rate {
+    font-size: calc(14px * var(--coef));
+  }
+
+  #modal-confirmation.custom-modal,
+  #modal-appointment-confirmation.custom-modal,
+  #modal-warning.custom-modal {
+    width: 100% !important;
+  }
+
+  #modal-confirmation.modal.custom-modal .modal-content,
+  #modal-appointment-confirmation.modal.custom-modal .modal-content {
+    padding: calc(30px * var(--coef)) 0;
+    height: fit-content;
+  }
+
+  #modal-confirmation.modal.custom-modal .btn.validate,
+  #modal-appointment-confirmation.modal.custom-modal .btn.validate {
+    height: calc(61px * var(--coef));
+    max-width: 80%;
+  }
+
+  .modal#modal-appointment a.close-modal {
+    top: calc(13px * var(--coef));
+  }
+
+  .recrutement-page {
+    margin-left: calc(21px * var(--coef));
+    margin-right: calc(20px * var(--coef));
+  }
+
+  .recrutement-page .mobile-header h1 {
+    width: calc(340px * var(--coef));
+    height: calc(46px * var(--coef));
+    font-size: calc(19px * var(--coef));
+    line-height: calc(23px * var(--coef));
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    text-transform: unset;
+  }
+
+  .recrutement-page .popup-div .communication-mode {
+    margin-top: calc(-20px * var(--coef));
+  }
+
+  .recrutement-page .popup-div .hidden.mobile-img {
+    width: calc(293px * var(--coef));
+    margin-right: 0px;
+    height: auto;
+    margin-left: calc(0px * var(--coef));
+    margin-top: calc(-13px * var(--coef));
+    margin-bottom: calc(0px * var(--coef));
+  }
+
+  .recrutement-page .popup-div .close-btn {
+    margin-left: calc(-18px * var(--coef));
+  }
+
+  .recrutement-page .popup-div .hidden.mobile-img,
+  .recrutement-page .tablette-popup .hidden.mobile-img,
+  .recrutement-page .mobile-popup .hidden.mobile-img {
+    display: block;
+  }
+
+  .recrutement-page .popup-div .hidden.desktop-img,
+  .recrutement-page .tablette-popup .hidden.desktop-img,
+  .recrutement-page .mobile-popup .hidden.desktop-img {
+    display: none;
+  }
+
+  .recrutement-page .mobile-popup.prives .communication-mode {
+    margin-top: calc(-22px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup.prives .hidden.mobile-img {
+    width: calc(200px * var(--coef));
+    height: auto;
+    margin-right: 0px;
+    margin-left: calc(72px * var(--coef));
+    margin-top: calc(-17px * var(--coef));
+  }
+
+  .recrutement-page .carousel_categories_container {
+    padding-bottom: calc(70px * var(--coef));
+  }
+
+  .recrutement-page .categories.owl_col {
+    height: calc(148px * var(--coef));
+    gap: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .chevron-white img {
+    width: calc(40px * var(--coef));
+  }
+
+  .recrutement-page .last-icon .icon {
+    z-index: 100;
+  }
+
+  .recrutement-header .img-container {
+    margin: auto;
+  }
+
+  .recrutement-header .links-container {
+    margin-top: calc(60px * var(--coef));
+  }
+
+  .recrutement-page .livitalk-info.mobile,
+  .recrutement-page .livitalk-info .description {
+    min-height: 0px !important;
+    height: auto;
+    width: calc(334px * var(--coef));
+    margin-top: 0;
+  }
+
+  .recrutement-page .communications .options {
+    max-width: none;
+    font-size: calc(13px * var(--coef));
+    letter-spacing: 1.4px;
+    margin-left: calc(28px * var(--coef));
+    margin-right: calc(28px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup.show {
+    display: flex;
+    position: relative;
+    margin-top: calc(22px * var(--coef));
+    background: #ededed;
+    color: black;
+  }
+
+  .recrutement-page .mobile-popup.video::after,
+  .recrutement-page .mobile-popup.masterClass::after,
+  .recrutement-page .mobile-popup.contenus::after,
+  .recrutement-page .mobile-popup.documents::after,
+  .recrutement-page .mobile-popup.prives::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border-bottom: calc(40px * var(--coef));
+    border-left: calc(23px * var(--coef)) solid transparent;
+    border-right: calc(24px * var(--coef)) solid transparent;
+    /* border-top: 34px solid #f00; */
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  .recrutement-page .mobile-popup.video img:not(:last-child),
+  .recrutement-page .mobile-popup.masterClass img:not(:last-child),
+  .recrutement-page .mobile-popup.contenus img:not(:last-child) {
+    width: calc(155px * var(--coef));
+    height: calc(90px * var(--coef));
+    margin-left: calc(79px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup.documents img:not(:last-child) {
+    width: calc(135px * var(--coef));
+    height: auto;
+    margin-top: calc(0px * var(--coef));
+    margin-left: calc(84px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup h2 {
+    color: black;
+    text-align: left;
+    margin-top: 0px;
+    font-size: calc(16px * var(--coef));
+    text-transform: uppercase;
+    margin-top: calc(9px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup .communication-mode {
+    margin-left: calc(11px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup .communication-mode p {
+    font-size: calc(12px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup .container-communication {
+    flex: 2;
+  }
+
+  .recrutement-page .mobile-popup .group-img {
+    position: relative;
+  }
+
+  .recrutement-page .mobile-popup .group-img .prive-second-img {
+    position: absolute;
+    width: calc(96px * var(--coef));
+    left: calc(130px * var(--coef));
+    top: calc(-10px * var(--coef));
+    height: calc(81px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup .group-img .prive-first-img {
+    width: calc(63px * var(--coef));
+    height: calc(80px * var(--coef));
+    margin-top: calc(20px * var(--coef));
+    margin-left: calc(95px * var(--coef));
+  }
+
+  .recrutement-page
+    .mobile-popup
+    .container-communication
+    .communication-mode
+    p {
+    width: 108%;
+    margin-bottom: calc(20px * var(--coef));
+    font-size: calc(12px * var(--coef));
+    max-width: none;
+  }
+
+  .recrutement-page .close-btn {
+    height: fit-content;
+  }
+
+  .recrutement-header .icon-option-container .last-icon img {
+    width: calc(31px * var(--coef));
+    height: calc(31px * var(--coef));
+  }
+
+  .recrutement-page .optional-function img {
+    width: calc(30px * var(--coef));
+    height: calc(30px * var(--coef));
+  }
+
+  .recrutement-header .option {
+    margin-top: calc(35px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup img {
+    width: calc(20px * var(--coef));
+    margin-top: calc(12px * var(--coef));
+    margin-right: calc(10px * var(--coef));
+    height: calc(20px * var(--coef));
+  }
+
+  .recrutement-page .mobile-popup {
+    display: none;
+    width: 97%;
+    margin: 0px auto;
+  }
+
+  .recrutement-page .livitalk-info h2 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 91%;
+    height: fit-content;
+    margin-top: calc(15px * var(--coef));
+    margin-bottom: calc(16px * var(--coef));
+    font-weight: 500;
+    font-size: calc(14.91px * var(--coef));
+    line-height: calc(22px * var(--coef));
+  }
+
+  .recrutement-page .livitalk-info .description {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    flex-direction: column;
+  }
+
+  .recrutement-page .hidden-img,
+  .recrutement-page .livitalk-info img {
+    width: 80%;
+    margin-top: 0px;
+    padding: 0px;
+    margin: 0px 0px calc(22px * var(--coef)) 0px;
+    height: auto;
+  }
+
+  .recrutement-page .hidden-img {
+    display: block;
+  }
+
+  .recrutement-page .visible-img {
+    display: none;
+  }
+
+  .recrutement-page .communications h2 {
+    margin-bottom: calc(15px * var(--coef));
+    margin-top: 0px;
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+
+  .recrutement-page .communications p {
+    width: calc(341px * var(--coef));
+    line-height: calc(18px * var(--coef));
+    font-size: calc(12px * var(--coef));
+  }
+
+  .recrutement-page .optional-function {
+    margin-top: calc(40px * var(--coef));
+  }
+
+  .recrutement-page .optional-function .card-text p {
+    width: 100%;
+    text-align: center;
+    height: calc(33px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+    margin-bottom: 0px;
+  }
+
+  .recrutement-page .card-icon {
+    text-align: center;
+    margin-left: calc(24px * var(--coef));
+    width: calc(119px * var(--coef));
+  }
+
+  .recrutement-page .card-description br {
+    display: none;
+  }
+
+  .recrutement-page .category-title {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+    margin-top: calc(70px * var(--coef));
+    padding: 0;
+  }
+
+  .recrutement-page
+    .category-title
+    .recrutement-page
+    .category-title::first-letter {
+    text-transform: uppercase;
+  }
+
+  .recrutement-page .carousel_categories {
+    max-width: calc(320px * var(--coef));
+    margin: auto;
+  }
+
+  .recrutement-page .owl-prev .chevron {
+    position: relative;
+    left: calc(-10px * var(--coef));
+    top: calc(-22px * var(--coef));
+  }
+
+  .recrutement-page .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .salary-img {
+    width: calc(334px * var(--coef));
+    border-radius: calc(50px * var(--coef));
+    height: calc(404px * var(--coef));
+    margin-top: 0px;
+  }
+
+  .recrutement-page .salary-estimation {
+    width: calc(300px * var(--coef));
+    margin-left: calc(19px * var(--coef));
+    margin-top: calc(37px * var(--coef));
+    height: calc(84px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: calc(3px * var(--coef));
+    width: calc(334px * var(--coef));
+  }
+
+  .recrutement-page .owl-stage-outer {
+    height: 230px;
+  }
+
+  .recrutement-page .generate-salary {
+    width: 100%;
+    height: auto !important;
+    min-height: 0;
+    margin-bottom: calc(35px * var(--coef));
+  }
+
+  .recrutement-page .affiliation-link a {
+    font-size: calc(15px * var(--coef));
+    line-height: calc(24px * var(--coef));
+  }
+
+  .recrutement-page .user-profil p {
+    width: calc(334px * var(--coef));
+    height: calc(80px * var(--coef));
+    font-size: calc(15px * var(--coef));
+    font-weight: 200;
+    line-height: calc(20px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .recrutement-page .popup-div .container-communication {
+    display: flex;
+    margin-left: calc(15px * var(--coef));
+    flex-direction: column;
+  }
+
+  .recrutement-page .popup-div .communication-mode h2 {
+    margin-top: 0px;
+    font-size: calc(16px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .popup-div .communication-mode p {
+    font-size: calc(11px * var(--coef));
+    margin-bottom: calc(16px * var(--coef));
+    width: 104%;
+    margin-left: 0px;
+  }
+
+  .recrutement-page .popup-div {
+    width: 97%;
+  }
+
+  .popup-div img {
+    width: calc(252px * var(--coef));
+    margin-right: 0px;
+    height: calc(149px * var(--coef));
+    margin-bottom: calc(16px * var(--coef));
+  }
+
+  .recrutement-page .livitalk-info .description .hidden-img {
+    margin-left: calc(-24px * var(--coef));
+    margin-bottom: 0px;
+  }
+
+  .recrutement-page .user-profil h1 {
+    text-align: center;
+    height: calc(27px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+    margin-top: calc(70px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+
+  .recrutement-page .owl-theme .owl-dots .owl-dot span {
+    width: calc(15px * var(--coef)) !important;
+    height: calc(15px * var(--coef)) !important;
+    margin: 4px !important;
+  }
+
+  .recrutement-page .mobile-device {
+    display: block;
+  }
+
+  .recrutement-page .generate-salary p {
+    line-height: calc(21px * var(--coef));
+    width: calc(282px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+    font-size: calc(14px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary h2 {
+    width: calc(229px * var(--coef));
+    line-height: calc(27px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary span {
+    font-size: calc(26px * var(--coef));
+  }
+
+  .recrutement-page .profil {
+    width: calc(161px * var(--coef));
+    height: calc(208px * var(--coef));
+  }
+
+  .recrutement-page .option2 {
+    width: calc(345px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary .badge {
+    font-size: calc(20px * var(--coef));
+    height: calc(40px * var(--coef));
+    width: calc(40px * var(--coef));
+    left: 80%;
+    top: -11%;
+  }
+
+  .recrutement-page .generate-salary {
+    height: calc(180px * var(--coef));
+  }
+
+  .recrutement-page .affiliation .title {
+    width: calc(270px * var(--coef));
+    text-align: center;
+    height: calc(54px * var(--coef));
+    margin-top: calc(70px * var(--coef));
+    margin-bottom: calc(44px * var(--coef));
+    line-height: calc(27px * var(--coef));
+    text-transform: uppercase;
+    font-size: calc(18px * var(--coef));
+  }
+
+  .recrutement-page .salary-container {
+    margin: auto;
+  }
+
+  .recrutement-page .salary-container .last-paragraph {
+    text-align: center;
+    width: 90%;
+    height: calc(30px * var(--coef));
+    line-height: calc(15px * var(--coef));
+    margin-top: 0px;
+    font-size: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .salary-range {
+    display: flex;
+    text-align: initial;
+    flex-direction: column;
+    margin-bottom: calc(15px * var(--coef));
+  }
+
+  .recrutement-page .owl-next .chevron {
+    top: calc(30px * var(--coef));
+    left: calc(-5px * var(--coef)) !important;
+  }
+
+  .recrutement-page .owl-prev,
+  .recrutement-page .owl-next .chevron {
+    left: calc(-15px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary .badge {
+    padding: 0px;
+  }
+
+  .recrutement-page .salary-img p:first-child {
+    width: calc(216px * var(--coef));
+  }
+
+  .recrutement-page .salary-container p.first-paragraph {
+    line-height: calc(21px * var(--coef));
+    width: calc(305px * var(--coef));
+    margin: 0 auto;
+    height: calc(42px * var(--coef));
+    font-size: calc(19px * var(--coef)) !important;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  .recrutement-page .desktop {
+    display: none;
+    background: red;
+  }
+
+  .recrutement-page .range__slider [type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(29px * var(--coef));
+    height: calc(29px * var(--coef));
+  }
+
+  .recrutement-page .range__slider [type="range"] {
+    height: calc(25px * var(--coef));
+  }
+
+  .recrutement-page .range-slider {
+    margin-left: calc(7px * var(--coef));
+    width: calc(304px * var(--coef));
+    margin-top: calc(54px * var(--coef));
+  }
+
+  .recrutement-page .salary-img h1 {
+    margin-bottom: calc(5px * var(--coef));
+
+    font-size: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .range-wrapper {
+    position: relative;
+    width: calc(303px * var(--coef));
+    height: fit-content;
+  }
+
+  .recrutement-page .marker {
+    font-size: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .category.black {
+    font-size: calc(13px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    width: calc(155px * var(--coef));
+    height: calc(47px * var(--coef));
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .recrutement-page .carousel_categories .owl-item {
+    width: calc(161px * var(--coef));
+  }
+
+  .recrutement-page .carousel_categories .owl-stage-outer {
+    height: calc(155px * var(--coef));
+  }
+
+  .recrutement-page .card-description {
+    margin-left: calc(47px * var(--coef));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .optional-function p {
+    width: calc(179px * var(--coef));
+    line-height: calc(16px * var(--coef));
+    text-align: left;
+    margin-left: 0px;
+    font-size: calc(13px * var(--coef));
+    margin-bottom: 0px;
+  }
+
+  .recrutement-page .share-text {
+    height: calc(var(--coef) * 72px);
+    width: auto;
+    margin-right: calc(var(--coef) * 16px);
+    margin-left: calc(16px * var(--coef));
+    margin-top: calc(var(--coef) * 25px);
+    margin-bottom: calc(var(--coef) * 20px);
+    align-items: unset;
+  }
+
+  .recrutement-page .salary-img p {
+    margin: 0px;
+    font-size: calc(12px * var(--coef));
+  }
+
+  .recrutement-page .salary-container span {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .recrutement-page .salary-img p:first-child {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary.first-child {
+    margin-bottom: calc(35px * var(--coef));
+  }
+
+  .recrutement-page .group-img-container img {
+    width: calc(156px * var(--coef)) !important;
+    height: calc(163px * var(--coef)) !important;
+  }
+
+  .recrutement-page .livitalk-info.socials .all-networks img {
+    width: calc(131px * var(--coef));
+    height: calc(124px * var(--coef));
+    margin: calc(16px * var(--coef)) 0 0 calc(0px * var(--coef));
+    padding: 0px;
+  }
+
+  .recrutement-page .share-text h3 {
+    margin: 0px;
+    font-size: calc(16px * var(--coef));
+    line-height: calc(24px * var(--coef));
+    text-align: center;
+    width: auto;
+    white-space: normal;
+  }
+
+  .recrutement-page .livitalk-info.socials {
+    margin-top: calc(70px * var(--coef));
+    margin-left: auto;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: unset;
+    margin-right: auto;
+    width: calc(334px * var(--coef)) !important;
+  }
+
+  .recrutement-page .card a {
+    font-size: calc(13px * var(--coef));
+    width: 100%;
+    margin-top: 0px;
+    text-align: left;
+    line-height: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .optional-function h3 {
+    width: calc(119px * var(--coef));
+    height: calc(34px * var(--coef));
+    margin-top: calc(0px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+    font-size: calc(11px * var(--coef));
+    line-height: calc(16px * var(--coef));
+  }
+
+  .recrutement-page .optional-function .card {
+    flex-direction: row !important;
+    margin-top: calc(15px * var(--coef));
+  }
+
+  .recrutement-page .communications p a {
+    display: block;
+    font-size: calc(14px * var(--coef));
+    text-align: center;
+    margin-top: calc(0px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .communications .bleu-icon-container {
+    gap: calc(0px * var(--coef));
+  }
+
+  .recrutement-page .communications .bleu-icon-container img,
+  .recrutement-page .communications .bleu-icon-container .icon img {
+    width: calc(60px * var(--coef));
+    height: calc(60px * var(--coef));
+    margin-left: 0px;
+  }
+
+  .recrutement-page .communications .bleu-icon-container .icon {
+    display: flex;
+    flex-direction: column;
+    width: calc(70px * var(--coef));
+    align-items: center;
+    margin-left: 0px;
+    justify-content: center;
+  }
+
+  .recrutement-page .communications .icon p {
+    font-size: calc(16px * var(--coef));
+    max-width: auto;
+  }
+
+  .recrutement-page .livitalk-info p {
+    width: 96%;
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(16px * var(--coef));
+    height: fit-content;
+    text-align: center;
+    font-size: calc(10.97px * var(--coef));
+    line-height: calc(16.5px * var(--coef));
+  }
+
+  .recrutement-header .text-container {
+    margin-top: 126px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .recrutement-header {
+    align-items: center;
+    width: auto;
+  }
+
+  .recrutement-header .links-container button {
+    margin-right: 0px;
+    border: none;
+    padding: calc(11px * var(--coef)) calc(10px * var(--coef));
+    width: calc(170px * var(--coef));
+    margin-bottom: calc(15px * var(--coef));
+    font-size: calc(17px * var(--coef));
+    line-height: calc(27px * var(--coef));
+    border-radius: calc(18px * var(--coef));
+  }
+
+  .recrutement-header .links-container {
+    width: auto;
+    align-items: center;
+    max-width: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .recrutement-page .mobile-header {
+    width: calc(340px * var(--coef));
+    margin: auto;
+    margin-top: calc(15px * var(--coef));
+  }
+
+  .recrutement-page .mobile-header p {
+    max-width: calc(338px * var(--coef));
+    height: calc(36px * var(--coef));
+    letter-spacing: 1px;
+    font-size: calc(12px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    text-align: center;
+  }
+
+  .recrutement-page .livitalk-info.socials .group-img-container img {
+    margin-top: calc(0px * var(--coef));
+    margin-bottom: calc(11px * var(--coef));
+    margin-left: calc(15px * var(--coef));
+    padding-left: 0px;
+  }
+
+  .recrutement-header {
+    flex-direction: column-reverse;
+  }
+
+  .recrutement-header .bleu-icon-container .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(41px * var(--coef));
+    margin-left: 0px;
+  }
+
+  .recrutement-page .chevron-white:not(.footer-chevron) {
+    text-align: center;
+    margin-top: calc(40px * var(--coef));
+    margin-bottom: calc(70px * var(--coef));
+  }
+
+  .recrutement-page .communications {
+    margin-top: calc(64px * var(--coef));
+  }
+
+  .recrutement-header .text-container .option p {
+    font-size: calc(11px * var(--coef));
+    line-height: calc(18px * var(--coef));
+    margin-left: calc(var(--coef) * -5px);
+  }
+
+  .recrutement-page .last-icon::after {
+    top: calc(15px * var(--coef));
+  }
+
+  .recrutement-header .last-icon {
+    gap: calc(12px * var(--coef));
+    margin-top: calc(-3px * var(--coef));
+  }
+
+  .recrutement-page .owl-nav .chevron {
+    width: calc(20px * var(--coef));
+    height: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .sign-in {
+    margin-top: calc(100px * var(--coef));
+  }
+
+  .recrutement-page .salary-img p:first-child {
+    max-width: none;
+  }
+
+  .recrutement-page .salary-img p:not(:first-child) {
+    font-size: calc(14px * var(--coef));
+    line-height: calc(18px * var(--coef));
+  }
+
+  .recrutement-page .last-icon .icon p {
+    margin: 0;
+  }
+
+  .recrutement-page .last-icon .icon p.contenu {
+    width: calc(61px * var(--coef));
+  }
+
+  .utilities .tb\:hidden,
+  .utilities .xs-only {
+    display: block;
+  }
+
+  .mode-page .mode-container {
+    margin-bottom: calc(17px * var(--coef));
+  }
+
+  .mode-page .mode-container,
+  .mode-page .mode .communication-mode {
+    margin-left: 0;
+    padding: calc(20px * var(--coef)) calc(15px * var(--coef));
+  }
+
+  .mode-page .mode.white .communication-mode {
+    padding-top: calc(40px * var(--coef));
+  }
+
+  .mode-page .formation-video.mode,
+  .mode-page .masterclass.mode,
+  .mode-page .contenus.mode,
+  .mode-page .prives.mode,
+  .mode-page .documents.mode {
+    display: block;
+  }
+
+  .mode-page .title-bloc,
+  .mode-page .mode-container .communication-mode-bloc,
+  .mode-page .mode-container div.text-bloc,
+  .mode-page .mode-container .chevron-paragraph,
+  .mode-page .mode-tablette .mode-tablette-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .mode-page .bleu-icon-container .icon p {
+    margin: 5px 0 0;
+    font-weight: 400;
+  }
+
+  .mode-page .mode-container .chevron-paragraph {
+    margin-top: calc(20px * var(--coef));
+  }
+
+  .mode-page .mode-tablette,
+  .mode-page .formation-video.mode-tablette {
+    display: none;
+  }
+
+  .mode-page .mode .communication-mode {
+    padding-left: calc(16px * var(--coef));
+  }
+
+  .mode-page .mode-container .communication-mode-bloc h1 {
+    font-size: calc(16px * var(--coef));
+    margin: calc(10px * var(--coef)) 0;
+  }
+
+  .mode-page .mode .communication-mode p,
+  .mode-page .chevron-paragraph .option p {
+    max-width: 100%;
+    font-size: calc(14px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .mode-page .formation-video.mode .communication-mode {
+    margin-bottom: 0;
+  }
+
+  .mode-page .mode .chevron-paragraph {
+    margin-top: calc(20px * var(--coef));
+    display: block;
+  }
+
+  .mode-page .chevron-paragraph .chevron-text-container {
+    width: 100%;
+  }
+
+  .mode-page .chevron-paragraph .option {
+    display: flex;
+    align-items: center;
+    margin-bottom: calc(12px * var(--coef));
+  }
+
+  .mode-page .formation-video.mode .bloc-img {
+    width: calc(277px * var(--coef));
+    margin-right: auto;
+    margin-left: auto;
+    height: calc(160px * var(--coef));
+  }
+
+  .mode-page .masterclass.mode .bloc-img {
+    width: calc(208px * var(--coef));
+    margin-right: auto;
+    margin-left: auto;
+    height: calc(140px * var(--coef));
+  }
+
+  .mode-page .contenus.mode .bloc-img {
+    width: calc(208px * var(--coef));
+    margin-right: auto;
+    margin-left: auto;
+    height: calc(109px * var(--coef));
+  }
+
+  .mode-page .documents.mode .bloc-img {
+    width: calc(162px * var(--coef));
+    margin-right: auto;
+    margin-left: auto;
+    height: calc(137px * var(--coef));
+  }
+
+  .mode-page .prives.mode-tablette {
+    display: none;
+  }
+
+  .mode-page .prives.mode .bloc-img {
+    width: calc(208px * var(--coef));
+    margin-right: auto;
+    margin-left: auto;
+    height: calc(119px * var(--coef));
+  }
+
+  .mode-page .mode .title {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .mode-page .mode .title img {
+    margin-right: calc(10px * var(--coef));
+  }
+
+  .mode-page .mode h1 {
+    font-size: calc(16px * var(--coef));
+    /*   line-height: calc(23px*var(--coef));
+  margin-bottom: calc(10px*var(--coef)); */
+  }
+
+  .mode-page .mode .mode-icon {
+    width: calc(45px * var(--coef));
+    height: calc(45px * var(--coef));
+  }
+
+  .mode-page .formation-video.mode,
+  .mode-page .prives.mode,
+  .mode-page .contenus.mode {
+    background: black;
+    display: flex;
+    align-items: initial;
+    flex-direction: column-reverse;
+    padding-bottom: calc(25px * var(--coef));
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+    padding-top: calc(0px * var(--coef));
+    color: white;
+  }
+
+  .mode-page .masterclass.mode,
+  .mode-page .documents.mode {
+    background: white;
+    display: flex;
+    align-items: initial;
+    flex-direction: column-reverse;
+    padding: 0px 0px calc(40px * var(--coef)) 0px;
+    color: black;
+  }
+
+  .mode-page .mode-container .img-container {
+    display: block;
+    margin-top: calc(10px * var(--coef));
+  }
+
+  .mode-page .img-container-no-desktop {
+    display: none;
+  }
+
+  .mode-page .title-bloc {
+    margin-top: calc(10px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .mode-page .communication-mode .title h1 {
+    margin: 0px;
+    line-height: calc(24px * var(--coef));
+  }
+
+  .mode-page .description {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .mode-page .communication-mode-bloc .bleu-icon-container img {
+    width: calc(56px * var(--coef));
+    height: calc(56px * var(--coef));
+    transition: all 0.5s;
+    margin-right: calc(0px * var(--coef));
+  }
+
+  .mode-page .communication-mode-bloc .bleu-icon-container {
+    gap: calc(5px * var(--coef));
+  }
+
+  .mode-page .communication-mode-bloc .bleu-icon-container .icon {
+    margin-left: 0px;
+    min-width: calc(62px * var(--coef));
+    text-align: center;
+  }
+
+  .mode-page .title-bloc h1 {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+
+  .mode-page .mode-container div.text-bloc p {
+    text-align: justify;
+    max-width: calc(345px * var(--coef));
+    font-weight: 400;
+    margin-top: calc(10px * var(--coef));
+    font-size: calc(14.59px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .mode-container .chevron-paragraph {
+    max-width: calc(345px * var(--coef));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(20px * var(--coef));
+  }
+
+  .mode-page .icon-text-bloc .chevron-paragraph .option p {
+    max-width: calc(345px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    font-size: calc(14px * var(--coef));
+  }
+
+  .mode-page .mobile-img {
+    display: block;
+  }
+
+  .mode-page .mobile-hidden-img {
+    display: none;
+  }
+
+  .mode-page .mode-container .img-container img {
+    width: 75.5%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mode-page .chevron-paragraph .option img {
+    width: calc(14px * var(--coef));
+    height: calc(15px * var(--coef));
+    margin-right: calc(10px * var(--coef));
+    margin-left: -1%;
+  }
+
+  .mode-page .prives.mode {
+    margin-bottom: calc(30px * var(--coef));
+    margin-top: calc(30px * var(--coef));
+  }
+
+  .mode-page .documents.mode {
+    padding-bottom: 0px;
+  }
+
+  .mode-page .sign-in button {
+    width: calc(134px * var(--coef));
+    font-size: calc(17px * var(--coef));
+    height: calc(41px * var(--coef));
+  }
+
+  .affilation-masterclass-page .header-img-container {
+    padding-top: calc(10px * var(--coef));
+    padding-bottom: calc(24px * var(--coef));
+    padding-left: calc(20px * var(--coef));
+    padding-right: calc(20px * var(--coef));
+  }
+  .affilation-masterclass-page .header-img-container .text-container h1 {
+    line-height: calc(27px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    margin-top: 0px;
+    margin-bottom: calc(0px * var(--coef));
+  }
+
+  .affilation-masterclass-page .header-img-container .text-container h3 {
+    line-height: calc(24px * var(--coef));
+    color: var(--blue);
+    font-size: calc(16px * var(--coef));
+    margin-top: 0px;
+    margin-bottom: calc(4px * var(--coef));
+  }
+
+  .affilation-masterclass-page .header-img-container .text-container p {
+    font-size: calc(15px * var(--coef));
+    max-width: calc(325px * var(--coef));
+    line-height: calc(16.47px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc {
+    margin-left: calc(20px * var(--coef));
+    margin-right: calc(20px * var(--coef));
+    margin-top: calc(40px * var(--coef));
+    flex-direction: column;
+  }
+
+  .affilation-masterclass-page .videos-bloc h1 {
+    margin-bottom: calc(9px * var(--coef));
+    margin-top: 0px;
+    text-align: center;
+    font-size: calc(20.5px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings {
+    display: flex;
+    gap: calc(17px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+    flex-wrap: wrap;
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings .search_language {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: calc(10px * var(--coef));
+    align-items: center;
+    max-width: calc(335px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container {
+    width: calc(210px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container
+    .searchInput
+    img {
+    width: calc(12px * var(--coef));
+    height: calc(12px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container
+    .searchInput {
+    align-items: center;
+  }
+  .affilation-masterclass-page .videos-bloc .settings .search_language .lang {
+    width: 100%;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    span {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings .tri .tri_options button {
+    font-size: calc(15px * var(--coef));
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 150%;
+    padding: calc(5px * var(--coef)) calc(5px * var(--coef));
+    width: calc(146px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings .tri {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings .tri span {
+    font-size: calc(18px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-right: 0px !important;
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings .tri span {
+    font-size: calc(18px * var(--coef));
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    h1
+    span {
+    display: none;
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .content-video h3 {
+    justify-content: center;
+    max-width: calc(335px * var(--coef));
+    font-size: calc(16px * var(--coef));
+  }
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p.date {
+    display: none;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    .all-price {
+    display: none;
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .content-video h1 {
+    font-size: calc(18px * var(--coef));
+    margin-left: calc(80px * var(--coef));
+    margin-right: calc(80px * var(--coef));
+  }
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    .selectoption
+    select {
+    height: calc(29px * var(--coef));
+    font-size: calc(16px * var(--coef));
+    padding: calc(2px * var(--coef)) calc(5px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container
+    .searchInput
+    input {
+    border: none;
+    outline: none;
+    font-size: calc(14px * var(--coef));
+    width: 100%;
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .img .mobile {
+    display: block;
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .img .mobile p.date {
+    font-size: calc(14px * var(--coef));
+    height: calc(42px * var(--coef));
+    margin-left: calc(10px * var(--coef));
+    color: #878787;
+    margin-top: calc(4px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img
+    .mobile
+    p.date
+    span {
+    color: var(--blue);
+    background-color: transparent;
+    font-weight: 500;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img
+    .mobile
+    p.all-price {
+    margin-top: calc(0px * var(--coef));
+    display: flex;
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(3px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img
+    .mobile
+    p.all-price
+    .cross {
+    font-size: calc(16px * var(--coef));
+    color: #878787;
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img
+    .mobile
+    p.all-price
+    .price {
+    font-size: calc(18px * var(--coef));
+    color: var(--blue);
+    font-weight: 500;
+    margin-left: calc(4px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .img {
+    margin-left: calc(0px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .video-img:not(.no-video),
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default {
+    width: calc(197px * var(--coef));
+    height: calc(113px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default
+    .no-video {
+    width: calc(40px * var(--coef));
+    height: calc(40px * var(--coef));
+  }
+  .affilation-masterclass-page .tablette-main-content .content-desc {
+    font-size: calc(14px * var(--coef));
+    font-weight: 300;
+    max-width: calc(335px * var(--coef));
+    margin-left: calc(10.77px * var(--coef));
+    margin-right: calc(19.93px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    margin-top: calc(5px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .affilation-masterclass-page .tablette-main-content .content-desc .dots {
+    color: var(--blue);
+    width: fit-content;
+    margin-top: calc(3px * var(--coef));
+    font-weight: 400;
+    cursor: pointer;
+    font-size: calc(14px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .photo-container {
+    background: white;
+    padding: calc(12px * var(--coef)) calc(20px * var(--coef));
+    max-width: calc(293px * var(--coef));
+    height: calc(72px * var(--coef));
+    margin-right: auto;
+    display: flex;
+    margin-top: calc(20px * var(--coef));
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .affilation-masterclass-page .videos-bloc .photo-container p {
+    margin: 0px;
+    font-weight: 300;
+    max-width: calc(252px * var(--coef));
+    height: auto;
+    align-self: center;
+    text-align: center;
+    font-size: calc(16px * var(--coef));
+    padding-top: calc(10px * var(--coef));
+    padding-bottom: calc(10px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .photo-container p span {
+    color: var(--blue);
+    font-weight: 500;
+    font-size: calc(16px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .photo-container {
+    background: white;
+    /* padding: calc(12px * var(--coef)) calc(20px * var(--coef)); */
+    max-width: calc(293px * var(--coef));
+    height: calc(72px * var(--coef));
+    margin-right: auto;
+    padding: 0px;
+  }
+
+  .affilation-masterclass-page .tablette-main-content .affiliation-link button {
+    background: var(--blue);
+    border: none;
+    width: calc(170px * var(--coef));
+    height: calc(40px * var(--coef));
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: calc(15px * var(--coef));
+    line-height: calc(17.73px * var(--coef));
+    padding: calc(3px * var(--coef)) calc(11px * var(--coef));
+    font-size: calc(16px * var(--coef));
+  }
+
+  .affilation-masterclass-page .copy-link .copy-btn button {
+    width: calc(80px * var(--coef));
+    height: calc(40px * var(--coef));
+    font-weight: 400;
+    font-size: calc(18px * var(--coef));
+    padding: calc(5px * var(--coef)) calc(20px * var(--coef));
+  }
+  .affilation-masterclass-page .copy-link input,
+  .affilation-masterclass-page .copy-link,
+  .affilation-masterclass-page .copy-link .link-img {
+    height: calc(40px * var(--coef));
+  }
+  .affilation-masterclass-page .copy-link {
+    width: calc(80% - calc(20px * var(--coef)));
+  }
+
+  .affilation-masterclass-page .video-wrapper {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+
+  .affilation-masterclass-page .arrow-scroll img {
+    width: calc(30px * var(--coef));
+    height: calc(45px * var(--coef));
+  }
+  .affilation-masterclass-page .arrow-scroll {
+    bottom: 1%;
+    left: 48%;
+  }
+
+  /*—————————————————————————————————
+     Begin Affiliation formation
+  —————————————————————————————————*/
+
+  .affilation-formation-page .header-img-container {
+    padding-top: calc(10px * var(--coef));
+    padding-bottom: calc(24px * var(--coef));
+    padding-left: calc(20px * var(--coef));
+    padding-right: calc(20px * var(--coef));
+  }
+  .affilation-formation-page .header-img-container .text-container h1 {
+    line-height: calc(27px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    margin-top: 0px;
+    margin-bottom: calc(0px * var(--coef));
+  }
+
+  .affilation-formation-page .header-img-container .text-container h3 {
+    line-height: calc(24px * var(--coef));
+    color: var(--blue);
+    font-size: calc(16px * var(--coef));
+    margin-top: 0px;
+    margin-bottom: calc(4px * var(--coef));
+  }
+
+  .affilation-formation-page .header-img-container .text-container p {
+    font-size: calc(15px * var(--coef));
+    max-width: calc(325px * var(--coef));
+    line-height: calc(16.47px * var(--coef));
+    margin-top: 5px;
+  }
+ 
+
+  .affilation-formation-page .videos-bloc {
+    margin-left: calc(20px * var(--coef));
+    margin-right: calc(20px * var(--coef));
+    margin-top: calc(40px * var(--coef));
+    flex-direction: column;
+  }
+
+  .affilation-formation-page .videos-bloc h1 {
+    margin-bottom: calc(9px * var(--coef));
+    margin-top: 0px;
+    text-align: center;
+    font-size: calc(20.5px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .settings {
+    display: flex;
+    gap: calc(17px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+    flex-wrap: wrap;
+  }
+
+  .affilation-formation-page .videos-bloc .settings .search_language {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: calc(10px * var(--coef));
+    align-items: center;
+    max-width: calc(335px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container {
+    width: calc(210px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container
+    .searchInput
+    img {
+    width: calc(12px * var(--coef));
+    height: calc(12px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container
+    .searchInput {
+    align-items: center;
+  }
+  .affilation-formation-page .videos-bloc .settings .search_language .lang {
+    width: 100%;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    span {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .settings .tri .tri_options button {
+    font-size: calc(15px * var(--coef));
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 150%;
+    padding: calc(5px var(--coef)) calc(5px var(--coef));
+    width: calc(146px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .settings .tri {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .affilation-formation-page .videos-bloc .settings .tri span {
+    font-size: calc(18px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-right: 0px !important;
+  }
+
+  .affilation-formation-page .videos-bloc .settings .tri span {
+    font-size: calc(18px * var(--coef));
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video h1 span {
+    display: none;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video h3 {
+    justify-content: center;
+    margin-top: 0px;
+    text-align: center;
+    max-width: calc(335px * var(--coef));
+    font-size: calc(16px * var(--coef));
+  }
+  .affilation-formation-page .videos-bloc .videos-links .content-video p.date {
+    display: none;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    .all-price {
+    display: none;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video h1 {
+    font-size: calc(18px * var(--coef));
+    margin-left: calc(80px * var(--coef));
+    margin-right: calc(80px * var(--coef));
+    max-width: calc(133px * var(--coef));
+  }
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    .selectoption
+    select {
+    height: calc(29px * var(--coef));
+    font-size: calc(16px * var(--coef));
+    padding: calc(2px * var(--coef)) calc(5px * var(--coef));
+  }
+
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video h1.mobile {
+    display: block;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video h1.desktop {
+    display: none;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video h1.mobile {
+    font-size: calc(18px * var(--coef));
+    margin-left: calc(65px * var(--coef));
+    margin-right: calc(65px * var(--coef));
+    margin-top: calc(12px*var(--coef));
+    max-width: calc(259px * var(--coef));
+}
+
+.affilation-formation-page .videos-bloc .videos-links .content-video h1.mobile.second-child{
+margin-top: 0px;
+}
+
+
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container
+    .searchInput
+    input {
+    border: none;
+    outline: none;
+    font-size: calc(14px * var(--coef));
+    width: 100%;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .img .mobile {
+    display: block;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .img .mobile p.date {
+    font-size: calc(14px * var(--coef));
+    height: calc(42px * var(--coef));
+    margin-left: calc(10px * var(--coef));
+    color: #878787;
+    width: 80%;
+    margin-top: calc(4px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    font-weight: 200;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img
+    .mobile
+    p.date
+    span {
+    color: var(--blue);
+    background-color: transparent;
+    font-weight: 500;
+    font-size: calc(15px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img
+    .mobile
+    p.all-price {
+    margin-top: calc(0px * var(--coef));
+    display: flex;
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: calc(3px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img
+    .mobile
+    p.all-price
+    .cross {
+    font-size: calc(16px * var(--coef));
+    color: #878787;
+    font-weight: 400;
+    text-decoration: line-through;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img
+    .mobile
+    p.all-price
+    .price {
+    font-size: calc(18px * var(--coef));
+    color: var(--blue);
+    font-weight: 500;
+    margin-left: calc(4px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .img {
+    margin-left: calc(0px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .video-img:not(.no-video),
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default {
+    width: calc(197px * var(--coef));
+    height: calc(113px * var(--coef));
+  }
+
+  .affilation-formation-page .header-img-container .text-container h2 {
+    line-height: calc(20px * var(--coef));
+    margin-top: 0px;
+    font-weight: 600;
+    margin-left: 0px;
+    text-align: start;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default
+    .no-video {
+    width: calc(40px * var(--coef));
+    height: calc(40px * var(--coef));
+  }
+  .affilation-formation-page .tablette-main-content .content-desc {
+    font-size: calc(14px * var(--coef));
+    font-weight: 300;
+    max-width: calc(335px * var(--coef));
+    margin-left: calc(10.77px * var(--coef));
+    margin-right: calc(19.93px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    margin-top: calc(5px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .affilation-formation-page .tablette-main-content .content-desc .dots {
+    color: var(--blue);
+    width: fit-content;
+    margin-top: calc(3px * var(--coef));
+    font-weight: 400;
+    cursor: pointer;
+    font-size: calc(14px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .photo-container {
+    background: white;
+    padding: calc(12px var(--coef)) calc(20px var(--coef));
+    max-width: calc(293px * var(--coef));
+    height: calc(72px * var(--coef));
+    margin-right: auto;
+    display: flex;
+    margin-top: calc(20px * var(--coef));
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .affilation-formation-page .videos-bloc .photo-container p {
+    margin: 0px;
+    font-weight: 300;
+    background-color: #ededed;
+    max-width: calc(252px * var(--coef));
+    height: auto;
+    align-self: center;
+    text-align: center;
+    font-size: calc(16px * var(--coef));
+    padding-top: calc(10px * var(--coef));
+    padding-bottom: calc(10px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .photo-container p span {
+    color: var(--blue);
+    font-weight: 500;
+    font-size: calc(16px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .photo-container {
+    background: white;
+    padding: calc(12px var(--coef)) calc(20px var(--coef));
+    max-width: calc(293px * var(--coef));
+    height: calc(72px * var(--coef));
+    margin-right: auto;
+    padding: 0px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.20);
+  }
+
+  .affilation-formation-page .video-wrapper {
+    width: 100%;
+}
+
+  .affilation-formation-page .tablette-main-content .affiliation-link button {
+    background: var(--blue);
+    border: none;
+    width: calc(170px * var(--coef));
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: calc(15px * var(--coef));
+    line-height: calc(17.73px * var(--coef));
+    padding: calc(3px var(--coef)) calc(11px var(--coef));
+    font-size: calc(16px * var(--coef));
+  }
+
+  .affilation-formation-page .copy-link .copy-btn button {
+    width: calc(80px * var(--coef));
+    height: calc(40px * var(--coef));
+    font-weight: 400;
+    font-size: calc(18px * var(--coef));
+    padding: calc(5px var(--coef)) calc(20px var(--coef));
+  }
+  .affilation-formation-page .copy-link input,
+  .affilation-formation-page .copy-link,
+  .affilation-formation-page .copy-link .link-img {
+    height: calc(40px * var(--coef));
+  }
+  .affilation-formation-page .copy-link {
+    width: calc(80% - calc(20px * var(--coef)));
+  }
+
+  .affilation-formation-page .video-wrapper {
+    margin-right: 0px;
+    margin-bottom: 5px;
+  }
+
+  .affilation-formation-page .arrow-scroll img {
+    width: calc(30px * var(--coef));
+    height: calc(45px * var(--coef));
+  }
+  .affilation-formation-page .arrow-scroll {
+    bottom: 1%;
+    left: 48%;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video p.date {
+    font-size: calc(16px * var(--coef));
+    height: calc(61px * var(--coef));
+    font-weight: 200;
+    max-width: 90%;
+    margin-left: calc(11px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+     END Affiliation formation
+  —————————————————————————————————*/
+
+
+
+  /*—————————————————————————————————
+    Begin Dashboard Client
+—————————————————————————————————*/
+
+.dashboard-client-page h1.title,
+.dashboard-client-page h2 {
+  font-size: calc(20px * var(--coef));
+}
+
+.dashboard-client-page h3 {
+  font-size: calc(14px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-links-container {
+  margin-bottom: calc(60px * var(--coef));
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(15px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-links-container a {
+  font-size: calc(18px * var(--coef));
+  height: calc(100px * var(--coef));
+  padding: calc(5px * var(--coef)) calc(15px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-links-container a span {
+  font-size: calc(14px * var(--coef));
+  line-height: calc(15px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-cards {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: calc(21px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-card {
+  width: calc(157px * var(--coef));
+  height: calc(225px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-card .card-content {
+  padding: calc(8px * var(--coef)) calc(16px * var(--coef));
+}
+/*—————————————————————————————————
+  End Dashboard Client
+—————————————————————————————————*/
+
+  .mode-page .sm\:hidden {
+    display: none !important;
+  }
+
+  .mode-page .md\:hidden {
+    display: block !important;
+  }
+
+  .mode-page .sm\:hidden {
+    display: none !important;
+  }
+
+  .mode-page .md\:hidden {
+    display: block !important;
+  }
+}

@@ -1,0 +1,634 @@
+/* ONLY iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px)  and (max-width : 1024px)  {
+    /* Styles */
+
+ 
+    
+ /*—————————————————————————————————
+		SIDE MENU
+  —————————————————————————————————*/  
+   
+    #side-menu{
+        position: relative;
+    }
+    
+    
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+    
+    
+    
+    
+}
+/* iPads (portrait) ----------- */
+@media only screen  and (max-width : 1024px) and (orientation : portrait) {
+    
+    
+    
+    
+    h1{
+        font-size: calc(28px*var(--coef));
+        line-height: calc(32px*var(--coef));
+        margin-bottom: calc(10px*var(--coef));;
+    }
+    
+    
+    /* BOUTONS SPECIAUX */
+.btn.spe1{
+     padding: calc(7px*var(--coef)) calc(11px*var(--coef)) calc(7px*var(--coef)) calc(10px*var(--coef));
+     font-size: calc(14px*var(--coef)); 
+     line-height: calc(16.41px*var(--coef)); 
+}
+
+.btn.spe1 img{
+    vertical-align: sub;
+    height: calc(17px*var(--coef));
+    margin-right: calc(10px*var(--coef));
+}
+    
+  /*—————————————————————————————————
+		MAIN
+  —————————————————————————————————*/  
+    .page article{    
+       font-size: calc(18px*var(--coef));
+       line-height: calc(22px*var(--coef));   
+       margin-left: 0;
+       margin-right: 0;
+       margin-bottom: calc(50px*var(--coef));
+       }
+    
+       
+ main>.content{
+padding: calc(106px*var(--coef)) calc(106px*var(--coef)) calc(100px*var(--coef)) calc(106px*var(--coef));
+}      
+       
+
+table.stries tbody tr{
+        font-size: calc(14px*var(--coef));
+        line-height: calc(16px*var(--coef));      
+}
+
+table.stries thead th{
+   height:  calc(61px*var(--coef));
+    font-size:  calc(18px*var(--coef));
+    line-height:  calc(21px*var(--coef));
+}
+ 
+table.stries td, table.stries th{
+
+  padding-left: calc(10px*var(--coef));
+  padding-right:calc(5px*var(--coef));
+}
+
+
+
+/*—————————————————————————————————
+		HISTORY PAGE
+  —————————————————————————————————*/
+
+.cadre_table{
+   padding: calc(22px*var(--coef)) calc(20px*var(--coef)) calc(20px*var(--coef)) calc(20px*var(--coef));
+   border-radius: calc(15px*var(--coef));
+   
+}
+
+
+.history-page .btns .btn.spe1{
+    margin-left: calc(15px*var(--coef));
+   
+}
+
+.history-page .btns .btn.spe2{
+   display:none;
+}
+
+.history-page table{
+    margin-top: calc(20px*var(--coef));
+}
+
+.history-page table img.rounded{
+    height: calc(35px*var(--coef));
+    width: calc(35px*var(--coef));
+    margin-right: calc(8px*var(--coef));
+   
+}
+
+.history-page table img.redirection{
+    height: calc(20px*var(--coef));
+    width: calc(20px*var(--coef));
+}
+
+
+
+
+
+}
+
+
+/* tablets ----------- */
+@media only screen and (max-width : 1024px) {
+
+
+.btn{
+    font-size: calc(16px*var(--coef)); 
+    line-height: calc(24px*var(--coef)); 
+}
+
+.btn.large{
+/* line-height: 30px;*/
+  font-size: calc(16px*var(--coef)); 
+  line-height: calc(20px*var(--coef)); 
+
+}
+
+.btn.small{
+font-size: calc(15px*var(--coef));
+line-height: calc(17px*var(--coef));
+} 
+
+.btn.xsmall{
+
+/*  padding: calc(6px*var(--coef)) calc(10px*var(--coef)) calc(7px*var(--coef)) calc(10px*var(--coef));*/
+
+    font-size: calc(12px*var(--coef));
+    line-height: calc(19px*var(--coef));
+
+}
+
+
+/*.btn.p22{
+     padding: calc(4px*var(--coef)) calc(5px*var(--coef)) calc(4px*var(--coef)) calc(5px*var(--coef));
+}*/
+
+.btn.p6{
+   padding: calc(4px*var(--coef)) calc(6px*var(--coef)) calc(4px*var(--coef)) calc(6px*var(--coef));
+}
+
+
+.left-column #side-menu.menu_closed{
+   animation: menu_hide 1s ease 0s 1 normal forwards;
+}
+
+@keyframes menu_hide {
+	0%
+	 {
+		opacity: 1;
+                left:0;
+	}
+/*
+	75% {
+		opacity: 0.5;
+                left:-200px;
+            }*/
+        
+        100% {
+            opacity: 0;
+            display: none;
+            left:-500px;
+	}
+}
+
+ /*—————————————————————————————————
+		HEADER 
+  —————————————————————————————————*/
+  header{
+        height:calc(64px*var(--coef));
+    }
+    
+    header .logo{
+    left: calc(88px*var(--coef));
+    width: calc(102px*var(--coef));
+    height: calc(21px*var(--coef));
+}
+
+
+
+ 
+ 
+ /* SEARCH BAR (loupe) */
+.search {
+    padding-left: calc(23px*var(--coef));
+  
+    border-radius:calc(25px*var(--coef));
+      left: calc(215px*var(--coef));
+     width: calc(160px*var(--coef));
+    height: calc(27px*var(--coef));
+
+}
+
+
+.search  .loupe{
+    left: calc(12px*var(--coef));
+    top: calc(6px*var(--coef));
+    width: calc(15px*var(--coef));
+    height:calc(15px*var(--coef));
+}
+
+ .search form input {
+      width: calc(135px*var(--coef));
+      font-size: calc(12px*var(--coef));
+
+    padding: calc(6px*var(--coef))px 12px calc(6px*var(--coef))px 9px;
+ 
+    /*line-height: 22px;*/
+    font-weight: 300;
+
+    left:calc(37px*var(--coef));
+}
+
+ 
+ 
+.crediter{
+
+    height: calc(32px*var(--coef));
+    right:calc(252px*var(--coef));
+    font-size:  calc(18px*var(--coef));
+    line-height:  calc(27px*var(--coef));
+}
+
+
+.crediter .btn{
+/*   padding-left:  calc(6px*var(--coef));
+   padding-right:  calc(6px*var(--coef));*/
+   margin-right: calc(10px*var(--coef));
+   border-radius: calc(10px*var(--coef));
+}
+
+
+    header .pictos{
+       right:calc(115px*var(--coef));
+       top:calc(17px*var(--coef));
+    }
+
+
+    
+.pictos .loupe,
+.pictos .user{
+    margin-right: calc(10px*var(--coef));
+}
+
+.pictos .loupe{
+    width:calc(19px*var(--coef));
+    height: calc(21px*var(--coef));
+}
+
+.pictos .user{
+    width:calc(20px*var(--coef));
+    height:calc(21px*var(--coef));
+
+}
+
+
+.pictos  .messages{
+   
+    width: calc(28px*var(--coef));
+    height: calc(22px*var(--coef));
+}
+
+
+
+/*—————————————————————————————————
+		MAIN
+  —————————————————————————————————*/
+main{
+    position: relative;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    
+    display: flex;
+    
+}
+    main .left-column{ 
+        position: absolute;
+    }
+    
+
+
+main>.content{
+/*    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+.page h1{ 
+    font-weight: 600;   
+}
+
+/*
+table.stries{
+    border-collapse: collapse;
+    width:100%;
+    background-color: var( --main-bg-color);
+    border-radius:18px;
+}
+
+table.stries thead{
+    min-height: 60px;
+}
+
+table.stries, table.stries tr,table.stries td, table.stries thead, table.stries tbody, table.stries th {
+    border: none;
+}
+
+table.stries tbody tr:nth-of-type(odd) {
+     
+}
+table.stries tbody tr:nth-of-type(even) {
+      background-color:#F5F5F5;
+}
+
+table.stries tbody tr{
+        border-bottom: #F0F0F0 10px solid ;
+        font-size: 14px;
+}
+
+table.stries thead th{
+   height: 40px;
+   vertical-align: top;
+}
+
+table.stries td, table.stries th{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+*/
+
+/*—————————————————————————————————
+		FOOTER
+  —————————————————————————————————*/
+footer .pc, footer .pc.block, footer .mobile, footer .mobile.block  {
+    display: none !important;
+}
+
+footer  .tablet {
+    display: flex !important;
+}
+footer  .tablet.block {
+    display: block !important;
+}
+
+footer .top,
+footer .middle,
+footer .bottom
+{
+    margin-left: calc(105px*var(--coef));;  
+    margin-right: calc(105px*var(--coef));;       
+}
+
+footer .bottom
+{
+  padding-bottom: calc(25px*var(--coef));;
+}
+
+            
+footer .top .content{ 
+    justify-content: center;
+    height: calc(74px*var(--coef));; 
+}
+
+
+footer .logo{
+     width:calc(106px*var(--coef));
+     height:calc(19px*var(--coef));
+
+}
+
+
+footer .mobile-flag{
+   text-align: left;
+    font-weight: 400;
+    font-size: calc(14px*var(--coef));
+    line-height:calc(21px*var(--coef));
+}
+
+
+footer .mobile-flag img{
+    height: calc(15px*var(--coef));
+    width: calc(19px*var(--coef));
+}
+
+
+footer .middle{
+ 
+    font-size: calc(20px*var(--coef));;
+    line-height: calc(30px*var(--coef));;
+}
+
+
+footer .middle .content > ul{
+   padding-bottom:  calc(10px*var(--coef)) ;
+  
+}
+
+
+
+footer .middle .content > ul > li{
+    margin-bottom: calc(15px*var(--coef));; 
+}
+
+
+
+
+footer .middle .content ul .social_net{
+    margin-top:calc(34px*var(--coef)) !important;;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+footer  .social_net li{
+    width:calc(25px*var(--coef));
+    height:calc(25px*var(--coef));
+
+    margin-right: calc(7px*var(--coef));
+}
+
+
+
+.copyright,.powered{
+
+    font-size: calc(16px*var(--coef));;
+    font-weight: 300;
+    line-height: calc(24px*var(--coef));;
+}
+
+footer .middle .copyright{
+    margin-top: calc(34px*var(--coef));;
+}
+footer .middle .lang_pow{
+     margin-top:calc(58px*var(--coef)) !important;;
+}
+
+/*—————————————————————————————————
+		VIGNETTE
+  —————————————————————————————————*/
+main .left-column>.div_vignette {
+        display:block;
+    }
+    
+   main .left-column .div_vignette .btn_menu.menu_open{
+        display:block;
+    }
+
+
+  main #side-menu .div_vignette .content {
+        visibility: hidden;
+    }
+    
+    main .left-column  .div_vignette .content .name,
+    main .left-column  .div_vignette .content .btn_modif,
+     main .left-column  .div_vignette .content .profile_ok{
+        display:none;
+    }
+
+
+
+.div_vignette{ 
+    border-top-right-radius:  calc(50px*var(--coef));
+    padding-top: calc(12px*var(--coef));;  
+    padding-bottom: calc(23px*var(--coef));;  
+    position: relative;
+    
+}
+
+.vignette_box, .rounded {
+        height: calc(75px*var(--coef));
+        width: calc(74px*var(--coef));
+      }
+
+img.rounded {
+  border: 1px  solid var(--blue);
+}
+
+.div_vignette .name{
+
+font-size: calc(15px*var(--coef));
+line-height: calc(15px*var(--coef));
+font-weight: 600;
+}
+
+.div_vignette .name_s{
+    /*visibility: hidden;*/
+    font-size: calc(15px*var(--coef));
+    line-height: calc(15px*var(--coef));
+    font-weight: 500; 
+    margin-left:  calc(12px*var(--coef))
+}
+
+
+.div_vignette .btn_menu{
+    width:  calc(30px*var(--coef));
+    height:  calc(20px*var(--coef));
+
+    left:  calc(21px*var(--coef));
+    top:  calc(-8px*var(--coef));
+   
+}
+
+
+ .div_vignette {
+         border-top-right-radius: initial;
+         margin-top: initial;  
+    }
+       
+    
+.div_vignette .btn_menu.menu_close{
+   display: none;
+}
+
+.div_vignette.menu_closed .btn_menu.menu_open{
+   display: none;
+}
+
+.div_vignette.menu_closed .btn_menu.menu_close{
+   display: block;
+}
+ 
+.div_vignette .content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-left: calc(-46px*var(--coef));
+    }   
+
+main .left-column  .div_vignette .content .name_s{
+        display: block;
+       
+    }
+
+   
+.picto_modif {
+  content: url("/theme/black_blue/img/modifier_bleu.svg");
+  right: calc(1px*var(--coef));
+  top: calc(-1px*var(--coef));
+  width: calc(19px*var(--coef));
+  height: calc(19px*var(--coef));
+
+} 
+
+/*—————————————————————————————————
+		SIDE MENU
+  —————————————————————————————————*/
+main .left-column{
+  width:calc(416px*var(--coef));
+}
+
+
+.dropdownlink {
+padding: calc(16px*var(--coef)) 0px calc(16px*var(--coef)) calc(68px*var(--coef));;
+font-size:  calc(22px*var(--coef));
+font-weight: 500;
+line-height:  calc(26px*var(--coef));
+padding-right: calc(28px*var(--coef)) !important;
+}
+
+.submenuItems {
+font-size: calc(18px*var(--coef));;
+font-weight: 500;
+line-height: calc(21px*var(--coef));
+}
+
+
+
+.submenuItems a {
+  padding: calc(12px*var(--coef)) 0px calc(5px*var(--coef)) calc(48px*var(--coef));  
+}   
+
+#side-menu .accordion-menu{
+   border-bottom-right-radius:  calc(15px*var(--coef));
+;
+}
+
+ul.accordion-menu, .accordion-menu ul {
+    padding-bottom: calc(26px*var(--coef));
+}
+
+
+.dropdownlink i, .dropdownlink img {
+    height: calc(24px*var(--coef));
+    top: calc(17px*var(--coef));
+    left: calc(28px*var(--coef));
+}
+
+.dropdownlink .fa-chevron-down {
+    height: calc(12px*var(--coef));
+    width: calc(20px*var(--coef));
+    top:calc(23px*var(--coef));
+}
+
+
+
+
+
+
+    
+    
+    
+    
+
+}

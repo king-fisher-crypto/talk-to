@@ -1,0 +1,610 @@
+/* Smartphones (portrait and landscape) ----------- */
+
+/*  Tablet Small OR Mobile Extra Large  */
+@media only screen   and (max-width : 767px)
+{
+ 
+
+
+/*—————————————————————————————————
+		HISTORY PAGE
+  —————————————————————————————————*/
+
+.cadre_table{
+   padding: calc(22px*var(--coef)) calc(20px*var(--coef)) calc(20px*var(--coef)) calc(20px*var(--coef));
+   border-radius: calc(15px*var(--coef));
+   
+}
+
+
+.history-page .btns .btn.spe1{
+    margin-left: calc(15px*var(--coef));
+     padding: 0 calc(13px*var(--coef)) 0 calc(10px*var(--coef));
+   
+}
+
+.history-page .btns .btn.spe2{
+   display:none;
+}
+
+.history-page table{
+    margin-top: calc(20px*var(--coef));
+}
+
+table img.rounded{
+    height: calc(35px*var(--coef));
+    width: calc(35px*var(--coef));
+    margin-right: calc(8px*var(--coef));
+   
+}
+
+ table img.redirection{
+    height: calc(20px*var(--coef));
+    width: calc(20px*var(--coef));
+}
+
+ table img.croix{
+    height: calc(15px*var(--coef));
+    width: calc(14px*var(--coef));
+}
+
+/*—————————————————————————————————
+		MES CODES PROMO
+  —————————————————————————————————*/
+.promo_codes-page.page article .btns{
+    margin-top: calc(20px*var(--coef));
+    display: flex;
+    justify-content: space-between;
+    gap:calc(7px*var(--coef));
+}
+
+   
+
+.promo_codes-page.page .btns .btn.agent{
+    width:60%;
+    padding: 0 calc(5px*var(--coef)) 0 calc(9px*var(--coef));
+}
+.promo_codes-page .btns .btn.chercher{
+    width:40%;
+}
+
+/*—————————————————————————————————
+		APPOINTMENTS PAGE (Mes rdez vous LIVI)
+  —————————————————————————————————*/
+
+
+.appointments-page  input[type="checkbox"].square_radio {
+ width:calc(15px*var(--coef));;
+ height: calc(15px*var(--coef));;
+}
+    
+
+
+/*—————————————————————————————————
+		MES PHOTOS ON DEMAND
+  —————————————————————————————————*/
+.photos_od-page  .btns,  
+.videos_od-page  .btns, 
+.pdf_od-page .btns,
+.subscription-page .btns,
+.payment_request-page .btns
+ {
+  margin-top: calc(-5px*var(--coef));
+  margin-bottom: calc(20px*var(--coef));
+  margin-left: calc(5px*var(--coef));
+}
+
+/*—————————————————————————————————
+		MY FAVORITES
+  —————————————————————————————————*/
+
+.favorites-page   .btns
+{
+     margin-top: 0;
+     margin-bottom: calc(50px*var(--coef));                      
+}
+
+.favorites-page table{
+    margin-top: 0;
+}
+
+.docs_pdf-page .arrow_right,
+.favorites-page .arrow_right 
+{display: initial; visibility: visible}
+
+/*—————————————————————————————————
+		MY Documents-Pdf
+  —————————————————————————————————*/
+.docs_pdf-page   .btns
+{
+     margin-top: 0;
+     margin-bottom: calc(30px*var(--coef));                      
+}
+
+/*—————————————————————————————————
+		Mes dépôts/crédits
+  —————————————————————————————————*/
+.buycredits-page .btns2{
+    margin-top:calc(30px*var(--coef));
+}
+
+.buycredits-page .btns{
+    margin-top:calc(10px*var(--coef));
+}
+
+.buycredits-page .btns2 .txt{
+        font-size: calc(14px*var(--coef));
+        line-height: calc(16px*var(--coef));     
+}
+
+
+.buycredits-page .btn.credits{
+   padding: 0 calc(72px*var(--coef)) 0 calc(20px*var(--coef));
+}
+
+.buycredits-page .btn.acheter{
+   font-size: calc(14px*var(--coef));
+   font-weight: 500;
+   padding: 0 calc(10px*var(--coef)) 0 calc(10px*var(--coef));
+}
+
+
+.buycredits-page  article{
+    margin-bottom: calc(30px*var(--coef));
+}
+
+
+
+
+/*—————————————————————————————————
+       Mes messages privés / account/my_private_messages
+  —————————————————————————————————*/
+
+
+.my_private_messages-page .cadre_table{
+     padding: calc(10px*var(--coef)) calc(20px*var(--coef)) calc(43px*var(--coef))  calc(20px*var(--coef));
+    margin-left: calc(-10px*var(--coef));
+    margin-right: calc(-10px*var(--coef));
+}
+
+.my_private_messages-page .cadre_table .message{
+    display: none;
+}
+
+.my_private_messages-page .links{
+     margin-left:0;
+     margin-bottom:calc(20px*var(--coef));
+     text-align: center;
+    
+}
+
+.my_private_messages-page .nbre_msg{
+    width:calc(12px*var(--coef));
+    height:calc(12px*var(--coef));
+    top:-2px;
+}
+
+
+.my_private_messages-page .links a:not(:first-child) {
+    margin-left:calc(15px*var(--coef)) 
+}
+
+
+.my_private_messages-page .left_col{
+    width:100%;
+    background-color: transparent;
+  
+}
+
+.my_private_messages-page  .div_search_client{
+    position: relative; 
+   
+}
+
+.my_private_messages-page .search_client{
+    /*box-shadow: 0px 3px 35px 0px #00000030;*/
+    /*box-shadow: 0px 3px 35px 0px #00000040;*/
+     background: 0;
+}
+
+
+
+
+.my_private_messages-page .left_col .search_client{
+    padding: calc(6px*var(--coef)) calc(40px*var(--coef))  calc(5px*var(--coef)) calc(10px*var(--coef));
+    position: relative;
+    left:calc(15px*var(--coef));
+    width: calc(200px*var(--coef));
+    height: calc(25px*var(--coef));
+    
+}
+
+.my_private_messages-page .left_col .loupe{
+    position: relative;
+    display: inline-block;
+    left:calc(-20px*var(--coef));
+    top: calc(4px*var(--coef));
+    width:calc(15px*var(--coef)) ;
+    height:calc(15px*var(--coef)) ;
+    
+}
+
+
+.my_private_messages-page .list_echanges{
+    margin-top: calc(30px*var(--coef));
+    padding: 0 0 1px 0; 
+    margin-bottom:calc(20px*var(--coef));
+}
+
+
+
+.my_private_messages-page  .echange_bloc{
+    padding: calc(12px*var(--coef)) calc(8px*var(--coef))  calc(10px*var(--coef)) calc(12px*var(--coef));
+    margin-bottom: calc(10px*var(--coef));
+    background-color: #ECECEC;
+    box-shadow: 0px 3px 35px 0px #00000014;
+}
+
+.my_private_messages-page  .echange_bloc.active{
+     background-color: white; 
+     -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+        box-shadow: none;
+}
+
+.my_private_messages-page  .echange_bloc .title {
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.my_private_messages-page  .echange_bloc .txt{
+    height:calc(20px*var(--coef));
+}
+
+
+
+.my_private_messages-page table img.rounded {
+    margin-right: calc(3px*var(--coef));
+    width:calc(20px*var(--coef));
+    height:calc(20px*var(--coef));
+}
+
+
+.my_private_messages-page .left_col .date{
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.my_private_messages-page  .echange_bloc .txt{
+    padding-top: calc(5px*var(--coef));
+}
+
+
+.my_private_messages-page  .right_col{
+    width:  100%;
+    padding: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display:none;
+}
+
+.my_private_messages-page  .right_col .div_search_client{
+    display: block;
+    margin-bottom: calc(20px*var(--coef)) ;
+    text-align: right;
+}
+
+
+.my_private_messages-page .right_col .search_client{
+    padding: calc(6px*var(--coef)) calc(40px*var(--coef))  calc(5px*var(--coef)) calc(10px*var(--coef));
+    position: relative;
+    left:calc(15px*var(--coef));
+}
+
+
+
+.my_private_messages-page .right_col .chevron{
+    position: absolute;
+    display:block;
+    width:calc(20px*var(--coef));
+    height:calc(12px*var(--coef));
+    transform: rotate(90deg);
+    top: calc(11px*var(--coef));
+    left:calc(-15px*var(--coef));
+    cursor: pointer;
+}
+
+
+.my_private_messages-page .right_col .loupe{
+    position: relative;
+    display: inline-block;
+    left:calc(-20px*var(--coef));
+    top: calc(4px*var(--coef));
+    width:calc(15px*var(--coef)) ;
+    height:auto ;
+}
+
+
+
+
+.my_private_messages-page  .voir_tout .img_txt img{
+    width:calc(15px*var(--coef)) ;
+    heigth:calc(10px*var(--coef)) ;
+    margin-right: calc(5px*var(--coef)) ;
+    
+}
+
+.my_private_messages-page  .voir_tout .txt{
+    width:calc(150px*var(--coef)) ;
+}
+
+.my_private_messages-page  .voir_tout  .close{
+  display: none;
+}
+
+.my_private_messages-page  .right_col>.vignette{
+    display: none;
+    margin-top:0;
+}
+
+.my_private_messages-page .right_col .bloc_txt .vignette {
+  display: flex;
+  margin: 0;
+}
+
+
+.my_private_messages-page  .right_col .vignette_date{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 calc(10px*var(--coef)) 0 calc(10px*var(--coef));
+     width: 100%;
+}
+
+.my_private_messages-page  .right_col .vignette img{
+    width:calc(20px*var(--coef));
+    height:calc(20px*var(--coef)) !important;  
+    margin-right: 2px;
+}
+
+.my_private_messages-page  .message_bloc{
+    margin-top: calc(15px*var(--coef)); 
+    width:100%;
+}
+
+.my_private_messages-page  .message_bloc:not(:first-child){
+   margin-top: calc(10px*var(--coef));
+ }
+
+
+.my_private_messages-page .message_bloc.envoi {
+    margin-left: 0;
+}
+
+.my_private_messages-page  .message_bloc .lus img{
+    width:calc(12px*var(--coef));
+    height:calc(12px*var(--coef));  
+    margin-right: calc(4px*var(--coef));   
+}
+
+
+.my_private_messages-page  .message_bloc .bloc_txt{
+   padding-top:  calc(12px*var(--coef));
+   padding-bottom:  calc(20px*var(--coef));
+ 
+}
+
+.my_private_messages-page  .message_bloc .bloc_txt .date{
+    padding-right:calc(24px*var(--coef));
+    width: calc(90px*var(--coef));
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+
+ }
+  
+ .my_private_messages-page  .message_bloc.envoi .bloc_txt .date{
+     padding-right:calc(20px*var(--coef));
+     right: calc(-201px*var(--coef));
+ }
+ 
+ 
+ 
+.my_private_messages-page  .message_bloc .bloc_txt .txt{
+     padding: calc(0px*var(--coef)) calc(10px*var(--coef))  calc(15px*var(--coef)) calc(33px*var(--coef));
+}
+
+
+
+.my_private_messages-page  .message_bloc .bloc_txt .files img{
+    margin-right: calc(36px*var(--coef));
+    width:calc(19px*var(--coef));
+    height:calc(26px*var(--coef)); 
+}
+
+.my_private_messages-page .send_msg
+{
+    margin-top: calc(20px*var(--coef)); 
+    padding: calc(6px*var(--coef)) calc(26px*var(--coef))  calc(6px*var(--coef)) calc(10px*var(--coef));
+    /*width:calc( 100% - calc(36px*var(--coef)) );*/
+     width: calc(100% - 36px*var(--coef)) ;
+    /*width:100%;*/
+    height: calc(20px*var(--coef));
+}
+
+.my_private_messages-page .send_msg textarea
+{
+    width:100%;
+    height:100%; 
+}
+
+
+.my_private_messages-page .send_msg img
+{
+    width:calc(15px*var(--coef));
+    height:calc(15px*var(--coef)); 
+}
+
+
+@-webkit-keyframes anim_extend_send_msg {
+  0% {}
+  100% {
+    width: calc(100% - 36px*var(--coef)) ;
+    height:calc(120px*var(--coef));
+  }
+}
+
+@-webkit-keyframes anim_contract_send_msg {
+0% { }
+  
+100% {
+    width: calc(100% - 36px*var(--coef)) ;
+    height: calc(20px*var(--coef));
+  }
+}
+
+/*—————————————————————————————————
+       Consultations payantes par Email / paid_consultations_email
+  —————————————————————————————————*/
+
+.paid_consultations_email-page .search_client {
+    background-color: var(--main-bg-color);
+}
+
+
+
+
+
+
+
+
+/*—————————————————————————————————
+		Mes Masterclass / account/my_masterclass
+  —————————————————————————————————*/
+.my_masterclass-page .title{
+    display: none;
+}
+.my_masterclass-page .cadre_master{
+      padding: calc(20px*var(--coef)) calc(18px*var(--coef)) calc(20px*var(--coef)) calc(18px*var(--coef));  
+      margin-bottom: calc(30px*var(--coef)); 
+}
+
+
+
+.my_masterclass-page .vignette{
+    width:calc(71px*var(--coef));
+    height:calc(71px*var(--coef));
+    margin-bottom: calc(5px*var(--coef));
+    padding: calc(8px*var(--coef));
+}
+
+.my_masterclass-page .master_id .job{
+     margin-bottom: calc(20px*var(--coef));
+}
+
+.my_masterclass-page .bar_field{
+    padding: calc(4px*var(--coef)) 0 calc(4px*var(--coef)) calc(10px*var(--coef)); 
+    margin-bottom: calc(10px*var(--coef));
+}
+.my_masterclass-page .bar_field:last-child{
+     padding-left: calc(10px*var(--coef)); 
+}
+.my_masterclass-page .video_txt{
+display: inline-flex;
+align-items: flex-start;
+gap:calc(30px*var(--coef));
+  flex-direction: column;
+}
+
+.my_masterclass-page .maj{
+    display:block;
+    position: absolute;
+   
+}
+
+.my_masterclass-page .video{
+    width:100%;
+    text-align: left;
+}
+
+.my_masterclass-page video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: calc(15px*var(--coef));
+    cursor: pointer;
+    
+}
+
+.my_masterclass-page .play{
+    width: calc(48px*var(--coef));
+    height: calc(33px*var(--coef));
+}
+
+
+.my_masterclass-page .txts{
+    width:100%;
+}
+
+
+.my_masterclass-page  .txts .descriptif{
+    height: calc(63px*var(--coef));
+}
+
+
+.my_masterclass-page  .txts .arrow{
+    width: calc(16px*var(--coef));
+    height: calc(7px*var(--coef));
+}
+
+.my_masterclass-page  .date{
+     margin-top: calc(50px*var(--coef));
+     margin-bottom: calc(25px*var(--coef));
+}
+
+.my_masterclass-page  .btn.orange{
+    margin-bottom: calc(20px*var(--coef));
+    padding: calc(13px*var(--coef)) ; 
+}
+
+.my_masterclass-page  .rappel{
+    width: calc(300px*var(--coef));
+}
+
+
+
+
+
+
+
+
+} /* —————————————FIN  @media only screen   and (max-width : 767px) ————————————— */
+
+
+/* Mobile Medium & Small ( < 480px ) */
+@media only screen  and (max-width : 380px ) {
+    :root {
+        --header-btns_height: 15px;
+    }
+  
+
+    h1{
+        font-size: 20px;
+    }
+
+    
+    
+/*—————————————————————————————————
+		HEADER 
+  —————————————————————————————————*/
+    
+    header .logo{
+    left:10px;
+}
+
+
+
+
+}

@@ -1,0 +1,1216 @@
+
+@media only screen and (min-width: 300px) and (max-width: 480px) {
+
+  :root {
+    --checkbox-height: calc(22px * var(--coef)) !important;
+  }
+  .social_networks-page .header-section,
+  .social_networks-page .container {
+    padding: calc(5px * var(--coef)) !important;
+  }
+
+  .social-form {
+    padding-left: calc(5px * var(--coef)) !important;
+  }
+
+  .my-sales .cadre_table {
+    padding: calc(20px * var(--coef)) calc(16px * var(--coef))
+      calc(30px * var(--coef)) calc(16px * var(--coef));
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .utilities .popup::after {
+    left: 37%;
+  }
+
+  .utilities .popup {
+    width: 90%;
+  }
+
+  .utilities .popup .month {
+    width: 30%;
+    border: 1px solid #4cbbec;
+  }
+
+  .utilities .popup.show {
+    display: block;
+    width: 100%;
+  }
+
+  #modal-confirmation.custom-modal,
+  #modal-appointment-confirmation.custom-modal,
+  #modal-warning.custom-modal {
+    width: 100% !important;
+  }
+
+  #modal-confirmation.modal.custom-modal .modal-content,
+  #modal-appointment-confirmation.modal.custom-modal .modal-content {
+    padding: calc(30px * var(--coef)) 0;
+    height: fit-content;
+  }
+
+  #modal-confirmation.modal.custom-modal .btn.validate,
+  #modal-appointment-confirmation.modal.custom-modal .btn.validate {
+    height: calc(61px * var(--coef));
+    max-width: 80%;
+  }
+
+  .modal#modal-appointment a.close-modal {
+    top: calc(13px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        BEGIN TABLE COMPONENT
+  —————————————————————————————————*/
+  .agent_cadre_table .table-picker-container {
+    width: calc(335px * var(--coef));
+  }
+
+  .agent_cadre_table .cadre_table .arrow_right.shake {
+    display: block !important;
+    position: absolute;
+    z-index: 10;
+    top: calc(31.5% + 30px);
+    right: -7px;
+  }
+
+  .agent_cadre_table .cadre_table {
+    padding: calc(20px * var(--coef));
+    position: relative;
+  }
+
+  .agent_cadre_table td {
+    padding: calc(11px * var(--coef)) 0px;
+  }
+
+  .agent_cadre_table th.agent {
+    padding-right: calc(125px * var(--coef));
+  }
+
+  .agent_cadre_table table.stries thead th {
+    font-size: calc(18px * var(--coef)) !important;
+    height: calc(21px * var(--coef));
+    padding-top: 0px;
+    padding-bottom: calc(20px * var(--coef));
+  }
+
+  .agent_cadre_table table.stries td {
+    font-size: calc(14px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        END TABLE COMPONENT
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        SOCIAL NETWORKS
+  —————————————————————————————————*/
+  .social_networks-page.marg180,
+  .social_networks-page .container,
+  .social_networks-page .header-section {
+    width: 100%;
+    font-size: calc(var(--coef) * 16px);
+  }
+
+  .social_networks-page .social-form {
+    padding-left: calc(20px * var(--coef));
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #878787;
+    font-size: calc(14px * var(--coef));
+    opacity: 1;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #878787;
+    font-size: calc(14px * var(--coef));
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #878787;
+    font-size: calc(14px * var(--coef));
+  }
+
+  .social_networks-page .container.social-form {
+    padding-top: 0px;
+  }
+
+  .social_networks-page .link-desc {
+    margin-left: 0px;
+  }
+
+  .social_networks-page .header-section,
+  .social_networks-page .container {
+    padding: calc(20px * var(--coef));
+  }
+
+  .social_networks-page .header-section {
+    padding-left: calc(10px * var(--coef));
+  }
+
+  .social_networks-page .row-social {
+    flex-wrap: wrap;
+    margin: calc(31px * var(--coef));
+  }
+
+  .social_networks-page .social {
+    margin-bottom: calc(20px * var(--coef));
+  }
+
+  .social_networks-page .header-section h1 {
+    font-size: calc(var(--coef) * 20px);
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(23px * var(--coef));
+    text-transform: capitalize;
+    margin-bottom: calc(var(--coeff) * 10px);
+  }
+
+  .social_networks-page .header-section {
+    font-weight: 400;
+    font-size: calc(16px * var(--coef));
+    line-height: calc(20px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+    padding-bottom: 0;
+  }
+
+  .social_networks-page .header-section p {
+    font-size: calc(16px * var(--coef));
+    line-height: calc(20px * var(--coef));
+  }
+
+  .social-bloc div a {
+    font-size: calc(18px * var(--coef));
+    line-height: 0px;
+  }
+
+  .social_networks-page .social-bloc div a {
+    font-size: calc(19px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .social_networks-page .link-div {
+    width: calc(114px * var(--coef));
+    height: calc(23px * var(--coef));
+  }
+
+  .desc-abonner {
+    justify-content: space-between;
+  }
+
+  .marg180.social_link {
+    width: 100%;
+  }
+
+  .link-desc {
+    margin-bottom: calc(var(--coef) * 15px);
+    padding-left: calc(7px * var(--coef));
+  }
+
+  input {
+    padding: 0px;
+  }
+
+  .desc-abonner {
+    padding-left: calc(7px * var(--coef));
+  }
+
+  .desc-abonner input {
+    width: calc(var(--coef) * 104px) !important;
+    flex: 2;
+  }
+
+  .social_networks-page .desc-abonner,
+  .social_networks-page .desc-link {
+    margin-left: 0px;
+    margin-bottom: calc(var(--coef) * 15px);
+  }
+
+  .social_networks-page .table-social-icon {
+    margin-bottom: calc(var(--coef) * 23px);
+    height: calc(35px * var(--coef));
+  }
+
+  .group-abonne img {
+    width: calc(var(--coef) * 19px);
+    height: calc(var(--coef) * 11px);
+    margin-left: calc(var(--coef) * 9px);
+  }
+
+  .content {
+    padding-right: calc(var(--coef) * 8px);
+    padding-left: calc(var(--coef) * 7px);
+  }
+
+  .social_networks-page.page {
+    margin-left: -6px;
+  }
+
+  .social_networks-page .row-social {
+    margin: calc(27px * var(--coef)) 0 calc(31px * var(--coef)) 0;
+  }
+
+  .social_networks-page .links .text-description {
+    display: none;
+  }
+
+  .social_networks-page .group-abonne {
+    width: calc(var(--coef) * 171px) !important;
+    padding: 0px;
+    justify-content: unset !important;
+  }
+
+  .social_networks-page .desc-abonner {
+    margin: 0px !important;
+  }
+
+  .social-links_header {
+    display: none;
+  }
+
+  .social_networks-page .social-media {
+    width: calc(172px * var(--coef));
+  }
+
+  .social_networks-page article:last-child {
+    margin-top: 0px;
+  }
+
+  .social_networks-page .social-indication {
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  .social_networks-page .save-btn button {
+    width: calc(173px * var(--coef));
+  }
+
+  .social_networks-page .desc-link.linkedin {
+    width: calc(var(--coef) * 266px);
+  }
+
+  .social_networks-page .desc-link input {
+    padding-left: 0px;
+  }
+
+  .social-bloc div a {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .social_networks-page .desc-abonner input {
+    width: calc(171px * var(--coef));
+    height: calc(22px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        END SOCIAL NETWORKS
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        START MY SALES
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        My sales
+  —————————————————————————————————*/
+
+  .my-sales.title {
+    margin-top: calc(18px * var(--coef));
+    width: calc(335px * var(--coef));
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .my-sales td {
+    padding: calc(11px * var(--coef)) 0px;
+  }
+
+  .my-sales .div_criteres {
+    display: flex;
+    width: calc(335px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .my-sales .table-picker-container {
+    width: calc(335px * var(--coef));
+  }
+
+  .my-sales.title h1 {
+    font-size: calc(20px * var(--coef));
+    margin-bottom: 0px;
+  }
+
+  .my-sales.title p {
+    font-size: calc(16px * var(--coef));
+    margin-top: calc(10px * var(--coef));
+  }
+
+  .my-sales .cadre_table .arrow_right {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    top: calc(31.5% + 30px);
+    right: -7px;
+  }
+
+  .my-sales .cadre_table {
+    padding: calc(20px * var(--coef));
+    position: relative;
+  }
+
+  .my-sales .overflow.jswidth {
+    max-width: calc(257.739px * var(--coef));
+  }
+
+  .my-sales .btns .btn.spe1 {
+    margin-top: calc(0px * var(--coef));
+  }
+
+  .my-sales th.agent {
+    padding-right: calc(125px * var(--coef));
+  }
+
+  .my-sales table.stries thead th {
+    font-size: calc(18px * var(--coef)) !important;
+    height: calc(21px * var(--coef));
+    padding-top: 0px;
+    padding-bottom: calc(20px * var(--coef));
+  }
+
+  .my-sales table.stries td {
+    font-size: calc(14px * var(--coef));
+  }
+
+  .my-sales .facturation a {
+    color: var(--blue);
+    font-size: calc(14px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        END MY SALES
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin comment_communication
+  —————————————————————————————————*/
+
+  .comment_communication.page .first-bloc {
+    max-width: calc(335px * var(--coef));
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .comment_communication.page .first-bloc h1 {
+    font-size: calc(20px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+    line-height: calc(23.44px * var(--coef));
+  }
+
+  .comment_communication.page .first-bloc {
+    margin-top: calc(29px * var(--coef));
+  }
+
+  .comment_communication.page .first-bloc p {
+    font-size: calc(16px * var(--coef));
+    line-height: calc(19.79px * var(--coef));
+  }
+
+  .comment_communication.page .second-bloc {
+    max-width: calc(335px * var(--coef));
+  }
+
+  .comment_communication.page .second-bloc h1 {
+    font-size: calc(18px * var(--coef));
+    margin-bottom: calc(20px * var(--coef));
+  }
+
+  .comment_communication.page .first-bloc,
+  .comment_communication.page .second-bloc {
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .comment_communication.page .second-bloc p {
+    font-size: calc(16px * var(--coef));
+    line-height: calc(23.23px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        End comment_communication
+  —————————————————————————————————*/
+  /*—————————————————————————————————
+        Begin comment_general
+  —————————————————————————————————*/
+
+  .comment_general.page .first-bloc {
+    max-width: calc(335px * var(--coef));
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .comment_general.page .first-bloc h1 {
+    font-size: calc(20px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+    line-height: calc(23.44px * var(--coef));
+  }
+
+  .comment_general.page .first-bloc {
+    margin-top: calc(29px * var(--coef));
+  }
+
+  .comment_general.page .first-bloc p {
+    font-size: calc(16px * var(--coef));
+    line-height: calc(19.79px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        Begin cgu
+  —————————————————————————————————*/
+  .cgu.page .first-bloc {
+    max-width: calc(335px * var(--coef));
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .cgu.page .first-bloc h1 {
+    font-size: calc(20px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+    line-height: calc(23.44px * var(--coef));
+  }
+
+  .cgu.page .first-bloc {
+    margin-top: calc(29px * var(--coef));
+  }
+
+  .cgu.page .first-bloc p {
+    font-size: calc(15.7px * var(--coef));
+    line-height: calc(19.79px * var(--coef));
+  }
+
+  .cgu.page .second-bloc {
+    max-width: calc(335px * var(--coef));
+  }
+
+  .cgu.page .second-bloc h1 {
+    font-size: calc(18px * var(--coef));
+    margin-bottom: calc(20px * var(--coef));
+  }
+
+  .cgu.page .first-bloc,
+  .cgu.page .second-bloc {
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .cgu.page .second-bloc p {
+    font-size: calc(15px * var(--coef));
+    line-height: calc(23.23px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        end cgu
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin gain
+  —————————————————————————————————*/
+
+  .gain.page .first-bloc {
+    max-width: calc(335px * var(--coef));
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .gain.page .first-bloc h1 {
+    font-size: calc(20px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+    line-height: calc(23.44px * var(--coef));
+  }
+
+  .gain.page .first-bloc {
+    margin-top: calc(29px * var(--coef));
+  }
+
+  .gain.page .first-bloc p {
+    font-size: calc(15.7px * var(--coef));
+    line-height: calc(19.79px * var(--coef));
+  }
+
+  .gain.page .second-bloc {
+    max-width: calc(335px * var(--coef));
+  }
+
+  .gain.page .second-bloc h1 {
+    font-size: calc(18px * var(--coef));
+    margin-bottom: calc(20px * var(--coef));
+  }
+
+  .gain.page .first-bloc,
+  .gain.page .second-bloc {
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .gain.page .second-bloc p {
+    font-size: calc(15px * var(--coef));
+    line-height: calc(23.23px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        end gain
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin my-billing
+  —————————————————————————————————*/
+
+  .my-billing.page .facturation-bloc {
+    max-width: calc(335px * var(--coef));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my-billing.page .bills-bloc {
+    max-width: calc(335px * var(--coef));
+  }
+
+  .my-billing.page .facturation-bloc h1 {
+    font-size: calc(20px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .my-billing.page .facturation-bloc p {
+    font-size: calc(16px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details h3 {
+    width: calc(111px * var(--coef));
+    font-size: calc(13px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details p {
+    width: calc(106px * var(--coef));
+    margin-top: calc(5px * var(--coef));
+    font-size: calc(12px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details span {
+    margin-top: calc(5px * var(--coef));
+    width: calc(106px * var(--coef));
+    font-size: calc(13px * var(--coef));
+  }
+
+  .my-billing.page .additional-sales .transaction-container {
+    display: none;
+  }
+
+  .my-billing.page .cadre_table {
+    box-shadow: none;
+    padding: 0px;
+  }
+
+  .my-billing.page .cadre_table {
+    display: block;
+  }
+
+  .my-billing.page .overflow.jswidth.stries-table-container {
+    max-width: 342.779px;
+    position: relative !important;
+  }
+
+  .my-billing.page .cadre_table .arrow_right {
+    display: block !important;
+  }
+
+  .my-billing.page td.agent {
+    padding-right: calc(4px * var(--coef));
+  }
+
+  .my-billing.page td.prestation {
+    padding-right: calc(40px * var(--coef));
+  }
+
+  .my-billing.page .affiliation {
+    margin-top: calc(80px * var(--coef));
+  }
+
+  .my-billing.page .affiliation-details span {
+    font-size: calc(13px * var(--coef));
+  }
+
+  .my-billing.page .affiliation-details {
+    padding: 0 calc(15px * var(--coef));
+  }
+
+  .my-billing.page .description p {
+    margin: 0px;
+    font-size: calc(12px * var(--coef));
+  }
+
+  .my-billing.page .payment h3 {
+    font-size: calc(13px * var(--coef));
+  }
+
+  .my-billing.page table.stries td.date {
+    color: var(--blue);
+  }
+
+  .my-billing.page .cadre_table .arrow_right {
+    display: block;
+    position: absolute;
+    width: calc(28px * var(--coef));
+    height: calc(13px * var(--coef));
+    top: calc(33% + 30px);
+  }
+
+  .my-billing.page .affiliation-message {
+    padding: 0 calc(13px * var(--coef));
+  }
+
+  .my-billing.page table.stries td.agent {
+    text-align: left;
+    padding-left: calc(20px * var(--coef));
+    font-weight: 500;
+    padding-right: calc(0px * var(--coef));
+    white-space: nowrap;
+    height: calc(33px * var(--coef));
+  }
+
+  .my-billing.page table.stries td {
+    height: calc(16px * var(--coef));
+  }
+
+  .my-billing.page .btn.spe1 {
+    font-size: calc(17px * var(--coef));
+    margin-left: calc(11px * var(--coef));
+  }
+
+  .my-billing.page .payment-btn button {
+    width: calc(200px * var(--coef));
+    height: calc(55px * var(--coef));
+    font-size: calc(16px * var(--coef));
+  }
+
+  .my-billing.page .next-payment p {
+    font-size: calc(var(--coef) * 14px);
+  }
+
+  .my-billing.page .btn.spe1 img {
+    margin-right: calc(11px * var(--coef));
+    font-size: calc(24px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details {
+    padding: 0 calc(15px * var(--coef));
+  }
+
+  .my-billing.page table.stries td.prestation {
+    padding-left: calc(8px * var(--coef));
+    font-size: calc(13px * var(--coef));
+  }
+
+  .my-billing.page table.stries tbody tr {
+    background-color: #fbfbfb;
+  }
+
+  .my-billing.page .payment span {
+    font-size: calc(13px * var(--coef));
+  }
+
+  .my-billing.page .close-btn-container {
+    position: absolute;
+    right: 4%;
+    top: 10%;
+  }
+
+  .my-billing.page .affiliation-details h3 {
+    font-size: calc(13px * var(--coef));
+    margin: calc(5px * var(--coef)) 0px;
+  }
+
+  .my-billing.page .additional-sales {
+    margin-top: calc(40px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        End my-billing
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin mails-relance
+  —————————————————————————————————*/
+
+  .mails-relance.page input[type="text"] {
+    margin-right: 10px;
+  }
+
+  .mails-relance.page .first-bloc {
+    max-width: calc(335px * var(--coef));
+  }
+
+  .mails-relance.page .first-bloc p {
+    font-size: calc(16px * var(--coef));
+  }
+
+  .mails-relance.page .first-bloc h1 {
+    font-size: calc(20px * var(--coef));
+  }
+
+  .mails-relance.page .mails-relance_search {
+    margin-top: calc(40px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+    display: flex;
+  }
+
+  .mails-relance.page .message-input .send-icon-container {
+    right: 4%;
+    bottom: 6%;
+  }
+
+  .mails-relance .search_container button {
+    height: calc(41px * var(--coef));
+    width: calc(112px * var(--coef));
+    padding: 0px;
+    font-size: calc(15px * var(--coef));
+  }
+
+  .mails-relance .search_container .search_modal .search_input {
+    width: calc(206px * var(--coef));
+  }
+
+  .mails-relance.page .message-input textarea {
+    width: 90%;
+  }
+
+  .mails-relance.page .message-input {
+    width: 100%;
+    margin-right: calc(20px * var(--coef));
+  }
+
+  .mails-relance.page input {
+    font-size: calc(14px * var(--coef));
+  }
+
+  .mails-relance.page .title-input {
+    width: calc(250px * var(--coef));
+    height: calc(63px * var(--coef));
+  }
+
+  .mails-relance.page .checkbox-wrapper-19 .check-box {
+    height: calc(20px * var(--coef));
+    width: calc(20px * var(--coef));
+  }
+
+  .mails-relance td {
+    padding-top: calc(5px * var(--coef));
+    padding-bottom: calc(5px * var(--coef));
+  }
+
+  .mails-relance.page.page .submitBtn {
+    margin-bottom: 0px;
+  }
+
+  .mails-relance.page .table-picker-container .stries-table-container {
+    overflow-x: auto;
+  }
+
+  /*—————————————————————————————————
+        End mail_relance
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+       Begin planning
+  —————————————————————————————————*/
+  .planning-page .cs-selecteur-horaires-options {
+    width: 95%;
+    margin-left: 0px;
+  }
+
+  .planning-page .cs-status-options {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .planning-page .cs-status-option {
+    flex-direction: column;
+    max-width: calc(76px * var(--coef));
+    gap: 0px calc(5px * var(--coef));
+  }
+
+  .planning-page .cs-selecteur-horaires {
+    max-width: calc(335px * var(--coef));
+    padding: calc(15px * var(--coef)) calc(0px * var(--coef));
+  }
+
+  .planning-page .cs-selecteur-horaires-header {
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .planning-page .cs-selecteur-horaires-header > p,
+  .planning-page .cs-selecteur-horaires-header .cs-current-utc {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+
+  .planning-page .cs-status-option img {
+    width: calc(30px * var(--coef));
+    margin-bottom: calc(2px * var(--coef));
+  }
+
+  .planning-page .cs-status-option > span,
+  .planning-page .cs-status-options .cs-status-delete {
+    font-size: calc(14px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .planning-page .cs-status-option {
+    max-width: calc(75px * var(--coef));
+    background: transparent;
+    box-shadow: unset;
+  }
+
+  .planning-page .cs-status-options .cs-status-delete {
+    max-width: calc(75px * var(--coef));
+  }
+
+  .planning-page .cs-status-options {
+    margin-left: calc(10px * var(--coef));
+    margin-right: calc(10px * var(--coef));
+  }
+
+  .planning-page .cs-status-options > * {
+    margin-top: calc(10px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .planning-page .cs-selecteur-horaires-timepicker .cs-time-sg {
+    font-size: calc(16px * var(--coef));
+    line-height: calc(24px * var(--coef));
+    max-width: calc(72px * var(--coef));
+    margin: calc(5px * var(--coef)) calc(4px * var(--coef));
+    height: calc(45px * var(--coef));
+  }
+
+  .planning-page .cs-selecteur-horaires-timepicker {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .planning-page .cs-selecteur-horaires-timepicker {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .planning-page .block2 .cs-selecteur-horaires .cs-selecteur-horaires-body {
+    flex-direction: column-reverse;
+    align-items: initial;
+    padding: 0px calc(10px * var(--coef)) calc(20px * var(--coef))
+      calc(10px * var(--coef));
+  }
+
+  .planning-page .second-title p {
+    margin-bottom: calc(20px * var(--coef));
+  }
+
+  .planning-page .slider-small .cs-mon-calendrier-section {
+    max-width: calc(348px * var(--coef));
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__weekdays
+    span {
+    font-size: calc(16px * var(--coef)) !important;
+    width: calc(39px * var(--coef)) !important;
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__weekdays
+    span {
+    font-size: calc(20px * var(--coef)) !important;
+    margin-bottom: calc(20px * var(--coef));
+    width: calc(39px * var(--coef)) !important;
+    margin-right: calc(6px * var(--coef));
+  }
+
+  .planning-page .second-title h1 {
+    font-size: calc(18px * var(--coef)) !important;
+  }
+
+  .planning-page .cs-mon-calendrier-section {
+    padding: calc(25px * var(--coef)) calc(35px * var(--coef));
+    background: #fbfbfb;
+    box-shadow: 0px 3px 35px rgb(0 0 0 / 25%);
+  }
+
+  .planning-page .cs-selecteur-horaires {
+    box-shadow: 0px 3px 35px rgb(0 0 0 / 25%);
+  }
+
+  .planning-page .slider-small .cs-mon-calendrier-section {
+    margin-top: calc(30px * var(--coef));
+  }
+
+  .planning-page #cs-mon-calendrier {
+    padding: calc(10px * var(--coef)) calc(20px * var(--coef));
+  }
+
+  .planning-page .second-title p {
+    font-size: calc(17px * var(--coef)) !important;
+  }
+
+  .planning-page .cs-mon-calendrier-bottom {
+    padding: 0px;
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date {
+    width: calc(34px * var(--coef)) !important;
+    margin-right: calc(11px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date:last-child {
+    margin-right: 0px;
+  }
+
+  .planning-page .slider-small .title {
+    width: 100%;
+    height: auto;
+  }
+
+  .planning-page .cs-mon-calendrier-container {
+    width: 100%;
+    max-width: inherit;
+  }
+
+  .planning-page
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date:before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: -1.2px;
+  }
+
+  .planning-page .second-title p {
+    width: 100%;
+  }
+
+  .planning-page .slider-small .title p {
+    width: 100%;
+  }
+
+  .planning-page .block2 {
+    width: 100%;
+  }
+
+  .planning-page .cs-selecteur-horaires {
+    max-width: inherit;
+  }
+
+  .planning-page #cs-mon-calendrier .dcalendarpicker .dudp__cal-container {
+    width: 100% !important;
+  }
+
+  .planning-page .slider-small .title h1 {
+    font-size: calc(20px * var(--coef)) !important;
+  }
+
+  .planning-page .slider-small .title h1 {
+    font-size: calc(20px * var(--coef)) !important;
+  }
+
+  .planning-page #cs-mon-calendrier .dcalendarpicker .dudp__calendar-header {
+    margin-right: -5%;
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__calendar-header
+    .dudp__sel-year {
+    font-size: calc(16px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+       End planning
+  —————————————————————————————————*/
+  /*—————————————————————————————————
+        Begin appointments
+  —————————————————————————————————*/
+
+  .appointments-page .cadre_table {
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .appointments-page .cadre_table .arrow_right {
+    display: block !important;
+  }
+
+  #cs-mon-calendrier .dcalendarpicker .dudp__cal-container {
+    width: calc(303px * var(--coef));
+    background: transparent;
+  }
+
+  /*———————————————————————
+  
+  ——————————
+        End appointments
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+       BEGIN DASHBOARD
+  —————————————————————————————————*/
+  .dashboard-page .title h2 {
+    font-size: calc(20px * var(--coef));
+    line-height: calc(23px * var(--coef));
+    margin-top: calc(35px * var(--coef));
+  }
+
+  .dashboard-page .notification-container .notification-block__header h2 {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    margin-top: calc(40px * var(--coef));
+    text-align: start;
+  }
+  .dashboard-page .title {
+    height: calc(41px * var(--coef));
+    width: calc(343px * var(--coef));
+    padding-left: 8px;
+    padding-top: 10px;
+  }
+
+  .dashboard-page .title h1 .hidden {
+    margin-left: 1px;
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+  }
+  .dashboard-page .notification-container {
+    margin-top: calc(25px * var(--coef));
+  }
+
+  .dashboard-page .notification-container {
+    padding-bottom: 0px;
+  }
+
+  .dashboard-page td {
+    padding-bottom: calc(15px * var(--coef));
+    vertical-align: baseline;
+  }
+
+  .dashboard-page .check-box.check.abled {
+    width: calc(24px * var(--coef));
+    height: calc(24px * var(--coef));
+    margin-top: calc(3px * var(--coef));
+  }
+
+  .dashboard-page .second-child {
+    vertical-align: bottom;
+  }
+  .dashboard-page .notification-container .notification-block__header .close-btn-container {
+    margin-right: calc(22px * var(--coef));
+  }
+
+  .dashboard-page .notification-container .notification-block__header .close-btn-container img {
+    width: calc(20px * var(--coef));
+    height: calc(20px * var(--coef));
+  }
+
+  .dashboard-page .notification-container .notification-block__header h2 {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    margin-top: calc(20px * var(--coef));
+    width: calc(251px * var(--coef));
+    height: calc(41px * var(--coef));
+    margin-bottom: 10px;
+  }
+
+  .dashboard-page .notification-container .notification-block__table a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(23px * var(--coef));
+    text-align: start;
+    margin-left: calc(2px * var(--coef));
+  }
+
+  .checkbox-wrapper-19 .check-box {
+    border-color: #4cbbec !important;
+    margin-bottom: calc(2px * var(--coef));
+    margin-top: calc(5px * var(--coef));
+  }
+
+  .dashboard-page .dashboard-options .dashboard-options__item {
+    width: calc(161px * var(--coef));
+    height: calc(100px * var(--coef));
+    margin-top: calc(16px * var(--coef));
+    padding-bottom: calc(6px * var(--coef));
+  }
+
+  .dashboard-page .dashboard-options .dashboard-options__item h2 {
+    font-weight: 600;
+    line-height: calc(21.08px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .dashboard-page .checkbox-wrapper-19 .check-box::after {
+    width: calc(var(--checkbox-height) * 0.1);
+  }
+
+  .dashboard-page .checkbox-wrapper-19 .check-box::before {
+    width: calc(var(--checkbox-height) * 0.1);
+  }
+  .dashboard-page .dashboard-options .dashboard-options__item p {
+    font-size: calc(14px * var(--coef));
+    line-height: calc(15px * var(--coef));
+    max-width: calc(133px * var(--coef));
+    padding: 0px;
+  }
+
+  .dashboard-page .dashboard-options .dashboard-options__item-empty {
+    width: calc(161px * var(--coef));
+    height: calc(100px * var(--coef));
+    display: none;
+  }
+
+  #modal-confirmation.custom-modal, #modal-refusal.custom-modal, #modal-warning.custom-modal, #modal-appointment-confirmation.custom-modal {
+    width: 80%;
+}
+
+#modal-warning.modal .btn.validate {
+  padding: 0 calc(30px * var(--coef)) 0 calc(30px * var(--coef));
+}
+
+}

@@ -1,0 +1,1 @@
+const $ = (<any>window).jQuery;

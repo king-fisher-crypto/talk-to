@@ -1,0 +1,497 @@
+@media screen and (max-width: 767px) {
+    .promo_codes-page.page > p{
+        font-size: calc(14px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .header{
+        margin-bottom: 0;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card{
+        margin-top: calc(12px*var(--coef));
+        margin-bottom: calc(12px*var(--coef));
+        padding: calc(8px*var(--coef)) calc(12px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card:last-child{
+        padding: calc(8px*var(--coef)) calc(8px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block{
+        margin-bottom: calc(10px*var(--coef));
+        gap: calc(8px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block p{
+        font-size: calc(14px*var(--coef));
+        margin: 0;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups button {
+        font-size: calc(16px*var(--coef));
+        height: calc(35px*var(--coef));
+        margin-bottom: 4px;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups .option {
+        width: calc(50px*var(--coef))!important;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups .option .icon {
+        height: calc(50px*var(--coef))!important;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups.grid{
+        gap: calc(25px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups .option label{
+        font-size: calc(11px*var(--coef));
+        width: calc(80px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container{
+        gap: calc(16px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container .search_modal .search_input {
+        padding: calc(10px*var(--coef));
+        gap: 9px;
+        width: auto;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container .search_modal .search_input img{
+        width: 12px;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container .search_modal .search_input input {
+        font-size: calc(12px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container button {
+        padding: calc(0px*var(--coef)) calc(12px*var(--coef));
+        height: calc(40px*var(--coef));
+        font-size: calc(12px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .clients_table{
+        margin: calc(10px*var(--coef)) auto;
+        font-size: calc(12px*var(--coef));;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .clients_table .table_header tr{
+        padding: 0;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .clients_table .table_container .table_row {
+        display: table-row;
+    }
+    table, th, td {
+        border: none;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .submitBtn button{
+        font-size: calc(14px*var(--coef));
+        height: calc(53px*var(--coef));
+        padding: calc(0px*var(--coef)) calc(65px*var(--coef));
+    }
+    th{
+
+        font-size: calc(12px*var(--coef))!important;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container .search_modal .search_suggestions .clients_suggestions p {
+        color: var(--main-color);
+        font-size: calc(12px*var(--coef));
+        cursor: pointer;
+    }
+
+
+    .oeuvres_caritatives_bg .oeuvres_caritatives{
+        margin: calc(30px*var(--coef)) calc(20px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .header h1{
+        font-size: calc(22px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .header p{
+        font-size: calc(18px*var(--coef));
+        line-height: 150%;
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .oeuvres .oeuvres_container {
+        gap:0px;
+        justify-content: center;
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .oeuvres .oeuvres_container .oeuvre {
+        width: calc(250px*var(--coef));
+        height: calc(250px*var(--coef));
+        margin: calc(12px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .oeuvres .oeuvres_container .oeuvre img {
+        width: calc(var(--w)*var(--coef)*0.65);
+    }
+
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .attachFile, .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .robotCheckContainer, .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .input_group{
+        width: calc(293px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container{
+        padding: calc(20px*var(--coef)) 0px;
+        gap: calc(18px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .input_group{
+        font-size: calc(16px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .input_group input{
+        font-size: auto;
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .attachFile span{
+        font-size: calc(16px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .attachFile button{
+        padding: calc(4px*var(--coef)) calc(28px*var(--coef));
+        font-size: calc(18px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .robotCheckContainer .robotCheck span{
+        font-size: calc(14px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .robotCheckContainer .robotCheck img{
+        width: 21px;
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form button{
+        font-size: calc(18px*var(--coef));
+        padding: calc(13px*var(--coef)) calc(50px*var(--coef));
+    }
+
+    .agent_oeuvres_caritatives_container p{
+        text-align: center;
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card .card_section {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        flex-direction: column;
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card{
+        gap: calc(25px*var(--coef));
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card .card_section button{
+        padding: calc(12px*var(--coef)) calc(70px*var(--coef)); 
+    }
+    .agent_oeuvres_caritatives h1{
+        font-size: 18px;
+    }
+    .page.agent_oeuvres_caritatives article{
+        font-size: calc(14px*var(--coef));
+    }
+
+
+    .page.qr-code-page .qr-code_container .qr-code .profile{
+        gap: calc(6px*var(--coef));
+    }
+
+    .page.qr-code-page .qr-code_container .qr-code .profile .image {
+        width: calc(55px*var(--coef));
+        height: calc(55px*var(--coef));
+    }
+    .page.qr-code-page .qr-code_container .qr-code .profile .image img{
+        height: 100%;
+    }
+    .page.qr-code-page .qr-code_container .qr-code .livitalk-qr-code {
+        width: calc(221px*var(--coef));
+        height: calc(221px*var(--coef));
+    }
+    .page.qr-code-page .qr-code_container .qr-code{
+        padding: calc(27px*var(--coef)) calc(57px*var(--coef)) calc(28px*var(--coef)) calc(57px*var(--coef));
+        gap: calc(30px*var(--coef));
+    }
+    .page.qr-code-page .qr-code_container .qr-code .profile{
+        font-size: calc(18px*var(--coef));
+
+    }
+
+    .video_livimaster_page .video_livimaster_header{
+        padding: calc(10px*var(--coef)) calc(20px*var(--coef));
+    }
+    .video_livimaster_page .video_livimaster_header .header_container h1{
+        font-size: calc(20px*var(--coef));
+    }
+    .video_livimaster_page .video_livimaster_header .header_container p{
+        font-size: calc(14px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster{
+        margin: calc(20px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings{
+        flex-direction: column;
+    }
+    .video_livimaster_page section.video_livimaster h1{
+        font-size: calc(20px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings{
+        align-items: center;
+    }
+    .video_livimaster_page section.video_livimaster .settings .search_language{
+        width: 100%;
+    }
+    .video_livimaster_page section.video_livimaster .settings .search_language .lang span{
+        font-size: calc(18px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .search_language .lang .selectoption select{
+        font-size: calc(16px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .tri{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .video_livimaster_page section.video_livimaster .settings .tri span{
+        font-size: calc(18px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .tri .tri_options button {
+        font-size: calc(16px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container{
+        margin-top: calc(40px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card{
+        width: 100%;
+        max-width: none;
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .video_display{
+        width: calc(297px*var(--coef));
+        height: calc(180px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .card_header .profile_image img {
+        width: calc(38px*var(--coef));
+        height: calc(38px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .card_header{
+        align-items: center;
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .card_header .profile span.name {
+        font-size: calc(18px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .card_header .profile span.title {
+        font-size: calc(12px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card a {
+        font-size: calc(16px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster a.next_page span {
+        font-size: calc(18px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .tri .tri_options {
+        gap: calc(10px*var(--coef));
+    }
+
+
+    .affiliation_generale .video_livimaster_header{
+        padding: calc(10px*var(--coef)) calc(20px*var(--coef));
+    }
+    .affiliation_generale .video_livimaster_header .header_container h1{
+        font-size: calc(20px*var(--coef));
+    }
+    .affiliation_generale .video_livimaster_header .header_container p{
+        font-size: calc(17px*var(--coef));
+    }
+    .affiliation_generale .video_livimaster_header .header_container p br{
+        display: none;
+    }
+    .affiliation_generale .video_livimaster_header .header_container p br.non-mobile{
+        display: block;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block div:nth-child(2){
+     font-weight: 400;   
+    font-size: calc(15px*var(--coef));
+    
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block br{
+        display: none;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block:not(:last-child){
+        margin-bottom: calc(40px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .btn_div{
+        bottom: calc(7px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block .pseudo_btn{
+        display: none;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .btn_div{
+        position: unset;
+        margin-top: calc(25px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block .btn{
+        margin-bottom: 0;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .btn_div:first-child,
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .btn_div:nth-child(2){
+        margin-top: calc(34px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section {
+        padding: calc(30px*var(--coef)) calc(12px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container {
+        display: flex;
+        gap: calc(16px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block .question {
+        font-size: calc(24px*var(--coef));
+        font-weight: 600;
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block .l-text {
+        font-size: calc(18px*var(--coef));
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block ul {
+        font-size: calc(18px*var(--coef));
+        font-weight: 400;
+    }
+    .affiliation_generale section.affiliation_generale_page section.categories {
+        padding: calc(14px*var(--coef));
+    }
+    .affiliation_generale .affiliation_generale_page section.categories .carousl_btns .carousel_categories .categories.owl_col{
+        display: none;
+    }
+    .affiliation_generale .affiliation_generale_page section.categories .carousl_btns .carousel_categories .categories.owl_col:first-child{
+        display: flex;
+        gap: 7px;
+    }
+    .affiliation_generale .affiliation_generale_page section.categories .carousl_btns .carousel_categories .owl_col .category:not(:first-child){
+        margin-top: 0px;
+    }
+    .affiliation_generale .affiliation_generale_page section.categories .carousl_btns .carousel_categories .category {
+        font-size: calc(14px*var(--coef));
+        font-weight: 600;
+        width: calc(136px*var(--coef));
+        line-height: calc(24px*var(--coef));
+        height: calc(42px*var(--coef));
+        margin: 0;
+        background: var(--second-bg-color);
+        color: var(--second-color);
+        box-shadow: 0px 3px 35px 0px #00000014;
+        border-radius: calc(15px*var(--coef));
+        text-align: center;
+        letter-spacing: 0em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+    }
+    .affiliation_generale .affiliation_generale_page section.categories .txt1{
+        margin-bottom: calc(22px*var(--coef));
+        font-size: calc(18px*var(--coef));
+    }
+    .bg21, .bg22{
+        background: none;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block {
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        min-height: calc(224px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .pic_block .btn_div{
+        bottom: 0;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .text_block {
+        font-size: calc(15px*var(--coef));
+        font-weight: 600;
+        padding: calc(0px*var(--coef)) calc(14px*var(--coef));
+        text-align: initial;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .text_block .title {
+        font-size: calc(18px*var(--coef));
+        font-weight: 700;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .sentence span {
+        font-size: calc(20px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .sentence {
+        font-size: calc(18px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block.bcc {
+        padding: 0!important;
+        flex: unset!important;
+        height: calc(270px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .text_block {
+        font-size: calc(16px*var(--coef));
+        font-weight: 400;
+        padding: calc(12px*var(--coef)) calc(9px*var(--coef));
+        text-align: center;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block, 
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block.bcc {
+        width: calc(335px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .sentence {
+        font-size: calc(18px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block {
+        background-color: var(--main-color);
+        border-radius: calc(24px*var(--coef));
+        padding: calc(5px*var(--coef)) calc(15px*var(--coef));
+        color: var(--white-claire);
+        width: calc(309px*var(--coef));
+        display: flex;
+        gap: 0;
+        /* gap: calc(-5px*var(--coef)); */
+        flex-direction: column;
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block .question {
+        font-size: calc(20px*var(--coef));
+        font-weight: 600;
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block .l-text {
+        font-size: calc(16px*var(--coef));
+        font-weight: 400;
+        line-height: calc(24px*var(--coef));
+        text-transform: capitalize;
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block ul {
+        font-size: calc(15px*var(--coef));
+        font-weight: 400;
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block .m-text {
+        font-size: calc(16px*var(--coef));
+        font-weight: 400;
+        margin: 8px;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .sentence{
+        line-height: calc(23px*var(--coef));
+        width: 100%;
+        text-align: left;
+    }
+    .affiliation_generale section.affiliation_generale_page .qa_section .qa_container .qa_black_block ol{
+        font-size: calc(14px*var(--coef));
+    }
+    section.affiliation_generale_page  .footer-bot {
+        background-color: var(--white-claire);
+        padding: calc(var(--coef)*34px) calc(var(--coef)*18px);
+        margin-top: -35px;
+        position: relative;
+    }
+    section.affiliation_generale_page  .footer-bot p{
+        font-size: calc(11px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .pic_block .btn_div .btn.white,
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block .btn{
+        padding: 0 calc(20px*var(--coef)) calc( 0px*var(--coef)) calc(20px*var(--coef));
+        font-size: calc(16px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .informations {
+        padding: calc(20px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block.bcc2 {
+        height: calc(262px*var(--coef));
+        padding: 0!important;
+        display: flex;
+        width: 100%!important;
+        flex: unset!important;
+    }
+    .carousl_btns .prev_btn img,
+    .carousl_btns .next_btn img
+    {
+        width: 20px;
+    }
+
+    .affiliation_generale_page section.categories .carousel_categories .categories.owl_col {
+        display: flex;
+        margin-left: calc(1px*var(--coef));
+        margin-right: calc(1px*var(--coef));
+        align-items: center;
+        gap: 2px;
+    }
+    .affiliation_generale_page section.categories .owl-carousel {
+        display: flex;
+        justify-content: center;
+        width: calc(292px*var(--coef));
+    }
+    .affiliation_generale_page section.categories .owl-carousel.owl-drag .owl-item {
+        width: 248.2px!important;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .pic_block .btn_div.scndbtn{
+        bottom: 4px;
+    }
+    
+}

@@ -1,0 +1,239 @@
+@media (min-width: 992px) {
+  #AlertPhoneNumber {
+    margin-left: -15px
+  }
+}
+@media (max-width: 980px) {
+  .sponsorship_subscribe_form form .control-label {
+    padding-left: 15px !important;
+  }
+}
+@media (max-width: 768px) {
+  .table-consultation {
+    border: none;
+  }
+  .account-page.mt20.mb40 {
+   /* margin-top: 0 !important;*/
+    margin-bottom: 0 !important;
+  }
+  .head-tabs .account-tabs > li {
+    width: 50%;
+    float: left;
+  }
+  .head-tabs .account-tabs > li {
+    margin-bottom: 0;
+  }
+  .head-tabs .account-tabs > li a {
+    margin-bottom: 0;
+  }
+  .head-tabs .account-tabs > li.envoyer, .head-tabs .account-tabs > li.mminfos {
+    width: 100%;
+  }
+	.tabs-data h3.tabs-heading {
+    padding-left: 15px;
+  }
+  .chatbox {
+    width: 360px;
+    z-index: 9999;
+  }
+  .chatbox .cb_pseudo {
+    height: 75px;
+  }
+  .chatbox textarea {
+    width: 350px;
+    height: inherit;
+  }
+  .chatbox .cb_history {
+    max-height: 150px;
+  }
+  .chatbox .cb_history ul {
+    padding-left: 10px;
+  }
+  .chatbox .cb_pseudo .avatar {
+    height: 40px;
+    width: 40px;
+  }
+  .chatbox .cb_pseudo .avatar img {
+    height: 40px !important;
+  }
+  .chatbox .cb_pseudo p.msg {
+    padding: 0;
+  }
+  .chatbox .cb_pseudo .name {
+    height: 11px;
+    font-size: 10px;
+  }
+  .phoneboxnote .cb_pseudo .action .cb_close {
+    font-size: 16px;
+  }
+  #messages .messageligne {
+    padding-top: 10px !important;
+  }
+  .discussion .table.table-mobile tbody tr {
+    border-bottom: 1px solid rgb(221, 221, 221);
+    padding-top: 5px !important;
+  }
+	
+	#availab_agent .label{
+		margin:10px 0;
+		display:inline-block;
+	}
+	#availab_agent .resize-img .cboth{
+		margin-left: 0;
+		text-align: center !important;
+	}
+	#availab_agent a.btn{
+		margin:1px auto;
+	}
+	#mmonprofil h3, #mmoninfo h3{
+		padding:0 15px;
+	}
+	
+	.discussion .veram.resize-img{
+		position:relative;
+	}
+	.discussion .glyphicon-envelope{
+		position:absolute;
+		right:10px;
+		top:10px;
+	}
+	
+	#accordion-m .fa-sort-asc:before{
+		content: "\f0dd" !important;
+	}
+}
+@media (max-width: 640px) {
+  #reportrange .m-wrap.date-range {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width : 480px) {
+  .phoneboxnote {
+    width: 100%;
+	  right:0px;
+	  height: 100%;
+	  min-height: 100vh;
+  }
+  .phoneboxnote .cb_pseudo .name {
+    font-size: 10px;
+    height: 24px;
+  }
+.phoneboxnote .cb_pseudo .action .cb_close {
+	  font-size: 25px;
+	}
+  .chatbox {
+    z-index: 9999;
+    width: 100%;
+    right: 0;
+    height: 100%;
+  }
+  .chatbox .cb_pseudo {
+    height: 65px;
+    overflow: hidden;
+  }
+  .chatbox textarea {
+    height: inherit;
+    margin: 0;
+    width: 100%;
+    max-height: 50px;
+  }
+  #ChatGetTemplateChatForm {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .chatbox .cb_history {
+    max-height: 150px;
+    padding: 10px 0;
+  }
+  .chatbox .cb_time_left {
+    padding: 5px 5px;
+    font-size: 10px;
+  }
+  .mstatus ul.medium-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width : 480px) {
+  .head-tabs .account-tabs > li a {
+    min-height: 50px;
+  }
+  .discussion .table.table-mobile tbody tr {
+    width: 100%;
+  }
+  .discussion .table.table-mobile tbody tr {
+    display: inline-block;
+  }
+  .discussion .msg-last-btn {
+    text-align: center;
+  }
+  .discussion .table.table-mobile tbody td {
+    display: inline-table !important;
+    width: 100% !important;
+  }
+	.discussion .resize-img a.sm-sid-photo, .discussion .resize-img p{
+		margin-bottom:5px;
+	}
+  .discussion .resize-img a.sm-sid-photo, .discussion .resize-img a.agent-pseudo {
+    float: none;
+	  margin-bottom:5px;
+  }
+  .discussion .msg-area-mobile p.date-mobile, .discussion .table-striped > tbody {
+    background: #f9f9f9;
+  }
+	.discussion.noread .msg-area-mobile p.date-mobile, .discussion .table-striped > tbody {
+    background: none;
+  }
+  .discussion.noread .msg-area-mobile, .discussion.noread .table.table-mobile tbody tr {
+    background: #5a449b;
+    color: #fff;
+  }
+	.discussion .table.table-mobile{
+		background:#f9f9f9;
+	}
+	
+  .discussion .msg-last-btn .btn-pink-modified {
+    margin-bottom: 5px !important;
+    margin-top: 0px !important;
+  }
+  .discussion .table-striped .whitespace-normal {
+    text-align: center;
+  }
+  .discussion .table.table-mobile tbody td:first-child {
+    padding-top: 0px;
+  }
+  .discussion .msg-area-mobile p.date-mobile {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+  }
+	.discussion .msg-area-mobile p.date-mobile {
+		border:0;
+	}
+  .panel-heading.panel-heading-modified.noread table tbody {
+   /* background: #5a449b;
+    color: #fff;*/
+    margin-bottom: 5px;
+  }
+  .panel-heading.panel-heading-modified.alert-bg table tbody {
+    background: #8777b4;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+  .account-tabs {
+    border-top: 1px solid #dee5e8;
+  }
+  .agentindextable td {
+    display: block;
+    width: 100%;
+  }
+  .agentindextable td ul {
+    list-style: none;
+    padding: 0;
+  }
+  .reponde-avis .vote li:nth-child(1) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

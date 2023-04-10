@@ -1,0 +1,112 @@
+<?php
+ini_set('display_errors', 1); 
+error_reporting(E_ALL); 
+
+$mysqli = new mysqli($dbb_head['host'], "spiriteo", "m3UFeJ9382rPQ9m8tQPqM4es", "spiriteo");
+
+
+$nb_achat = array();
+$nb_life = array();
+$nb_client = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client'  order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		$result_order99 = $mysqli->query("SELECT count(date_add) as nb, date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add");
+		$row_order99 = $result_order99->fetch_array(MYSQLI_ASSOC);
+		if($row_order99['nb']>0){
+			$nb_client ++;
+			if(!isset($nb_achat[$row_order99['nb']])){
+				$nb_achat[$row_order99['nb']] = 0;
+			}
+			$nb_achat[$row_order99['nb']] ++;
+			
+			if(!isset($nb_life[$row_order99['nb']])){
+				$nb_life[$row_order99['nb']] = 0;
+			}
+			$result_order0 = $mysqli->query("SELECT date_add  from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add desc limit 1");
+			$row_order0 = $result_order0->fetch_array(MYSQLI_ASSOC);
+			
+			$start = strtotime($row_order99['date_add']);
+			$end = strtotime($row_order0['date_add']);
+			$delay = ceil(abs($end - $start) / 86400)-1;
+			
+			if(!$nb_life[$row_order99['nb']]) $nb_life[$row_order99['nb']] = $delay;else{
+				$nb_life[$row_order99['nb']] = ($nb_life[$row_order99['nb']] + $delay) / 2;
+			}
+			
+		}
+	}
+}
+
+$result = $mysqli->query("SELECT user_credit_last_history, date_start,phone_number from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) group by phone_number order by date_start asc");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	$result_order99 = $mysqli->query("SELECT count(user_credit_last_history) as nb , date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and phone_number = '".$row['phone_number']."' order by date_start asc");
+		$row_order99 = $result_order99->fetch_array(MYSQLI_ASSOC);
+		if($row_order99['nb']>0){
+			$nb_client ++;
+			if(!isset($nb_achat[$row_order99['nb']])){
+				$nb_achat[$row_order99['nb']] = 0;
+			}
+			$nb_achat[$row_order99['nb']] ++;
+			
+			if(!isset($nb_life[$row_order99['nb']])){
+				$nb_life[$row_order99['nb']] = 0;
+			}
+			$result_order0 = $mysqli->query("SELECT date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and phone_number = '".$row['phone_number']."' order by date_start desc limit 1 ");
+			$row_order0 = $result_order0->fetch_array(MYSQLI_ASSOC);
+			
+			$start = strtotime($row_order99['date_start']);
+			$end = strtotime($row_order0['date_start']);
+			$delay = ceil(abs($end - $start) / 86400)-1;
+			
+			if(!$nb_life[$row_order99['nb']]) $nb_life[$row_order99['nb']] = $delay;else{
+				$nb_life[$row_order99['nb']] = ($nb_life[$row_order99['nb']] + $delay) / 2;
+			}
+		}
+}
+ksort($nb_achat);
+
+echo '<h1>NB achats par clients en group disctinct</h1>';
+echo 'Nb clients ayant acheté un forfait ou appellé : '.($nb_client - 164);
+echo '</br >';
+foreach($nb_achat as $n => $c){
+	$pourcent = number_format($c * 100 / $nb_client,2);
+	if($nb_life[$n] < 0)$nb_life[$n] = 0;
+	echo 'Nb achat : '.$n . ' -> '.$c.' soit '.$pourcent.'% soit duree vie : '.number_format($nb_life[$n],0).' Jrs <br />';
+}
+
+
+krsort($nb_achat);
+
+echo '<h1>NB achats par clients cumulé</h1>';
+echo 'Nb clients ayant acheté un forfait ou appellé : '.($nb_client - 164);
+echo '</br >';
+$old = -1;
+$index_old = 999;
+$nb_old = -1;
+foreach($nb_achat as $n => &$c){
+	
+	if($old == -1){
+		$old = $c;
+		$index_old = $n; 
+		$nb_old = $c;
+	}else{
+		$old = $old + $c;
+		$nb_achat[$n] = $old;
+		$nb_life[$n] = (($nb_life[$n]*$c)+ $nb_life[$index_old]*$nb_old )/ ($c * $nb_old);
+	}
+}
+
+ksort($nb_achat);
+
+echo '<h1>NB achats par clients</h1>';
+echo 'Nb clients ayant acheté un forfait ou appellé : '.($nb_client - 164);
+echo '</br >';
+foreach($nb_achat as $n => $c){
+	$pourcent = number_format($c * 100 / $nb_client,2);
+	if($nb_life[$n] < 0)$nb_life[$n] = 0;
+	echo 'Nb achat : '.$n . ' -> '.$c.' soit '.$pourcent.'% soit duree vie : '.number_format($nb_life[$n],0).' Jrs <br />';
+}

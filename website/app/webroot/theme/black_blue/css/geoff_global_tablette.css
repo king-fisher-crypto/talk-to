@@ -1,0 +1,2379 @@
+@media screen and (max-width: 1024px) {
+  /*—————————————————————————————————
+        BEGIN Rate COMPONENT
+  —————————————————————————————————*/
+  /* Base setup */
+  /* Ratings widget */
+  .utilities .rate {
+    font-size: calc(18px * var(--coef));
+  }
+
+  #modal-confirmation.custom-modal,
+  #modal-appointment-confirmation.custom-modal {
+    width: 50%;
+  }
+
+  .recrutement-page .img-container .group-img {
+    width: calc(280px * var(--coef));
+    height: (209px * var(--coef));
+    margin-top: calc(37px * var(--coef));
+  }
+
+  .recrutement-page {
+    margin: 0 calc(40px * var(--coef));
+  }
+
+  .recrutement-header .bleu-icon-container {
+    gap: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .categories.owl_col {
+    height: 206px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .recrutement-page .owl-next .chevron {
+    position: relative;
+    left: 22px;
+    top: -6px;
+  }
+  .recrutement-page .owl-next .chevron {
+    position: relative;
+    top: 38px;
+  }
+  .recrutement-page .owl-nav .chevron {
+    width: calc(25px * var(--coef));
+    height: calc(34px * var(--coef));
+  }
+
+  .recrutement-page .text-container h1,
+  .recrutement-page .text-container .client-livitalk {
+    display: none;
+  }
+  .recrutement-page .livitalk-info img {
+    width: calc(124px * var(--coef));
+    height: calc(255px * var(--coef));
+    margin-left: calc(36px * var(--coef));
+    margin-top: calc(27px * var(--coef));
+    margin-bottom: 0;
+  }
+  .recrutement-header .icon-option-container img,
+  .recrutement-page .optional-function img {
+    width: calc(50px * var(--coef));
+    height: calc(50px * var(--coef));
+  }
+
+  .recrutement-page .mobile-header {
+    display: block;
+    margin-left: calc(3rem * var(--coef));
+    color: white;
+  }
+
+  .recrutement-page .owl-theme .owl-dots .owl-dot span {
+    width: calc(18px * var(--coef)) !important;
+    height: calc(18px * var(--coef)) !important;
+    margin: 4px !important;
+  }
+
+  .recrutement-page .generate-salary.first-child {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: calc(70px * var(--coef));
+  }
+
+  .recrutement-page .carousel_categories_container {
+    padding-bottom: calc(63px * var(--coef));
+  }
+
+  .recrutement-header .option1 {
+    height: calc(26px * var(--coef));
+  }
+
+  .recrutement-page .popup-div img {
+    width: calc(185px * var(--coef));
+    height: calc(174px * var(--coef));
+    margin-top: calc(60px * var(--coef));
+    margin-right: calc(14px * var(--coef));
+  }
+
+  .recrutement-page .popup-div.documents .communication-mode h2 {
+    margin-top: calc(42px * var(--coef));
+  }
+  .recrutement-page .popup-div .communication-mode h2 {
+    color: black;
+    text-align: left;
+    margin-top: calc(38px * var(--coef));
+    font-weight: 600;
+    font-size: calc(18px * var(--coef));
+  }
+
+  .recrutement-page .popup-div.documents::after {
+    left: 29%;
+  }
+
+  .recrutement-page .popup-div.prives::after {
+    bottom: 100%;
+    left: 63%;
+    border-left: calc(38px * var(--coef)) solid transparent;
+    border-right: calc(38px * var(--coef)) solid transparent;
+  }
+
+  .recrutement-page .generate-salary-container:last-of-type {
+    margin-bottom: calc(6px * var(--coef));
+  }
+  .recrutement-page .popup-div .communication-mode p {
+    font-size: calc(14px * var(--coef));
+    margin-bottom: calc(12px * var(--coef));
+  }
+
+  .recrutement-page .tablette-popup h2 {
+    text-transform: uppercase;
+    font-size: calc(20px * var(--coef));
+  }
+
+  .recrutement-page .tablette-popup {
+    display: none;
+    width: 90%;
+    margin-top: 20px;
+    position: relative;
+    background: white;
+    color: black;
+    margin: 0 auto;
+  }
+
+  .recrutement-page .popup-div.prives .group-img .prive-first-img {
+    width: calc(109px * var(--coef));
+    height: calc(146px * var(--coef));
+    margin-top: calc(56px * var(--coef));
+    margin-right: calc(110px * var(--coef));
+    margin-bottom: calc(0px * var(--coef));
+  }
+
+  .recrutement-page .popup-div.prives .group-img .prive-second-img {
+    position: absolute;
+    left: calc(44px * var(--coef));
+    margin-top: calc(24px * var(--coef));
+    width: calc(165px * var(--coef));
+    height: calc(126px * var(--coef));
+  }
+
+  .recrutement-page .tablette-popup.show {
+    display: flex;
+    margin-top: 46px;
+  }
+  .recrutement-page .tablette-popup h2 {
+    color: black;
+    margin-top: calc(30px * var(--coef));
+    text-align: left;
+    margin-bottom: calc(15px * var(--coef));
+  }
+  .recrutement-page .tablette-popup.video img:not(:last-child) {
+    width: calc(198px * var(--coef));
+    height: calc(159px * var(--coef));
+    margin-top: calc(60px * var(--coef));
+  }
+
+  .recrutement-page .tablette-popup.masterClass img:not(:last-child) {
+    height: calc(114px * var(--coef));
+    width: calc(200px * var(--coef));
+    margin-left: calc(17px * var(--coef));
+    margin-right: calc(17px * var(--coef));
+    margin-top: calc(56px * var(--coef));
+  }
+
+  .recrutement-page .popup-div {
+    min-height: calc(190px * var(--coef));
+    margin: 0 auto;
+  }
+
+  .recrutement-page .tablette-popup.contenus img:not(:last-child) {
+    height: calc(165px * var(--coef));
+    width: calc(239px * var(--coef));
+    margin-left: calc(17px * var(--coef));
+    margin-right: calc(17px * var(--coef));
+    margin-bottom: calc(20px * var(--coef));
+    margin-top: calc(14px * var(--coef));
+  }
+
+  .recrutement-page .tablette-popup img:last-child {
+    width: calc(33px * var(--coef));
+    height: calc(35px * var(--coef));
+    margin-right: calc(12px * var(--coef));
+    margin-top: calc(9px * var(--coef));
+  }
+  .recrutement-page .tablette-popup.video::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 11.4%;
+    border-bottom: calc(66px * var(--coef));
+    border-left: 35px solid transparent;
+    border-right: 38px solid transparent;
+    /* border-top: 34px solid #f00; */
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  .recrutement-page .popup-div::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 47%;
+    margin-left: calc(-8px * var(--coef));
+    border-bottom: calc(65px * var(--coef));
+    border-left: calc(25px * var(--coef)) solid transparent;
+    border-right: calc(25px * var(--coef)) solid transparent;
+    border-top: calc(34px * var(--coef)) solid #f00;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  .recrutement-page .tablette-popup.masterClass::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 45%;
+    border-bottom: calc(68px * var(--coef));
+    border-left: calc(35px * var(--coef)) solid transparent;
+    border-right: calc(38px * var(--coef)) solid transparent;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  .recrutement-page .tablette-popup.contenus::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 79.1%;
+    border-bottom: calc(68px * var(--coef));
+    border-left: calc(35px * var(--coef)) solid transparent;
+    border-right: calc(38px * var(--coef)) solid transparent;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+
+  .recrutement-page .tablette-popup.video .communication-mode p,
+  .recrutement-page .tablette-popup.masterClass .communication-mode p,
+  .recrutement-page .tablette-popup.contenus .communication-mode p {
+    width: auto;
+    margin-left: 0px;
+    max-width: none;
+    margin-bottom: calc(23px * var(--coef));
+  }
+
+  .recrutement-page .tablette-popup.contenus .communication-mode p {
+    font-size: calc(16px * var(--coef));
+  }
+  .recrutement-header .text-container .option p {
+    width: calc(313px * var(--coef));
+    margin: 0px;
+    letter-spacing: 1px;
+    height: auto;
+    font-size: calc(14px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .recrutement-header .option {
+    align-items: baseline;
+  }
+
+  .recrutement-page .last-icon::after {
+    top: calc(13px * var(--coef));
+  }
+
+  .recrutement-page .livitalk-info h2 {
+    text-align: initial;
+    color: black;
+    width: calc(516px * var(--coef));
+    height: calc(108px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+    margin-bottom: calc(15px * var(--coef));
+  }
+
+  .recrutement-page .livitalk-info .description {
+    margin-left: calc(27px * var(--coef));
+    padding-left: 0px;
+    margin-top: calc(var(--coef) * 7px);
+    height: fit-content;
+    min-height: fit-content;
+  }
+
+  .recrutement-page .carousel_categories {
+    max-width: calc(765px * var(--coef));
+  }
+
+  .recrutement-page .tablettebreak {
+    display: none;
+  }
+
+  .recrutement-page .share-text {
+    width: calc(var(--coef) * 236px);
+    height: calc(var(--coef) * 234px);
+    display: flex;
+    margin-right: calc(var(--coef) * 0px);
+    margin-left: calc(19px * var(--coef));
+    margin-top: calc(var(--coef) * 49px);
+    margin-bottom: calc(var(--coef) * 40px);
+  }
+  .recrutement-page .livitalk-info.socials .all-networks img {
+    width: calc(234px * var(--coef));
+    height: calc(220px * var(--coef));
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: calc(var(--coef) * 0px);
+    margin-top: calc(var(--coef) * 58px);
+    margin-bottom: calc(var(--coef) * 49px);
+  }
+
+  .recrutement-page .group-img-container img {
+    width: calc(239px * var(--coef));
+    height: calc(271px * var(--coef));
+    margin: 0px;
+  }
+
+  .recrutement-page .share-text h3 {
+    margin: 0px;
+    font-size: calc(22px * var(--coef));
+    line-height: calc(37px * var(--coef));
+    width: calc(226px * var(--coef));
+    text-align: center;
+  }
+
+  .recrutement-page .livitalk-info.socials {
+    margin-top: calc(100px * var(--coef));
+    width: calc(754px * var(--coef));
+    height: calc(323px * var(--coef));
+  }
+
+  .recrutement-page .optional-function {
+    margin-top: calc(50px * var(--coef));
+    margin-left: 0px;
+    margin-right: auto;
+  }
+
+  .recrutement-page .optional-function .card-text p {
+    width: calc(320px * var(--coef));
+    height: calc(33px * var(--coef));
+    font-size: calc(22px * var(--coef));
+    line-height: calc(33px * var(--coef));
+  }
+
+  .recrutement-page .optional-function .card {
+    margin-top: calc(20px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary span {
+    font-size: calc(35px * var(--coef));
+  }
+
+  .recrutement-page .owl-next {
+    top: 32px;
+  }
+
+  .recrutement-page .optional-function p {
+    width: calc(238px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    height: auto;
+    margin-bottom: calc(10px * var(--coef));
+    font-size: calc(14px * var(--coef));
+  }
+
+  .recrutement-page .chevron-white.functional {
+    display: none;
+  }
+
+  .recrutement-page .card a {
+    font-size: calc(16px * var(--coef));
+    line-height: calc(24px * var(--coef));
+  }
+
+  .recrutement-page .carousel_fiche .owl-dots {
+    margin-top: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .category.black {
+    text-align: center;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    background: #1b1c21;
+    box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    font-size: calc(30px * var(--coef));
+    line-height: calc(45px * var(--coef));
+  }
+
+  .recrutement-page .carousel_categories .owl-stage-outer {
+    height: calc(160px * var(--coef));
+  }
+
+  .recrutement-page .profil .info h4 {
+    text-align: initial;
+    font-size: calc(14px * var(--coef));
+    line-height: calc(17px * var(--coef));
+  }
+
+  .recrutement-page .profil .info {
+    margin-left: calc(18px * var(--coef));
+    margin-bottom: calc(8px * var(--coef));
+  }
+
+  .recrutement-page .profil .info h1 {
+    text-align: initial;
+    width: calc(178px * var(--coef));
+    height: calc(22px * var(--coef));
+    font-size: calc(16px * var(--coef));
+    line-height: calc(19px * var(--coef));
+  }
+
+  .recrutement-page .profil {
+    width: calc(179px * var(--coef));
+    height: calc(232px * var(--coef));
+  }
+
+  .recrutement-page .carousel_fiche {
+    max-width: calc(754px * var(--coef));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .recrutement-page .salary-container .first-paragraph {
+    width: calc(455px * var(--coef));
+    height: calc(27px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    margin-top: 0px;
+  }
+
+  .recrutement-page .range__slider [type="range"] {
+    height: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .range-slider {
+    width: calc(565px * var(--coef));
+    margin: auto;
+    margin-top: calc(80px * var(--coef));
+    margin-bottom: calc(24px * var(--coef));
+    height: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .salary-img h1 {
+    margin-top: calc(25px * var(--coef));
+    margin-bottom: 0px;
+    line-height: calc(36px * var(--coef));
+    font-size: calc(24px * var(--coef));
+  }
+
+  .recrutement-page .range__slider [type="range"] {
+    height: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .carousel_categories .owl-stage-outer {
+    height: calc(124px * var(--coef));
+  }
+
+  .recrutement-page .range__slider [type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: calc(23px * var(--coef));
+    height: calc(23px * var(--coef));
+  }
+
+  .recrutement-page .owl-stage-outer {
+    height: calc(240px * var(--coef));
+  }
+
+  .recrutement-page .sign-in {
+    margin-top: calc(100px * var(--coef));
+    margin-bottom: calc(100px * var(--coef));
+  }
+
+  .recrutement-page .salary-estimation {
+    width: calc(534px * var(--coef));
+    margin-left: calc(85px * var(--coef));
+    margin-top: calc(42px * var(--coef));
+    height: calc(84px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary.first-child {
+    margin-right: 0px;
+  }
+
+  .recrutement-page .owl-prev {
+    top: 52%;
+    left: -34px;
+  }
+
+  .recrutement-page .owl-item {
+    width: calc(200px * var(--coef));
+    text-align: -webkit-center;
+    margin-right: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .communications {
+    margin-top: calc(100px * var(--coef));
+    margin-left: 0px;
+    margin-right: auto;
+  }
+
+  .recrutement-page .user-profil p {
+    width: calc(699px * var(--coef));
+    height: calc(48px * var(--coef));
+    font-size: calc(16px * var(--coef));
+    line-height: calc(24px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .recrutement-page .user-profil h1 {
+    text-align: center;
+    width: calc(350px * var(--coef));
+    height: calc(33px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+    margin-top: calc(100px * var(--coef));
+    font-size: calc(22px * var(--coef));
+    line-height: calc(33px * var(--coef));
+  }
+
+  .recrutement-page .affiliation-link a {
+    font-size: calc(20px * var(--coef));
+    line-height: calc(30px * var(--coef));
+    /* identical to box height, or 30px */
+  }
+
+  .recrutement-page .affiliation-link img {
+    width: calc(25px * var(--coef));
+    margin-left: calc(5px * var(--coef));
+    height: calc(15px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary {
+    width: 100%;
+    height: calc(189px * var(--coef));
+    margin-bottom: calc(66px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary .badge {
+    left: 78%;
+    top: -24%;
+    height: calc(88px * var(--coef));
+    width: calc(88px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary h2 {
+    font-size: calc(22px * var(--coef));
+    margin-left: calc(22px * var(--coef));
+    margin-top: calc(20px * var(--coef));
+    margin-bottom: calc(15px * var(--coef));
+    color: black;
+  }
+
+  .recrutement-page .generate-salary p,
+  .recrutement-page .generate-salary h2 {
+    margin-left: calc(22px * var(--coef));
+  }
+
+  .recrutement-page .generate-salary p {
+    line-height: calc(27px * var(--coef));
+    font-weight: 400;
+    width: calc(643px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .recrutement-page .salary-container .last-paragraph {
+    width: 100%;
+    height: calc(20px * var(--coef));
+    margin-top: calc(20px * var(--coef));
+    font-size: calc(13px * var(--coef));
+    text-align: center;
+  }
+
+  .recrutement-page .generate-salary-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(700px * var(--coef));
+    margin-bottom: calc(2px * var(--coef));
+    height: auto;
+  }
+
+  .recrutement-page .affiliation .title {
+    margin-top: calc(100px * var(--coef));
+    margin-bottom: calc(64px * var(--coef));
+    text-transform: uppercase;
+    font-size: calc(22px * var(--coef));
+  }
+
+  .recrutement-page .marker {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .recrutement-page .salary-img p:first-child {
+    font-size: calc(16px * var(--coef));
+    font-weight: 200;
+    text-align: left;
+    width: calc(184px * var(--coef));
+    line-height: calc(24px * var(--coef));
+  }
+
+  .recrutement-page .communications .bleu-icon-container img:hover {
+    transform: scale(1);
+  }
+
+  .recrutement-page .salary-container span {
+    font-size: calc(25px * var(--coef));
+  }
+
+  .recrutement-page .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: calc(-3px * var(--coef));
+  }
+
+  .recrutement-page .salary-img p {
+    font-size: calc(16px * var(--coef));
+    font-weight: 500;
+    line-height: calc(24px * var(--coef));
+  }
+
+  .recrutement-page .salary-range {
+    display: flex;
+    justify-content: normal;
+    margin-bottom: calc(2px * var(--coef));
+  }
+
+  .recrutement-page .salary-img {
+    width: calc(753px * var(--coef));
+    border-radius: calc(50px * var(--coef));
+    height: calc(358px * var(--coef));
+  }
+
+  .recrutement-page .owl-prev .chevron {
+    position: relative;
+    left: 0.2rem;
+    top: -25px;
+  }
+
+  .recrutement-page .owl-next .chevron {
+    position: relative;
+    left: 0.2rem;
+    top: -0.2rem;
+  }
+
+  .recrutement-page .categories.owl_col {
+    height: calc(112px * var(--coef));
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
+    gap: calc(25px * var(--coef));
+  }
+
+  .recrutement-page .category.black {
+    font-size: calc(12.5px * var(--coef));
+    line-height: calc(43px * var(--coef));
+    height: calc(43px * var(--coef));
+    box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+    border-radius: calc(15px * var(--coef));
+  }
+
+  .recrutement-page .category-title {
+    font-size: calc(22px * var(--coef));
+    line-height: calc(33px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+    margin-top: calc(100px * var(--coef));
+  }
+
+  .recrutement-page .optional-function h3 {
+    width: calc(200px * var(--coef));
+    height: calc(21px * var(--coef));
+    margin-top: calc(10px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .optional-function .cards {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .recrutement-page .communications p {
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.2px;
+    line-height: calc(24px * var(--coef));
+    font-size: calc(17px * var(--coef));
+    color: white;
+  }
+
+  .recrutement-page .communications .options {
+    max-width: calc(427px * var(--coef));
+  }
+
+  .recrutement-page .bleu-icon-container p {
+    font-family: inherit;
+  }
+
+  .recrutement-page .communications p a {
+    display: block;
+    text-align: center;
+    margin-top: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .communications h2 {
+    margin-bottom: calc(20px * var(--coef));
+    margin-top: 0px;
+    font-size: calc(22px * var(--coef));
+    line-height: calc(33px * var(--coef));
+  }
+
+  .recrutement-page .communications .bleu-icon-container img {
+    width: calc(78px * var(--coef));
+    height: calc(78px * var(--coef));
+  }
+
+  .recrutement-page .livitalk-info p {
+    width: calc(496px * var(--coef));
+    height: calc(126px * var(--coef));
+    font-style: normal;
+    padding-top: 0px;
+    font-weight: 500;
+    font-size: calc(13px * var(--coef));
+    line-height: calc(21px * var(--coef));
+  }
+
+  .recrutement-page .livitalk-info h2 {
+    margin-left: 0px;
+    width: calc(516px * var(--coef));
+    height: calc(108px * var(--coef));
+    font-family: "Roboto";
+    font-style: normal;
+    margin-top: calc(20px * var(--coef));
+    margin-bottom: calc(15px * var(--coef));
+    font-weight: 500;
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+  .recrutement-page .livitalk-info.socials .group-img-container img {
+    width: calc(253px * var(--coef));
+    height: calc(271px * var(--coef));
+    margin-top: calc(27px * var(--coef));
+    margin-bottom: calc(11px * var(--coef));
+    padding-left: 0px;
+  }
+
+  .recrutement-page .popup-div.prives .group-img {
+    position: relative;
+    margin-right: calc(0px * var(--coef));
+  }
+  .recrutement-page .salary-estimation {
+    width: auto;
+  }
+  .recrutement-page .livitalk-info img {
+    width: calc(225px * var(--coef));
+    height: calc(267px * var(--coef));
+    padding-left: calc(25px * var(--coef));
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+  }
+  .recrutement-page .livitalk-info,
+  .recrutement-page .livitalk-info,
+  .recrutement-page .livitalk-info.socials {
+    width: auto;
+    margin: 0;
+    height: inherit;
+    min-height: inherit;
+  }
+
+  .recrutement-page .livitalk-info,
+  .recrutement-page .livitalk-info.socials {
+    margin-top: calc(100px * var(--coef));
+    padding-bottom: calc(20px * var(--coef));
+  }
+
+  .recrutement-page .chevron-white img {
+    height: calc(37px * var(--coef));
+    width: calc(50px * var(--coef));
+  }
+
+  .recrutement-header .links-container a {
+    font-size: calc(16px * var(--coef));
+    line-height: calc(24px * var(--coef));
+  }
+
+  .recrutement-header .img-container,
+  .recrutement-header .img-container .group-img,
+  .recrutement-header .img-container img {
+    width: calc(280px * var(--coef));
+    height: calc(209px * var(--coef));
+  }
+
+  .recrutement-page .salary-img p:not(:first-child) {
+    font-style: normal;
+    font-weight: 600;
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+
+  .recrutement-page .salary-img .first-paragraph {
+    font-weight: 400 !important;
+  }
+
+  .recrutement-header .img-container .bleu-icon-container img {
+    width: calc(38px * var(--coef));
+    height: calc(38px * var(--coef));
+  }
+
+  .recrutement-header .options img {
+    width: calc(14px * var(--coef));
+    height: calc(10px * var(--coef));
+    margin-right: calc(10px * var(--coef));
+  }
+
+  .recrutement-header {
+    width: calc(712px * var(--coef));
+    gap: calc(20px * var(--coef));
+    margin: auto;
+    justify-content: unset;
+  }
+
+  .recrutement-header .option.option2 {
+    margin: calc(15px * var(--coef)) 0px;
+  }
+
+  .recrutement-header .option {
+    margin-bottom: calc(15px * var(--coef)) !important;
+  }
+
+  .recrutement-page .mobile-header h1 {
+    height: calc(25px * var(--coef));
+    font-size: calc(21.5px * var(--coef));
+    margin-bottom: calc(17px * var(--coef));
+    line-height: calc(25px * var(--coef));
+  }
+
+  .recrutement-page .text-container {
+    width: calc(337px * var(--coef)) !important;
+    margin-left: calc(6px * var(--coef)) !important;
+  }
+
+  .recrutement-header .img-container {
+    margin-left: calc(57px * var(--coef));
+  }
+
+  .recrutement-page .last-icon .icon {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: calc(1px * var(--coef));
+  }
+
+  .recrutement-header .icon-option-container .last-icon img {
+    width: calc(28px * var(--coef));
+    height: calc(28px * var(--coef));
+  }
+
+  .recrutement-header .bleu-icon-container {
+    margin-top: calc(-25px * var(--coef));
+  }
+
+  .recrutement-header .links-container {
+    margin-top: calc(60px * var(--coef));
+    max-width: calc(285px * var(--coef));
+    margin-left: calc(20px * var(--coef));
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recrutement-header .icon-option-container .option-text p {
+    font-weight: 600;
+    margin-bottom: calc(10px * var(--coef));
+    font-size: calc(12px * var(--coef));
+    line-height: calc(18px * var(--coef));
+  }
+
+  .recrutement-page .chevron-white {
+    text-align: center;
+    margin-top: calc(32px * var(--coef));
+    margin-bottom: calc(100px * var(--coef));
+  }
+
+  .recrutement-header .icon-option-container {
+    margin-top: calc(10px * var(--coef));
+  }
+
+  .recrutement-page .last-icon .icon p {
+    width: calc(51.39px * var(--coef));
+    height: calc(24px * var(--coef));
+    font-size: calc(11px * var(--coef));
+    line-height: calc(12px * var(--coef));
+  }
+
+  .recrutement-page .category.black {
+    width: calc(161px * var(--coef));
+  }
+
+  .recrutement-header .links-container button {
+    padding: calc(11px * var(--coef)) calc(5px * var(--coef));
+    color: white;
+    background: var(--blue);
+    margin-bottom: calc(15px * var(--coef));
+    font-size: calc(16px * var(--coef));
+    border-radius: calc(15px * var(--coef));
+    line-height: calc(22px * var(--coef));
+    width: calc(146px * var(--coef));
+    height: auto;
+    margin-top: calc(22px * var(--coef));
+  }
+
+  .recrutement-page .popup-div.documents img {
+    margin-bottom: calc(0px * var(--coef));
+    margin-top: calc(20px * var(--coef));
+  }
+  .recrutement-page .mobile-header span {
+    color: var(--blue);
+  }
+
+  .recrutement-page .communications .bleu-icon-container {
+    gap: calc(15px * var(--coef));
+  }
+
+  .recrutement-header .bleu-icon-container .icon,
+  .recrutement-page .communications .bleu-icon-container .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .recrutement-header .bleu-icon-container img,
+  .recrutement-page .communications .bleu-icon-container img {
+    margin-left: 0px;
+  }
+
+  .recrutement-header .bleu-icon-container .icon p {
+    font-size: calc(12px * var(--coef));
+    line-height: calc(18px * var(--coef));
+    width: auto;
+  }
+
+  .recrutement-page .generate-salary:hover {
+    transform: scale(1);
+  }
+
+  .recrutement-page .communications .bleu-icon-container .icon {
+    width: calc(80px * var(--coef));
+  }
+  .recrutement-page .communications .icon p {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(24px * var(--coef));
+    width: auto;
+    max-width: initial;
+  }
+
+  .recrutement-page .mobile-header p {
+    width: calc(752px * var(--coef));
+    height: calc(42px * var(--coef));
+    max-width: none;
+    font-size: calc(17.5px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    margin: 0px;
+    letter-spacing: 0px;
+  }
+
+  .recrutement-page .communications p a {
+    font-size: calc(16px * var(--coef));
+    line-height: calc(24px * var(--coef));
+  }
+
+  .recrutement-page .sign-in button {
+    width: calc(294px * var(--coef));
+    height: calc(68px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+
+  .recrutement-page .footer-chevron {
+    margin-top: calc(100px * var(--coef));
+    margin-bottom: calc(100px * var(--coef));
+  }
+
+  .recrutement-header .bleu-icon-container .icon {
+    min-width: calc(34px * var(--coef));
+  }
+  /*—————————————————————————————————
+        END RECRUTEMENT
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin modes
+  —————————————————————————————————*/
+
+  .mode-page .mode-container {
+    margin-left: 0px;
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .mode-page .title-bloc,
+  .mode-page .mode-container .communication-mode-bloc,
+  .mode-page .mode-container div.text-bloc,
+  .mode-page .mode-container .chevron-paragraph,
+  .mode-page .mode-tablette .mode-tablette-container {
+    width: auto;
+    margin: calc(40px * var(--coef)) calc(106px * var(--coef));
+    font-weight: 600;
+    max-width: 100%;
+  }
+
+  .mode-page .title-bloc h1 {
+    font-size: calc(21px * var(--coef));
+    line-height: calc(33px * var(--coef));
+  }
+
+  .mode-page .mode-container .img-container {
+    display: none;
+  }
+
+  .mode-page .description .icon-text-bloc {
+    margin-right: 0px;
+  }
+
+  .mode-page .mode-container .communication-mode-bloc h1 {
+    color: var(--blue);
+    font-weight: 700;
+    text-transform: inherit;
+    font-size: calc(20px * var(--coef));
+    margin-top: calc(10px * var(--coef));
+    margin-bottom: calc(20px * var(--coef));
+  }
+
+  .mode-page .mode-container .text-bloc {
+    margin-bottom: calc(20px * var(--coef));
+    margin-top: 0px;
+  }
+
+  .mode-page .mode-container .communication-mode-bloc {
+    position: relative;
+    margin-bottom: 0px;
+  }
+
+  .mode-page .mode-container .chevron-paragraph {
+    margin-top: calc(50px * var(--coef));
+    margin-bottom: 0px;
+    margin-right: calc(52px * var(--coef));
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mode-page .communication-mode .chevron-paragraph {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mode-page .mode-tablette .mode-tablette-container {
+    margin-bottom: 0px;
+    margin-right: 0px;
+  }
+  .mode-page
+    .mode-tablette
+    .mode-tablette-container
+    .communication-mode
+    .first-p {
+    margin-right: calc(106px * var(--coef));
+  }
+
+  .mode-page
+    .formation-video.mode-tablette
+    .mode-tablette-container
+    .communication-mode
+    .chevron-paragraph {
+    margin-right: calc(59.23px * var(--coef));
+  }
+  .mode-page
+    .masterclass.mode-tablette
+    .mode-tablette-container
+    .communication-mode
+    .chevron-paragraph {
+    margin-right: calc(61px * var(--coef));
+  }
+
+  .mode-page
+    .contenus.mode-tablette
+    .mode-tablette-container
+    .communication-mode
+    .chevron-paragraph {
+    margin-right: calc(65px * var(--coef));
+  }
+
+  .mode-page
+    .documents.mode-tablette
+    .mode-tablette-container
+    .communication-mode
+    .chevron-paragraph {
+    margin-right: calc(73px * var(--coef));
+  }
+
+  .mode-page
+    .prives.mode-tablette
+    .mode-tablette-container
+    .communication-mode
+    .chevron-paragraph {
+    margin-right: calc(62px * var(--coef));
+  }
+
+  .mode-page .private-imgs.mode-tablette-img {
+    width: 35%;
+    position: relative;
+    margin-top: calc(30px * var(--coef));
+  }
+  .mode-page .private-imgs img:first-child.bloc-img {
+    position: absolute;
+    width: calc(124.94px * var(--coef));
+    height: calc(129px * var(--coef));
+  }
+
+  .mode-page .private-imgs img:last-child.bloc-img {
+    position: absolute;
+    width: calc(168.26px * var(--coef));
+    height: calc(142.5px * var(--coef));
+    left: calc(90px * var(--coef));
+    top: calc(-40px * var(--coef));
+  }
+
+  .mode-page .chevron-paragraph .option img {
+    width: calc(19px * var(--coef));
+    height: calc(15px * var(--coef));
+    margin-right: calc(10px * var(--coef));
+    margin-left: -1%;
+  }
+
+  .mode-page .mode-container .text-bloc p {
+    text-align: justify;
+    font-weight: 400;
+    margin-top: calc(32px * var(--coef));
+    font-size: calc(17.59px * var(--coef));
+    line-height: calc(27px * var(--coef));
+  }
+
+  .mode-page .sm\:hidden {
+    display: block !important;
+  }
+
+  .mode-page .md\:hidden {
+    display: none !important;
+  }
+
+  .mode-page .description {
+    width: 100%;
+    display: block;
+  }
+
+  .mode-page .icon-text-bloc .chevron-paragraph .option p {
+    line-height: calc(27px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .mode-page .communication-mode-bloc .bleu-icon-container img {
+    width: calc(66px * var(--coef));
+    height: calc(66px * var(--coef));
+    transition: all 0.5s;
+    margin-right: calc(10px * var(--coef));
+  }
+
+  .mode-page .img-container-no-desktop {
+    display: block;
+    width: 35%;
+  }
+
+  .mode-page .mode-tablette .mode-tablette-container {
+    padding-top: calc(40px * var(--coef));
+    padding-bottom: calc(40px * var(--coef));
+  }
+
+  .mode-page .mode-tablette.white .mode-tablette-container {
+    margin-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .mode-page .mode-tablette .communication-mode .chevron-paragraph p {
+    line-height: calc(27px * var(--coef));
+  }
+  .mode-page .mode-tablette .title {
+    display: flex;
+    margin-bottom: calc(20px * var(--coef));
+    align-items: center;
+  }
+
+  .mode-page .mode-tablette .communication-mode .first-p {
+    text-align: justify;
+    font-weight: 400;
+    margin-bottom: calc(25px * var(--coef));
+    font-size: calc(17.6px * var(--coef));
+  }
+
+  .mode-page .chevron-paragraph .chevron-text-container {
+    width: 61%;
+  }
+
+  .mode-page .formation-video.mode-tablette {
+    display: block;
+  }
+
+  .mode-page .mode-tablette .communication-mode p {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .mode-page .formation-video.mode-tablette .bloc-img {
+    width: calc(248px * var(--coef));
+    height: calc(150px * var(--coef));
+  }
+
+  .mode-page .masterclass.mode-tablette .bloc-img {
+    width: calc(231px * var(--coef));
+    height: calc(158px * var(--coef));
+  }
+
+  .mode-page .contenus.mode-tablette .mode-tablette-container {
+    padding-bottom: calc(28px * var(--coef));
+    margin-bottom: calc(40px * var(--coef));
+  }
+  .mode-page .documents.mode-tablette .mode-tablette-container {
+    padding-bottom: calc(50px * var(--coef));
+    padding-top: 0px;
+  }
+
+  .mode-page .prives.mode-tablette .mode-tablette-container {
+    padding-bottom: calc(74px * var(--coef));
+    margin-top: 0px;
+  }
+
+  .mode-page .masterclasss.mode-tablette .mode-tablette-container {
+    padding-bottom: calc(50px * var(--coef));
+  }
+
+  .mode-page .contenus.mode-tablette .bloc-img {
+    width: calc(227px * var(--coef));
+    height: calc(225px * var(--coef));
+  }
+
+  .mode-page .prives.mode-tablette .bloc-img {
+    width: calc(278px * var(--coef));
+    height: calc(209px * var(--coef));
+  }
+
+  .mode-page .documents.mode-tablette .bloc-img {
+    width: calc(220px * var(--coef));
+    height: calc(211px * var(--coef));
+  }
+
+  .mode-page .mode-tablette .title h1 {
+    margin: 0px;
+    color: var(--blue);
+    font-size: calc(20px * var(--coef));
+  }
+  .mode-page .formation-video.mode,
+  .mode-page .masterclass.mode,
+  .mode-page .contenus.mode,
+  .mode-page .prives.mode,
+  .mode-page .documents.mode {
+    display: none;
+  }
+  .mode-page .mode-tablette .title img {
+    width: calc(60px * var(--coef));
+    height: calc(60px * var(--coef));
+    margin-right: calc(10px * var(--coef));
+  }
+
+  .mode-page .img-container-no-desktop img {
+    width: 100%;
+    height: calc(224px * var(--coef));
+    margin-top: calc(-50px * var(--coef));
+  }
+
+  .mode-page .mode-tablette {
+    background: black;
+    color: white;
+  }
+  .mode-page .mode-tablette.white {
+    background: white;
+    color: black;
+  }
+
+  .mode-page .mode-tablette {
+    display: block;
+  }
+
+  .mode-page .prives.mode-tablette {
+    display: block;
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .mode-page .sign-in button {
+    width: calc(176px * var(--coef));
+    font-size: calc(20px * var(--coef));
+    height: calc(51px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        END MODES
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+    Begin affiliation-masterclass 
+  —————————————————————————————————*/
+
+  .affilation-masterclass-page .header-img-container {
+    padding-top: calc(16px * var(--coef));
+    padding-bottom: calc(26px * var(--coef));
+    padding-left: calc(108px * var(--coef));
+    padding-right: calc(104px * var(--coef));
+  }
+
+  .affilation-masterclass-page .header-img-container .text-container h1 {
+    line-height: calc(42px * var(--coef));
+    font-size: calc(28px * var(--coef));
+    margin-top: 0px;
+    margin-bottom: calc(0px * var(--coef));
+  }
+
+  .affilation-masterclass-page .header-img-container .text-container h3 {
+    line-height: calc(48px * var(--coef));
+    color: var(--blue);
+    font-size: calc(22px * var(--coef));
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .affilation-masterclass-page .header-img-container .text-container p {
+    font-size: calc(22px * var(--coef));
+    max-width: calc(622px * var(--coef));
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: calc(24.31px * var(--coef));
+  }
+
+  .affilation-masterclass-page .header-img-container .text-container p {
+    font-size: calc(22px * var(--coef));
+    max-width: calc(622px * var(--coef));
+    line-height: calc(24.31px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc {
+    margin: calc(60px * var(--coef)) auto;
+    display: flex;
+    margin-left: calc(106px * var(--coef));
+    flex-direction: column;
+    max-width: calc(834px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc h1 {
+    margin-bottom: calc(38px * var(--coef));
+    margin-top: 0px;
+    font-size: calc(22px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings .search_language {
+    display: flex;
+    flex-direction: column;
+    gap: calc(10px * var(--coef));
+    max-width: calc(303px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container {
+    width: calc(303px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container
+    .searchInput
+    input {
+    border: none;
+    outline: none;
+    font-size: calc(17px * var(--coef));
+    width: 100%;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    span {
+    font-size: calc(20px * var(--coef));
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    .selectoption {
+    width: calc(107px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    .selectoption
+    select {
+    height: calc(46px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings {
+    display: flex;
+    gap: calc(17px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings .tri {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .affilation-masterclass-page .videos-bloc .settings .tri span {
+    font-size: calc(20px * var(--coef));
+    font-weight: 400;
+    width: 100%;
+    display: none;
+    line-height: 150%;
+    margin-right: calc(50px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .settings .tri .tri_options button {
+    font-size: calc(17px * var(--coef));
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 150%;
+    padding: calc(7px * var(--coef)) calc(9px * var(--coef));
+    width: calc(180px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .video-img,
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default {
+    width: calc(249px * var(--coef));
+    height: calc(182px * var(--coef));
+    margin-top: calc(40px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default {
+    margin-top: calc(15px * var(--coef));
+  }
+
+  .affilation-masterclass-page .video-wrapper {
+    margin-right: calc(106px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default
+    .no-video {
+    margin-top: 0px;
+  }
+
+  .affilation-masterclass-page .arrow-scroll img {
+    width: calc(50px * var(--coef));
+    height: calc(75px * var(--coef));
+  }
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default
+    .no-video {
+    width: calc(80px * var(--coef));
+    height: calc(80px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .img
+    .img-bloc-youtube
+    .youtube-icon {
+    width: calc(43px * var(--coef));
+    height: calc(38px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .video-img:not(.no-video) {
+    width: calc(249px * var(--coef));
+    height: calc(182px * var(--coef));
+    margin-top: calc(15px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links {
+    gap: 0 calc(11px * var(--coef));
+    box-shadow: none;
+    border-radius: calc(15px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .affilation-masterclass-page .card-video {
+    width: 100%;
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links.column {
+    flex-direction: column;
+    border-radius: calc(15px * var(--coef));
+    margin-right: calc(106px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+    padding-right: calc(15px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .tablette-main-content {
+    display: block;
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .img {
+    margin-left: calc(20px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .content-video h1 {
+    font-size: calc(22px * var(--coef));
+    max-width: calc(348px * var(--coef));
+    line-height: calc(24px * var(--coef));
+    margin-top: calc(15px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .content-video h3 {
+    height: calc(30px * var(--coef));
+    font-size: calc(20px * var(--coef));
+    margin-bottom: calc(4px * var(--coef));
+    margin-top: calc(10px * var(--coef));
+    line-height: calc(30px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p.date {
+    font-size: calc(16px * var(--coef));
+    height: calc(80px * var(--coef));
+    font-weight: 500;
+    max-width: 100%;
+  }
+
+
+  
+  .affilation-formation-page .header-img-container {
+      background-image: url(../img/affiliation.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: grey;
+      background-blend-mode: multiply;
+      font-family: "Roboto";
+      border-radius: 0 0 45px 45px;
+      color: var(--second-color);
+      padding-top: calc(16px * var(--coef));
+      padding-bottom: calc(26px * var(--coef));
+      padding-left: calc(108px * var(--coef));
+      padding-right: calc(104px * var(--coef));
+  }
+
+  .affilation-formation-page .header-img-container .text-container h1 {
+    line-height: calc(67.5px * var(--coef));
+    color: var(--blue);
+    font-size: calc(28px * var(--coef));}
+
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p
+    .cross {
+    font-size: calc(20px * var(--coef));
+  }
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p
+    .price {
+    font-size: calc(24px * var(--coef));
+  }
+
+
+
+
+  .affilation-formation-page .header-img-container {
+    padding-top: calc(16px * var(--coef));
+    padding-bottom: calc(26px * var(--coef));
+    padding-left: calc(108px * var(--coef));
+    padding-right: calc(104px * var(--coef));
+}
+
+.affilation-formation-page .header-img-container .text-container h1 {
+  color: var(--blue);
+  line-height: calc(42px * var(--coef));
+  font-size: calc(28px * var(--coef));
+  margin-top: 0px;
+  margin-bottom: calc(0px * var(--coef));
+
+}
+
+
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .desktop-main-content {
+    display: none;
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links {
+    margin-bottom: calc(0px * var(--coef));
+  }
+
+  .affilation-masterclass-page .tablette-main-content .content-desc {
+    font-size: calc(18px * var(--coef));
+    font-weight: 300;
+    max-width: calc(588px * var(--coef));
+    margin-left: calc(20px * var(--coef));
+    line-height: calc(27px * var(--coef));
+    margin-top: calc(5px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .tablette-main-content
+    .content-desc
+    .read-more-arrow {
+    margin-left: calc(10px * var(--coef));
+  }
+
+  .affilation-masterclass-page .tablette-main-content .content-desc .dots {
+    color: var(--blue);
+    width: fit-content;
+    margin-top: calc(10px * var(--coef));
+    font-weight: 400;
+    cursor: pointer;
+    font-size: calc(18px * var(--coef));
+    display: flex;
+    align-items: center;
+  }
+
+  .affilation-masterclass-page .videos-bloc .photo-container {
+    background: white;
+    padding: calc(2px * var(--coef)) calc(12px * var(--coef));
+    max-width: calc(420px * var(--coef));
+    height: calc(66px * var(--coef));
+    margin-right: auto;
+    display: flex;
+    margin-top: calc(30px * var(--coef));
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .affilation-masterclass-page .videos-bloc .photo-container p {
+    margin: 0px;
+    font-weight: 300;
+    align-self: flex-start;
+    max-width: calc(420px * var(--coef));
+    height: calc(54px * var(--coef));
+    text-align: center;
+    font-size: calc(17px * var(--coef));
+  }
+
+  .affilation-masterclass-page .tablette-main-content .content-desc .more {
+    display: none;
+  }
+
+  .affilation-masterclass-page .tablette-main-content .arrow-back {
+    text-align: center;
+    display: none;
+    display: none;
+    margin-top: calc(40px * var(--coef));
+    margin-bottom: calc(15px * var(--coef));
+  }
+
+  .affilation-masterclass-page .card-video {
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .affilation-masterclass-page .videos-bloc .videos-links .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: calc(-10px * var(--coef));
+  }
+
+  .affilation-masterclass-page .tablette-main-content .arrow-back .arrow_top {
+    transform: rotate(-91deg);
+    cursor: pointer;
+    width: calc(35px * var(--coef));
+  }
+
+  .affilation-masterclass-page .tablette-main-content .affiliation-link {
+    margin-top: calc(22px * var(--coef));
+    text-align: center;
+    margin-bottom: calc(31px * var(--coef));
+  }
+  .affilation-masterclass-page .header-img-container .text-container h1 {
+    text-transform: uppercase;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    .all-price.mobile {
+    display: block;
+  }
+
+  .affilation-masterclass-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    .all-price.desktop {
+    display: none;
+  }
+
+  .affilation-masterclass-page .tablette-main-content .affiliation-link button {
+    background: var(--blue);
+    border: none;
+    width: calc(202px * var(--coef));
+    height: calc(50px * var(--coef));
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: calc(15px * var(--coef));
+    line-height: calc(17.73px * var(--coef));
+    padding: calc(8px * var(--coef)) calc(15px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .affilation-masterclass-page
+    .tablette-main-content
+    .affiliation-link
+    button:hover {
+    color: var(--blue);
+    background-color: var(--light-grey);
+  }
+
+  .affilation-masterclass-page .copy-link {
+    box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+    padding-left: calc(65px * var(--coef));
+    height: calc(50px * var(--coef));
+    width: 80%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(20px * var(--coef));
+    margin-top: calc(20px * var(--coef));
+    background: #fbfbfb;
+    border-radius: calc(15px * var(--coef));
+    position: relative;
+  }
+
+  /*—————————————————————————————————
+     Begin Affiliation formation
+  —————————————————————————————————*/
+
+  .affilation-formation-page .header-img-container .text-container p {
+    font-size: calc(22px * var(--coef));
+    max-width: calc(622px * var(--coef));
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: calc(24.31px * var(--coef));
+  }
+
+  .affilation-formation-page .header-img-container .text-container p {
+    font-size: calc(22px * var(--coef));
+    max-width: calc(622px * var(--coef));
+    line-height: calc(24.31px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc {
+    margin: calc(70px * var(--coef)) auto;
+    display: flex;
+    margin-left: calc(106px * var(--coef));
+    flex-direction: column;
+    max-width: calc(834px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc h1 {
+    margin-bottom: calc(38px * var(--coef));
+    margin-top: 0px;
+    font-size: calc(22px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .settings .search_language {
+    display: flex;
+    flex-direction: column;
+    gap: calc(10px * var(--coef));
+    max-width: calc(303px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container {
+    width: calc(303px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .search_container
+    .searchInput
+    input {
+    border: none;
+    outline: none;
+    font-size: calc(17px * var(--coef));
+    width: 100%;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    span {
+    font-size: calc(20px * var(--coef));
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    .selectoption {
+    width: calc(107px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .settings
+    .search_language
+    .lang
+    .selectoption
+    select {
+    height: calc(35px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    padding: calc(0px * var(--coef)) calc(10px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .settings {
+    display: flex;
+    gap: calc(17px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .settings .tri {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .affilation-formation-page .videos-bloc .settings .tri span {
+    font-size: calc(20px * var(--coef));
+    font-weight: 400;
+    display: none;
+    width: 100%;
+    line-height: 150%;
+    margin-right: calc(50px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .settings .tri .tri_options button {
+    font-size: calc(17px * var(--coef));
+    font-weight: 400;
+    text-transform: capitalize;
+    height: calc(38px * var(--coef));
+    line-height: 150%;
+    padding: calc(7px var(--coef)) calc(9px var(--coef));
+    width: calc(180px * var(--coef));
+  }
+
+ 
+  .affilation-formation-page .videos-bloc .videos-links .video-img,
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default {
+    width: calc(249px * var(--coef));
+    height: calc(182px * var(--coef));
+    margin-top: calc(40px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default {
+    margin-top: calc(15px * var(--coef));
+  }
+
+  .affilation-formation-page .video-wrapper {
+    margin-right: calc(106px * var(--coef));
+    max-width: calc(662px*var(--coef));
+  }
+
+
+  .affilation-formation-page .video-wrapper {
+    margin-bottom: calc(100px * var(--coef));
+    width: 86%;
+}
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default
+    .no-video {
+    margin-top: 0px;
+  }
+
+  .affilation-formation-page .arrow-scroll img {
+    width: calc(50px * var(--coef));
+    height: calc(75px * var(--coef));
+  }
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img-bloc-youtube.default
+    .no-video {
+    width: calc(80px * var(--coef));
+    height: calc(80px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .img
+    .img-bloc-youtube
+    .youtube-icon {
+    width: calc(43px * var(--coef));
+    height: calc(38px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .video-img:not(.no-video) {
+    width: calc(249px * var(--coef));
+    height: calc(182px * var(--coef));
+    margin-top: calc(15px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links {
+    gap: 0 calc(11px * var(--coef));
+    box-shadow: none;
+    border-radius: calc(15px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .affilation-formation-page .card-video {
+    width: 100%;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links.column {
+    flex-direction: column;
+    border-radius: calc(15px * var(--coef));
+    margin-right: calc(106px * var(--coef));
+    -webkit-box-shadow:0px 1px 4px rgba(0, 0, 0, 0.2) ;
+    margin-bottom: calc(30px * var(--coef));
+    padding-right: calc(0px * var(--coef));
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .tablette-main-content {
+    display: block;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .img {
+    margin-left: calc(20px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video h1 {
+    font-size: calc(22px * var(--coef));
+    max-width: calc(361px * var(--coef));
+    line-height: calc(24px * var(--coef));
+    margin-top: calc(15px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video h3 {
+    height: calc(30px * var(--coef));
+    font-size: calc(20px * var(--coef));
+    margin-top: calc(4px * var(--coef));
+    display: block;
+    margin-bottom: calc(4px * var(--coef));
+    line-height: calc(30px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .content-video p.date {
+    font-size: calc(16px * var(--coef));
+    height: calc(61px * var(--coef));
+    font-weight: 200;
+    max-width: 80%;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p
+    .cross {
+    font-size: calc(20px * var(--coef));
+  }
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p
+    .price {
+    font-size: calc(24px * var(--coef));
+    margin-left: 0px;
+  }
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p
+    .price {
+    margin-left: calc(20px * var(--coef));
+    margin-bottom: 0px;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p.date.second-child {
+    margin-bottom: calc(26px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    p.date
+    .blue {
+    color: var(--blue);
+    font-weight: 500;
+    background-color: transparent;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .desktop-main-content {
+    display: none;
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links {
+    margin-bottom: calc(0px * var(--coef));
+  }
+
+  .affilation-formation-page .tablette-main-content .content-desc {
+    font-size: calc(18px * var(--coef));
+    font-weight: 300;
+    max-width: calc(565px * var(--coef));
+    margin-left: calc(20px * var(--coef));
+    line-height: calc(27px * var(--coef));
+    margin-top: calc(5px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .tablette-main-content
+    .content-desc
+    .read-more-arrow {
+    margin-left: calc(10px * var(--coef));
+    width: calc(18px * var(--coef));
+  }
+
+  .affilation-formation-page .tablette-main-content .content-desc .dots {
+    color: var(--blue);
+    width: fit-content;
+    margin-top: calc(10px * var(--coef));
+    font-weight: 400;
+    cursor: pointer;
+    font-size: calc(18px * var(--coef));
+    display: flex;
+    align-items: center;
+  }
+
+  .affilation-formation-page .videos-bloc .photo-container {
+    background: white;
+    padding: calc(2px var(--coef)) calc(12px var(--coef));
+    max-width: calc(455px * var(--coef));
+    height: calc(66px * var(--coef));
+    margin-right: auto;
+    display: flex;
+    margin-top: calc(30px * var(--coef));
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.18);
+  }
+
+
+
+
+  .affilation-formation-page
+  .videos-bloc
+  .videos-links
+  .content-video
+  .affiliation-link.no-desktop {
+  display: block;
+}
+
+.affilation-formation-page
+  .videos-bloc
+  .videos-links
+  .content-video
+  .affiliation-link.desktop {
+  display: none;
+}
+
+
+  .affilation-formation-page .videos-bloc .photo-container p {
+    margin: 0px;
+    font-weight: 300;
+    max-width: calc(420px * var(--coef));
+    height: auto;
+    text-align: center;
+    font-size: calc(17px * var(--coef));
+  }
+
+  .affilation-formation-page .tablette-main-content .content-desc .more {
+    display: none;
+  }
+
+  .affilation-formation-page .tablette-main-content .arrow-back {
+    text-align: center;
+    display: none;
+    display: none;
+    margin-top: calc(40px * var(--coef));
+    margin-bottom: calc(15px * var(--coef));
+  }
+
+  .affilation-formation-page .card-video {
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .affilation-formation-page .videos-bloc .videos-links .rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: calc(-10px * var(--coef));
+  }
+
+  .affilation-formation-page .tablette-main-content .arrow-back .arrow_top {
+    transform: rotate(-91deg);
+    cursor: pointer;
+    width: calc(25px * var(--coef));
+  }
+
+  .affilation-formation-page .header-img-container .text-container h2 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .affilation-formation-page .tablette-main-content .affiliation-link {
+    margin-top: calc(22px * var(--coef));
+    text-align: center;
+    margin-bottom: calc(31px * var(--coef));
+  }
+  .affilation-formation-page .header-img-container .text-container h1 {
+    text-transform: uppercase;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    .all-price.mobile {
+    display: block;
+  }
+
+  .affilation-formation-page
+    .videos-bloc
+    .videos-links
+    .content-video
+    .all-price.desktop {
+    display: none;
+  }
+
+  .affilation-formation-page .tablette-main-content .affiliation-link button {
+    background: var(--blue);
+    border: none;
+    width: calc(202px * var(--coef));
+    height: calc(47px * var(--coef));
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+    border-radius: calc(15px * var(--coef));
+    line-height: calc(17.73px * var(--coef));
+    padding: calc(8px var(--coef)) calc(15px var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .affilation-formation-page
+    .tablette-main-content
+    .affiliation-link
+    button:hover {
+    color: var(--blue);
+    background-color: var(--light-grey);
+  }
+
+  .affilation-formation-page .copy-link {
+    box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.15);
+    padding-left: calc(65px * var(--coef));
+    height: calc(50px * var(--coef));
+    width: 80%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(20px * var(--coef));
+    margin-top: calc(20px * var(--coef));
+    background: #fbfbfb;
+    border-radius: calc(15px * var(--coef));
+    position: relative;
+  }
+
+
+
+
+  /*—————————————————————————————————
+    Begin Dashboard Client
+—————————————————————————————————*/
+.dashboard-client-page h1.title,
+.dashboard-client-page h2 {
+  font-size: calc(28px * var(--coef));
+  margin-bottom: calc(40px * var(--coef));
+}
+
+.dashboard-client-page h3 {
+  font-size: calc(24px * var(--coef));
+  margin-bottom: calc(40px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-links-container {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: calc(69px * var(--coef));
+  gap: calc(51px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-links-container a {
+  font-size: calc(20px * var(--coef));
+}
+
+.dashboard-client-page .dashboard-links-container a span {
+  font-size: calc(16px * var(--coef));
+}
+
+
+.dashboard-client-page .owl-carousel{
+  display: none!important;
+}
+
+.dashboard-client-page .dashboard-links-container .hidden-tablet-mobile {
+  display: none;
+}
+
+.dashboard-client-page .dashboard-cards {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: calc(60px * var(--coef));
+  row-gap: calc(25px * var(--coef));
+  column-gap: calc(12px * var(--coef));
+}
+
+
+.dashboard-client-page .dashboard-cards.tablette{
+  display:grid;
+}
+
+
+.dashboard-client-page .dashboard-card {
+  width: calc(217px * var(--coef));
+  height: calc(313px * var(--coef));
+}
+
+/*—————————————————————————————————
+    End Dashboard Client
+—————————————————————————————————*/
+
+
+  /*—————————————————————————————————
+     END Affiliation formation
+  —————————————————————————————————*/
+
+  .utilities .sm\:hidden {
+    display: none;
+  }
+
+  .utilities .md\:hidden {
+    display: block;
+  }
+  .utilities .tb\:hidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .recrutement-page .popup-div.documents::after {
+    left: 28.5%;
+  }
+
+  .recrutement-page .popup-div.prives::after {
+    bottom: 100%;
+    left: 63%;
+    border-left: calc(38px * var(--coef)) solid transparent;
+    border-right: calc(38px * var(--coef)) solid transparent;
+  }
+
+  .recrutement-page .tablette-popup.contenus::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 79.1%;
+    border-bottom: calc(78px * var(--coef));
+    border-left: calc(35px * var(--coef)) solid transparent;
+    border-right: calc(38px * var(--coef)) solid transparent;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  .recrutement-page .tablette-popup.video::after {
+    left: 10.4%;
+  }
+  .recrutement-page .last-icon .icon p {
+    font-size: calc(10px * var(--coef));
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  .recrutement-header .links-container {
+    margin-left: calc(28px * var(--coef));
+  }
+}

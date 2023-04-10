@@ -1,0 +1,2020 @@
+ :root {
+  --checkbox-height: calc(28px * var(--coef)) !important;
+}
+ 
+.utilities .popup-overlay {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(100%);
+}
+
+.utilities .popup-overlay.show {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+}
+
+.utilities .popup:not(.popup.voir-plus) {
+  width: 25%;
+  box-shadow: 0px 3px 15px rgb(0 0 0 / 12%);
+  border-radius: calc(15px * var(--coef));
+  z-index: 1001;
+  background: #fbfbfb;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fbfbfb;
+}
+
+.utilities .popup .years-container {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: calc(20px * var(--coef));
+  color: white;
+  border-radius: calc(15px * var(--coef));
+  position: relative;
+  height: calc(91px * var(--coef));
+}
+
+.utilities .close-btn-container {
+  position: absolute;
+  right: 8px;
+  top: 2px;
+}
+
+.utilities .month:hover {
+  background: #4cbbec;
+  color: white;
+}
+
+.utilities .popup .years-container h2 {
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  margin: 0px;
+  font-size: calc(40px * var(--coef));
+}
+
+.utilities .popup .month-container {
+  display: flex;
+  gap: calc(20px * var(--coef)) calc(12px * var(--coef));
+  flex-wrap: wrap;
+
+  padding: 0px calc(10px * var(--coef)) calc(20px * var(--coef));
+}
+
+.utilities .popup-container span {
+  text-transform: capitalize;
+}
+.utilities .popup .month {
+  width: 30%;
+  border: 1px solid #4cbbec;
+  height: calc(52px * var(--coef));
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  text-transform: capitalize;
+  font-style: normal;
+  font-weight: 100;
+  font-size: calc(18px * var(--coef));
+}
+
+.utilities .popup .years {
+  display: flex;
+}
+
+.utilities .popup .left-arrow {
+  margin-right: calc(20px * var(--coef));
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.utilities .popup .right-arrow {
+  margin-left: calc(20px * var(--coef));
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.utilities .popup .years-container .close-btn-icon {
+  width: calc(15px * var(--coef));
+  height: calc(15px * var(--coef));
+  cursor: pointer;
+}
+
+.utilities .popup-container {
+  position: relative;
+}
+
+.utilities .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal-confirmation.custom-modal,
+#modal-refusal.custom-modal,
+#modal-warning.custom-modal,
+#modal-appointment-confirmation.custom-modal {
+  width: 33%;
+}
+
+#modal-confirmation.modal.custom-modal .modal-content,
+#modal-refusal.modal.custom-modal .modal-content,
+#modal-warning.modal.custom-modal .modal-content,
+#modal-appointment-confirmation.modal.custom-modal .modal-content {
+  width: 100%;
+  padding: calc(50px * var(--coef)) 0;
+}
+#modal-confirmation.modal.custom-modal .modal-content #message,
+#modal-refusal.modal.custom-modal .modal-content #message,
+#modal-warning.modal.custom-modal .modal-content #message,
+#modal-appointment-confirmation.modal.custom-modal .modal-content #message {
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#modal-appointment-confirmation.modal.custom-modal .btn.validate {
+  padding-left: calc(10px * var(--coef));
+  padding-right: calc(10px * var(--coef));
+}
+
+#modal-warning.modal .btn.validate {
+  padding: 0 calc(80px * var(--coef)) 0 calc(78px * var(--coef));
+}
+
+#modal-confirmation.modal.custom-modal .modal-content #message .message-title,
+#modal-refusal.modal.custom-modal .modal-content #message .message-title,
+#modal-warning.modal.custom-modal .modal-content #message .message-title,
+#modal-appointment-confirmation.modal.custom-modal
+  .modal-content
+  #message
+  .message-title {
+  margin: calc(5px * var(--coef)) calc(10px * var(--coef))
+    calc(32px * var(--coef)) calc(10px * var(--coef));
+}
+
+/*—————————————————————————————————
+        BEGIN TABLE COMPONENT
+  —————————————————————————————————*/
+
+.agent_cadre_table .table-container {
+  margin-top: calc(55px * var(--coef));
+  box-shadow: 0px 3px 15px rgb(0 0 0 / 12%);
+  padding: 0px calc(50px * var(--coef)) calc(31px * var(--coef));
+  border-radius: calc(15px * var(--coef));
+}
+
+.agent_cadre_table .table-picker-container {
+  margin-top: calc(50px * var(--coef));
+  max-width: calc(1114px * var(--coef));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agent_cadre_table .table-picker-container table {
+  width: 100%;
+}
+
+.agent_cadre_table tr:nth-child(even),
+.agent_cadre_table tr.last {
+  background-color: #f5f5f5;
+  border-bottom: #f0f0f0 calc(10px * var(--coef)) solid;
+}
+
+.agent_cadre_table table.stries thead th {
+  background: none;
+  height: calc(45px * var(--coef));
+}
+
+.agent_cadre_table .table-picker-container .cadre_table .btns {
+  margin-left: calc(10px * var(--coef));
+}
+
+.agent_cadre_table td,
+.agent_cadre_table th {
+  padding: calc(11px * var(--coef)) 0px;
+}
+
+.agent_cadre_table table.stries td {
+  height: calc(16px * var(--coef));
+}
+
+.agent_cadre_table table.stries tbody tr {
+  box-shadow: 0px 3px 35px rgb(0 0 0 / 8%);
+}
+
+.agent_cadre_table .table.stries {
+  margin-top: calc(55px * var(--coef));
+}
+
+.agent_cadre_table .table.stries td {
+  font-size: calc(22px * var(--coef));
+  height: calc(26px * var(--coef));
+}
+
+.agent_cadre_table .table.stries thead th {
+  background: none;
+}
+
+.agent_cadre_table .table.stries thead th,
+.agent_cadre_table td {
+  font-family: "Roboto";
+}
+
+.agent_cadre_table .cadre_table {
+  position: relative;
+  box-shadow: 0px 3px 15px rgb(0 0 0 / 12%);
+  padding: calc(10px * var(--coef)) calc(50px * var(--coef))
+    calc(30px * var(--coef)) calc(50px * var(--coef));
+}
+
+.agent_cadre_table .table-picker-container .stries-table-container {
+  overflow-x: overlay;
+}
+/*—————————————————————————————————
+          END TABLE COMPONENT
+    —————————————————————————————————*/
+
+/*—————————————————————————————————
+        SOCIAL NETWORKS
+  —————————————————————————————————*/
+.social-media {
+  height: calc(42px * var(--coef));
+  width: calc(267px * var(--coef));
+  border-radius: calc(15px * var(--coef));
+  display: flex;
+  align-items: center;
+  padding: calc(12px * var(--coef)) calc(20px * var(--coef));
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.08);
+}
+
+.social_networks-page .shadow {
+  box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.08);
+}
+
+.social-media h2 {
+  margin-left: calc(40px * var(--coef)) !important;
+  margin: 0px;
+  height: calc(30px * var(--coef));
+  font-size: calc(26px * var(--coef));
+  font-weight: 500;
+  line-height: calc(30px * var(--coef));
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4cbbec;
+}
+
+.social_networks-page .header-section {
+  margin-bottom: calc(96px * var(--coef));
+}
+
+.social_networks-page .header-section p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(24px * var(--coef));
+  line-height: calc(28px * var(--coef));
+}
+
+.social_networks-page .header-section,
+.social_networks-page .social-bloc {
+  max-width: calc(960px * var(--coef));
+}
+
+.social_networks-page .social-div {
+  justify-content: space-between;
+}
+
+.social_networks-page .article-header {
+  margin-bottom: calc(62px * var(--coef));
+  font-weight: 500;
+  font-size: calc(35px * var(--coef));
+  line-height: calc(41px * var(--coef));
+  margin-top: 0px;
+}
+
+.social_networks-page .social-bloc div a {
+  font-style: normal;
+  font-size: calc(24px * var(--coef));
+  font-weight: 600;
+  line-height: calc(28px * var(--coef));
+  letter-spacing: 0em;
+  text-align: left;
+  font-variant: small-caps;
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+.social_networks-page .social-bloc {
+  margin-bottom: calc(28px * var(--coef));
+}
+
+.social_networks-page .social {
+  width: 100%;
+  display: flex;
+  margin-bottom: calc(34px * var(--coef));
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social_networks-page .social-links_header {
+  width: 100%;
+  margin-top: calc(60px * var(--coef));
+  margin-bottom: calc(15px * var(--coef));
+}
+
+.social_networks-page .text-description {
+  display: flex;
+  justify-content: end;
+}
+
+.social_networks-page .row-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: calc(40px * var(--coef));
+}
+
+.social-form .row-social:first-child {
+  margin-top: calc(12px * var(--coef));
+}
+
+.social_networks-page .desc-link {
+  margin-left: calc(30px * var(--coef));
+  height: calc(40px * var(--coef));
+  width: calc(483px * var(--coef));
+  font-weight: 400;
+  font-size: calc(18px * var(--coef));
+  line-height: calc(21px * var(--coef));
+  color: #878787;
+}
+
+.social_networks-page .link-desc {
+  margin-left: calc(30px * var(--coef));
+  height: calc(40px * var(--coef));
+  width: calc(468px * var(--coef));
+}
+
+.desc-abonner input {
+  width: calc(135px * var(--coef));
+  height: calc(27px * var(--coef));
+  height: 100%;
+  border: none;
+  padding-left: calc(15px * var(--coef));
+  outline: none;
+  line-height: 150%;
+  font-weight: 300;
+  font-size: calc(18px * var(--coef));
+  line-height: calc(21px * var(--coef));
+  color: #878787;
+}
+
+.social_networks-page .desc-abonner {
+  width: calc(307px * var(--coef));
+  font-size: calc(18px * var(--coef));
+  font-weight: 400;
+  line-height: calc(21px * var(--coef));
+  margin-left: calc(90px * var(--coef));
+  height: calc(40px * var(--coef));
+  color: #878787;
+}
+
+.link-desc input {
+  background: transparent;
+  line-height: 150%;
+  font-weight: 300;
+  height: 100%;
+  font-size: calc(18px * var(--coef));
+  line-height: calc(21px * var(--coef));
+  color: #878787;
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.link-desc,
+.desc-abonner {
+  overflow: hidden;
+  box-shadow: 0px 3px calc(35px * var(--coef)) rgba(0, 0, 0, 0.08);
+  width: 100%;
+  height: 100%;
+  padding-left: calc(15px * var(--coef));
+  border-radius: calc(15px * var(--coef));
+  line-height: 150%;
+  font-weight: 300;
+  font-size: calc(18px * var(--coef));
+  line-height: calc(21px * var(--coef));
+  color: #878787;
+}
+
+.desc-abonner.text {
+  box-shadow: none;
+  overflow: visible;
+  padding-left: 0px;
+  margin-right: calc(15px * var(--coef));
+}
+
+body:has(.social_networks-page) {
+  overflow-x: hidden;
+}
+
+.link-desc {
+  display: flex;
+  align-items: center;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #878787;
+  font-size: calc(18px * var(--coef));
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #878787;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #878787;
+}
+
+.desc-abonner {
+  display: flex;
+  align-items: center;
+  padding-left: calc(15px * var(--coef));
+  justify-content: left;
+}
+
+.desc-abonner img {
+  width: calc(34px * var(--coef));
+  height: calc(21px * var(--coef));
+  margin-left: calc(5px * var(--coef));
+}
+
+.desc-abonner p {
+  font-weight: 300;
+  font-size: calc(18px * var(--coef));
+  line-height: 150%;
+}
+
+.desc-abonner input {
+  padding: 0px !important;
+}
+
+.mb-106 {
+  margin-bottom: calc(106px * var(--coef));
+}
+
+.table-social-icon {
+  display: flex;
+  align-items: center;
+  height: calc(65px * var(--coef));
+}
+
+.table-social-icon h2 {
+  font-weight: 500;
+  font-size: calc(26px * var(--coef));
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: calc(30px * var(--coef));
+  margin-left: calc(15px * var(--coef));
+  color: #000000;
+  min-width: calc(119px * var(--coef));
+}
+
+.p-13 {
+  padding: calc(13px * var(--coef));
+}
+
+.br-15 {
+  border-radius: calc(15px * var(--coef));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.save-btn {
+  text-align: center;
+  margin-top: calc(63px * var(--coef));
+}
+
+.save-btn button:hover {
+  background-color: var(--blue);
+  color: #fbfbfb;
+}
+
+.save-btn button {
+  width: calc(306px * var(--coef));
+  background: #fbfbfb;
+  color: var(--blue);
+  border: none;
+  border-radius: calc(var(--coef) * 14px);
+  font-weight: 400;
+  font-size: calc(25px * var(--coef));
+  line-height: calc(29px * var(--coef));
+  box-shadow: 0px 3px calc(35px * var(--coef)) rgba(0, 0, 0, 0.08);
+  height: calc(85px * var(--coef));
+}
+
+/*—————————————————————————————————
+       END  SOCIAL NETWORKS
+  —————————————————————————————————*/
+
+/*—————————————————————————————————
+       Begin My sales
+  —————————————————————————————————*/
+.my-sales.title {
+  max-width: calc(1114px * var(--coef));
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: calc(100px * var(--coef));
+}
+
+.my-sales.title h1 {
+  font-size: calc(35px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.my-sales.title p {
+  font-size: calc(24px * var(--coef));
+  color: #878787;
+}
+
+.my-sales .div_criteres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(30px * var(--coef));
+  margin-bottom: calc(50px * var(--coef));
+  z-index: 10;
+  position: relative;
+}
+
+.my-sales .table-container {
+  margin-top: calc(55px * var(--coef));
+  box-shadow: 0px 3px 15px rgb(0 0 0 / 12%);
+  padding: 0px calc(50px * var(--coef)) calc(31px * var(--coef));
+  border-radius: calc(15px * var(--coef));
+}
+
+.my-sales .table-picker-container {
+  margin-top: calc(50px * var(--coef));
+  max-width: calc(1114px * var(--coef));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-sales .table-picker-container table {
+  width: 100%;
+}
+
+.my-sales tr:nth-child(even),
+.my-sales tr.last {
+  background-color: #f5f5f5;
+  border-bottom: #f0f0f0 calc(10px * var(--coef)) solid;
+}
+
+.my-sales table.stries thead th {
+  background: none;
+  height: calc(45px * var(--coef));
+}
+
+.my-sales .table-picker-container .cadre_table .btns {
+  margin-left: calc(10px * var(--coef));
+}
+
+.my-sales td,
+.my-sales th {
+  padding: calc(11px * var(--coef)) 0px;
+}
+
+.my-sales .btns .btn.spe1 {
+  margin-top: 0px;
+  margin-left: calc(-10px * var(--coef));
+  padding: 0 calc(60px * var(--coef)) 0 calc(28px * var(--coef));
+}
+
+.my-sales .btn.spe1 img {
+  vertical-align: top;
+  margin-right: calc(48px * var(--coef));
+}
+
+.my-sales .table.stries {
+  margin-top: calc(55px * var(--coef));
+}
+
+.my-sales .table.stries td {
+  font-size: calc(22px * var(--coef));
+  height: calc(26px * var(--coef));
+}
+
+.my-sales .table.stries thead th {
+  background: none;
+}
+
+.my-sales .table.stries thead th,
+.my-sales td {
+  font-family: "Roboto";
+}
+
+.my-sales .facturation {
+  text-align: center;
+  margin-top: calc(50px * var(--coef));
+}
+
+.my-sales .facturation a {
+  color: var(--blue);
+  font-size: calc(22px * var(--coef));
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.my-sales .cadre_table {
+  position: relative;
+  box-shadow: 0px 3px 15px rgb(0 0 0 / 12%);
+  padding: calc(10px * var(--coef)) calc(50px * var(--coef))
+    calc(30px * var(--coef)) calc(50px * var(--coef));
+}
+
+.my-sales .table-picker-container .stries-table-container {
+  overflow-x: overlay;
+}
+
+.my-sales table.stries td {
+  height: calc(16px * var(--coef));
+}
+
+.my-sales table.stries tbody tr {
+  box-shadow: 0px 3px 35px rgb(0 0 0 / 8%);
+}
+
+/*—————————————————————————————————
+       End My sales
+  —————————————————————————————————*/
+
+/*—————————————————————————————————
+       Begin comment_communication
+  —————————————————————————————————*/
+.help-and-support p {
+  color: #878787;
+}
+
+.comment_communication.page .first-bloc,
+.comment_communication.page .second-bloc {
+  max-width: calc(1114px * var(--coef));
+  margin-left: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-right: auto;
+}
+
+.comment_communication.page h1 {
+  font-weight: 500;
+}
+
+.comment_communication.page p {
+  font-weight: 400;
+  line-height: calc(35px * var(--coef));
+}
+
+.comment_communication.page .first-bloc {
+  margin-top: calc(40px * var(--coef));
+}
+
+.comment_communication.page .first-bloc,
+.comment_communication.page .second-bloc {
+  margin-bottom: calc(100px * var(--coef));
+}
+
+.comment_communication.page .first-bloc h1 {
+  font-size: calc(35px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.comment_communication.page .first-bloc p {
+  font-size: calc(23.5px * var(--coef));
+  line-height: calc(28.13px * var(--coef));
+  color: #878787;
+}
+
+.comment_communication.page .second-bloc h1 {
+  font-size: calc(30px * var(--coef));
+  margin-bottom: calc(50px * var(--coef));
+}
+
+.comment_communication.page .second-bloc p {
+  font-size: calc(23.5px * var(--coef));
+}
+
+/*—————————————————————————————————
+       End comment_communication
+  —————————————————————————————————*/
+
+/*—————————————————————————————————
+        Begin comment_general
+  —————————————————————————————————*/
+.comment_general.page .first-bloc {
+  max-width: calc(1114px * var(--coef));
+  margin-left: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-right: auto;
+}
+
+.comment_general.page h1 {
+  font-weight: 500;
+}
+
+.comment_general.page p {
+  font-weight: 400;
+  line-height: calc(35px * var(--coef));
+}
+
+.comment_general.page .first-bloc {
+  margin-top: calc(40px * var(--coef));
+}
+
+.comment_general.page .first-bloc {
+  margin-bottom: calc(100px * var(--coef));
+}
+
+.comment_general.page .first-bloc h1 {
+  font-size: calc(35px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.comment_general.page .first-bloc p {
+  font-size: calc(23.5px * var(--coef));
+  line-height: calc(28.13px * var(--coef));
+  color: #878787;
+}
+
+/*—————————————————————————————————
+        Begin cgu
+  —————————————————————————————————*/
+
+.cgu.page .first-bloc,
+.cgu.page .second-bloc {
+  max-width: calc(1114px * var(--coef));
+  margin-left: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-right: auto;
+}
+
+.cgu.page h1 {
+  font-weight: 500;
+}
+.cgu.page p {
+  font-weight: 400;
+  line-height: calc(35px * var(--coef));
+}
+
+.cgu.page .first-bloc {
+  margin-top: calc(40px * var(--coef));
+}
+
+.cgu.page .first-bloc,
+.cgu.page .second-bloc {
+  margin-bottom: calc(100px * var(--coef));
+}
+.cgu.page .first-bloc h1 {
+  font-size: calc(35px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.cgu.page .first-bloc p {
+  font-size: calc(23.5px * var(--coef));
+  line-height: calc(28.13px * var(--coef));
+  color: #878787;
+}
+
+.cgu.page .second-bloc h1 {
+  font-size: calc(30px * var(--coef));
+  margin-bottom: calc(50px * var(--coef));
+}
+
+.cgu.page .second-bloc p {
+  font-size: calc(24px * var(--coef));
+}
+/*—————————————————————————————————
+        end cgu
+  —————————————————————————————————*/
+
+/*—————————————————————————————————
+        Begin gain
+  —————————————————————————————————*/
+
+.gain.page .first-bloc,
+.gain.page .second-bloc {
+  max-width: calc(1114px * var(--coef));
+  margin-left: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-right: auto;
+}
+
+.gain.page h1 {
+  font-weight: 500;
+}
+
+.gain.page p {
+  font-weight: 400;
+  line-height: calc(35px * var(--coef));
+}
+
+.gain.page .first-bloc {
+  margin-top: calc(40px * var(--coef));
+}
+
+.gain.page .first-bloc,
+.gain.page .second-bloc {
+  margin-bottom: calc(100px * var(--coef));
+}
+
+.gain.page .first-bloc h1 {
+  font-size: calc(35px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.gain.page .first-bloc p {
+  font-size: calc(23.5px * var(--coef));
+  line-height: calc(28.13px * var(--coef));
+  color: #878787;
+}
+
+.gain.page .second-bloc h1 {
+  font-size: calc(30px * var(--coef));
+  margin-bottom: calc(50px * var(--coef));
+}
+
+.gain.page .second-bloc p {
+  font-size: calc(24px * var(--coef));
+}
+/*—————————————————————————————————
+        end gain
+  —————————————————————————————————*/
+
+/*—————————————————————————————————
+        Begin mails-relance
+  —————————————————————————————————*/
+
+.mails-relance.page .first-bloc {
+  max-width: calc(1114px * var(--coef));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mails-relance.page .first-bloc h1 {
+  font-weight: 500;
+  margin-bottom: calc(20px * var(--coef));
+  font-size: calc(35px * var(--coef));
+}
+
+.mails-relance.page .first-bloc p {
+  color: #878787;
+  font-weight: 400;
+  font-size: calc(24px * var(--coef));
+  margin-bottom: calc(100px * var(--coef));
+}
+
+.mails-relance.page .p1 {
+  max-width: calc(1114px * var(--coef));
+  margin-right: auto;
+  width: calc(630px * var(--coef));
+  height: calc(50px * var(--coef));
+  box-shadow: 0px 3px calc(35px * var(--coef)) rgb(0 0 0 / 8%);
+  display: flex;
+  align-items: center;
+  padding-left: calc(30px * var(--coef));
+  border-radius: calc(15px * var(--coef));
+  font-weight: 300;
+  font-size: calc(20px * var(--coef));
+  padding-top: calc(-12px * var(--coef));
+  padding-bottom: calc(-12px * var(--coef));
+  color: #878787;
+}
+
+.mails-relance.page .p2 {
+  display: flex;
+  max-width: calc(1114px * var(--coef));
+  margin-right: auto;
+  border-radius: calc(15px * var(--coef));
+  box-shadow: 0px 3px calc(35px * var(--coef)) rgb(0 0 0 / 8%);
+  width: calc(791px * var(--coef));
+  height: calc(238px * var(--coef));
+  margin-top: calc(50px * var(--coef));
+  padding-left: calc(30px * var(--coef));
+  padding-top: calc(20px * var(--coef));
+  font-weight: 300;
+  font-size: calc(20px * var(--coef));
+  color: #878787;
+}
+
+.mails-relance.page .p2 img {
+  margin-top: auto;
+  margin-left: auto;
+  padding: calc(20px * var(--coef));
+}
+
+.mails-relance.page form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(100px * var(--coef));
+  max-width: calc(1114px * var(--coef));
+  width: calc(740px * var(--coef));
+  height: calc(44px * var(--coef));
+  margin-left: calc(70px * var(--coef));
+}
+
+.mails-relance.page .title-input {
+  border: none;
+  margin-right: 0px;
+  outline: none;
+  width: calc(630px * var(--coef));
+  box-shadow: 0px 3px calc(35px * var(--coef)) rgba(0, 0, 0, 0.08);
+  border-radius: calc(15px * var(--coef));
+  padding-left: calc(12px * var(--coef));
+  color: #878787;
+  height: calc(50px * var(--coef));
+  display: flex;
+  align-items: center;
+}
+
+.mails-relance.page .title-input input {
+  width: 100%;
+}
+
+.mails-relance.page input {
+  font-weight: 300;
+  color: var(--light-grey);
+  font-size: calc(22px * var(--coef));
+}
+
+.mails-relance.page .message-input {
+  position: relative;
+  margin-top: calc(50px * var(--coef));
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 0px 3px calc(35px * var(--coef)) rgba(0, 0, 0, 0.08);
+  border-radius: calc(15px * var(--coef));
+}
+
+.mails-relance.page .message-input textarea {
+  width: calc(791px * var(--coef));
+  outline: none;
+  resize: none;
+  border: none;
+  border-radius: calc(15px * var(--coef));
+  height: calc(238px * var(--coef));
+  padding-top: 10px;
+  padding-left: 10px;
+  color: var(--light-grey);
+  font-weight: 300;
+}
+
+.mails-relance.page input[type="text"] {
+  border: none;
+  outline: none;
+}
+
+.mails-relance.page .checkbox-wrapper-19 .check-box {
+  height: var(--checkbox-height);
+  width: var(--checkbox-height);
+  background-color: transparent;
+  border: calc(var(--checkbox-height) * 0.1) solid var(--blue);
+}
+
+.mails-relance.page ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  vertical-align: middle;
+
+  padding-top: calc(10px * var(--coef));
+  padding-left: calc(15px * var(--coef));
+  font-size: calc(22px * var(--coef));
+}
+
+.mails-relance.page button[type="submit"] {
+  border: none;
+  background-color: white;
+  color: #4cbbec;
+  font-size: 16px;
+  padding: calc(10px * var(--coef)) calc(20px * var(--coef));
+  cursor: pointer;
+  border-radius: calc(15px * var(--coef));
+  box-shadow: 0px 3px calc(35px * var(--coef)) rgb(0 0 0 / 8%);
+  font-weight: 400;
+  font-size: calc(25px * var(--coef));
+  padding-bottom: calc(10px * var(--coef));
+}
+
+.mails-relance.page.page .submitBtn {
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mails-relance.page .btns .btn.spe1 {
+  margin-top: 0px;
+  margin-left: calc(-10px * var(--coef));
+  padding: 0 calc(60px * var(--coef)) 0 calc(28px * var(--coef));
+}
+
+.mails-relance.page .btn.spe1 img {
+  vertical-align: top;
+  margin-right: calc(48px * var(--coef));
+}
+
+/* Recherche
+  */
+.mails-relance_search {
+  margin-top: calc(100px * var(--coef));
+  margin-bottom: calc(100px * var(--coef));
+  display: flex;
+  height: calc(77px * var(--coef));
+  align-items: center;
+}
+
+.mails-relance_search .search_container {
+  display: flex;
+  gap: calc(16px * var(--coef));
+  align-items: center;
+  height: calc(77px * var(--coef));
+}
+
+.mails-relance_search .search_container .search_modal {
+  height: 100%;
+}
+.mails-relance_search .search_container .search_modal .search_input {
+  border: solid 2px var(--blue);
+  border-radius: calc(15px * var(--coef));
+  padding-left: calc(5px * var(--coef));
+  width: calc(470px * var(--coef));
+  gap: calc(0px * var(--coef));
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.mails-relance_search
+  .search_container
+  .search_modal
+  .search_input
+  .input-controller {
+  width: 100%;
+  color: var(--light-grey);
+  padding-left: 5px;
+  font-weight: 400;
+}
+
+.mails-relance_search .search_container button {
+  text-transform: uppercase;
+  color: var(--blue);
+  background-color: var(--white-claire);
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+  font-size: calc(25px * var(--coef));
+  border: none;
+  height: calc(70px * var(--coef));
+  border-radius: calc(15px * var(--coef));
+  padding: calc(20px * var(--coef)) calc(73px * var(--coef));
+  cursor: pointer;
+  transition: ease-out 300ms;
+  margin-bottom: 0px;
+  margin-top: calc(5px * var(--coef));
+}
+
+.mails-relance_search .search_container button:hover {
+  color: var(--white-claire);
+  background-color: var(--blue);
+}
+
+.mails-relance_search .search_container .search_modal .search_suggestions {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  transition: ease-in 300ms;
+}
+
+.mails-relance_search
+  .search_container
+  .search_modal
+  .search_suggestions.hidden {
+  display: none;
+}
+
+.mails-relance_search
+  .search_container
+  .search_modal
+  .search_suggestions
+  .clients_suggestions {
+  background-color: var(--white-claire);
+  border: 1px solid var(--blue);
+  border-radius: calc(15px * var(--coef));
+  padding: calc(10px * var(--coef)) calc(55px * var(--coef));
+  margin-top: calc(15px * var(--coef));
+}
+
+.mails-relance_search
+  .search_container
+  .search_modal
+  .search_suggestions
+  .clients_suggestions
+  p {
+  color: var(--main-color);
+  font-size: calc(22px * var(--coef));
+  cursor: pointer;
+}
+
+.mails-relance_search
+  .search_container
+  .search_modal
+  .search_suggestions
+  .clients_suggestions
+  p:hover {
+  color: var(--blue);
+}
+
+.mails-relance_search .search_container .search_modal {
+  position: relative;
+}
+
+.mails-relance.page .cadre_table {
+  padding: calc(16px * var(--coef));
+}
+
+.mails-relance.page .table-picker-container .stries-table-container {
+  overflow-x: hidden;
+}
+
+.mails-relance.page .submitBtn {
+  margin: calc(50px * var(--coef)) auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+.submitBtn button {
+  text-transform: uppercase;
+  line-height: calc(30px * var(--coef));
+  color: var(--blue);
+  background-color: var(--white-claire);
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+  font-size: calc(25px * var(--coef));
+  border: none;
+  border-radius: calc(15px * var(--coef));
+  padding: calc(28px * var(--coef)) calc(105px * var(--coef));
+  cursor: pointer;
+  transition: ease-out 300ms;
+}
+
+.submitBtn button:hover {
+  color: var(--white-claire);
+  background-color: var(--blue);
+}
+
+/*—————————————————————————————————
+        End mails-relance
+  —————————————————————————————————*/
+—————————————————————————————————*/
+
+/*—————————————————————————————————
+        Begin my-billing
+  —————————————————————————————————*/
+.my-billing.page .facturation-bloc {
+  max-width: calc(952px * var(--coef));
+  margin-left: calc(138px * var(--coef));
+}
+
+.my-billing.page .facturation-bloc h1 {
+  font-size: calc(35px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.my-billing.page .btn.spe1 img {
+  margin-right: calc(48px * var(--coef));
+  font-size: calc(24px * var(--coef));
+}
+
+.my-billing.page .facturation-bloc p {
+  font-size: calc(24px * var(--coef));
+  margin-bottom: calc(43px * var(--coef));
+  color: #878787;
+}
+
+.my-billing.page .bills-bloc {
+  max-width: calc(952px * var(--coef));
+  margin-left: calc(138px * var(--coef));
+}
+
+.my-billing.page .transaction-details {
+  display: flex;
+  align-items: center;
+  padding: 0 calc(30px * var(--coef));
+  background: #fbfbfb;
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+  border-radius: calc(15px * var(--coef));
+  max-width: calc(952px * var(--coef));
+}
+
+.my-billing.page .transaction-container {
+  margin-top: calc(41px * var(--coef));
+}
+
+.my-billing.page .transaction-details {
+  margin-bottom: calc(8px * var(--coef));
+}
+
+.my-billing.page .transaction-details h3 {
+  width: calc(454px * var(--coef));
+  font-size: calc(24px * var(--coef));
+  font-weight: 500;
+  margin-top: calc(9px * var(--coef));
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: calc(13px * var(--coef));
+}
+
+.my-billing.page .transaction-details p {
+  width: calc(307px * var(--coef));
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-top: calc(9px * var(--coef));
+  font-weight: 400;
+  font-size: calc(22px * var(--coef));
+  margin-bottom: calc(13px * var(--coef));
+}
+
+.my-billing.page .transaction-details span {
+  margin-top: calc(9px * var(--coef));
+  width: calc(207px * var(--coef));
+  font-size: calc(22px * var(--coef));
+  text-align: right;
+  color: var(--blue);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: calc(13px * var(--coef));
+}
+
+.my-billing.page .additional-sales {
+  margin-top: calc(84px * var(--coef));
+}
+.my-billing.page .additional-sales h3 {
+  font-size: calc(24px * var(--coef));
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.my-billing.page .affiliation {
+  max-width: calc(952px * var(--coef));
+  margin-top: calc(166px * var(--coef));
+}
+
+.my-billing.page .affiliation-details {
+  padding: 0 calc(30px * var(--coef));
+  display: flex;
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+  border-radius: calc(15px * var(--coef));
+  align-items: center;
+  margin-bottom: calc(20px * var(--coef));
+  justify-content: space-between;
+}
+
+.my-billing.page .affiliation-details h3 {
+  font-size: calc(24px * var(--coef));
+  font-weight: 500;
+  margin-top: calc(9px * var(--coef));
+  margin: calc(10px * var(--coef)) 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.my-billing.page .affiliation-details span {
+  font-size: calc(22px * var(--coef));
+  text-align: right;
+  color: var(--blue);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.my-billing.page .affiliation-details.blue-bloc {
+  background: var(--blue);
+}
+.my-billing.page .affiliation-details.blue-bloc h3,
+.my-billing.page .affiliation-details.blue-bloc span {
+  color: white;
+}
+
+.my-billing.page .affiliation-message {
+  display: flex;
+  flex-direction: column;
+  padding: 0 calc(30px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+  border-radius: calc(15px * var(--coef));
+}
+
+.my-billing.page .payment {
+  display: flex;
+  align-items: center;
+  margin-top: calc(10px * var(--coef));
+  justify-content: space-between;
+}
+
+.my-billing.page .payment h3 {
+  font-size: calc(24px * var(--coef));
+  font-weight: 500;
+  font-family: "Roboto";
+  margin-bottom: 0px;
+  margin-top: calc(10px * var(--coef));
+  font-style: normal;
+  text-transform: capitalize;
+}
+
+.my-billing.page .payment span {
+  font-size: calc(22px * var(--coef));
+  text-align: right;
+  color: var(--blue);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.my-billing.page .description {
+  margin-top: calc(25px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.my-billing.page .description p {
+  margin: 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(22px * var(--coef));
+  color: #878787;
+}
+
+.my-billing.page .payment-btn {
+  text-align: center;
+  margin-top: calc(50px * var(--coef));
+}
+
+.my-billing.page .payment-btn button {
+  background: white;
+  width: calc(306px * var(--coef));
+  height: calc(85px * var(--coef));
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  border-radius: calc(15px * var(--coef));
+  font-size: calc(20px * var(--coef));
+  text-transform: uppercase;
+  padding: 0px;
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+  border: none;
+  color: var(--blue);
+}
+
+.my-billing.page .payment-btn button:hover {
+  background-color: var(--blue);
+  color: var(--main-bg-color);
+}
+
+.my-billing.page .next-payment {
+  margin-top: calc(25px * var(--coef));
+  text-align: center;
+}
+
+.my-billing.page .cadre_table {
+  display: none;
+}
+
+.my-billing.page .next-payment p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0px;
+  font-size: calc(var(--coef) * 22px);
+  color: #878787;
+}
+
+.my-billing.page table.stries tbody tr {
+  box-shadow: 0px 3px calc(var(--coef) * 35px) rgb(0 0 0 / 8%);
+  border-radius: calc(var(--coef) * 15px);
+}
+
+/*—————————————————————————————————
+        end my-billing
+  —————————————————————————————————*/
+
+/*—————————————————————————————————
+        Begin planning
+  —————————————————————————————————*/
+.planning-page {
+  margin-left: calc(131px * var(--coef));
+  max-width: calc(952px * var(--coef));
+}
+
+.planning-page .cs-selecteur-horaires-timepicker .cs-time-sg {
+  max-width: calc(101px * var(--coef));
+}
+
+.planning-page .cs-mon-calendrier-container {
+  max-width: calc(792px * var(--coef));
+  width: calc(792px * var(--coef));
+}
+.planning-page .cs-selecteur-horaires-header > p {
+  font-size: calc(24px * var(--coef));
+}
+.planning-page .cs-selecteur-horaires-header .cs-current-utc {
+  font-size: calc(20px * var(--coef));
+}
+.planning-page .slider-small .title {
+  width: calc(768px * var(--coef));
+  height: calc(89px * var(--coef));
+}
+
+.planning-page .slider-small .title h1 {
+  font-size: calc(35px * var(--coef));
+  line-height: calc(41px * var(--coef));
+  font-weight: 500;
+}
+.planning-page .slider-small .title p {
+  font-size: calc(24px * var(--coef));
+  line-height: calc(28px * var(--coef));
+  font-weight: 400;
+  color: #878787;
+  max-width: calc(768px * var(--coef));
+}
+
+.planning-page
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar
+  .dudp__weekdays
+  span {
+  font-size: calc(24px * var(--coef));
+}
+
+.planning-page
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar
+  .dudp__cal-week
+  .dudp__date {
+  font-size: calc(24px * var(--coef));
+}
+
+.planning-page .cs-mon-calendrier-bottom > p > span:last-child {
+  font-size: calc(20px * var(--coef));
+}
+
+.planning-page .cs-mon-calendrier-bottom > p > span:last-child {
+  font-size: calc(20px * var(--coef));
+}
+
+.planning-page .title.p-container {
+  margin-top: calc(50px * var(--coef));
+  height: auto;
+}
+
+.planning-page .slider-small .cs-mon-calendrier-section {
+  max-width: calc(792px * var(--coef));
+}
+
+.planning-page
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar
+  .dudp__weekdays
+  span {
+  font-size: calc(20px * var(--coef));
+  font-weight: 500;
+  width: calc(104px * var(--coef));
+}
+
+.planning-page
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar
+  .dudp__cal-week
+  .dudp__date {
+  width: calc(104px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.planning-page
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar-views {
+  width: calc(2500px * var(--coef));
+}
+
+.planning-page #cs-mon-calendrier .dcalendarpicker .dudp__cal-container {
+  width: calc(713px * var(--coef));
+}
+
+.planning-page .slider-small .cs-mon-calendrier-section {
+  padding: 0px;
+}
+
+.planning-page .dudp__cal-week:last-child {
+  display: none !important;
+}
+
+.planning-page .second-title h1 {
+  font-size: calc(24px * var(--coef));
+}
+
+.planning-page .second-title p {
+  font-size: calc(24px * var(--coef));
+  color: #878787;
+  width: calc(904px * var(--coef));
+  line-height: calc(36px * var(--coef));
+}
+
+.planning-page #cs-mon-calendrier .dudp__date.cs-completed:before {
+  border: 1px var(--blue) solid;
+}
+
+.planning-page
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar
+  .dudp__cal-month-year
+  .cal-month {
+  font-size: calc(30px * var(--coef));
+}
+
+.planning-page
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__calendar-header
+  .dudp__sel-year {
+  font-size: calc(28px * var(--coef));
+}
+.planning-page .cs-selecteur-horaires-timepicker {
+  width: 62%;
+}
+
+.planning-page .dudp__buttons {
+  height: calc(44px * var(--coef));
+  padding: 0px !important;
+}
+
+.planning-page .slider-small .title1 h1 {
+  font-size: calc(24px * var(--coef));
+  line-height: calc(36px * var(--coef));
+  font-weight: 500;
+}
+.planning-page .slider-small .title1 p {
+  font-size: calc(24px * var(--coef));
+  line-height: calc(36px * var(--coef));
+  font-weight: 400;
+  color: #878787;
+  width: calc(772px * var(--coef));
+}
+
+.planning-page .slider-small .title1 {
+  margin-top: calc(74px * var(--coef));
+  margin-left: calc(131px * var(--coef));
+}
+
+.planning-page .block2 .cs-selecteur-horaires {
+  margin-left: 0px;
+  margin-top: calc(15px * var(--coef));
+}
+
+.planning-page .block2 .cs-selecteur-horaires .cs-selecteur-horaires-body {
+  padding: 0px calc(20px * var(--coef)) calc(30px * var(--coef))
+    calc(20px * var(--coef));
+}
+
+.planning-page .second-title {
+  margin-top: calc(100px * var(--coef));
+}
+
+.planning-page .second-title h1 {
+  margin-top: 0px;
+}
+
+.planning-page .second-title p {
+  margin-bottom: calc(0px * var(--coef));
+}
+.planning-page ._utilities_tabs {
+  display: none;
+}
+
+.planning-page .planning-btn-container {
+  text-align: center;
+  margin-top: calc(40px * var(--coef));
+}
+
+.planning-page .planning-btn-container button {
+  width: calc(306px * var(--coef));
+  font-size: calc(25px * var(--coef));
+  border: none;
+  background: white;
+  text-transform: uppercase;
+  border-radius: calc(15px * var(--coef));
+  color: #4cbbec;
+  box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.08);
+  height: calc(85px * var(--coef));
+}
+
+/*—————————————————————————————————
+      END PLANNING
+  —————————————————————————————————*/
+
+/*—————————————————————————————————
+        Begin appointments
+  —————————————————————————————————*/
+
+.appointments-page article {
+  margin-bottom: calc(50px * var(--coef));
+  max-width: calc(1114px * var(--coef));
+}
+
+.appointments-page table.stries thead th {
+  background: transparent;
+}
+
+.appointments-page .cadre_table {
+  margin-bottom: calc(51px * var(--coef));
+}
+
+.appointments-page {
+  max-width: calc(1114px * var(--coef));
+}
+
+.appointments-page th.date {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointments-page th.date span {
+  font-weight: 400;
+}
+
+.appointments-page input[type="checkbox"] {
+  width: calc(25px * var(--coef));
+  height: calc(25px * var(--coef));
+  cursor: pointer;
+}
+
+.appointments-page .btn-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 10px;
+}
+
+.modal#modal-appointment {
+  height: 100vh;
+  background: white;
+  margin-top: calc(20px * var(--coef));
+  margin-left: calc(127px * var(--coef));
+}
+.modal#modal-appointment .cs-selecteur-horaires-timepicker {
+  width: 100%;
+}
+
+.modal#modal-appointment .cs-selecteur-horaires {
+  margin: calc(3px * var(--coef)) auto;
+}
+
+.modal#modal-appointment ._utilities_tabs {
+  height: calc(0px * var(--coef));
+}
+
+.modal#modal-appointment .cs-selecteur-horaires {
+  max-width: calc(700px * var(--coef));
+  padding: 0 calc(100px * var(--coef));
+}
+.modal#modal-appointment .cs-selecteur-horaires-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.modal#modal-appointment .cs-mon-calendrier-bottom > p > span:last-child {
+  text-align: initial;
+}
+.modal#modal-appointment .cs-selecteur-horaires-timepicker .cs-time-sg {
+  max-width: calc(92px * var(--coef));
+  height: calc(50px * var(--coef));
+}
+
+.modal#modal-appointment .cs-selecteur-horaires-header > p {
+  width: fit-content;
+  font-weight: 400;
+}
+
+.modal#modal-appointment .second-title {
+  display: none;
+}
+
+.modal#modal-appointment .cs-selecteur-horaires-options {
+  width: 30%;
+  display: none;
+}
+
+.modal#modal-appointment .title h1 {
+  font-size: calc(24px * var(--coef));
+  text-align: left;
+  margin-top: 0px;
+}
+
+.modal#modal-appointment a.close-modal {
+  top: calc(32px * var(--coef));
+}
+
+.modal#modal-appointment .title {
+  margin-left: calc(0px * var(--coef));
+  margin-right: calc(0px * var(--coef));
+}
+.modal#modal-appointment .title p {
+  color: #878787;
+  font-size: calc(24px * var(--coef));
+  max-width: calc(694px * var(--coef));
+  text-align: left;
+}
+
+.modal#modal-appointment
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar-views {
+  width: calc(1750px * var(--coef));
+}
+
+#modal-appointment .cs-mon-calendrier-container {
+  margin: auto;
+}
+
+#modal-appointment
+  #cs-mon-calendrier
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar
+  .dudp__cal-week
+  .dudp__date {
+  margin-bottom: calc(6px * var(--coef));
+}
+
+.appointments-page .btn-group .btn {
+  text-transform: uppercase;
+  width: calc(300px * var(--coef));
+  border: none;
+  font-weight: 500;
+}
+.planning-page .cs-mon-calendrier-section .mask-div {
+  display: none;
+}
+.appointments-page .btn-grey {
+  color: var(--light-grey);
+  background-color: #ececec;
+}
+
+/* modal#modal-appointment
+  .dcalendarpicker
+  .dudp__cal-container
+  .dudp__calendar
+  .dudp__cal-week:last-child {
+  background: red;
+  margin-bottom: 0px;
+} */
+
+.appointments-page .btn-grey:hover,
+.appointments-page .btn-grey:focus {
+  background-color: var(--main-bg-color);
+  color: var(--blue);
+}
+
+/*—————————————————————————————————
+    End appointments
+—————————————————————————————————*/
+/*—————————————————————————————————
+        Begin dashboard
+  —————————————————————————————————*/
+.dashboard-page {
+  max-width: 82%;
+  margin: auto;
+}
+#modal-confirmation.custom-modal, #modal-refusal.custom-modal, #modal-warning.custom-modal, #modal-appointment-confirmation.custom-modal {
+  width: 33%;
+}
+.dashboard-page .title {
+  height: calc(41px * var(--coef));
+  width: calc(343px * var(--coef));
+}
+.dashboard-page .title h2 {
+  font-weight: 500;
+  font-size: calc(35px * var(--coef));
+  line-height: calc(41px * var(--coef));
+  color: #000000;
+}
+
+.dashboard-page .notification-container {
+  max-width: 100%;
+  padding-bottom: calc(20px * var(--coef));
+  border: 3px solid #ff9800;
+  box-shadow: 0px 3px calc(35px * var(--coef)) rgba(0, 0, 0, 0.08);
+  border-radius: calc(15px * var(--coef));
+  margin-top: calc(70px * var(--coef));
+}
+
+.dashboard-page td {
+  padding-bottom: calc(20px * var(--coef));
+  font-size: calc(24px * var(--coef));
+}
+
+.dashboard-page .notification-container .notification-block__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: calc(40px * var(--coef));
+}
+
+.dashboard-page .notification-container .notification-block__header .close-btn-container {
+  margin-right: calc(30px * var(--coef));
+}
+
+.dashboard-page .notification-container .notification-block__header .close-btn-container img {
+  width: calc(40px * var(--coef));
+  height: calc(40px * var(--coef));
+  cursor: pointer;
+}
+
+.dashboard-page .notification-container .notification-block__header h2 {
+  font-weight: 500;
+  font-size: calc(30px * var(--coef));
+  line-height: calc(35px * var(--coef));
+  color: #000000;
+  margin-left: 0px;
+}
+
+.dashboard-page .notification-container .notification-block__table {
+  margin-left: calc(40px * var(--coef));
+  margin-top: calc(23px * var(--coef));
+}
+
+.dashboard-page .notification-container .notification-block__table a {
+  text-decoration: underline;
+  color: #4cbbec;
+  margin-left: calc(16px * var(--coef));
+  margin-bottom: calc(20px * var(--coef));
+}
+
+.dashboard-page .dashboard-options {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(36px * var(--coef));
+  justify-content: space-around;
+  gap: 0px calc(74px * var(--coef));
+  align-items: center;
+}
+
+.dashboard-page .dashboard-options .dashboard-options__item {
+  width: calc(308px * var(--coef));
+  height: calc(175px * var(--coef));
+  border: solid 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  align-items: center;
+  margin-top: calc(25px * var(--coef));
+  border: none;
+  box-shadow: 0px 3px calc(var(--coef) * 35px) rgb(0 0 0 / 8%);
+  border-radius: calc(var(--coef) * 15px);
+}
+.dashboard-page .dashboard-options .dashboard-options__item-empty {
+  width: calc(308px * var(--coef));
+  height: calc(175px * var(--coef));
+}
+
+.dashboard-page .checkbox-wrapper-19 {
+  display: flex;
+}
+
+.dashboard-page .check-box.check.abled {
+  width: calc(30px * var(--coef));
+  height: calc(30px * var(--coef));
+  margin: 0px;
+}
+
+.dashboard-page .dashboard-options .dashboard-options__item h2 {
+  font-weight: 600;
+  font-size: calc(30px * var(--coef));
+  line-height: calc(35px * var(--coef));
+  color: #4cbbec;
+  margin: 0px;
+  text-align: center;
+}
+
+.dashboard-page .dashboard-options .dashboard-options__item:hover h2, .dashboard-page .dashboard-options .dashboard-options__item:hover p {
+  color: white;
+}
+
+.dashboard-page .dashboard-options .dashboard-options__item:hover {
+  background-color: var(--blue);
+}
+
+.dashboard-page .checkbox-wrapper-19 .check-box::after {
+  width: calc(var(--checkbox-height) * 0.2);
+}
+
+.dashboard-page .dashboard-options .dashboard-options__item p {
+  font-weight: 400;
+  font-size: calc(22px * var(--coef));
+  line-height: calc(24px * var(--coef));
+  color: #878787;
+  margin: 0px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.dashboard-page .checkbox-wrapper-19 .check-box::after {
+  width: calc(var(--checkbox-height) * 0.1);
+}
+
+.dashboard-page .checkbox-wrapper-19 .check-box::before {
+  width: calc(var(--checkbox-height) * 0.1);
+}
+
+.dashboard-page .checkbox-wrapper-19 .check-box {
+  border-color: #4cbbec !important;
+}
+
+.dashboard-page .checkbox-wrapper-19 .check-box {
+  height: var(--checkbox-height);
+  width: var(--checkbox-height);
+  background-color: transparent;
+  border: 2px solid #c5c5c5;
+}
+.dashboard-page .title h1 .hidden {
+  margin-left: 1px;
+}
+
+.dashboard-page .title h1 {
+  display: flex;
+}
+.dashboard-page #close {
+  position: absolute;
+  right: calc(20px * var(--coef));
+  color: #4cbbec;
+  top: calc(10px * var(--coef));
+  font-size: calc(40px * var(--coef));
+}
+.xmark:before {
+  content: "\f00d";
+}
+
+/*—————————————————————————————————
+        End dashboard
+  —————————————————————————————————*/

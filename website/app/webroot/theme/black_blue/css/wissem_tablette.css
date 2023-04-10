@@ -1,0 +1,414 @@
+@media screen and (max-width: 1024px) {
+    .promo_codes-page.page article.marge {
+        margin-right: 0;
+    }
+   
+    .promo_codes-page.page article.marge .promo_code_container{
+        width: 100%!important;;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card{
+        margin-top: calc(50px*var(--coef));
+        margin-bottom: calc(50px*var(--coef));
+        padding: calc(15px*var(--coef)) calc(30px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block p{
+        font-size: calc(18px*var(--coef));
+        line-height: calc(22px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups button {
+        font-size: calc(18px*var(--coef));
+        height: calc(60px*var(--coef));
+        width: calc(85px*var(--coef));
+    }
+     .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups .option label{
+        width: calc(100px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search {
+        margin-top: calc(50px*var(--coef));
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;  
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container .search_modal .search_input{
+        padding: calc(10px*var(--coef));
+        gap: 9px;
+        width: 100%;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container button{
+        padding: calc(0px*var(--coef)) calc(9px*var(--coef));
+        height: calc(36px*var(--coef));
+        font-size: calc(12px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container{
+        gap: calc(50px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups .option .icon img {
+        width: 50%;
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .clients_table .table_header span {
+        font-size: calc(18px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .card .block .options_groups .mode_block:last-child {
+        padding: 0;
+        gap: calc(25px*var(--coef));
+    }
+    .promo_codes-page.page article.marge .promo_code_container .promo-code_search .search_container .search_modal .search_suggestions .clients_suggestions {
+        background-color: var(--white-claire);
+        border: 1px solid var(--blue);
+        border-radius: 15px;
+        padding: calc(10px*var(--coef)) calc(33px*var(--coef));
+        margin-top: calc(15px*var(--coef));
+    }
+
+
+    .oeuvres_caritatives_bg .oeuvres_caritatives{
+        margin: calc(50px*var(--coef)) calc(100px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container{
+        gap: calc(15px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .header h1{
+        font-size: calc(30px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .header p{
+        font-size: calc(22px*var(--coef));
+        line-height: 137.69%;
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .oeuvres .oeuvres_container .oeuvre{
+        width: calc(285px*var(--coef));
+        height: calc(285px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container .oeuvres .oeuvres_container .oeuvre img {
+        width: calc(var(--w)*var(--coef)*0.75);
+    }
+
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form{
+        width: 100%;
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container{
+        width: 100%;
+        padding: calc(46px*var(--coef)) 0px;
+        gap: calc(24px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .input_group input{
+        padding: calc(4px*var(--coef)) calc(18px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .attachFile,
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .robotCheckContainer,
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .input_group{
+        width: calc(560px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .robotCheckContainer .robotCheck{
+        width: max-content;
+        gap: calc(12px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .input_group textarea{
+        padding: calc(14px*var(--coef)) calc(18px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form button{
+        font-size: calc(20px*var(--coef));
+    }
+    .oeuvres_caritatives_bg .oeuvres_caritatives .container form .form_container .robotCheckContainer .robotCheck span{
+        font-size: calc(16px*var(--coef));
+    }
+
+    .page.agent_oeuvres_caritatives article.marge{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .page.agent_oeuvres_caritatives article.marge .header{
+        margin-bottom: 0px;
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card{
+        margin-top: calc(40px*var(--coef));
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container{
+        width: 100%;
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card{
+        padding: calc(20px*var(--coef));
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card .card_section .oeuvres_container{
+        justify-content: center;
+        gap: calc(33px*var(--coef));
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card .card_section .oeuvres_container .oeuvre{
+        width: calc(202px*var(--coef));
+        height: calc(203px*var(--coef));
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card .card_section .oeuvres_container .oeuvre img {
+        width: calc(var(--w)*var(--coef)*0.7);
+    }
+    .page.agent_oeuvres_caritatives article.marge .agent_oeuvres_caritatives_container .card .card_section button {
+        text-transform: uppercase;
+        line-height: calc(30px*var(--coef));
+        color: var(--blue);
+        background-color: var(--white-claire);
+        box-shadow: 0px 3px 35px rgb(0 0 0 / 8%);
+        font-size: calc(22px*var(--coef));
+        border: none;
+        border-radius: 15px;
+        padding: calc(19px*var(--coef)) calc(70px*var(--coef));
+        cursor: pointer;
+        transition: ease-out 300ms;
+    }
+
+    .video_livimaster_page .video_livimaster_header{
+        padding: calc(30px*var(--coef)) calc(106px*var(--coef));
+    }
+    
+    .video_livimaster_page .video_livimaster_header .header_container h1{
+        font-size: calc(28px*var(--coef));
+        margin: 0;
+        margin-bottom: calc(10px*var(--coef));
+    }
+    .video_livimaster_page .video_livimaster_header .header_container p{
+        font-size: calc(22px*var(--coef));
+        margin-bottom: calc(14px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster{
+        margin: calc(40px*var(--coef)) calc(107px*var(--coef));
+        gap: calc(15px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster h1{
+        font-size: calc(22px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings{
+        gap: calc(17px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .search_language{
+        width: calc(303px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .search_language .search_container .searchInput input{
+        width: 100%;
+    }
+    .video_livimaster_page section.video_livimaster .settings .search_language .lang span{
+        font-size: calc(20px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .search_language .lang .selectoption select{
+        font-size: calc(18px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .tri{
+        gap: calc(15px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .tri span{
+        font-size: calc(20px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .tri .tri_options{
+        gap: calc(26px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .settings .tri .tri_options button{
+        font-size: calc(18px*var(--coef));
+        padding: calc(4px*var(--coef)) calc(46px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container{
+        gap: calc(30px*var(--coef)) calc(10px*var(--coef));
+        justify-content: space-between;
+        margin-bottom: calc(30px*var(--coef));
+        margin-top: calc(84px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card{
+        padding: calc(15px*var(--coef)) calc(19px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .card_header .profile_image img {
+        width: calc(30px*var(--coef));
+        height: calc(30px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .card_header .profile span.name
+    {
+        font-size: calc(20px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .card_header .profile span.title{
+        font-size: calc(14px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card .video_display {
+        width: calc(268px*var(--coef));
+        height: calc(149px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster .videos_container .video_card a{
+        font-size: calc(18px*var(--coef));
+    }
+    .video_livimaster_page section.video_livimaster a.next_page span{
+        font-size: calc(20px*var(--coef));
+    }
+
+    .affiliation_generale .video_livimaster_header{
+        padding: calc(30px*var(--coef)) calc(106px*var(--coef));
+    }
+    
+    .affiliation_generale .video_livimaster_header .header_container h1{
+        font-size: calc(28px*var(--coef));
+        margin: 0;
+        margin-bottom: calc(10px*var(--coef));
+    }
+    .affiliation_generale .video_livimaster_header .header_container p{
+        font-size: calc(22px*var(--coef));
+        margin-bottom: calc(14px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .informations .top_gains{
+        display: none;
+    }
+    .affiliation_generale section.affiliation_generale_page .informations{
+        padding: calc(24px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .sentence{
+        width: calc(584px*var(--coef));
+        font-size: calc(22px*var(--coef));
+        margin-bottom: calc(18px*var(--coef));
+        margin-right: 0px;
+        text-align: left;
+        line-height: calc(34px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .sentence span {
+        font-size: calc(26px*var(--coef));
+    }
+    .affiliation_generale_page .qa_section .qa_container{
+        flex-direction: column;
+    }
+    .affiliation_generale_page .qa_section{
+        padding: calc(50px*var(--coef)) calc(12px*var(--coef));
+    }
+    section.categories .txt1{
+        margin-bottom: calc(50px*var(--coef));
+    }
+    .affiliation_generale_page .home-page section.categories .carousl_btns .carousel_categories .category{
+        font-size: calc(17px*var(--coef));
+        font-weight: 600;
+        width: calc(163px*var(--coef));
+        line-height: calc(24px*var(--coef));
+        height: calc(42px*var(--coef));
+        margin: auto;
+        background: var(--second-bg-color);
+        color: var(--second-color);
+        box-shadow: 0px 3px 35px 0px #00000014;
+        border-radius: calc(15px*var(--coef));
+        text-align: center;
+        letter-spacing: 0em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page{
+        margin-left: 0px;
+        align-items: flex-start;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block{
+        margin-right: 0px;
+        font-size: calc(16px*var(--coef));
+        min-height: calc(216px*var(--coef));
+        line-height: calc(27px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block.bcc {
+        padding: 0!important;
+        display: flex;
+        width: calc(836px*var(--coef));
+        flex: unset!important;
+        height: 100%;
+    }
+    .affiliation_generale_page .home-page section.categories .txt1 {
+        margin-bottom: calc(60px*var(--coef));
+        text-align: center;
+    }
+    section.affiliation_generale_page .footer-bot p {
+        color: var(--blue);
+        font-weight: 500;
+        font-size: calc(20px*var(--coef));
+    }
+    .affiliation_generale_page .home-page section.categories{
+        padding: calc(40px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block,
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block.bcc,
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block.bcc2{
+        width: calc(516px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block2
+    {
+        margin-right: 0px;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block.blck2{
+        margin-right: 0px;
+        font-size: calc(16px*var(--coef));
+        min-height: calc(234px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .text_block {
+        font-size: calc(18px*var(--coef));
+        font-weight: 400;
+        padding: calc(12px*var(--coef)) calc(9px*var(--coef));
+        text-align: initial;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .pic_block {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 calc(25px*var(--coef)) calc(25px*var(--coef)) 0;
+        padding-right: calc(10px*var(--coef));
+        /* padding-left: calc(11px*var(--coef)); */
+        padding-left: calc(10px*var(--coef));
+        margin-bottom: 0px;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block .black_block .pic_block .btn_div {
+        position: relative;
+        bottom: calc(0px*var(--coef));
+        text-align: center;
+        right: 0;
+    }
+    .affiliation_generale_page .qa_section .qa_container .qa_black_block {
+        background-color: var(--main-color);
+        border-radius: calc(46px*var(--coef));
+        padding: calc(40px*var(--coef)) calc(27px*var(--coef));
+        color: var(--white-claire);
+        width: calc(541px*var(--coef));
+        display: flex;
+        gap: 0;
+        /* gap: calc(-5px*var(--coef)); */
+        flex-direction: column;
+    }
+    .affiliation_generale_page .qa_section .qa_container .qa_black_block .question {
+        font-size: calc(30px*var(--coef));
+        font-weight: 600;
+    }
+    .affiliation_generale_page .qa_section .qa_container .qa_black_block .l-text {
+        font-size: calc(22px*var(--coef));
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    .affiliation_generale_page .qa_section .qa_container .qa_black_block ul {
+        font-size: calc(22px*var(--coef));
+        font-weight: 400;
+    }  
+    .affiliation_generale_page .qa_section .qa_container .qa_black_block .m-text {
+        font-size: calc(22px*var(--coef));
+        font-weight: 400;
+    }
+    .affiliation_generale section.affiliation_generale_page .informations{
+        justify-content: center;
+    }
+    .affiliation_generale_page .home-page section.categories .txt1{
+        font-size: calc(22px*var(--coef));;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block .btn{
+        margin-bottom: calc(18px*var(--coef));
+        font-weight: 400;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block2 .btns{
+        gap: calc(10px*var(--coef));
+    }
+    .affiliation_generale_page section.categories .owl-carousel {
+        display: flex;
+        justify-content: center;
+        width: calc(722px*var(--coef));
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .black_block2 .title{
+        padding: calc(12px*var(--coef));
+    }
+    .affiliation_generale_page .home-page .categories .carousl_btns .next_btn img,
+    .affiliation_generale_page .home-page .categories .carousl_btns .prev_btn img{
+        width: 27px;
+    }
+    .affiliation_generale section.affiliation_generale_page .parrainage-page .div_black_block:not(:last-child) {
+        margin-bottom: calc(28px*var(--coef));
+    }
+    
+}

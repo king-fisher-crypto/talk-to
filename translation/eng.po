@@ -1,0 +1,5716 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2015-02-23 17:37+0000\n"
+"PO-Revision-Date: 2022-01-11 09:32+0100\n"
+"Last-Translator: \n"
+"Language-Team: <EMAIL@ADDRESS>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: /Controller/AccountsController.php:91;113;256
+#: /Controller/AgentsController.php:607
+#: /Controller/ContactsController.php:33;82
+#: /Controller/ExtranetController.php:661 /Controller/PhonesController.php:30
+#: /Controller/VouchersController.php:30;207
+msgid "Veuillez remplir les champs obligatoires."
+msgstr "Please fill in the required field."
+
+#: /Controller/AccountsController.php:97
+#: /Controller/AdminsController.php:106;236
+#: /Controller/AgentsController.php:589 /Controller/ExtranetController.php:667
+#: /Controller/UsersController.php:561;765
+msgid "Email invalide."
+msgstr "Invalid e-mail."
+
+#: /Controller/AccountsController.php:125;170
+msgid "Vos données ont été mises à jour."
+msgstr "Your datas are up to date."
+
+#: /Controller/AccountsController.php:128
+msgid "Vos données ont été mises à jour. Votre compte est activé."
+msgstr "Your datas are complete. Your account is activated."
+
+#: /Controller/AccountsController.php:131;172
+msgid "Erreur lors de la sauvegarde de vos données"
+msgstr "Error in your data backup."
+
+#: /Controller/AccountsController.php:144;517
+#: /Controller/AgentsController.php:447;583
+msgid "Veuillez remplir correctement le formulaire."
+msgstr "Please fill in correctly the form."
+
+#: /Controller/AccountsController.php:154 /Controller/AgentsController.php:616
+#: /Controller/AlertsController.php:439 /Controller/UsersController.php:160;352
+msgid "L'indicatif téléphonique n'est pas valide."
+msgstr "The phone dialling code is invalid."
+
+#: /Controller/AccountsController.php:263
+msgid "Veuillez choisir une note pour l'expert."
+msgstr "Please mark the expert."
+
+#: /Controller/AccountsController.php:283
+msgid "Erreur lors de la sauvegarde de votre avis."
+msgstr "Error in your opinion backup."
+
+#: /Controller/AccountsController.php:297
+msgid "Merci. Votre avis est enregistré et en attente de validation."
+msgstr "Thank you. Your opinion is recorded, pending validation."
+
+#: /Controller/AccountsController.php:301
+msgid "Erreur rencontrée lors de la sauvegarde de votre avis."
+msgstr "Error during your opinion backup."
+
+#: /Controller/AccountsController.php:358;365
+#: /Controller/AgentsController.php:1229;1236;1702
+#: /Controller/AppController.php:113 /View/Agents/profil.ctp:26
+#: /View/Elements/agent_options.ctp:81
+#: /View/Elements/agentslist.ctp:234;247;395
+msgid "Chat"
+msgstr "Chat"
+
+#: /Controller/AccountsController.php:358 /Controller/AgentsController.php:1229
+msgid "L'historique de la conversation est introuvable."
+msgstr "The conversation historic can not be found."
+
+#: /Controller/AccountsController.php:358
+#: /Controller/AgentsController.php:1229;1439
+#: /Controller/UsersController.php:111 /View/Pages/display.ctp:7
+msgid "Fermer"
+msgstr "Close"
+
+#: /Controller/AccountsController.php:409
+#: /Controller/AdminsController.php:99;164;230
+#: /Controller/AgentsController.php:943;1086
+#: /Controller/PagesController.php:499 /Controller/UsersController.php:487;552
+msgid "Erreur dans le formulaire."
+msgstr "Error in the form."
+
+#: /Controller/AccountsController.php:420
+msgid "Votre limite a été mise à jour."
+msgstr "Your limit has been updated."
+
+#: /Controller/AccountsController.php:424
+msgid "La mise à jour de la limite a échoué."
+msgstr "The limit's update has failed."
+
+#: /Controller/AccountsController.php:443;760
+#: /Controller/AgentsController.php:355 /Controller/AlertsController.php:376
+#: /Controller/ChatsController.php:152
+msgid "Accès client"
+msgstr "Customer access"
+
+#: /Controller/AccountsController.php:443;760
+#: /Controller/AgentsController.php:355;1473
+#: /Controller/AlertsController.php:376;417 /Controller/ChatsController.php:152
+#: /Controller/UsersController.php:931 /View/Elements/admin_modal.ctp:16
+#: /View/Elements/admin_refuse_modal.ctp:20
+msgid "Annuler"
+msgstr "Cancelled"
+
+#: /Controller/AccountsController.php:451 /Controller/AgentsController.php:2635
+msgid "Cet expert n'existe pas."
+msgstr "This expert does not exist."
+
+#: /Controller/AccountsController.php:452
+msgid "Expert introuvable"
+msgstr "Expert not found"
+
+#: /Controller/AccountsController.php:452;466;481
+#: /View/Agents/admin_record_audio.ctp:32 /View/Elements/admin_modal.ctp:15
+#: /View/Elements/admin_refuse.ctp:12 /View/Elements/admin_refuse_modal.ctp:19
+msgid "Ok"
+msgstr "Ok"
+
+#: /Controller/AccountsController.php:465
+msgid "Cet expert est déjà enregistré dans vos favoris."
+msgstr "This expert is already recorded in your favorites."
+
+#: /Controller/AccountsController.php:466;481
+msgid "Expert favoris"
+msgstr "Favorite expert"
+
+#: /Controller/AccountsController.php:477
+msgid "L'expert a été enregistré dans vos favoris."
+msgstr "The expert has been recorded in your favorites."
+
+#: /Controller/AccountsController.php:479
+msgid "Erreur lors de l'enregistrement de l'expert dans vos favoris."
+msgstr "Error in the recording of the expert in your favorites."
+
+#: /Controller/AccountsController.php:528
+msgid "L'expert a été ajouté à vos favoris."
+msgstr "The expert has been added to your favorites."
+
+#: /Controller/AccountsController.php:530
+msgid "Erreur lors de l'ajout de l'expert dans vos favoris."
+msgstr "Error in the adding of the expert in your favorites."
+
+#: /Controller/AccountsController.php:603
+msgid "Impossible de trouver l'expert."
+msgstr "Impossible to find the expert."
+
+#: /Controller/AccountsController.php:605
+msgid "L'expert a été supprimé de vos favoris."
+msgstr "The expert has been removed from your favorites."
+
+#: /Controller/AccountsController.php:607
+msgid "Erreur dans la suppression de l'expert de vos favoris."
+msgstr "Error in the removing of the expert from your favorites."
+
+#: /Controller/AccountsController.php:775 /Controller/UsersController.php:111
+msgid "Erreur avec le formulaire"
+msgstr "Error with the form"
+
+#: /Controller/AccountsController.php:797
+msgid "L'expert est indisponible ou il n'accepte pas de consultation par mail."
+msgstr "The expert is unavailable or does not accept e-mail consultations."
+
+#: /Controller/AccountsController.php:809 /Controller/AdminsController.php:672
+msgid "Le fichier n'est pas un fichier image accepté."
+msgstr "The file is not an accepted picture file format."
+
+#: /Controller/AccountsController.php:816;1063
+#: /Controller/AgentsController.php:532
+msgid "Erreur dans le chargement de votre fichier."
+msgstr "Error in your file's upload."
+
+#: /Controller/AccountsController.php:827;1075
+msgid "Vous n'avez pas assez de crédit. Il vous faut"
+msgstr "You have not got enough credit. You need"
+
+#: /Controller/AccountsController.php:827;1075
+msgid "crédits."
+msgstr "crédits."
+
+#: /Controller/AccountsController.php:848;1103
+msgid ""
+"Erreur lors de la mise à jour de votre crédit. Le mail n'a pas été envoyé."
+msgstr "Error in your credit update. The e-mail has not been sent."
+
+#: /Controller/AccountsController.php:877;1138
+msgid ""
+"Votre message a été envoyé. Cependant la pièce jointe n'a pu être envoyé."
+msgstr ""
+"Your message has been sent, however, the attached file could not be "
+"forwarded."
+
+#: /Controller/AccountsController.php:881;883;1156
+msgid "Votre message a été envoyé."
+msgstr "Your message has been sent."
+
+#: /Controller/AccountsController.php:893;1158
+msgid "Erreur durant l'envoi du mail. Vous n'avez pas été décrédité."
+msgstr "Error in the sending of your message. You have not been debited."
+
+#: /Controller/AccountsController.php:910
+msgid "Veuillez-vous connecter avec un compte client."
+msgstr "Please connect yourself with a customer account."
+
+#: /Controller/AccountsController.php:933
+msgid ""
+"L'expert est indisponible ou il n'accepte pas les consultations par mail."
+msgstr "The expert is unavailable, or he does not accept e-mail consultation."
+
+#: /Controller/AccountsController.php:939
+msgid "Vous n'avez pas assez de crédit pour consulter"
+msgstr "You have insufficient credit to consult."
+
+#: /Controller/AccountsController.php:986 /Controller/AgentsController.php:1340
+msgid "Erreur avec le formulaire de réponse"
+msgstr "Error with the answer form"
+
+#: /Controller/AccountsController.php:1022
+msgid "Vous ne pouvez pas répondre à ce message."
+msgstr "You can not answer this message."
+
+#: /Controller/AccountsController.php:1047
+msgid "L'expert n'accepte pas/plus de consultation par mail."
+msgstr "The expert does not/any more accept e-mail consultation."
+
+#: /Controller/AccountsController.php:1056 /Controller/AgentsController.php:526
+msgid "Le fichier n'est pas un fichier image accepté"
+msgstr "This file is not an accepted picture file format"
+
+#: /Controller/AccountsController.php:1200
+msgid "Erreur au niveau du formulaire"
+msgstr "Error in the form"
+
+#: /Controller/AccountsController.php:1206 /View/Elements/cart_products.ctp:90
+msgid "Veuillez sélectionner un produit"
+msgstr "Please select a product"
+
+#: /Controller/AccountsController.php:1226
+msgid "Ce produit n'est plus disponible ou n'existe pas."
+msgstr "This product is not available or does not exist."
+
+#: /Controller/AccountsController.php:1276
+msgid "Le bon de réduction que vous avez indiqué n'est pas valide."
+msgstr "The discount voucher indicated is not valid."
+
+#: /Controller/AccountsController.php:1320
+msgid ""
+"Le bon de réduction que vous avez indiqué n'est pas valide pour ce produit."
+msgstr "The discount voucher indicated is not valid for this product."
+
+#: /Controller/AccountsController.php:1341
+msgid "Erreur dans la mise à jour de votre crédit."
+msgstr "Error in your credit update."
+
+#: /Controller/AccountsController.php:1370
+msgid "Votre compte a été crédité de"
+msgstr "Your account has been credited by"
+
+#: /Controller/AccountsController.php:1370
+#: /View/Accounts/buycredits._backupjr.ctp:63 /View/Agents/admin_edit.ctp:58
+#: /View/Elements/cart_products.ctp:12;14
+msgid "crédits"
+msgstr "credits"
+
+#: /Controller/AccountsController.php:1511;1519
+#: /Controller/AgentsController.php:1725 /View/Accounts/admin_com.ctp:67
+#: /View/Accounts/admin_com_view.ctp:73 /View/Accounts/admin_view.ctp:43;183
+#: /View/Accounts/history.ctp:110 /View/Accounts/index.ctp:122;131;140;147
+#: /View/Agents/admin_com.ctp:64 /View/Agents/admin_com_view.ctp:71;77
+#: /View/Agents/admin_view.ctp:105;229;235 /View/Agents/history.ctp:68
+#: /View/Agents/index.ctp:99;108;117
+msgid "N/D"
+msgstr "N/A"
+
+#: /Controller/AccountsController.php:1621;1670
+#: /View/Accounts/admin_view.ctp:31
+msgid "Aucun client trouvé"
+msgstr "No Customer found"
+
+#: /Controller/AccountsController.php:1714
+#: /Controller/ExtranetController.php:579
+msgid "Aucune donnée à exporter."
+msgstr "No datas to export."
+
+#: /Controller/AccountsController.php:1784
+msgid "Cet utilisateur n'existe pas ou n'est pas un client."
+msgstr "This user does not exist or is not a customer."
+
+#: /Controller/AccountsController.php:1814
+#: /Controller/AgentsController.php:2608
+msgid "Le compte a été supprimé."
+msgstr "The account has been deleted."
+
+#: /Controller/AccountsController.php:1816
+#: /Controller/AgentsController.php:2611 /Controller/PagesController.php:212
+#: /Controller/ReviewsController.php:152
+msgid "Erreur lors de la suppression."
+msgstr "Error in the deleting."
+
+#: /Controller/AdminsController.php:110;180
+msgid "8 caractères au minimum pour le mot de passe."
+msgstr "A minimum of 8 characters for the password."
+
+#: /Controller/AdminsController.php:113;183
+#: /Controller/ExtranetController.php:138;688
+#: /Controller/UsersController.php:788
+msgid "Les mots de passe sont différents."
+msgstr "Different passwords."
+
+#: /Controller/AdminsController.php:130
+msgid "Nouvel utilisateur crée. Email envoyé."
+msgstr "New user created. E-mail sent."
+
+#: /Controller/AdminsController.php:143
+msgid "Erreur lors de la création de l'admin. Email non envoyé."
+msgstr "Error in the admin creation. E-mail not sent."
+
+#: /Controller/AdminsController.php:148
+msgid "Un administrateur a déjà cet email. Veuillez réessayer."
+msgstr "An administrator has already got this e-mail. Please try again."
+
+#: /Controller/AdminsController.php:194 /Controller/UsersController.php:515
+msgid "Erreur dans la réinitialisation de votre mot de passe"
+msgstr "Error in the password reset"
+
+#: /Controller/AdminsController.php:196 /View/Users/newpasswd.ctp:19
+msgid "Votre mot de passe a été réinitialisé."
+msgstr "Your password has been reset."
+
+#: /Controller/AdminsController.php:265
+msgid "Un délai de 30min est requis entre chaque génération de mot de passe."
+msgstr "A 30 minute delay is required between each password reset."
+
+#: /Controller/AdminsController.php:288
+msgid "Un mail pour réinitialiser votre mot de passe a été envoyé."
+msgstr "An e-mail has been sent to allow you to reset your password."
+
+#: /Controller/AdminsController.php:292
+msgid "Aucun compte trouvé pour cet email."
+msgstr "No account found for this e-mail."
+
+#: /Controller/AdminsController.php:341
+msgid "Erreur avec le formulaire de réponse ou votre message est vide."
+msgstr "Error with the answer form or your message is empty."
+
+#: /Controller/AdminsController.php:354
+msgid ""
+"L'expediteur demandé n'existe pas ou plus ou vous ne pouvez pas répondre à "
+"ce message."
+msgstr ""
+"The requested expeditor does not exist, or you can not answer to this "
+"message."
+
+#: /Controller/AdminsController.php:396
+msgid "Votre réponse a été envoyée par mail."
+msgstr "Your answer has been sent by e-mail."
+
+#: /Controller/AdminsController.php:420 /Controller/AgentsController.php:1399
+msgid "Votre réponse a été envoyée."
+msgstr "Your answer has been sent."
+
+#: /Controller/AdminsController.php:423 /Controller/AgentsController.php:1401
+msgid "Erreur durant l'envoi du mail."
+msgstr "Error in the sending of the message."
+
+#: /Controller/AdminsController.php:497;499;518;520
+msgid "(Invite)"
+msgstr "(Invite)"
+
+#: /Controller/AdminsController.php:581
+msgid "Impossible de modifier le logo"
+msgstr "Impossible to modify the logo"
+
+#: /Controller/AdminsController.php:590;623
+#: /Controller/ColumnsController.php:229
+#: /Controller/HoroscopesController.php:67;185
+#: /Controller/ProductsController.php:146;159
+#: /Controller/SlidesController.php:217
+msgid "Erreur dans le formulaire"
+msgstr "Error in the form"
+
+#: /Controller/AdminsController.php:603
+msgid "Le logo est introuvable."
+msgstr "The logo can not be found."
+
+#: /Controller/AdminsController.php:678
+msgid ""
+"La taille du logo n'est pas bonne. La taille attendue est la suivante : "
+msgstr "The logo size is incorrect. The expected size is the following:"
+
+#: /Controller/AdminsController.php:683
+msgid "Votre logo n'a pu être sauvegardé"
+msgstr "Unabble to upload your logo"
+
+#: /Controller/AdminsController.php:687
+msgid "Votre logo a été sauvegardé."
+msgstr "Logo uploaded."
+
+#: /Controller/AdminsController.php:690
+msgid "Erreur avec le chargement du fichier"
+msgstr "Error with the uploading of the file"
+
+#: /Controller/AgentsController.php:459
+msgid "L'agent est introuvable."
+msgstr "Agent not found."
+
+#: /Controller/AgentsController.php:476
+msgid ""
+"Votre requête a bien été enregistrée et sera traitée dans les plus brefs "
+"délais"
+msgstr ""
+"Your request has been recorded, and will be dealt with as soon as possible"
+
+#: /Controller/AgentsController.php:478
+msgid "Erreur lors de l'enregistrement de votre requête."
+msgstr "Error with the recording of your request."
+
+#: /Controller/AgentsController.php:480
+msgid "Veuillez vous connecter sur votre compte client."
+msgstr "Please connect on your customer account."
+
+#: /Controller/AgentsController.php:501
+msgid "Formulaire incomplet."
+msgstr "Incomplete form."
+
+#: /Controller/AgentsController.php:552
+msgid "Votre message a été envoyé, mais la pièce jointe n'a pu être envoyée."
+msgstr "Message sent but attached file can not be forwarded."
+
+#: /Controller/AgentsController.php:564
+msgid "Message envoyé."
+msgstr "Message sent."
+
+#: /Controller/AgentsController.php:567
+msgid "Erreur lors de l'envoi du message."
+msgstr "Error in the sending of the message."
+
+#: /Controller/AgentsController.php:569
+msgid "Seuls les clients peuvent envoyer des messages privés."
+msgstr "Customers only can send private messages."
+
+#: /Controller/AgentsController.php:633
+msgid ""
+"Veuillez indiquer un indicatif pays sur votre numéro de téléphone secondaire"
+msgstr ""
+"Please indicate a country dialling code for your secondary phone number."
+
+#: /Controller/AgentsController.php:639
+msgid "L'indicatif téléphonique du numéro secondaire n'est pas valide."
+msgstr "The secondary number's dialling code is not valid."
+
+#: /Controller/AgentsController.php:670
+msgid ""
+"Votre modification est enregistrée. Elle est en attente de validation par un "
+"administrateur."
+msgstr ""
+"Your modification is recorded. Pending validation from an administrator."
+
+#: /Controller/AgentsController.php:692
+msgid ""
+"Votre modification est enregistrée. Elle est en attente de validation par un "
+"administrateur"
+msgstr ""
+"Your modification is recorded. Pending validation from an administrator."
+
+#: /Controller/AgentsController.php:708;770
+msgid ""
+"La modification de vos options est impossible, lorsque vous êtes en "
+"communication."
+msgstr ""
+"Your options modification is impossible while you are in communication."
+
+#: /Controller/AgentsController.php:716
+msgid "Veuillez sélectionner une option."
+msgstr "Please select an option."
+
+#: /Controller/AgentsController.php:756;842
+msgid "Vos options ont été modifiées"
+msgstr "Your options have been modified."
+
+#: /Controller/AgentsController.php:758;844
+msgid ""
+"Vos options ont été modifiées. Une erreur est survenue au niveau de la "
+"plateforme téléphonique."
+msgstr ""
+"Your options have been modified. An error has occurred at the phone platform "
+"level."
+
+#: /Controller/AgentsController.php:780
+msgid "Veuillez remplir toutes vos options experts."
+msgstr "Please fill in all your expert options."
+
+#: /Controller/AgentsController.php:836
+msgid "Erreur dans la modification de vos options experts"
+msgstr "Error in the modifying of your expert options"
+
+#: /Controller/AgentsController.php:857
+msgid ""
+"Ce formulaire est incorrect. Veuillez ne pas toucher le code HTML du site."
+msgstr "This form is incorrect. Please do not touch the HTML code of the site."
+
+#: /Controller/AgentsController.php:906
+msgid "Votre fichier audio est trop volumineux"
+msgstr "Your audio file is too large"
+
+#: /Controller/AgentsController.php:949
+msgid "Votre présentation est vide."
+msgstr "Your presentation is empty."
+
+#: /Controller/AgentsController.php:969;975
+msgid "Erreur dans la mise à jour de votre présentation."
+msgstr "Error in the uploading of your presentation."
+
+#: /Controller/AgentsController.php:980
+msgid "La modification de votre présentation est en attente de validation."
+msgstr "The modifiaction of your presentation is pending validation."
+
+#: /Controller/AgentsController.php:1127;1131
+msgid "Mise à jour du planning."
+msgstr "Updating of the planning."
+
+#: /Controller/AgentsController.php:1129
+msgid "Erreur dans la modification de votre planning"
+msgstr "Error in the modification of your planning"
+
+#: /Controller/AgentsController.php:1365
+msgid ""
+"Le client demandé n'existe pas ou il n'est plus actif ou vous ne pouvez pas "
+"répondre à ce message."
+msgstr ""
+"The requested  customer does not exist, or is not active anymore or you can "
+"not answer this message."
+
+#: /Controller/AgentsController.php:1423 /Controller/UsersController.php:823
+msgid "Veuillez patienter"
+msgstr "Please wait"
+
+#: /Controller/AgentsController.php:1438
+msgid "Erreur dans le chargement de la présentation"
+msgstr "Error in the presentation's uploading"
+
+#: /Controller/AgentsController.php:1439
+msgid "Présentation audio de "
+msgstr "Audio presentation of"
+
+#: /Controller/AgentsController.php:1472 /Controller/UsersController.php:930
+msgid "Erreur dans le chargement de votre image"
+msgstr "Error in the picture's uploading"
+
+#: /Controller/AgentsController.php:1473 /Controller/UsersController.php:931
+msgid "Redimensionner votre photo"
+msgstr "Please resize your picture"
+
+#: /Controller/AgentsController.php:1571
+msgid "Echec de la connection avec la plateforme téléphonique."
+msgstr "Failure to connect with the phone Platform."
+
+#: /Controller/AgentsController.php:1578
+msgid "La déconnexion de la plateforme téléphonique a échoué."
+msgstr "Failure of the phone Platform disconnection."
+
+#: /Controller/AgentsController.php:1691 /View/Elements/agent_infos.ctp:31
+msgid "Homme"
+msgstr "Man"
+
+#: /Controller/AgentsController.php:1692 /View/Elements/agent_infos.ctp:34
+msgid "Femme"
+msgstr "Woman"
+
+#: /Controller/AgentsController.php:1698 /Controller/AppController.php:112
+#: /View/Accounts/admin_index.ctp:86 /View/Agents/admin_index.ctp:84
+#: /View/Agents/profil.ctp:24 /View/Elements/agent_options.ctp:80
+#: /View/Elements/agentslist.ctp:212;214 /View/Helper/MetronicHelper.php:206
+msgid "Téléphone"
+msgstr "Phone"
+
+#: /Controller/AgentsController.php:1700 /View/Accounts/admin_edit.ctp:39
+#: /View/Accounts/admin_index.ctp:85;90 /View/Admins/admin_subscribe.ctp:19
+#: /View/Agents/admin_edit.ctp:44 /View/Agents/admin_index.ctp:91
+#: /View/Agents/profil.ctp:25 /View/Elements/account_compte.ctp:12
+#: /View/Elements/agent_options.ctp:79
+msgid "Email"
+msgstr "E-mail"
+
+#: /Controller/AgentsController.php:1827 /View/Agents/admin_view.ctp:31
+msgid "Aucun expert trouvé"
+msgstr "No expert found"
+
+#: /Controller/AgentsController.php:1917;2604
+#: /Controller/ExtranetController.php:477;738;1449;1463;1623
+msgid "Erreur API : "
+msgstr "API error:"
+
+#: /Controller/AgentsController.php:1934
+msgid "Mise à jour des informations de l'agent. Email envoyé."
+msgstr "Updating agent's information. E-mail sent."
+
+#: /Controller/AgentsController.php:1939
+msgid ""
+"Echec de la mise à jour des informations de l'agent. Pas d'email envoyé."
+msgstr "Failure in updating agent's information. No e-mail sent."
+
+#: /Controller/AgentsController.php:1942
+msgid "Erreur dans la mise à jour des données de l'agent."
+msgstr "Error in the agent's data updating."
+
+#: /Controller/AgentsController.php:2025
+msgid "Erreur lors de la récupération des données"
+msgstr "Error during the data recovery"
+
+#: /Controller/AgentsController.php:2160
+msgid "Présentation validée. L'email a été envoyé."
+msgstr "Validated presentation.E-mail sent."
+
+#: /Controller/AgentsController.php:2162
+msgid "Erreur lors de la modification de la présentation de l'agent."
+msgstr "Error during the agent presentation's modification."
+
+#: /Controller/AgentsController.php:2318
+msgid "Aucune présentation audio."
+msgstr "No audio presentation."
+
+#: /Controller/AgentsController.php:2406
+msgid "Aucun résultat retourné."
+msgstr "No result found."
+
+#: /Controller/AgentsController.php:2504;2512;2524;2537
+msgid "Le fichier est introuvable"
+msgstr "File not found"
+
+#: /Controller/AgentsController.php:2532
+msgid "Le fichier a été supprimé."
+msgstr "File deleted."
+
+#: /Controller/AgentsController.php:2534
+msgid "Echec de la suppression."
+msgstr "Failure to delete."
+
+#: /Controller/AgentsController.php:2578
+msgid "Cet utilisateur n'existe pas ou n'est pas un agent."
+msgstr "This user does not exist or is not an agent."
+
+#: /Controller/AgentsController.php:2645
+msgid "Echec lors de la modification du statut."
+msgstr "Failure during the status modification."
+
+#: /Controller/AgentsController.php:2647
+msgid "Statut modifié, cependant une erreur api est survenue : "
+msgstr "Modified status, however an API error has occured."
+
+#: /Controller/AgentsController.php:2649
+msgid "Statut modifié."
+msgstr "Modified status."
+
+#: /Controller/AgentsController.php:2652
+msgid "L'expert est occupé, impossible de modifier son statut."
+msgstr "The expert is busy, impossible tomodify its status."
+
+#: /Controller/AlertsController.php:260
+msgid "L'agent %s est disponible."
+msgstr "The %s agent is available."
+
+#: /Controller/AlertsController.php:265
+msgid "Par "
+msgstr "By"
+
+#: /Controller/AlertsController.php:343
+msgid "Vos alertes ont été supprimées"
+msgstr "Your alertes have been deleted"
+
+#: /Controller/AlertsController.php:345
+msgid "Erreur lors de la suppression de vos alertes"
+msgstr "Error during your alertes deleting."
+
+#: /Controller/AlertsController.php:366
+msgid "Alerte impossible"
+msgstr "Impossible alerte."
+
+#: /Controller/AlertsController.php:401
+msgid "Pour être alerté de la disponibilité de"
+msgstr "To be alerted of the availability of"
+
+#: /Controller/AlertsController.php:428
+msgid "Il y a une incohérence entre votre adresse e-mail et sa confirmation."
+msgstr "Inconsistency with your e-mail address and its confirmation."
+
+#: /Controller/AlertsController.php:452
+msgid "Erreur inconnue"
+msgstr "Unknown error"
+
+#: /Controller/AlertsController.php:488
+msgid "Votre(vos) alerte(s) a(ont) été désactivée(s) !"
+msgstr "Your alerte(s) has(have) been disabled!"
+
+#: /Controller/AlertsController.php:545
+msgid "Votre(vos) alerte(s) ont été créée(s) avec succès !"
+msgstr "Your alerte(s) has(have) been successefully created !"
+
+#: /Controller/AppController.php:114 /View/Accounts/admin_index.ctp:39
+#: /View/Agents/admin_index.ctp:38;83 /View/Elements/agentslist.ctp:392
+#: /View/Helper/FrontblockHelper.php:682
+msgid "E-mail"
+msgstr "E-mail"
+
+#: /Controller/AppController.php:117
+msgid "Voyance par Téléphone"
+msgstr "Clairvoyance by phone"
+
+#: /Controller/AppController.php:118
+msgid "Voyance par Chat"
+msgstr "Clairvoyance by Chat"
+
+#: /Controller/AppController.php:119
+msgid "Voyance par E-mail"
+msgstr "Clairvoyance by E-mail"
+
+#: /Controller/AppController.php:164
+msgid "Invalid domain"
+msgstr "Invalid domain"
+
+#: /Controller/AppController.php:175
+msgid "Invalid lang"
+msgstr "Invalid language"
+
+#: /Controller/AppController.php:256
+msgid "Veuillez activer votre compte"
+msgstr "Please activate your account"
+
+#: /Controller/AppController.php:258
+msgid "Complétez votre profil."
+msgstr "Complete your profil."
+
+#: /Controller/AppController.php:994
+msgid "Pour le motif suivant :"
+msgstr "For the following reason:"
+
+#: /Controller/AppController.php:1056
+msgid "Ce numéro est déjà enregistré."
+msgstr "This number is already recorded."
+
+#: /Controller/AppController.php:1072
+msgid "Numéro de téléphone invalide."
+msgstr "Invalid phone number."
+
+#: /Controller/CategoryController.php:23
+msgid "Défaut"
+msgstr "Fault"
+
+#: /Controller/CategoryController.php:28 /View/Accounts/index.ctp:169
+msgid "Disponibilité"
+msgstr "Availability"
+
+#: /Controller/CategoryController.php:33
+msgid "Top experts / jour"
+msgstr "Top experts /day"
+
+#: /Controller/CategoryController.php:38
+msgid "Les plus consultés"
+msgstr "The most consulted"
+
+#: /Controller/CategoryController.php:43
+msgid "Les mieux notés"
+msgstr "The best marked"
+
+#: /Controller/CategoryController.php:51
+msgid "Tous les expert(e)s"
+msgstr "All the experts"
+
+#: /Controller/CategoryController.php:56
+msgid "Nouveaux experts"
+msgstr "New experts"
+
+#: /Controller/CategoryController.php:61
+msgid "Hommes"
+msgstr "Men"
+
+#: /Controller/CategoryController.php:66
+msgid "Femmes"
+msgstr "Women"
+
+#: /Controller/CategoryController.php:86
+msgid "Parle Français"
+msgstr "Speaks French"
+
+#: /Controller/CategoryController.php:87
+msgid "Parle Anglais"
+msgstr "Speaks English"
+
+#: /Controller/CategoryController.php:88
+msgid "Parle Allemand"
+msgstr "Speaks German"
+
+#: /Controller/CategoryController.php:89
+msgid "Parle Espagnol"
+msgstr "Speaks Spanish"
+
+#: /Controller/CategoryController.php:90
+msgid "Parle Italien"
+msgstr "Speaks Italian"
+
+#: /Controller/CategoryController.php:91
+msgid "Parle Portugais"
+msgstr "Speaks Portuguese"
+
+#: /Controller/CategoryController.php:141
+msgid "Invalid category"
+msgstr "Invalid category"
+
+#: /Controller/CategoryController.php:383
+msgid "Aucun expert ne correspond à vos critères"
+msgstr "No expert answer your criterias"
+
+#: /Controller/CategoryController.php:385;387
+msgid "Nous avons "
+msgstr "We have"
+
+#: /Controller/CategoryController.php:385
+msgid "expert"
+msgstr "Expert"
+
+#: /Controller/CategoryController.php:385;387
+msgid "à vous proposer"
+msgstr "to suggest to you"
+
+#: /Controller/CategoryController.php:387
+msgid "experts"
+msgstr "experts"
+
+#: /Controller/CategoryController.php:584;691
+#: /Controller/HoroscopesController.php:94;212
+#: /Controller/PagesController.php:80
+msgid ""
+"Une erreur est survenue avec le contenu, votre contenu est sûrement vide."
+msgstr "An error occured with the content, it is probably empty"
+
+#: /Controller/CategoryController.php:595 /Controller/PagesController.php:387
+msgid "La catégorie a bien été enregistrée."
+msgstr "The category has been recorded."
+
+#: /Controller/CategoryController.php:633
+#: /Controller/PagesController.php:178;446
+#: /Controller/ProductsController.php:106 /View/Columns/admin_list.ctp:55
+#: /View/Helper/MetronicHelper.php:1120 /View/Slides/admin_list.ctp:53
+#: /View/Vouchers/admin_index.ctp:58
+msgid "Active"
+msgstr "Active"
+
+#: /Controller/CategoryController.php:634
+#: /Controller/PagesController.php:179;447
+#: /Controller/ProductsController.php:107 /View/Columns/admin_list.ctp:56
+#: /View/Slides/admin_list.ctp:54 /View/Vouchers/admin_index.ctp:59
+msgid "Inactive"
+msgstr "Inactive"
+
+#: /Controller/CategoryController.php:650 /Controller/PagesController.php:578
+msgid ""
+"La catégorie est désactivée. Si votre modification affecte le menu pensez à "
+"le regénérer"
+msgstr ""
+"The category is disabled. If your modification affects the menu, please "
+"think about regenerating it."
+
+#: /Controller/CategoryController.php:650;662;703
+#: /Controller/PagesController.php:91;196;210;222;319;517;561;578
+msgid "ICI"
+msgstr "ICI"
+
+#: /Controller/CategoryController.php:652
+msgid "Erreur dans la désactivation de la catégorie"
+msgstr "Error in the category disabling."
+
+#: /Controller/CategoryController.php:662 /Controller/PagesController.php:561
+msgid ""
+"La catégorie est activée. Si votre modification affecte le menu pensez à le "
+"regénérer"
+msgstr ""
+"The category is activated. If your modification affects the menu, please "
+"think about regenerating it"
+
+#: /Controller/CategoryController.php:664
+msgid "Erreur dans l'activation de la catégorie"
+msgstr "Error in the activation of the category"
+
+#: /Controller/CategoryController.php:678 /Controller/PagesController.php:378
+msgid "Le formulaire est incomplet."
+msgstr "The form is incomplete."
+
+#: /Controller/CategoryController.php:703 /Controller/PagesController.php:517
+msgid ""
+"La catégorie a été modifiée. Si votre modification affecte le menu pensez à "
+"le regénérer"
+msgstr ""
+"The category has been modified.  If your modification affects the menu, "
+"please think about regenerating it"
+
+#: /Controller/ChatsController.php:19;20;24;28
+msgid "Déconnexion du client. Vous pouvez fermer le chat"
+msgstr "Customer disconnected. You can close the Chat"
+
+#: /Controller/ChatsController.php:23
+msgid "Votre client n'a plus de crédit. Il a été déconnecté du chat."
+msgstr ""
+"Your Customer has no more credit. He has been disconnected from the Chat."
+
+#: /Controller/ChatsController.php:27
+msgid ""
+"Votre client n'est plus présent sur le site. Il a été déconnecté du chat."
+msgstr ""
+"Your Customer is not present on the site anymore. He has disconnected from "
+"the Chat."
+
+#: /Controller/ChatsController.php:30
+msgid ""
+"Engagez la discussion avec votre client (Le décompte client commencera dès "
+"que vous aurez envoyé la première réponse)"
+msgstr ""
+"Please engage conversation with your Customer (the customer's billing will "
+"start as soon as you will send your first answer)"
+
+#: /Controller/ChatsController.php:34;35;43
+msgid "Déconnexion de l'expert. Vous pouvez fermer le chat"
+msgstr "Disconnection of the expert. You can close the Chat"
+
+#: /Controller/ChatsController.php:38
+msgid "Vous n'avez plus assez de crédits. Vous avez été déconnecté du chat."
+msgstr ""
+"You have not enough credits anymore. You have been disconnected from the "
+"Chat."
+
+#: /Controller/ChatsController.php:39
+msgid "Déconnexion du chat. Vous pouvez fermer le chat"
+msgstr "Disconnecting of the Chat. You can close the Chat"
+
+#: /Controller/ChatsController.php:42
+msgid "L'expert s'est déconnecté du site. Vous pouvez fermer le site."
+msgstr "The expert has disconnected from the site. You can close the site."
+
+#: /Controller/ChatsController.php:45
+msgid "La connexion avec l'expert est en cours. Veuillez patienter..."
+msgstr "Expert connection in progress. Please wait..."
+
+#: /Controller/ChatsController.php:214
+msgid "Erreur lors de la création de votre chat. Veuillez réessayer."
+msgstr "Error during the creation of your Chat. Please try again."
+
+#: /Controller/ChatsController.php:216
+msgid "Uniquement disponible pour les comptes clients."
+msgstr "Only available for customers accounts."
+
+#: /Controller/ChatsController.php:237
+msgid "Consultation par chat avec"
+msgstr "Chat consultation with"
+
+#: /Controller/ChatsController.php:307
+msgid "Impossible d'actualiser votre chat. Veuillez réactualiser la page."
+msgstr "Impossible to update your chat. Please update the page."
+
+#: /Controller/ChatsController.php:332;610
+msgid "En ligne"
+msgstr "On ligne"
+
+#: /Controller/ChatsController.php:340
+msgid "est en train d'écrire..."
+msgstr "Is writing"
+
+#: /Controller/ChatsController.php:357;446;621
+#: /View/Accounts/chat_history.ctp:9 /View/Agents/chat_history.ctp:9
+msgid "Moi"
+msgstr "Me"
+
+#: /Controller/ChatsController.php:452
+msgid "Erreur dans l'envoi de votre message."
+msgstr "Error in the message sending."
+
+#: /Controller/ChatsController.php:491
+msgid "Voulez-vous vraiment fermer le chat ?"
+msgstr "Do you really want to close the Chat?"
+
+#: /Controller/ChatsController.php:537 /Model/Chat.php:246
+msgid "Echec lors de la fermeture du chat."
+msgstr "Failure in the closing of Chat."
+
+#: /Controller/ChatsController.php:544
+msgid "Il vous reste"
+msgstr "You still have"
+
+#: /Controller/ChatsController.php:545
+msgid "Il reste"
+msgstr "You have"
+
+#: /Controller/ChatsController.php:547
+msgid "Il vous reste moins de 2min"
+msgstr "You have less than 2 min left"
+
+#: /Controller/ChatsController.php:548
+msgid "Il reste moins de 2min de crédit à votre client"
+msgstr " Your Customer has less than 2 min credit left"
+
+#: /Controller/ChatsController.php:550
+msgid "Il vous reste moins de 3min"
+msgstr "You have less than 3 min left"
+
+#: /Controller/ChatsController.php:551
+msgid "Il reste moins de 3min de crédit à votre client"
+msgstr "Your Customer has less than 3 min credit left"
+
+#: /Controller/ChatsController.php:553
+msgid "Il vous reste moins de 4min"
+msgstr "You have less than 4 min left"
+
+#: /Controller/ChatsController.php:554
+msgid "Il reste moins de 4min de crédit à votre client"
+msgstr "Your Customer has less than 4 min credit left"
+
+#: /Controller/ChatsController.php:556
+msgid "Il vous reste moins de 5min"
+msgstr "You have less than 5 min left"
+
+#: /Controller/ChatsController.php:557
+msgid "Il reste moins de 5min de crédit à votre client"
+msgstr "Your Customer has less than 5 min credit left"
+
+#: /Controller/ChatsController.php:559
+msgid "Il vous reste moins de 6min"
+msgstr "You have less than 6 min left"
+
+#: /Controller/ChatsController.php:560
+msgid "Il reste moins de 6min de crédit à votre client"
+msgstr "Your Customer has less than 6 min credit left"
+
+#: /Controller/ChatsController.php:562
+msgid "Temps restant :"
+msgstr "Time left:"
+
+#: /Controller/ChatsController.php:563
+msgid "Crédit client restant :"
+msgstr "Client credit left:"
+
+#: /Controller/ChatsController.php:569
+msgid "Temps de consultation : "
+msgstr "Consulting time:"
+
+#: /Controller/ColumnsController.php:49
+msgid "L'élement a été crée. N'oubliez pas de configurer les langues."
+msgstr ""
+"The element has been created. Please do not forget to configurate languages."
+
+#: /Controller/ColumnsController.php:53 /Controller/SlidesController.php:53
+msgid "Erreur lors de la sauvegarde"
+msgstr "Error during the uploading"
+
+#: /Controller/ColumnsController.php:127
+msgid "Mise à jour de l'élément"
+msgstr "Updating of the element"
+
+#: /Controller/ColumnsController.php:129
+msgid "Echec de la mise à jour de l'élément"
+msgstr "Failure in updating the element"
+
+#: /Controller/ColumnsController.php:186
+msgid "L'élément a été activé"
+msgstr "The element has been activated"
+
+#: /Controller/ColumnsController.php:188
+msgid "Erreur lors de l'activation de l'élement."
+msgstr "Error in the activation of the element."
+
+#: /Controller/ColumnsController.php:197
+msgid "L'élément a été désactivé"
+msgstr "The element has been disactivated"
+
+#: /Controller/ColumnsController.php:199
+msgid "Erreur lors de la désactivation de l'élement."
+msgstr "Error during the disabling of the element."
+
+#: /Controller/ColumnsController.php:207
+#: /Controller/HoroscopesController.php:382
+#: /Controller/SlidesController.php:195
+msgid "La date est incorrecte. Respectez le format suivant : JJ-MM-AAA"
+msgstr "Incorrect date. Please respect the following format: DD-MM-YYY"
+
+#: /Controller/ColumnsController.php:238 /Controller/SlidesController.php:226
+msgid "Sélectionner au minimum un domaine."
+msgstr "Chose at least one domain."
+
+#: /Controller/ColumnsController.php:266 /Controller/VouchersController.php:407
+msgid "La date de fin est moins récente que la date de début"
+msgstr "The end date is less recent than the start date"
+
+#: /Controller/ColumnsController.php:276 /Controller/SlidesController.php:249
+msgid "La position minimum est de 1"
+msgstr "The minimum position is 1"
+
+#: /Controller/ColumnsController.php:289 /Controller/SlidesController.php:262
+msgid "Erreur avec l'un des formulaires d'une langue."
+msgstr "Error with one of the language forms."
+
+#: /Controller/ColumnsController.php:300
+#: /Controller/PagesController.php:245;487 /Controller/SlidesController.php:273
+msgid "Veuillez renseigner au moins une langue."
+msgstr "Please provide at least one language."
+
+#: /Controller/ContactsController.php:39
+msgid "Votre email est invalide."
+msgstr "Invalid E-mail"
+
+#: /Controller/ContactsController.php:62;95;170
+msgid "Votre message a bien été enregistré"
+msgstr "Message recorded"
+
+#: /Controller/ContactsController.php:64;97;173
+msgid "Erreur lors de l'enregistrement de votre message."
+msgstr "Error during the recording of your message."
+
+#: /Controller/ContactsController.php:66
+msgid "Une erreur est survenue. Veuillez réessayer"
+msgstr "An error has occured. Please try again"
+
+#: /Controller/ContactsController.php:124 /Controller/HomeController.php:233
+msgid "Une erreur est survenue."
+msgstr "An error has occured."
+
+#: /Controller/ContactsController.php:130
+msgid "Une erreur de sécurité est survenue."
+msgstr "A safety error has occured."
+
+#: /Controller/ContactsController.php:151
+msgid "Votre discussion n'existe plus."
+msgstr "Your conversation does not exist anymore."
+
+#: /Controller/ExtranetController.php:97
+msgid ""
+"Votre compte a été modifié. Vous allez recevoir un mail pour la confirmation "
+"de votre compte."
+msgstr ""
+"Your account has been modified. You are going to receive a confirmation for "
+"your account."
+
+#: /Controller/ExtranetController.php:99
+msgid "Votre compte a été modifié. Veuillez vous reconnecter"
+msgstr "Your account  has been modified. Please connect yourself again."
+
+#: /Controller/ExtranetController.php:134
+msgid "Votre mot de passe doit faire 8 caractères au minimum."
+msgstr "The password must be minimum 8 characters ."
+
+#: /Controller/ExtranetController.php:148
+msgid "Veuillez confirmer votre nouveau mot de passe"
+msgstr "Please confirm your new password"
+
+#: /Controller/ExtranetController.php:175
+msgid "L'email renseigné est déjà enregistré"
+msgstr "The given E-mail is already recorded"
+
+#: /Controller/ExtranetController.php:440
+msgid "Commentaire sauvegardé."
+msgstr "Saved commentary."
+
+#: /Controller/ExtranetController.php:461
+msgid "Aucun agent trouvé."
+msgstr "No agent found."
+
+#: /Controller/ExtranetController.php:676 /Controller/UsersController.php:49
+msgid "Cet email est déjà enregistré"
+msgstr "This E-mail is already recorded"
+
+#: /Controller/ExtranetController.php:685
+msgid "Le mot de passe doit faire 8 caractères au minimum."
+msgstr "The password must be minimum 8 characters ."
+
+#: /Controller/ExtranetController.php:710
+msgid "Le champ \"Pseudo\" n'accepte que les caractères alphanumériques."
+msgstr "The field \"Pseudo\" only accepts alphanumeric characters."
+
+#: /Controller/ExtranetController.php:751
+msgid "Le nombre de crédits pour un mail ne peut être égal à zéro."
+msgstr "The number of credits for an E-mail can not equal zero."
+
+#: /Controller/ExtranetController.php:1121
+msgid "Le fichier est introuvable."
+msgstr "File not found."
+
+#: /Controller/ExtranetController.php:1134
+msgid "Pièce jointe"
+msgstr "Attachment"
+
+#: /Controller/ExtranetController.php:1138
+msgid "Le fichier n'existe pas."
+msgstr "Non existing file."
+
+#: /Controller/ExtranetController.php:1331
+msgid "Le fichier a été refusé. L'email a été envoyé."
+msgstr "File declined. E-mail sent."
+
+#: /Controller/ExtranetController.php:1333
+msgid "Erreur dans le refus du fichier."
+msgstr "Error in the declining of the file."
+
+#: /Controller/ExtranetController.php:1383
+msgid "Le fichier en attente n'existe pas."
+msgstr "The pending file does not exist."
+
+#: /Controller/ExtranetController.php:1401
+msgid "Le fichier a été accepté. L'email a été envoyé."
+msgstr "File accepted. E-mail sent."
+
+#: /Controller/ExtranetController.php:1403
+msgid "Erreur dans le déplacement du fichier."
+msgstr "Error in the moving of the file."
+
+#: /Controller/ExtranetController.php:1430
+msgid "Agent inexistant"
+msgstr "Inexisting agent"
+
+#: /Controller/ExtranetController.php:1541
+msgid "Le mail a été envoyé."
+msgstr "E-mail sent."
+
+#: /Controller/ExtranetController.php:1569
+msgid "Echec de la confirmation de l'email."
+msgstr "Failure of the confirmation E-mail."
+
+#: /Controller/ExtranetController.php:1578
+msgid "L'adresse mail a été confirmé."
+msgstr "The E-mail address is confirmed."
+
+#: /Controller/FootersController.php:240
+msgid "Le footer a été enregistré"
+msgstr "The footer as been recorded"
+
+#: /Controller/FootersController.php:423 /Controller/MenusController.php:417
+msgid "Horoscope du jour"
+msgstr "Today's horoscope"
+
+#: /Controller/FootersController.php:606 /View/Footers/admin_footer.ctp:33
+msgid "Saut de colonne"
+msgstr "Column break"
+
+#: /Controller/FootersController.php:612 /Controller/MenusController.php:598
+#: /Model/PageCategory.php:57 /View/Horoscopes/admin_edit.ctp:2
+msgid "Sans nom"
+msgstr "Without name"
+
+#: /Controller/FootersController.php:636 /Controller/MenusController.php:622
+#: /Controller/MenusController_old.php:153
+msgid "Impossible de créer un nouveau lien."
+msgstr "Impossible to create a new link."
+
+#: /Controller/FootersController.php:647 /Controller/MenusController.php:633
+#: /Controller/MenusController_old.php:164
+msgid "Impossible de créer un nouveau bloc de lien."
+msgstr "Impossible to create a new bloc of link."
+
+#: /Controller/FootersController.php:657;675
+#: /Controller/MenusController.php:643;661
+#: /Controller/MenusController_old.php:174;192
+msgid "Impossible de créer le lien"
+msgstr "Impossible to create the link."
+
+#: /Controller/FootersController.php:669;708;910
+#: /Controller/MenusController.php:655;694;846;907
+msgid "Renseigner au moins une langue."
+msgstr "Provide at least one language."
+
+#: /Controller/FootersController.php:687 /Controller/MenusController.php:673
+#: /Controller/MenusController_old.php:204
+msgid "Le lien a été crée."
+msgstr "The link has been created."
+
+#: /Controller/FootersController.php:690 /Controller/MenusController.php:676
+#: /Controller/MenusController_old.php:207
+msgid "Erreur lors de la sauvegarde du lien."
+msgstr "Error during the backing up of the link."
+
+#: /Controller/FootersController.php:714 /Controller/MenusController.php:700
+#: /Controller/MenusController_old.php:231
+msgid "Impossible de créer le bloc de lien"
+msgstr "Impossible to create a block of link."
+
+#: /Controller/FootersController.php:727 /Controller/MenusController.php:714
+#: /Controller/MenusController_old.php:244
+msgid "Le bloc de lien a été crée."
+msgstr "The block of link is created."
+
+#: /Controller/FootersController.php:730 /Controller/MenusController.php:717
+#: /Controller/MenusController_old.php:247
+msgid "Erreur lors de la sauvegarde du bloc de lien."
+msgstr "Error during the backing up of the block of link."
+
+#: /Controller/FootersController.php:795 /Controller/MenusController.php:782
+#: /Controller/MenusController_old.php:312
+msgid "Lien introuvable"
+msgstr "Link not found"
+
+#: /Controller/FootersController.php:819 /Controller/MenusController.php:806
+#: /Controller/MenusController_old.php:336
+msgid "Bloc introuvable"
+msgstr "Block not found"
+
+#: /Controller/FootersController.php:847;865
+#: /Controller/MenusController.php:834;852
+#: /Controller/MenusController_old.php:364;382
+msgid "Impossible de modifier le lien"
+msgstr "Impossible to modify the link"
+
+#: /Controller/FootersController.php:859
+#: /Controller/MenusController_old.php:186;225;376;437
+msgid "Renseigné au moins une langue."
+msgstr "Please provide at least one language."
+
+#: /Controller/FootersController.php:880 /Controller/MenusController.php:876
+#: /Controller/MenusController_old.php:406
+msgid "Le lien a été modifié."
+msgstr "Link is modified."
+
+#: /Controller/FootersController.php:882 /Controller/MenusController.php:879
+#: /Controller/MenusController_old.php:409
+msgid "Erreur lors de la MAJ du lien."
+msgstr "Error during the Shift of the link."
+
+#: /Controller/FootersController.php:895;916
+#: /Controller/MenusController.php:892;913
+#: /Controller/MenusController_old.php:422;443
+msgid "Impossible de modifier le bloc de lien"
+msgstr "Impossible to modify the block of link"
+
+#: /Controller/FootersController.php:929 /Controller/MenusController.php:926
+#: /Controller/MenusController_old.php:456
+msgid "Le bloc de lien a été modifié."
+msgstr "The block of link is modified."
+
+#: /Controller/FootersController.php:935 /Controller/MenusController.php:932
+#: /Controller/MenusController_old.php:462
+msgid "Impossible de supprimer le lien"
+msgstr "Impossible to delete the link"
+
+#: /Controller/FootersController.php:944 /Controller/MenusController.php:943
+#: /Controller/MenusController_old.php:473
+msgid "Le lien a été supprimé."
+msgstr "The link is deleted."
+
+#: /Controller/FootersController.php:950 /Controller/MenusController.php:949
+#: /Controller/MenusController_old.php:479
+msgid "Impossible de supprimer le bloc lien"
+msgstr "Impossible to delete the link block"
+
+#: /Controller/FootersController.php:959 /Controller/MenusController.php:958
+#: /Controller/MenusController_old.php:488
+msgid "Le bloc de lien a été supprimé."
+msgstr "The link block is deleted."
+
+#: /Controller/HomeController.php:186
+msgid "Voyance de qualité"
+msgstr "Clairvoyance of quality"
+
+#: /Controller/HomeController.php:199
+msgid "Vos avantages"
+msgstr "Your advantages"
+
+#: /Controller/HomeController.php:215
+msgid "Expert introuvable."
+msgstr "Expert not found"
+
+#: /Controller/HomeController.php:237
+msgid "Consultation avec"
+msgstr "Consultation with"
+
+#: /Controller/HomeController.php:256 /View/Accounts/index.ctp:205
+#: /View/Agents/admin_edit.ctp:94;102 /View/Agents/display.ctp:544
+#: /View/Elements/agentslist.ctp:187 /View/Helper/FrontblockHelper.php:200
+msgid "Disponible"
+msgstr "Available"
+
+#: /Controller/HomeController.php:258 /View/Elements/agentslist.ctp:190
+msgid "En consultation"
+msgstr "In consultation"
+
+#: /Controller/HomeController.php:260 /View/Accounts/index.ctp:211
+#: /View/Agents/admin_edit.ctp:95;101 /View/Agents/display.ctp:548
+#: /View/Elements/agentslist.ctp:193 /View/Helper/FrontblockHelper.php:202
+msgid "Indisponible"
+msgstr "Unavailable"
+
+#: /Controller/HomeController.php:264;267 /View/Agents/display.ctp:337;349
+msgid "Consultez par chat"
+msgstr "Consult by Chat"
+
+#: /Controller/HomeController.php:273;277 /View/Agents/display.ctp:371;381
+msgid "Consultez par e-mail"
+msgstr "Consult by E-mail"
+
+#: /Controller/HoroscopesController.php:79;197
+msgid "Veuillez renseigner au moins une langue"
+msgstr "Please provide at least one language."
+
+#: /Controller/HoroscopesController.php:87;205
+msgid "Erreur pour une des langues"
+msgstr "Error for one of the languages"
+
+#: /Controller/HoroscopesController.php:125
+msgid "Votre horoscope a été modifié."
+msgstr "Your horoscope is modified."
+
+#: /Controller/HoroscopesController.php:127
+msgid ""
+"Votre horoscope a été modifié, mais un problème est survenue au niveau des "
+"langues."
+msgstr "Your horoscope is modified, but a problem occured with the languages."
+
+#: /Controller/HoroscopesController.php:129
+msgid "L'horoscope n'a pu être modifié."
+msgstr "Not able to modify the horoscope."
+
+#: /Controller/HoroscopesController.php:149
+msgid "Horoscope introuvable"
+msgstr "Horoscope not found"
+
+#: /Controller/HoroscopesController.php:229
+msgid "Un horoscope est déjà prévu pour ce signe à cette date"
+msgstr "An horoscope is already forseen for this date."
+
+#: /Controller/HoroscopesController.php:246
+msgid "Votre horoscope a été enregistré."
+msgstr "Your horoscope is recorded."
+
+#: /Controller/HoroscopesController.php:248
+msgid ""
+"Votre horoscope a été enregistré, mais un problème est survenue au niveau "
+"des langues."
+msgstr "Your horoscope is recorded, but a problem occured with the languages."
+
+#: /Controller/HoroscopesController.php:250
+msgid "L'horoscope n'a pu être sauvegardé."
+msgstr "Not able to back up the horoscope."
+
+#: /Controller/HoroscopesController.php:342;365
+msgid "Nous sommes désolés, mais votre horoscope n'est pas disponible."
+msgstr "We are sorry, but your horoscope is not available."
+
+#: /Controller/HoroscopesController.php:371
+msgid "Horoscope du jour "
+msgstr "Today's horoscope"
+
+#: /Controller/MenusController.php:241
+msgid "Le menu a été enregistré"
+msgstr "Menu recorded"
+
+#: /Controller/MenusController.php:874 /Controller/MenusController_old.php:404
+msgid "Sans titre"
+msgstr "Without title"
+
+#: /Controller/MenusController_old.php:24
+msgid "Veuillez sélectionner au minimum un menu."
+msgstr "Please select at least one menu."
+
+#: /Controller/MenusController_old.php:34
+msgid "Le nouveau menu est enregistré."
+msgstr "The new menu is recorded."
+
+#: /Controller/MenusController_old.php:37
+msgid "Erreur le nouveau menu n'a pu être sauvegardé."
+msgstr "Error the new menu is not backed up."
+
+#: /Controller/MenusController_old.php:42
+msgid "Cliquez sur \"Enregistrer\" pour mettre à jour le menu."
+msgstr "Click on\"Register\" to update the menu."
+
+#: /Controller/MenusController_old.php:134;524 /View/Accounts/admin_com.ctp:9
+#: /View/Accounts/admin_com_view.ctp:9 /View/Accounts/admin_credit.ctp:9
+#: /View/Accounts/admin_credit_view.ctp:9 /View/Accounts/admin_edit.ctp:5
+#: /View/Accounts/admin_index.ctp:5 /View/Accounts/admin_view.ctp:6
+#: /View/Accounts/favorites.ctp:17 /View/Accounts/review.ctp:21
+#: /View/Admins/admin_edit_logo.ctp:5 /View/Admins/admin_list.ctp:5
+#: /View/Admins/admin_logo.ctp:5 /View/Admins/admin_mails.ctp:8
+#: /View/Admins/admin_subscribe.ctp:3 /View/Admins/admin_watchmails.ctp:6
+#: /View/Advertising/admin_index.ctp:5 /View/Agents/admin_com.ctp:9
+#: /View/Agents/admin_com_view.ctp:9 /View/Agents/admin_edit.ctp:5
+#: /View/Agents/admin_index.ctp:5 /View/Agents/admin_record_audio.ctp:10
+#: /View/Agents/admin_valid_audio.ctp:5 /View/Agents/admin_valid_info.ctp:5
+#: /View/Agents/admin_valid_info_view.ctp:6
+#: /View/Agents/admin_valid_photo.ctp:5
+#: /View/Agents/admin_valid_presentation.ctp:5 /View/Agents/admin_view.ctp:6
+#: /View/Category/admin_create.ctp:5 /View/Category/admin_edit.ctp:5
+#: /View/Columns/admin_create.ctp:6 /View/Columns/admin_edit.ctp:6
+#: /View/Columns/admin_list.ctp:5 /View/Elements/agent_navbar.ctp:2
+#: /View/Footers/admin_footer.ctp:12
+#: /View/Helper/FrontblockHelper.php:1069;1118
+#: /View/Helper/MetronicHelper.php:100 /View/Horoscopes/admin_create.ctp:5
+#: /View/Horoscopes/admin_edit.ctp:5 /View/Menus/admin_menu.ctp:13
+#: /View/Pages/admin_create.ctp:5 /View/Pages/admin_create_category.ctp:5
+#: /View/Pages/admin_edit.ctp:8;18 /View/Pages/admin_edit_category.ctp:5
+#: /View/Payment/admin_index.ctp:5 /View/Phones/admin_create.ctp:5
+#: /View/Phones/admin_edit.ctp:5 /View/Phones/admin_list.ctp:5
+#: /View/Products/admin_create.ctp:5 /View/Products/admin_edit.ctp:5
+#: /View/Reviews/admin_index.ctp:5 /View/Slides/admin_create.ctp:6
+#: /View/Slides/admin_edit.ctp:6 /View/Slides/admin_list.ctp:5
+#: /View/Translate/admin_index.ctp:5 /View/Vouchers/admin_create.ctp:8
+#: /View/Vouchers/admin_index.ctp:5 /View/Vouchers/admin_use_voucher.ctp:5
+msgid "Accueil"
+msgstr "Home page"
+
+#: /Controller/MenusController_old.php:136;138;140
+#: /Controller/PagesController.php:176 /View/Columns/admin_list.ctp:43
+msgid "Pas de nom"
+msgstr "No name"
+
+#: /Controller/PagesController.php:49
+msgid "Cette page n'existe pas."
+msgstr "This page does not exist."
+
+#: /Controller/PagesController.php:91
+msgid ""
+"La page a bien été enregistrée. Si votre modification affecte le menu pensez "
+"à le regénérer"
+msgstr ""
+"The page is recorded. If the modification affects the menu, please think of "
+"regenerating it"
+
+#: /Controller/PagesController.php:196
+msgid ""
+"La page est désactivée. Si votre modification affecte le menu pensez à le "
+"regénérer"
+msgstr ""
+"The page is disabled. If the modification affects the menu, please think of "
+"regenerating it"
+
+#: /Controller/PagesController.php:198;580
+msgid "Erreur lors de la désactivation."
+msgstr "Error during the disabling."
+
+#: /Controller/PagesController.php:210
+msgid ""
+"La page a été supprimée. Si votre suppression affecte le menu pensez à le "
+"regénérer"
+msgstr ""
+"The page is deleted. If your delition affects the menu, please think of "
+"regenerating it"
+
+#: /Controller/PagesController.php:222
+msgid ""
+"La page est activée. Si votre modification affecte le menu pensez à le "
+"regénérer"
+msgstr ""
+"The page is activated. If  the modification affects the menu, please think "
+"of regenerating it"
+
+#: /Controller/PagesController.php:224;563
+msgid "Erreur lors de l'activation."
+msgstr "Error during the activation."
+
+#: /Controller/PagesController.php:271
+msgid "Veuillez remplir les champs obligatoires pour chaque langue renseignée."
+msgstr "Please fill in the compulsory fields for each provided language."
+
+#: /Controller/PagesController.php:288
+msgid ""
+"Une erreur est survenue avec une des langues, votre contenu est sûrement "
+"vide."
+msgstr ""
+"An error occured with one of the languages, your content is probably empty."
+
+#: /Controller/PagesController.php:319
+msgid ""
+"La page a été modifiée. Si votre modification affecte le menu pensez à le "
+"regénérer"
+msgstr ""
+"The page is modified. If the modification affects the menu, please think of "
+"regenerating it"
+
+#: /Controller/PagesController.php:390
+msgid "Erreur, la catégorie n'a pu être sauvegardé."
+msgstr "Error, not able to backup the category."
+
+#: /Controller/PagesController.php:450 /View/Agents/admin_view.ctp:112
+msgid "Oui"
+msgstr "Yes"
+
+#: /Controller/PagesController.php:451 /View/Agents/admin_view.ctp:98;112;128
+msgid "Non"
+msgstr "No"
+
+#: /Controller/PagesController.php:553
+msgid "Ohh le vilain, impossible d'activer cette catégorie."
+msgstr "Naughty, naughty, impossible to activate this category."
+
+#: /Controller/PagesController.php:570
+msgid "Impossible de désactiver cette catégorie."
+msgstr "Impossible to deactivate this category."
+
+#: /Controller/PaymentController.php:37
+msgid "Erreur, la commande n'a pu être trouvée"
+msgstr "Error, command not found"
+
+#: /Controller/PaymentController.php:42
+msgid "Ce paiement a déjà été validé"
+msgstr "This paiement is validated"
+
+#: /Controller/PaymentController.php:49
+msgid "Impossible de créditer un nombre nul ou négatif de crédits ("
+msgstr "Impossible to credit a nil or negative number of credits ( "
+
+#: /Controller/PaymentController.php:56
+msgid "Erreur dans la mise à jour du crédit."
+msgstr "Error in the udpating of the credit."
+
+#: /Controller/PaymentController.php:158
+msgid "Réglement par"
+msgstr "Paiement by"
+
+#: /Controller/PaymentController.php:219
+msgid "Erreur de création de la commande"
+msgstr "Error in the creating of the command"
+
+#: /Controller/PaymentController.php:227
+msgid "Mode de paiement non autorisé"
+msgstr "Paiment mode not allowed"
+
+#: /Controller/PaymentController.php:232
+msgid "Mode de paiement inconnu"
+msgstr "Unknown paiment mode"
+
+#: /Controller/PaymentController.php:237;242
+msgid "Erreur de panier."
+msgstr "Basket error."
+
+#: /Controller/PaymentController.php:251
+msgid "Erreur de sécurité du panier"
+msgstr "Basket safety error "
+
+#: /Controller/PaymentController.php:258
+msgid "Erreur interne. Veuillez nous excuser"
+msgstr "Intern error. Please accept our appologies"
+
+#: /Controller/PaymentController.php:267
+msgid "Une commande a déjà été passée avec ce panier"
+msgstr "An order is already taken with this basket."
+
+#: /Controller/PaymentbankwireController.php:16
+msgid "Virement bancaire"
+msgstr "Bank draft"
+
+#: /Controller/PhonesController.php:43
+msgid "Nouvelle configuration ajoutée."
+msgstr "New added configuration."
+
+#: /Controller/PhonesController.php:46
+msgid "Echec de l'ajout."
+msgstr "Failure of the add on."
+
+#: /Controller/PhonesController.php:51
+msgid ""
+"Une configuration pour ce pays et cette langue existe déjà. Vous pouvez la "
+"modifier."
+msgstr ""
+"A configuration for this Country and this language is already existing. You "
+"can modify it."
+
+#: /Controller/PhonesController.php:94
+msgid "Erreur avec le formulaire."
+msgstr "Error with the form"
+
+#: /Controller/PhonesController.php:102
+msgid "Modification enregistrée."
+msgstr "Modification recorded."
+
+#: /Controller/PhonesController.php:105
+msgid "Echec de la modification."
+msgstr "Modification failure."
+
+#: /Controller/ProductsController.php:46
+msgid "Le produit a bien été enregistré."
+msgstr "The product is registered."
+
+#: /Controller/ProductsController.php:124
+msgid "Le produit est désactivé."
+msgstr "The product is deactivated."
+
+#: /Controller/ProductsController.php:131
+msgid "Le produit est activé."
+msgstr "The product is activated."
+
+#: /Controller/ProductsController.php:168
+msgid "Mise à jour du produit"
+msgstr "Updating of the product"
+
+#: /Controller/ProductsController.php:171
+msgid "Erreur lors de la mise à jour du produit."
+msgstr "Error in the product updating."
+
+#: /Controller/ReviewsController.php:92
+msgid "Avis validé. Email envoyé au client."
+msgstr "Comment validated. E-mail sent to Customer."
+
+#: /Controller/ReviewsController.php:94
+msgid "Erreur dans la validation de l'avis."
+msgstr "Comment validation error."
+
+#: /Controller/ReviewsController.php:105
+msgid "Avis refusé."
+msgstr "Comment refused."
+
+#: /Controller/ReviewsController.php:107
+msgid "Erreur lors du rejet de l'avis."
+msgstr "Error during the comment rejection."
+
+#: /Controller/ReviewsController.php:144
+msgid "Cet avis n'existe pas."
+msgstr "This comment does not exist."
+
+#: /Controller/ReviewsController.php:150
+msgid "L'avis a été supprimé."
+msgstr "This comment is deleted."
+
+#: /Controller/SlidesController.php:49
+msgid "La slide a été crée. N'oubliez pas de configurer les langues."
+msgstr "The slide is created. Do not forget to configure languages."
+
+#: /Controller/SlidesController.php:115
+msgid "Mise à jour du slide"
+msgstr "Slide update"
+
+#: /Controller/SlidesController.php:117
+msgid "Echec de la mise à jour du slide"
+msgstr "Slide update failure"
+
+#: /Controller/SlidesController.php:174
+msgid "Le slide a été activé"
+msgstr "Slide is activated"
+
+#: /Controller/SlidesController.php:176
+msgid "Erreur lors de l'activation du slide."
+msgstr "Slide activation error."
+
+#: /Controller/SlidesController.php:185
+msgid "Le slide a été désactivé"
+msgstr "The slide is deactivated"
+
+#: /Controller/SlidesController.php:187
+msgid "Erreur lors de la désactivation du slide."
+msgstr "Error during the slide deactivation."
+
+#: /Controller/TranslateController.php:69
+msgid "Aucun fichier n'a été transmis."
+msgstr "No file transmitted."
+
+#: /Controller/TranslateController.php:73
+msgid "Erreur de téléchargement de fichier, veuillez contacter l'admin serveur"
+msgstr "Uploading file error, please contact the server administrator"
+
+#: /Controller/TranslateController.php:78
+msgid "Veuillez sélectionner une langue valide pour qualifier ce fichier .po"
+msgstr "Please chose a valid language to qualify this file .po"
+
+#: /Controller/TranslateController.php:82
+msgid ""
+"Le fichier que vous tentez d'importer ne semble pas être un fichier .po "
+"valide"
+msgstr "The file you are attempting to import does not seem to be .po valid"
+
+#: /Controller/TranslateController.php:98
+msgid ""
+"Impossible d'effectuer une copie de sauvegarde avant de remplacer le "
+"fichier. Veuillez contacter votre administrateur serveur"
+msgstr ""
+"Impossible to do a backup copy before replacing the file. Please contact "
+"your server adminstrator"
+
+#: /Controller/TranslateController.php:114
+msgid "Votre fichier traduction a bien été mis en production"
+msgstr "Your translating file  is put in production"
+
+#: /Controller/TranslateController.php:146
+msgid "Fichier introuvable"
+msgstr "File not found"
+
+#: /Controller/TranslateController.php:152
+msgid "Fichier inexistant"
+msgstr "Non existent file"
+
+#: /Controller/UsersController.php:25
+msgid "Liste des erreurs : "
+msgstr "Errors list :"
+
+#: /Controller/UsersController.php:29
+msgid "Email invalide"
+msgstr "Invalid E-mail"
+
+#: /Controller/UsersController.php:34;773
+msgid "Vos emails sont différents"
+msgstr "Your E-mails are different"
+
+#: /Controller/UsersController.php:39;778
+msgid "La taille minimum de votre mot de passe doit être de 8 caractères."
+msgstr "The password's minimum size must be of 8 characters."
+
+#: /Controller/UsersController.php:44
+msgid "Les mots de passe sont différents"
+msgstr "Different passwords"
+
+#: /Controller/UsersController.php:56
+msgid "L'indicatif téléphonique n'est pas valide"
+msgstr "The dialling code is not valid"
+
+#: /Controller/UsersController.php:64
+msgid "Ce numéro de téléphone est déjà enregistré"
+msgstr "This phone number is already recorded"
+
+#: /Controller/UsersController.php:69
+msgid ""
+"Veuillez saisir votre pseudo uniquement avec des caractères alphanumériques "
+"et sans espace"
+msgstr ""
+"Please enter your pseudo only with alphanumeric characters, and no space"
+
+#: /Controller/UsersController.php:75
+msgid "Numéro de téléphone invalide"
+msgstr "Invalid phone number."
+
+#: /Controller/UsersController.php:80
+msgid "Veuillez préciser l'opérateur téléphonique de votre numéro de téléphone"
+msgstr "Please indicate your phone number's phone operator"
+
+#: /Controller/UsersController.php:86;137
+msgid "Veuillez remplir toutes vos options experts"
+msgstr "Please fill in all your expert options"
+
+#: /Controller/UsersController.php:91;213
+msgid "Votre présentation est vide"
+msgstr "Your presentation is empty"
+
+#: /Controller/UsersController.php:97;219
+msgid "Votre parcours professionnel est vide"
+msgstr "Your career path is empty"
+
+#: /Controller/UsersController.php:103
+msgid "Votre profile est vide"
+msgstr "Your profile is empty"
+
+#: /Controller/UsersController.php:148
+msgid ""
+"Veuillez remplir correctement le formulaire. N'oubliez pas les champs "
+"obligatoires."
+msgstr ""
+"Please fill in the form correctly. Do not forget the compulsory fields."
+
+#: /Controller/UsersController.php:170
+msgid ""
+"L'indicatif téléphonique du deuxième numéro de téléphone n'est pas valide."
+msgstr "The dialling code of the second phone number is invalid."
+
+#: /Controller/UsersController.php:193
+msgid "Erreur dans le chargement d'un des fichiers. Veuillez réessayer."
+msgstr "Error in the uploading of one of the files. Please try again."
+
+#: /Controller/UsersController.php:201
+msgid "Un des fichers est dans un format incorrect."
+msgstr "One of the files has an incorrect format."
+
+#: /Controller/UsersController.php:207
+msgid "Votre fichier audio est trop volumineux."
+msgstr "Your audio file is too large"
+
+#: /Controller/UsersController.php:225
+msgid "Votre profil est vide"
+msgstr "Your profile is empty"
+
+#: /Controller/UsersController.php:503
+msgid ""
+"Votre mot de passe doit contenir au minimum huit caractères ou vos mots de "
+"passe ne sont pas identiques."
+msgstr ""
+"Your password must contain at least 8 characters, or your passwords are not "
+"indentical."
+
+#: /Controller/UsersController.php:622
+msgid "Identifiant inconnu"
+msgstr "Unknown login"
+
+#: /Controller/UsersController.php:643;645
+msgid "Authentification impossible. Veuillez actualiser la page."
+msgstr "Impossible identification. Please update the page."
+
+#: /Controller/UsersController.php:699
+msgid "Identifiants incorrects"
+msgstr "Incorrect logins"
+
+#: /Controller/UsersController.php:706;708;711
+msgid "Identifiants incorrects."
+msgstr "Incorrect logins."
+
+#: /Controller/UsersController.php:706;708;711 /View/Admins/passwdforget.ctp:3
+msgid "Mot de passe oublié ?"
+msgstr "Forgotten password?"
+
+#: /Controller/UsersController.php:715
+msgid "Votre compte n'est pas activé"
+msgstr "Your account is not activated."
+
+#: /Controller/UsersController.php:733
+msgid "Vous êtes déconnecté."
+msgstr "You are disconnected."
+
+#: /Controller/UsersController.php:769
+msgid "Veuillez confirmer votre adresse e-mail en la re-saisissant"
+msgstr "Please confirm your e-mail address by re typing it."
+
+#: /Controller/UsersController.php:783
+msgid "Veuillez re-saisir votre mot de passe dans le champ de confirmation"
+msgstr "Please re type your password in the confirmation field"
+
+#: /Controller/UsersController.php:793
+msgid "Cet email est déjà enregistré."
+msgstr "This E-mail is already recorded"
+
+#: /Controller/UsersController.php:798
+msgid "Ce numéro de téléphone est déjà enregistré."
+msgstr "This phone number is already recorded"
+
+#: /Controller/UsersController.php:801
+msgid "Veuillez rentrer votre prénom ou pseudo"
+msgstr "Please enter your pseudo or first name"
+
+#: /Controller/UsersController.php:804
+msgid "Veuillez accepter les CGV pour créer votre compte"
+msgstr "Please accept the terms and condition of sales to create your account"
+
+#: /Controller/VouchersController.php:34
+msgid ""
+"Veuillez saisir un nombre de crédit, un montant de réduction ou une remise "
+"en pourcentage"
+msgstr ""
+"Please enter a number of credit, a discounted amount, or a discount in "
+"percentage"
+
+#: /Controller/VouchersController.php:44
+msgid ""
+"Un bon de réduction ne peut avoir qu'un seul mode de remise : crédits, "
+"montant ou pourcentage"
+msgstr ""
+"A discount voucher can only have one redeeming mode: credit, amount or "
+"percentage"
+
+#: /Controller/VouchersController.php:49
+msgid "La remise en % ne peut dépasser 100%"
+msgstr "The discount in % can not go above 100%"
+
+#: /Controller/VouchersController.php:85
+msgid "Le coupon a été enregistré"
+msgstr "The voucher is registered"
+
+#: /Controller/VouchersController.php:88
+msgid "Erreur lors de l'enregistrement du coupon"
+msgstr "Error during the registering of the voucher"
+
+#: /Controller/VouchersController.php:138
+msgid "Le coupon a été activé"
+msgstr "Voucher activated"
+
+#: /Controller/VouchersController.php:140
+msgid "Erreur lors de l'activation du coupon."
+msgstr "Error during the validating of the voucher"
+
+#: /Controller/VouchersController.php:148
+msgid "Le coupon a été désactivé"
+msgstr "The voucher is deactivated"
+
+#: /Controller/VouchersController.php:150
+msgid "Erreur lors de la désactivation du coupon."
+msgstr "Error during the deactivating og the voucher."
+
+#: /Controller/VouchersController.php:174
+msgid "Client introuvable"
+msgstr "Unfound customer"
+
+#: /Controller/VouchersController.php:219
+msgid ""
+"Veuillez saisir un nombre de crédit, un montant de réduction ou un "
+"pourcentage de remise"
+msgstr ""
+"Please enter a number of credit, a discounted amount, or a discount in "
+"percentage"
+
+#: /Controller/VouchersController.php:225
+msgid ""
+"Veuillez saisir UN SEUL ET UNIQUE CHAMP parmi : \"Crédit\", \"Montant remise"
+"\" ou \"Pourcentage\""
+msgstr ""
+"Please enter ONE AND ONLY FIELD from:\"Credit\", \" Discounted amount\" ou "
+"\"Percentage\""
+
+#: /Controller/VouchersController.php:231
+msgid "La remise en pourcentage ne peut excéder 100%"
+msgstr "The discount in % can not go above 100%"
+
+#: /Controller/VouchersController.php:237
+msgid ""
+"Un bon de réduction ne peut avoir qu'un seul mode de remise : crédits ou "
+"montant"
+msgstr ""
+"A discount voucher can only have one redeeming mode: credit, amount or "
+"percentage"
+
+#: /Controller/VouchersController.php:284
+msgid "Le coupon a été modifié"
+msgstr "The voucher is modified"
+
+#: /Controller/VouchersController.php:287
+msgid "Erreur lors de la modification du coupon"
+msgstr "Error during the modifying of the voucher"
+
+#: /Controller/VouchersController.php:302
+msgid "Coupon introuvable."
+msgstr "Voucher not found"
+
+#: /Controller/VouchersController.php:332
+msgid "Coupon invalide"
+msgstr "Invalid voucher"
+
+#: /Controller/VouchersController.php:343
+msgid "Vous ne pouvez pas utiliser ce coupon."
+msgstr "You can not use this voucher"
+
+#: /Controller/VouchersController.php:359
+msgid ""
+"Vous ne pouvez plus utiliser ce coupon. La limite d'utilisation est atteinte."
+msgstr "You can not use this voucher. The redeeming date has expired."
+
+#: /Controller/VouchersController.php:371
+msgid "Coupon utilisé"
+msgstr "Voucher used"
+
+#: /Controller/VouchersController.php:382
+msgid "Ce code est déjà enregistré"
+msgstr "Code already registered"
+
+#: /Controller/VouchersController.php:387
+msgid "Le code ne doit comporter que des lettres ou des chiffres."
+msgstr "Code composed only of letters or numbers."
+
+#: /Controller/VouchersController.php:392
+msgid ""
+"La date de début est incorrecte. Respectez le format suivant : JJ-MM-AAA HH:"
+"MM"
+msgstr ""
+"The start date is incorrect. Please respect the following format: DD-MM-YYY "
+"HH:MM"
+
+#: /Controller/VouchersController.php:396
+msgid ""
+"La date de fin est incorrecte. Respectez le format suivant : JJ-MM-AAA HH:MM"
+msgstr ""
+"The end date is incorrecte. Please respect the following format: DD-MM-YYY "
+"HH:MM"
+
+#: /Controller/VouchersController.php:412
+msgid "Le crédit est négatif"
+msgstr "Negative credit"
+
+#: /Controller/VouchersController.php:417
+msgid "Nombre d'utilisation négative."
+msgstr "Negative number of uses"
+
+#: /Model/Chat.php:244
+msgid "Déconnexion du chat"
+msgstr "Disconnecting of Chat"
+
+#: /View/Accounts/admin_com.ctp:6 /View/Accounts/admin_com_view.ctp:6;24
+#: /View/Accounts/admin_credit.ctp:6 /View/Accounts/admin_credit_view.ctp:6;24
+#: /View/Accounts/admin_index.ctp:2 /View/Accounts/admin_view.ctp:3;16;27
+#: /View/Agents/admin_com.ctp:49 /View/Agents/admin_com_view.ctp:57
+#: /View/Agents/admin_view.ctp:215 /View/Agents/appointments.ctp:48
+#: /View/Agents/display.ctp:584 /View/Agents/history.ctp:54
+#: /View/Payment/admin_index.ctp:31 /View/Reviews/admin_index.ctp:40
+msgid "Client"
+msgstr "Customer"
+
+#: /View/Accounts/admin_com.ctp:6
+msgid "Communications des clients"
+msgstr "Customers communications"
+
+#: /View/Accounts/admin_com.ctp:14 /View/Accounts/admin_com_view.ctp:14
+#: /View/Accounts/admin_credit.ctp:14 /View/Accounts/admin_credit_view.ctp:14
+#: /View/Accounts/admin_edit.ctp:2;10 /View/Accounts/admin_index.ctp:10
+#: /View/Accounts/admin_view.ctp:11 /View/Helper/MetronicHelper.php:334
+msgid "Clients"
+msgstr "Customers"
+
+#: /View/Accounts/admin_com.ctp:19 /View/Agents/admin_com.ctp:19
+msgid "Communication"
+msgstr "Communication"
+
+#: /View/Accounts/admin_com.ctp:32
+msgid "Dernière communication des clients"
+msgstr "Last customers communication"
+
+#: /View/Accounts/admin_com.ctp:35 /View/Agents/admin_com.ctp:35
+msgid "Export CSV de toutes les communications"
+msgstr "CSV export of all communications"
+
+#: /View/Accounts/admin_com.ctp:43 /View/Agents/admin_com.ctp:43
+msgid "Pas de communication"
+msgstr "No communication"
+
+#: /View/Accounts/admin_com.ctp:48 /View/Accounts/admin_credit.ctp:48
+#: /View/Accounts/admin_index.ctp:81 /View/Agents/admin_index.ctp:81
+#: /View/Agents/admin_valid_info.ctp:24
+msgid "Nom complet"
+msgstr "Complete name"
+
+#: /View/Accounts/admin_com.ctp:49 /View/Accounts/admin_com_view.ctp:57
+#: /View/Accounts/admin_view.ctp:166 /View/Accounts/favorites.ctp:40
+#: /View/Accounts/history.ctp:70 /View/Agents/admin_com.ctp:48
+#: /View/Agents/admin_com_view.ctp:24 /View/Agents/admin_edit.ctp:15
+#: /View/Agents/admin_valid_audio.ctp:24
+#: /View/Agents/admin_valid_info_view.ctp:3;16
+#: /View/Agents/admin_valid_photo.ctp:24 /View/Agents/admin_view.ctp:3;16;27
+#: /View/Reviews/admin_index.ctp:41
+msgid "Agent"
+msgstr "Agent"
+
+#: /View/Accounts/admin_com.ctp:50 /View/Accounts/admin_com_view.ctp:58
+#: /View/Accounts/admin_view.ctp:167 /View/Accounts/history.ctp:71
+#: /View/Agents/admin_com.ctp:50 /View/Agents/admin_com_view.ctp:58
+#: /View/Agents/admin_view.ctp:216 /View/Agents/history.ctp:55
+#: /View/Helper/MetronicHelper.php:1174
+msgid "Media"
+msgstr "Media"
+
+#: /View/Accounts/admin_com.ctp:51 /View/Accounts/admin_com_view.ctp:59
+msgid "Coût de la com."
+msgstr "Com. cost"
+
+#: /View/Accounts/admin_com.ctp:52 /View/Accounts/admin_com_view.ctp:60
+#: /View/Accounts/admin_view.ctp:170 /View/Accounts/history.ctp:73
+#: /View/Agents/admin_com.ctp:51 /View/Agents/admin_com_view.ctp:60
+#: /View/Agents/admin_view.ctp:218 /View/Agents/history.ctp:56
+msgid "Durée"
+msgstr "Lenght"
+
+#: /View/Accounts/admin_com.ctp:53
+msgid "Crédits avant"
+msgstr "Crédits before"
+
+#: /View/Accounts/admin_com.ctp:54 /View/Accounts/admin_com_view.ctp:62
+#: /View/Accounts/admin_view.ctp:171 /View/Accounts/chat_history.ctp:52
+#: /View/Accounts/history.ctp:74 /View/Admins/admin_mails.ctp:39
+#: /View/Agents/admin_com.ctp:52 /View/Agents/appointments.ctp:50
+#: /View/Agents/chat_history.ctp:54 /View/Agents/history.ctp:57
+#: /View/Elements/mails.ctp:10 /View/Payment/admin_index.ctp:43
+msgid "Date"
+msgstr "Date"
+
+#: /View/Accounts/admin_com.ctp:55 /View/Accounts/admin_credit.ctp:51
+#: /View/Accounts/admin_index.ctp:91;122 /View/Accounts/admin_view.ctp:55
+#: /View/Accounts/chat_history.ctp:53 /View/Accounts/favorites.ctp:78
+#: /View/Admins/admin_logo.ctp:31 /View/Agents/admin_com.ctp:53
+#: /View/Agents/admin_index.ctp:92;122
+#: /View/Agents/admin_valid_info_view.ctp:41 /View/Agents/admin_view.ctp:62
+#: /View/Agents/chat_history.ctp:55 /View/Columns/admin_list.ctp:36
+#: /View/Pages/admin_create.ctp:93 /View/Pages/admin_create_category.ctp:42
+#: /View/Payment/admin_index.ctp:86 /View/Phones/admin_list.ctp:37
+#: /View/Reviews/admin_index.ctp:45 /View/Slides/admin_list.ctp:35
+#: /View/Vouchers/admin_index.ctp:47
+msgid "Actions"
+msgstr "Actions"
+
+#: /View/Accounts/admin_com.ctp:74 /View/Accounts/admin_view.ctp:131;160
+msgid "Voir l'historique complet du client"
+msgstr "See complete customer's historic"
+
+#: /View/Accounts/admin_com_view.ctp:6;29 /View/Agents/admin_com_view.ctp:6;29
+#: /View/Helper/FrontblockHelper.php:351
+msgid "Historique des communications"
+msgstr "Communications historic"
+
+#: /View/Accounts/admin_com_view.ctp:19 /View/Agents/admin_com_view.ctp:19
+msgid "Communications"
+msgstr "Communications"
+
+#: /View/Accounts/admin_com_view.ctp:42 /View/Agents/admin_com_view.ctp:42
+msgid "Toutes les communications de"
+msgstr "All communications of"
+
+#: /View/Accounts/admin_com_view.ctp:44 /View/Agents/admin_com_view.ctp:44
+msgid "Export CSV de toutes les communications de "
+msgstr "CSV export of all communications of"
+
+#: /View/Accounts/admin_com_view.ctp:52
+msgid "Aucune communication"
+msgstr "No communication"
+
+#: /View/Accounts/admin_com_view.ctp:61 /View/Accounts/admin_view.ctp:168
+msgid "Crédit avant"
+msgstr "Crédit before"
+
+#: /View/Accounts/admin_credit.ctp:6
+msgid "Achats des clients"
+msgstr "Customer purchases"
+
+#: /View/Accounts/admin_credit.ctp:19 /View/Accounts/admin_credit_view.ctp:19
+msgid "Achats"
+msgstr "purchases"
+
+#: /View/Accounts/admin_credit.ctp:32
+msgid "Dernier achat des clients"
+msgstr "Last Customer purchase"
+
+#: /View/Accounts/admin_credit.ctp:35
+msgid "Export CSV de tous les achats"
+msgstr "CSV export of all purchases"
+
+#: /View/Accounts/admin_credit.ctp:43
+msgid "Pas d'achat"
+msgstr "No purchase"
+
+#: /View/Accounts/admin_credit.ctp:49 /View/Accounts/admin_index.ctp:84
+#: /View/Products/admin_create.ctp:27 /View/Products/admin_edit.ctp:26
+msgid "Credit"
+msgstr "Credit"
+
+#: /View/Accounts/admin_credit.ctp:50 /View/Accounts/admin_credit_view.ctp:58
+#: /View/Accounts/admin_view.ctp:137 /View/Accounts/payments.ctp:38
+msgid "Date d'achat"
+msgstr "Purchase date"
+
+#: /View/Accounts/admin_credit.ctp:61
+msgid "Voir l'historique complet"
+msgstr "See complete historic"
+
+#: /View/Accounts/admin_credit_view.ctp:6;29
+msgid "Historique des achats"
+msgstr "Purchase historic"
+
+#: /View/Accounts/admin_credit_view.ctp:42
+msgid "Tous les achats de"
+msgstr "All the purchases of"
+
+#: /View/Accounts/admin_credit_view.ctp:45
+msgid "Export CSV de tous les achats de "
+msgstr "CSV export of all purchases of"
+
+#: /View/Accounts/admin_credit_view.ctp:55 /View/Accounts/payments.ctp:35
+msgid "Pack"
+msgstr "Pack"
+
+#: /View/Accounts/admin_credit_view.ctp:56
+#: /View/Accounts/buycreditpaiement.ctp:24
+#: /View/Accounts/buycredits._backupjr.ctp:53 /View/Accounts/payments.ctp:36
+#: /View/Payment/admin_index.ctp:37 /View/Payment/Bankwire/index.ctp:23
+#: /View/Products/admin_create.ctp:28;44 /View/Products/admin_edit.ctp:27
+msgid "Prix"
+msgstr "Price"
+
+#: /View/Accounts/admin_credit_view.ctp:57 /View/Accounts/payments.ctp:37
+#: /View/Payment/admin_index.ctp:62 /View/Products/admin_create.ctp:44
+#: /View/Vouchers/admin_create.ctp:77
+msgid "Crédit"
+msgstr "Credit"
+
+#: /View/Accounts/admin_edit.ctp:2
+msgid "Edition d'un client"
+msgstr "Customer editing"
+
+#: /View/Accounts/admin_edit.ctp:15
+msgid "Editer "
+msgstr "Edit"
+
+#: /View/Accounts/admin_edit.ctp:15
+msgid "client"
+msgstr "Customer"
+
+#: /View/Accounts/admin_edit.ctp:26
+msgid "Editer le client"
+msgstr "edit the customer"
+
+#: /View/Accounts/admin_edit.ctp:31
+msgid "Informations du client"
+msgstr "Customer's information"
+
+#: /View/Accounts/admin_edit.ctp:35 /View/Admins/admin_subscribe.ctp:17
+#: /View/Agents/admin_edit.ctp:41 /View/Contacts/index.ctp:44
+#: /View/Elements/account_infos.ctp:19;40
+msgid "Prénom"
+msgstr "First name"
+
+#: /View/Accounts/admin_edit.ctp:36 /View/Accounts/admin_index.ctp:33
+#: /View/Accounts/buycredits._backupjr.ctp:54
+#: /View/Admins/admin_subscribe.ctp:18 /View/Agents/admin_edit.ctp:42
+#: /View/Category/admin_create.ctp:29;52 /View/Columns/admin_list.ctp:31
+#: /View/Contacts/index.ctp:43 /View/Elements/account_infos.ctp:24;45
+#: /View/Elements/agent_infos.ctp:20
+#: /View/Helper/MetronicHelper.php:792;828;945;990;1051
+#: /View/Pages/admin_create.ctp:31;76
+#: /View/Pages/admin_create_category.ctp:27;39
+#: /View/Products/admin_create.ctp:30;43
+msgid "Nom"
+msgstr "Surmane"
+
+#: /View/Accounts/admin_edit.ctp:37 /View/Admins/admin_subscribe.ctp:21
+#: /View/Admins/login.ctp:14 /View/Admins/newpasswd.ctp:14
+#: /View/Agents/admin_edit.ctp:64 /View/Elements/account_compte.ctp:22
+#: /View/Elements/login_modal.ctp:15 /View/Helper/FrontblockHelper.php:683
+#: /View/Users/login.ctp:21;94 /View/Users/login_agent.ctp:20
+msgid "Mot de passe"
+msgstr "Password"
+
+#: /View/Accounts/admin_edit.ctp:38 /View/Admins/admin_subscribe.ctp:22
+#: /View/Agents/admin_edit.ctp:65
+msgid "Confirmation mot de passe"
+msgstr "Password confirmation"
+
+#: /View/Accounts/admin_edit.ctp:40 /View/Agents/admin_edit.ctp:60
+#: /View/Agents/admin_valid_info.ctp:25 /View/Elements/account_details.ctp:12
+#: /View/Elements/agent_infos.ctp:93
+msgid "Adresse"
+msgstr "Addresse"
+
+#: /View/Accounts/admin_edit.ctp:41 /View/Agents/admin_edit.ctp:61
+#: /View/Elements/account_details.ctp:18 /View/Elements/agent_infos.ctp:99
+msgid "Code postal"
+msgstr "Postal code"
+
+#: /View/Accounts/admin_edit.ctp:42 /View/Accounts/admin_index.ctp:87
+#: /View/Agents/admin_edit.ctp:62 /View/Agents/admin_index.ctp:88
+#: /View/Elements/account_details.ctp:24 /View/Elements/agent_infos.ctp:106
+msgid "Ville"
+msgstr "Town"
+
+#: /View/Accounts/admin_edit.ctp:44 /View/Agents/admin_com_view.ctp:59
+#: /View/Agents/admin_edit.ctp:46 /View/Agents/admin_valid_info.ctp:26
+#: /View/Agents/admin_view.ctp:217 /View/Elements/account_details.ctp:6
+#: /View/Elements/account_subscribe.ctp:29 /View/Elements/agent_infos.ctp:55
+msgid "Numéro de téléphone"
+msgstr "Phone number"
+
+#: /View/Accounts/admin_edit.ctp:52 /View/Accounts/admin_index.ctp:88
+#: /View/Admins/admin_subscribe.ctp:20 /View/Agents/admin_edit.ctp:63
+#: /View/Agents/admin_index.ctp:89 /View/Agents/admin_valid_info.ctp:24
+#: /View/Elements/agent_infos.ctp:89
+msgid "Pays de résidence"
+msgstr "Country of residence"
+
+#: /View/Accounts/admin_edit.ctp:58 /View/Accounts/admin_view.ctp:209
+#: /View/Accounts/limits.ctp:55 /View/Accounts/profil.ctp:58
+#: /View/Admins/admin_logo.ctp:77 /View/Admins/admin_subscribe.ctp:28
+#: /View/Agents/admin_edit.ctp:71 /View/Agents/admin_view.ctp:260
+#: /View/Agents/planning.ctp:131 /View/Alerts/setnew.ctp:156
+#: /View/Category/admin_create.ctp:44 /View/Columns/admin_edit.ctp:110
+#: /View/Elements/admin_footer_form_block_link.ctp:51
+#: /View/Elements/admin_footer_form_link.ctp:60
+#: /View/Elements/admin_form_block_link.ctp:51
+#: /View/Elements/admin_form_link.ctp:60 /View/Elements/admin_menu_link.ctp:44
+#: /View/Helper/MetronicHelper.php:833;1069
+#: /View/Horoscopes/admin_create.ctp:40 /View/Horoscopes/admin_edit.ctp:37
+#: /View/Pages/admin_create.ctp:46 /View/Pages/admin_edit.ctp:89
+#: /View/Pages/admin_edit_category.ctp:53 /View/Phones/admin_create.ctp:44
+#: /View/Phones/admin_edit.ctp:51 /View/Products/admin_create.ctp:35
+#: /View/Products/admin_edit.ctp:31 /View/Slides/admin_edit.ctp:110
+msgid "Enregistrer"
+msgstr "Register"
+
+#: /View/Accounts/admin_index.ctp:2
+msgid "Liste des clients"
+msgstr "Customers list"
+
+#: /View/Accounts/admin_index.ctp:22
+msgid "Liste clients"
+msgstr "Customers database"
+
+#: /View/Accounts/admin_index.ctp:24 /View/Agents/admin_index.ctp:24
+#: /View/Pages/admin_create.ctp:57
+msgid "Recherche"
+msgstr "Research"
+
+#: /View/Accounts/admin_index.ctp:27
+msgid "Code client"
+msgstr "Customers code"
+
+#: /View/Accounts/admin_index.ctp:63
+msgid "Aucun client"
+msgstr "No customer"
+
+#: /View/Accounts/admin_index.ctp:69
+msgid "Liste des clients qui n'ont pas confirmé leurs adresses mails"
+msgstr "Customers list without e-mail  confirmation"
+
+#: /View/Accounts/admin_index.ctp:74
+msgid "Liste des clients dont le compte n'est pas activé"
+msgstr "Customers list with inactive account"
+
+#: /View/Accounts/admin_index.ctp:82
+msgid "Code personnel"
+msgstr "Personal code"
+
+#: /View/Accounts/admin_index.ctp:83 /View/Agents/admin_index.ctp:87
+msgid "Inscription"
+msgstr "Registration"
+
+#: /View/Accounts/admin_index.ctp:89 /View/Agents/admin_index.ctp:90
+msgid "Compte"
+msgstr "account"
+
+#: /View/Accounts/admin_index.ctp:108 /View/Accounts/admin_view.ctp:80
+#: /View/Agents/admin_index.ctp:110 /View/Agents/admin_view.ctp:49
+msgid "Compte activé"
+msgstr "Activated account"
+
+#: /View/Accounts/admin_index.ctp:110 /View/Accounts/admin_view.ctp:82
+#: /View/Agents/admin_index.ctp:112 /View/Agents/admin_view.ctp:51
+#: /View/Helper/MetronicHelper.php:325
+msgid "Compte non validé"
+msgstr "non validated account"
+
+#: /View/Accounts/admin_index.ctp:112 /View/Accounts/admin_view.ctp:84
+#: /View/Agents/admin_index.ctp:114 /View/Agents/admin_view.ctp:53
+msgid "Compte désactivé"
+msgstr "deactivated account"
+
+#: /View/Accounts/admin_index.ctp:117 /View/Accounts/admin_view.ctp:51
+#: /View/Agents/admin_index.ctp:142 /View/Agents/admin_view.ctp:81
+msgid "Email confirmé"
+msgstr "confirmed e-mail"
+
+#: /View/Accounts/admin_index.ctp:119 /View/Accounts/admin_view.ctp:53
+#: /View/Agents/admin_index.ctp:119 /View/Agents/admin_view.ctp:60
+#: /View/Helper/MetronicHelper.php:233;318
+msgid "Email non confirmé"
+msgstr "Not confirmed e-mail"
+
+#: /View/Accounts/admin_index.ctp:125 /View/Accounts/admin_view.ctp:58
+#: /View/Agents/admin_index.ctp:125 /View/Agents/admin_view.ctp:65
+msgid "Relancer un mail de confirmation"
+msgstr "Send a reminder of confirmation of e-mail "
+
+#: /View/Accounts/admin_index.ctp:128 /View/Accounts/admin_view.ctp:61
+#: /View/Agents/admin_index.ctp:128 /View/Agents/admin_view.ctp:68
+msgid "Voulez-vous vraiment renvoyer un mail de confirmation ?"
+msgstr "Do you really want to send a confirmation e-mail again?"
+
+#: /View/Accounts/admin_index.ctp:132 /View/Accounts/admin_view.ctp:65
+#: /View/Agents/admin_index.ctp:132 /View/Agents/admin_view.ctp:72
+msgid "Confirmer l'email"
+msgstr "Confirm e-mail"
+
+#: /View/Accounts/admin_index.ctp:135 /View/Accounts/admin_view.ctp:68
+#: /View/Agents/admin_index.ctp:135 /View/Agents/admin_view.ctp:75
+msgid "Voulez-vous vraiment forcer la confirmation de l'adresse mail ?"
+msgstr "Do you really want to force the e-mail address confirmation?"
+
+#: /View/Accounts/admin_index.ctp:146 /View/Accounts/admin_view.ctp:92
+#: /View/Accounts/profil.ctp:78;97 /View/Admins/admin_edit_logo.ctp:54
+#: /View/Admins/admin_logo.ctp:40 /View/Agents/admin_index.ctp:160
+#: /View/Agents/admin_valid_presentation.ctp:41 /View/Agents/admin_view.ctp:136
+#: /View/Agents/presentations.ctp:84 /View/Agents/profil.ctp:102;124;141;158
+#: /View/Category/admin_create.ctp:55 /View/Columns/admin_list.ctp:61
+#: /View/Elements/admin_edit.ctp:13 /View/Helper/FrontblockHelper.php:243
+#: /View/Horoscopes/admin_create.ctp:80 /View/Pages/admin_create.ctp:112
+#: /View/Pages/admin_create_category.ctp:52 /View/Phones/admin_list.ctp:51
+#: /View/Products/admin_create.ctp:47 /View/Slides/admin_list.ctp:59
+#: /View/Vouchers/admin_index.ctp:90
+msgid "Modifier"
+msgstr "Modify"
+
+#: /View/Accounts/admin_index.ctp:152 /View/Accounts/favorites.ctp:82
+#: /View/Accounts/history.ctp:120;128 /View/Agents/admin_index.ctp:147
+#: /View/Agents/history.ctp:78;86
+msgid "Voir"
+msgstr "See"
+
+#: /View/Accounts/admin_index.ctp:159
+msgid "Forcer l'activation du compte"
+msgstr "Force the account activation"
+
+#: /View/Accounts/admin_index.ctp:163
+msgid "Voulez-vous vraiment forcer l'activation du compte ?"
+msgstr "Do you really want to force the account activation?"
+
+#: /View/Accounts/admin_index.ctp:167 /View/Agents/admin_index.ctp:174
+msgid "Supprimer le compte"
+msgstr "Delete the account"
+
+#: /View/Accounts/admin_index.ctp:171 /View/Agents/admin_index.ctp:182
+msgid "Voulez-vous vraiment supprimer définitivement le compte ?"
+msgstr "Do you really want to delete this account definately?"
+
+#: /View/Accounts/admin_view.ctp:3
+msgid "Données du client"
+msgstr "Customers data"
+
+#: /View/Accounts/admin_view.ctp:98 /View/Agents/admin_view.ctp:161
+msgid "Désactiver le compte"
+msgstr "Deactivate the account"
+
+#: /View/Accounts/admin_view.ctp:102
+msgid "Voulez-vous vraiment désactiver le compte du client ?"
+msgstr "Do you really want to deactivate the customer account?"
+
+#: /View/Accounts/admin_view.ctp:105 /View/Agents/admin_view.ctp:169
+msgid "Activer le compte"
+msgstr "Activate the account"
+
+#: /View/Accounts/admin_view.ctp:130;159 /View/Agents/admin_view.ctp:208
+msgid "Les"
+msgstr "The"
+
+#: /View/Accounts/admin_view.ctp:130
+msgid "derniers achats"
+msgstr "last purchases"
+
+#: /View/Accounts/admin_view.ctp:138
+msgid "Credits"
+msgstr "Credits"
+
+#: /View/Accounts/admin_view.ctp:159
+msgid "dernières communications"
+msgstr "Last communications"
+
+#: /View/Accounts/admin_view.ctp:169
+msgid "Coût (en credits)"
+msgstr "Cost (in crédits)"
+
+#: /View/Accounts/admin_view.ctp:200 /View/Agents/admin_view.ctp:251
+msgid "Note privée"
+msgstr "Private note"
+
+#: /View/Accounts/buycreditpaiement.ctp:17
+msgid "Votre commande"
+msgstr "Your order"
+
+#: /View/Accounts/buycreditpaiement.ctp:22 /View/Payment/Bankwire/index.ctp:21
+#: /View/Products/admin_edit.ctp:8
+msgid "Produit"
+msgstr "Products"
+
+#: /View/Accounts/buycreditpaiement.ctp:23 /View/Accounts/index.ctp:33
+#: /View/Elements/mails.ctp:11 /View/Payment/admin_index.ctp:32
+#: /View/Payment/Bankwire/index.ctp:22
+msgid "Crédits"
+msgstr "Credits"
+
+#: /View/Accounts/buycreditpaiement.ctp:34 /View/Elements/cart_products.ctp:56
+#: /View/Payment/admin_index.ctp:33 /View/Payment/Bankwire/index.ctp:33
+msgid "Code promo"
+msgstr "Promo code"
+
+#: /View/Accounts/buycreditpaiement.ctp:41 /View/Payment/Bankwire/index.ctp:40
+msgid "Gratuit !"
+msgstr "Free !"
+
+#: /View/Accounts/buycreditpaiement.ctp:45 /View/Payment/admin_index.ctp:39
+#: /View/Payment/Bankwire/index.ctp:44
+msgid "Total"
+msgstr "Total"
+
+#: /View/Accounts/buycreditpaiement.ctp:76;79
+msgid "Payer par virement bancaire"
+msgstr "Pay by bank draft"
+
+#: /View/Accounts/buycreditpaiement.ctp:80
+msgid "Payer par virement bancaire (traitement plus long)"
+msgstr "Pay by bank draft (longer processing)"
+
+#: /View/Accounts/buycreditpaiement.ctp:85;88
+msgid "Payer par carte bancaire"
+msgstr "Pay by bank card"
+
+#: /View/Accounts/buycreditpaiement.ctp:89
+msgid "Payer par carte bancaire avec le système de paiement sécurisé HiPay"
+msgstr "Pay by bank card with the Hipay secure payment system"
+
+#: /View/Accounts/buycreditpaiement.ctp:100 /View/Elements/agentslist.ctp:415
+#: /View/Helper/MetronicHelper.php:752;757 /View/Reviews/display.ctp:62
+msgid "Précédent"
+msgstr "Previous"
+
+#: /View/Accounts/buycredits._backupjr.ctp:38
+#: /View/Elements/cart_products.ctp:3
+msgid "Nous n'avons aucun produit à vous proposer."
+msgstr "We have no product to suggest to you."
+
+#: /View/Accounts/buycredits._backupjr.ctp:55
+#: /View/Helper/MetronicHelper.php:829;862;903
+#: /View/Products/admin_create.ctp:31
+msgid "Description"
+msgstr "Description"
+
+#: /View/Accounts/buycredits._backupjr.ctp:67
+#: /View/Elements/cart_products.ctp:18
+msgid "Sélectionner"
+msgstr "Chose"
+
+#: /View/Accounts/buycredits._backupjr.ctp:83
+msgid "Si vous disposez d'un code PROMO, indiquez le ci-dessous"
+msgstr "If you have a discount VOUCHER, please indicate it below"
+
+#: /View/Accounts/buycredits._backupjr.ctp:85
+#: /View/Elements/account_subscribe.ctp:44 /View/Elements/cart_products.ctp:67
+msgid "J'ai lu et j'approuve sans réserve les"
+msgstr "I have read and approve with no reservation the"
+
+#: /View/Accounts/buycredits._backupjr.ctp:88
+#: /View/Elements/cart_products.ctp:79
+msgid "Acheter"
+msgstr "Buy"
+
+#: /View/Accounts/chat_history.ctp:45
+msgid "Vous n'avez consulté aucun expert via le chat."
+msgstr "You have consulted no expert via Chat."
+
+#: /View/Accounts/chat_history.ctp:51 /View/Agents/chat_history.ctp:53
+msgid "Chat avec"
+msgstr "Chat with"
+
+#: /View/Accounts/chat_history.ctp:76 /View/Agents/chat_history.ctp:65
+msgid "Voir la conversation"
+msgstr "See the conversation"
+
+#: /View/Accounts/favorites.ctp:21
+msgid "Mes experts"
+msgstr "My experts"
+
+#: /View/Accounts/favorites.ctp:30
+msgid "Vous n'avez consulté aucun expert."
+msgstr "You have consulted no expert."
+
+#: /View/Accounts/favorites.ctp:32 /View/Accounts/review.ctp:78
+msgid "Rendez-vous ici"
+msgstr "Meet here"
+
+#: /View/Accounts/favorites.ctp:41 /View/Agents/admin_index.ctp:27;86
+msgid "Code agent"
+msgstr "Agent code"
+
+#: /View/Accounts/favorites.ctp:42 /View/Agents/admin_valid_info.ctp:26
+#: /View/Agents/admin_valid_presentation.ctp:25
+#: /View/Category/admin_create.ctp:52 /View/Reviews/admin_index.ctp:44
+msgid "Date d'ajout"
+msgstr "Date of addition"
+
+#: /View/Accounts/favorites.ctp:96 /View/Admins/admin_list.ctp:64
+#: /View/Agents/admin_record_audio.ctp:48
+#: /View/Elements/admin_block_link_action.ctp:3
+#: /View/Elements/admin_footer_block_link_action.ctp:3
+#: /View/Elements/admin_footer_link_action.ctp:3
+#: /View/Elements/admin_link_action.ctp:3 /View/Footers/admin_footer.ctp:66
+#: /View/Menus/admin_menu.ctp:53 /View/Pages/admin_create.ctp:141
+#: /View/Reviews/admin_index.ctp:123
+msgid "Supprimer"
+msgstr "Delete"
+
+#: /View/Accounts/favorites.ctp:116
+msgid "Sélectionnez un expert ci-dessous pour l'enregistrer dans vos favoris."
+msgstr "Select an expert below to register in your favorites."
+
+#: /View/Accounts/favorites.ctp:121
+msgid "Ajouter un expert consulté dans vos favoris"
+msgstr "Add a consulted expert in your favorites"
+
+#: /View/Accounts/favorites.ctp:130
+msgid "Sélectionner un expert"
+msgstr "Select an expert"
+
+#: /View/Accounts/favorites.ctp:132 /View/Accounts/review.ctp:46
+msgid "Choisissez un expert"
+msgstr "Chose an expert"
+
+#: /View/Accounts/favorites.ctp:139 /View/Vouchers/admin_create.ctp:124
+msgid "Ajouter"
+msgstr "Add"
+
+#: /View/Accounts/history.ctp:12 /View/Helper/FrontblockHelper.php:351;454
+msgid "Mes communications"
+msgstr "My communications"
+
+#: /View/Accounts/history.ctp:17
+msgid "Mes communications par téléphone"
+msgstr "My phone communication"
+
+#: /View/Accounts/history.ctp:20
+msgid "Mes communications par e-mail"
+msgstr "My e-mail communications"
+
+#: /View/Accounts/history.ctp:23
+msgid "Mes communications par chat"
+msgstr "My chat communications "
+
+#: /View/Accounts/history.ctp:32
+msgid "Historique de mes communications"
+msgstr "My communications historic"
+
+#: /View/Accounts/history.ctp:52 /View/Agents/history.ctp:36
+msgid "Toutes les communications"
+msgstr "All communications "
+
+#: /View/Accounts/history.ctp:53 /View/Agents/history.ctp:37
+#: /View/Helper/FrontblockHelper.php:352;455 /View/Home/media_phone.ctp:8
+msgid "Par téléphone"
+msgstr "By phone"
+
+#: /View/Accounts/history.ctp:54 /View/Agents/history.ctp:38
+#: /View/Helper/FrontblockHelper.php:353;456
+msgid "Par écrit"
+msgstr "By writing"
+
+#: /View/Accounts/history.ctp:55 /View/Agents/display.ctp:330
+#: /View/Agents/history.ctp:39 /View/Helper/FrontblockHelper.php:354;457
+msgid "Par chat"
+msgstr "By chat"
+
+#: /View/Accounts/history.ctp:60 /View/Agents/history.ctp:44
+msgid "Filtre : "
+msgstr "Filter :"
+
+#: /View/Accounts/history.ctp:66
+msgid "Vous n'avez eu aucune communication avec un expert."
+msgstr "You have no communication with an expert."
+
+#: /View/Accounts/history.ctp:72
+msgid "Crédits/Seconde"
+msgstr "Crédits/second"
+
+#: /View/Accounts/history.ctp:107
+msgid "crédit(s)"
+msgstr "credit(s)"
+
+#: /View/Accounts/index.ctp:13
+msgid "Mon compte Client"
+msgstr "My Customer account"
+
+#: /View/Accounts/index.ctp:25 /View/Agents/index.ctp:29
+#: /View/Helper/FrontblockHelper.php:349;451
+msgid "Mes informations"
+msgstr "My information"
+
+#: /View/Accounts/index.ctp:29
+msgid "Mon code personnel"
+msgstr "My personal code"
+
+#: /View/Accounts/index.ctp:34
+msgid " soit "
+msgstr "either"
+
+#: /View/Accounts/index.ctp:37 /View/Agents/index.ctp:45
+msgid "Ma dernière communication"
+msgstr "My last communication"
+
+#: /View/Accounts/index.ctp:41 /View/Agents/index.ctp:49
+msgid "Vous n'avez eu aucune communication"
+msgstr "You have had no communication"
+
+#: /View/Accounts/index.ctp:42
+msgid "Pour commencer, rendez-vous"
+msgstr "To start with, meet"
+
+#: /View/Accounts/index.ctp:42 /View/Agents/planning.ctp:133
+msgid "ici"
+msgstr "here"
+
+#: /View/Accounts/index.ctp:44 /View/Agents/index.ctp:51
+msgid "Avec"
+msgstr "With"
+
+#: /View/Accounts/index.ctp:56 /View/Agents/index.ctp:52
+msgid "par"
+msgstr "By"
+
+#: /View/Accounts/index.ctp:56 /View/Agents/index.ctp:52
+#: /View/Elements/agent_box_appointment.ctp:13
+msgid "le"
+msgstr "the"
+
+#: /View/Accounts/index.ctp:64 /View/Agents/index.ctp:59
+msgid "Voir toutes mes communications"
+msgstr "See all my communications"
+
+#: /View/Accounts/index.ctp:73 /View/Helper/FrontblockHelper.php:361
+msgid "Acheter des minutes"
+msgstr "BUY MINUTES"
+
+#: /View/Accounts/index.ctp:81
+msgid "Consultation par téléphone"
+msgstr "Phone consulting"
+
+#: /View/Accounts/index.ctp:89
+msgid "Consultation par mail"
+msgstr "E-mail consulting"
+
+#: /View/Accounts/index.ctp:97
+msgid "Consultation par chat"
+msgstr "Chat consulting"
+
+#: /View/Accounts/index.ctp:109 /View/Agents/index.ctp:86
+#: /View/Helper/FrontblockHelper.php:350;452
+msgid "Mon profil"
+msgstr "My profil"
+
+#: /View/Accounts/index.ctp:113 /View/Agents/index.ctp:90
+msgid "Mon e-mail"
+msgstr "My e-mail"
+
+#: /View/Accounts/index.ctp:117 /View/Agents/index.ctp:94
+msgid "Mon adresse"
+msgstr "My address"
+
+#: /View/Accounts/index.ctp:130 /View/Agents/index.ctp:107
+msgid "Mon nom"
+msgstr "My surname"
+
+#: /View/Accounts/index.ctp:134 /View/Agents/index.ctp:111
+msgid "Mon prénom"
+msgstr "My first name"
+
+#: /View/Accounts/index.ctp:138 /View/Agents/index.ctp:115
+msgid "Ma date de naissance"
+msgstr "My date of birth"
+
+#: /View/Accounts/index.ctp:146 /View/Agents/index.ctp:124
+msgid "Mon n° de téléphone"
+msgstr "My phone number"
+
+#: /View/Accounts/index.ctp:150 /View/Agents/index.ctp:128
+msgid "Mon pays"
+msgstr "My Country"
+
+#: /View/Accounts/index.ctp:157 /View/Accounts/profil.ctp:36
+#: /View/Agents/index.ctp:134
+msgid "Modifier mon profil"
+msgstr "Modify my profil"
+
+#: /View/Accounts/index.ctp:161 /View/Helper/FrontblockHelper.php:358
+msgid "Mes experts favoris"
+msgstr "My favourite experts"
+
+#: /View/Accounts/index.ctp:163
+msgid "Vous n'avez pas d'experts en favoris"
+msgstr "Youhave no experts in your favourites"
+
+#: /View/Accounts/index.ctp:168 /View/Agents/admin_record_audio.ctp:31;39
+msgid "Expert"
+msgstr "Expert"
+
+#: /View/Accounts/index.ctp:208 /View/Agents/admin_edit.ctp:90
+#: /View/Agents/display.ctp:546 /View/Helper/FrontblockHelper.php:201
+msgid "Occupé"
+msgstr "Busy"
+
+#: /View/Accounts/index.ctp:234
+msgid "Déposer un avis"
+msgstr "Leave a comment"
+
+#: /View/Accounts/index.ctp:245
+msgid "Voir mes experts favoris"
+msgstr "See my favourite experts"
+
+#: /View/Accounts/limits.ctp:50
+msgid "Entrez votre limite (crédits)"
+msgstr "Enter your limit (crédits)"
+
+#: /View/Accounts/mails.ctp:33 /View/Agents/mails.ctp:36
+msgid "Les messages privés ne sont pas facturés au client."
+msgstr "Private messages are not billed to customers."
+
+#: /View/Accounts/mails.ctp:40 /View/Admins/admin_mails.ctp:27
+#: /View/Agents/mails.ctp:43
+msgid "Messages"
+msgstr "Messages"
+
+#: /View/Accounts/mails.ctp:42 /View/Agents/mails.ctp:45
+#: /View/Helper/FrontblockHelper.php:357;460
+msgid "Messages privés"
+msgstr "Private messages"
+
+#: /View/Accounts/mails.ctp:44 /View/Agents/mails.ctp:47
+msgid "Messages archivés"
+msgstr "Stored messages"
+
+#: /View/Accounts/new_mail.ctp:37 /View/Agents/display.ctp:364
+msgid "Posez votre question à"
+msgstr "Ask your question to"
+
+#: /View/Accounts/new_mail.ctp:38
+msgid "crédits seront prélévés pour le message."
+msgstr "Credit will be withdrawn for this message"
+
+#: /View/Accounts/new_mail.ctp:39 /View/Elements/answer_mail.ctp:46
+msgid ""
+"Une réponse vous sera apportée par notre agent dans un délai maximum de 6 "
+"heures"
+msgstr ""
+"An answer will be given to you by our agent within a 6 hour maximum delay"
+
+#: /View/Accounts/new_mail.ctp:51 /View/Agents/display.ctp:678
+#: /View/Contacts/answer.ctp:38 /View/Contacts/index.ctp:39;46
+#: /View/Elements/admin_answer_mail.ctp:14
+msgid "Votre message"
+msgstr "Your message"
+
+#: /View/Accounts/new_mail.ctp:52 /View/Agents/display.ctp:679
+#: /View/Elements/answer_mail.ctp:77
+msgid "Joindre une image (.jpg .png .gif)"
+msgstr "Join a picture (.jpg .png .gif)"
+
+#: /View/Accounts/payments.ctp:21
+msgid "Mes achats"
+msgstr "My purchases"
+
+#: /View/Accounts/payments.ctp:30
+msgid "Vous n'avez effectué aucun achat."
+msgstr "You have not purchased anything."
+
+#: /View/Accounts/profil.ctp:29
+msgid "Veuillez entrer votre prénom. Cela validera votre compte."
+msgstr "Please enter your first name. It will validate your account."
+
+#: /View/Accounts/profil.ctp:35 /View/Agents/profil.ctp:46
+msgid "Infos générales"
+msgstr "General info"
+
+#: /View/Accounts/profil.ctp:37
+msgid "Modifier mes infos complémentaires"
+msgstr "Modify my additional information"
+
+#: /View/Accounts/profil.ctp:75
+msgid "Mon Profil"
+msgstr "My profil"
+
+#: /View/Accounts/review.ctp:15
+msgid "Votre avis nous intéresse"
+msgstr "We are interested in your opinion"
+
+#: /View/Accounts/review.ctp:25;67 /View/Agents/display.ctp:637
+msgid "Votre avis"
+msgstr "Your opinion"
+
+#: /View/Accounts/review.ctp:44
+msgid "Sélectionner l'expert"
+msgstr "Select an expert"
+
+#: /View/Accounts/review.ctp:53 /View/Agents/display.ctp:621
+msgid "Evaluation de l'expert"
+msgstr "Evaluating of the expert"
+
+#: /View/Accounts/review.ctp:55 /View/Agents/display.ctp:623
+msgid "Mauvais"
+msgstr "Bad"
+
+#: /View/Accounts/review.ctp:56 /View/Agents/display.ctp:624
+msgid "Peu satisfaisant"
+msgstr "Unsatisfactory"
+
+#: /View/Accounts/review.ctp:57 /View/Agents/display.ctp:625
+msgid "Satisfaisant"
+msgstr "Satisfactory"
+
+#: /View/Accounts/review.ctp:58 /View/Agents/display.ctp:626
+msgid "Bon"
+msgstr "Good"
+
+#: /View/Accounts/review.ctp:59 /View/Agents/display.ctp:627
+msgid "Excellent"
+msgstr "Excellent"
+
+#: /View/Accounts/review.ctp:76 /View/Agents/display.ctp:646
+#: /View/Elements/answer_mail.ctp:82
+msgid "Envoyer"
+msgstr "Send"
+
+#: /View/Accounts/review.ctp:78
+msgid "Vous n'avez consulté aucun expert ou aucun expert récemment."
+msgstr "You have consulted no expert or none recently."
+
+#: /View/Accounts/review.ctp:78
+msgid "pour en consulter un."
+msgstr "To consult one."
+
+#: /View/Admins/admin_edit_logo.ctp:2 /View/Admins/admin_logo.ctp:2;30
+#: /View/Helper/MetronicHelper.php:576
+msgid "Logo"
+msgstr "Logo"
+
+#: /View/Admins/admin_edit_logo.ctp:2 /View/Admins/admin_logo.ctp:2
+msgid "Logos des sites"
+msgstr "Sites Logos"
+
+#: /View/Admins/admin_edit_logo.ctp:10 /View/Admins/admin_logo.ctp:10;83
+msgid "Logos"
+msgstr "Logos"
+
+#: /View/Admins/admin_edit_logo.ctp:22
+msgid "Edition du logo pour : "
+msgstr "Editing the logo to:"
+
+#: /View/Admins/admin_edit_logo.ctp:36
+msgid "Logo actuel"
+msgstr "Actual logo"
+
+#: /View/Admins/admin_edit_logo.ctp:45 /View/Elements/agent_media.ctp:4;51
+#: /View/Pages/admin_tinymce_upload.ctp:30
+msgid "Photo (.jpg .png .gif)"
+msgstr "Picture (.jpg .png .gif)"
+
+#: /View/Admins/admin_edit_logo.ctp:49 /View/Admins/admin_logo.ctp:72
+#: /View/Helper/MetronicHelper.php:905
+msgid "Taille finale de l'image"
+msgstr "Final picture size"
+
+#: /View/Admins/admin_index.ctp:2
+msgid "Zone d'administration"
+msgstr "Administration zone"
+
+#: /View/Admins/admin_index.ctp:123
+msgid "Informations constantes du site."
+msgstr "Constant sites information."
+
+#: /View/Admins/admin_index.ctp:129
+msgid "Nom de la constante"
+msgstr "Constant 's name"
+
+#: /View/Admins/admin_index.ctp:130
+msgid "Valeur de la constante"
+msgstr "Constant's value"
+
+#: /View/Admins/admin_index.ctp:135
+msgid ""
+"Nombre de jours de fonctionnement d'une alerte client pour la disponibilité "
+"d'un agent"
+msgstr ""
+"Number of operating days of a customer's alert for the availability of an "
+"agent"
+
+#: /View/Admins/admin_index.ctp:139
+msgid "Le nombre de seconde pour 1 crédit"
+msgstr "Number of seconds for 1 credit"
+
+#: /View/Admins/admin_index.ctp:143
+msgid "Nombre de crédit par défaut pour une consultation par mail"
+msgstr "Credits number by default for a consulting by mail"
+
+#: /View/Admins/admin_index.ctp:147
+msgid ""
+"Nombre de crédit minimum que doit avoir un client pour une consultation par "
+"chat "
+msgstr ""
+"Minimum number of credit requested by a Customer for a consulting by chat"
+
+#: /View/Admins/admin_list.ctp:2;8 /View/Helper/MetronicHelper.php:633
+msgid "Administrateurs"
+msgstr "Administrators"
+
+#: /View/Admins/admin_list.ctp:18
+msgid "Les admins"
+msgstr "The admins"
+
+#: /View/Admins/admin_list.ctp:23
+msgid "Pas d'admin"
+msgstr "No admin"
+
+#: /View/Admins/admin_list.ctp:48 /View/Category/admin_create.ctp:67
+#: /View/Columns/admin_list.ctp:74 /View/Pages/admin_create.ctp:130
+#: /View/Pages/admin_create_category.ctp:68 /View/Products/admin_create.ctp:59
+#: /View/Slides/admin_list.ctp:72 /View/Vouchers/admin_index.ctp:103
+msgid "Activer"
+msgstr "Activate"
+
+#: /View/Admins/admin_list.ctp:52
+msgid "Voulez-vous vraiment activer le compte admin de  "
+msgstr "Do you want to activate the admin account of"
+
+#: /View/Admins/admin_list.ctp:55 /View/Category/admin_create.ctp:61
+#: /View/Columns/admin_list.ctp:68 /View/Pages/admin_create.ctp:123
+#: /View/Pages/admin_create_category.ctp:61 /View/Products/admin_create.ctp:53
+#: /View/Slides/admin_list.ctp:66 /View/Vouchers/admin_index.ctp:97
+msgid "Désactiver"
+msgstr "Deactivate"
+
+#: /View/Admins/admin_list.ctp:59
+msgid "Voulez-vous vraiment désactiver le compte admin de  "
+msgstr "Do you really want to deactivate the admin account of"
+
+#: /View/Admins/admin_list.ctp:68
+msgid "Voulez-vous vraiment supprimer le compte admin de  "
+msgstr "Do you really want to delete the admin account of"
+
+#: /View/Admins/admin_logo.ctp:21
+msgid "Les logos pour chaque site"
+msgstr "Each sites logos"
+
+#: /View/Admins/admin_logo.ctp:24
+msgid "Pas de logo"
+msgstr "No logo"
+
+#: /View/Admins/admin_logo.ctp:29;66 /View/Products/admin_create.ctp:43
+msgid "Site"
+msgstr "Site"
+
+#: /View/Admins/admin_logo.ctp:66 /View/Pages/admin_create.ctp:30
+msgid "Choisissez"
+msgstr "Please chose"
+
+#: /View/Admins/admin_logo.ctp:68
+msgid "Photo (.jpg .jpeg)"
+msgstr "Picture (.jpg .jpeg)"
+
+#: /View/Admins/admin_logo.ctp:87
+msgid "Nouveau logo"
+msgstr "New logo"
+
+#: /View/Admins/admin_mails.ctp:5
+msgid "Administrateur"
+msgstr "Administrator"
+
+#: /View/Admins/admin_mails.ctp:5;13 /View/Helper/MetronicHelper.php:108
+#: /View/Layouts/admin_layout.ctp:56
+msgid "Messagerie"
+msgstr "Mailbox"
+
+#: /View/Admins/admin_mails.ctp:33
+msgid "Pas de message"
+msgstr "No message"
+
+#: /View/Admins/admin_mails.ctp:38
+msgid "Discussion"
+msgstr "Conversation"
+
+#: /View/Admins/admin_mails.ctp:52
+msgid "(Invité)"
+msgstr "(guest)"
+
+#: /View/Admins/admin_subscribe.ctp:2
+msgid "Ajouter un administrateur"
+msgstr "Add an administrator"
+
+#: /View/Admins/admin_subscribe.ctp:9
+msgid "Nouvel administrateur"
+msgstr "New administrator"
+
+#: /View/Admins/admin_watchmails.ctp:3;9 /View/Helper/MetronicHelper.php:429
+msgid "Messageries internes"
+msgstr "Inbox mail"
+
+#: /View/Admins/admin_watchmails.ctp:17 /View/Pages/admin_create.ctp:72
+msgid "Pas de page"
+msgstr "No page"
+
+#: /View/Admins/admin_watchmails.ctp:21
+msgid "De"
+msgstr "Of"
+
+#: /View/Admins/admin_watchmails.ctp:22
+msgid "Pour"
+msgstr "For"
+
+#: /View/Admins/admin_watchmails.ctp:23
+msgid "Message"
+msgstr "Message"
+
+#: /View/Admins/admin_watchmails.ctp:24
+msgid "Date d'envoi"
+msgstr "sending date"
+
+#: /View/Admins/login.ctp:13 /View/Admins/passwdforget.ctp:14
+#: /View/Contacts/index.ctp:45 /View/Elements/login_modal.ctp:14
+#: /View/Users/login.ctp:20;93 /View/Users/login_agent.ctp:19
+#: /View/Users/passwdforget.ctp:50
+msgid "Votre E-mail"
+msgstr "Your e-mail"
+
+#: /View/Admins/login.ctp:19 /View/Elements/login_modal.ctp:22
+#: /View/Helper/FrontblockHelper.php:687 /View/Users/login.ctp:29;97
+#: /View/Users/login_agent.ctp:23
+msgid "Connexion"
+msgstr "connection"
+
+#: /View/Admins/newpasswd.ctp:3 /View/Helper/FrontblockHelper.php:697
+#: /View/Users/login_agent.ctp:29 /View/Users/newpasswd.ctp:11
+msgid "Mot de passe oublié"
+msgstr "forgotten password"
+
+#: /View/Admins/newpasswd.ctp:15 /View/Elements/account_compte.ctp:25
+#: /View/Elements/agent_compte.ctp:15 /View/Users/newpasswd.ctp:38
+msgid "Confirmez votre mot de passe"
+msgstr "Please confirm your password"
+
+#: /View/Admins/newpasswd.ctp:20 /View/Admins/passwdforget.ctp:18
+#: /View/Users/newpasswd.ctp:43 /View/Users/passwdforget.ctp:55
+msgid "Valider"
+msgstr "Validate"
+
+#: /View/Advertising/admin_index.ctp:2;8
+msgid "Blocs pub"
+msgstr "Pub blocks"
+
+#: /View/Advertising/admin_index.ctp:2
+msgid "colonne gauche"
+msgstr "Left column"
+
+#: /View/Advertising/admin_index.ctp:16
+msgid "Les visuels"
+msgstr "Visuals"
+
+#: /View/Agents/admin_com.ctp:6;14 /View/Agents/admin_com_view.ctp:6;14
+#: /View/Agents/admin_edit.ctp:2;10 /View/Agents/admin_index.ctp:2;10
+#: /View/Agents/admin_record_audio.ctp:7;13
+#: /View/Agents/admin_valid_audio.ctp:2;8 /View/Agents/admin_valid_info.ctp:2;8
+#: /View/Agents/admin_valid_info_view.ctp:11
+#: /View/Agents/admin_valid_photo.ctp:2;8
+#: /View/Agents/admin_valid_presentation.ctp:2;8 /View/Agents/admin_view.ctp:11
+msgid "Agents"
+msgstr "Agents"
+
+#: /View/Agents/admin_com.ctp:6
+msgid "Communications des agents"
+msgstr "Agent's communication"
+
+#: /View/Agents/admin_com.ctp:32
+msgid "Dernière communication des agents"
+msgstr "Last agent's communication"
+
+#: /View/Agents/admin_com.ctp:70 /View/Agents/admin_view.ctp:209
+msgid "Voir l'historique complet de l'agent"
+msgstr "See complete agent's historic"
+
+#: /View/Agents/admin_com_view.ctp:52
+msgid "Aucune communication."
+msgstr "No communication."
+
+#: /View/Agents/admin_com_view.ctp:61 /View/Agents/admin_view.ctp:219
+msgid "Date consultation"
+msgstr "Consulting date"
+
+#: /View/Agents/admin_edit.ctp:2
+msgid "Edition d'un agent"
+msgstr "Agent editing"
+
+#: /View/Agents/admin_edit.ctp:20 /View/Pages/admin_edit.ctp:5
+msgid "Edition"
+msgstr "Editing"
+
+#: /View/Agents/admin_edit.ctp:32
+msgid "Editer l'agent"
+msgstr "Edit the agent"
+
+#: /View/Agents/admin_edit.ctp:37
+msgid "Informations de l'agent"
+msgstr "Agent's information"
+
+#: /View/Agents/admin_edit.ctp:43 /View/Agents/admin_index.ctp:33;82
+#: /View/Agents/admin_valid_info.ctp:24
+#: /View/Agents/admin_valid_presentation.ctp:24
+#: /View/Elements/agent_infos.ctp:6
+msgid "Pseudo"
+msgstr "Pseudo"
+
+#: /View/Agents/admin_edit.ctp:55
+msgid "Nombre de crédits pour un mail"
+msgstr "Number of credits for an e-mail"
+
+#: /View/Agents/admin_edit.ctp:58
+msgid "Si sans valeur alors par défaut : "
+msgstr "If no value so by default :"
+
+#: /View/Agents/admin_edit.ctp:81
+msgid "Modifier le statut de l'agent"
+msgstr "Modify the agent's status"
+
+#: /View/Agents/admin_edit.ctp:108
+msgid "Le statut actuel de l'expert : "
+msgstr "Present agent's status :"
+
+#: /View/Agents/admin_edit.ctp:111
+msgid "Modifier le statut en : "
+msgstr "Modify the status by :"
+
+#: /View/Agents/admin_edit.ctp:120
+msgid "Vous ne pouvez pas modifier son statut pour le moment."
+msgstr "You can not modify the status for the moment."
+
+#: /View/Agents/admin_index.ctp:2
+msgid "Liste des agents"
+msgstr "Agents list"
+
+#: /View/Agents/admin_index.ctp:22
+msgid "Liste agents"
+msgstr "Agents database"
+
+#: /View/Agents/admin_index.ctp:62
+msgid "Aucun expert"
+msgstr "No expert"
+
+#: /View/Agents/admin_index.ctp:68
+msgid "Liste des agents qui n'ont pas confirmé leurs adresses mails"
+msgstr "Agents list without e-mail  confirmation"
+
+#: /View/Agents/admin_index.ctp:73
+msgid "Liste des agents dont le compte n'est pas validé"
+msgstr "Agents list with inactive account"
+
+#: /View/Agents/admin_index.ctp:85
+msgid "Téléphone 2"
+msgstr "Phone 2"
+
+#: /View/Agents/admin_record_audio.ctp:7
+msgid "Enregistrement audio"
+msgstr "Audio recording"
+
+#: /View/Agents/admin_record_audio.ctp:18 /View/Helper/MetronicHelper.php:288
+msgid "Enregistrements audio"
+msgstr "Audio recordings"
+
+#: /View/Agents/admin_record_audio.ctp:37
+msgid "Il n'y a aucun enregistrement."
+msgstr "There are no recording."
+
+#: /View/Agents/admin_record_audio.ctp:39
+msgid "Enregistré le"
+msgstr "Recorded the"
+
+#: /View/Agents/admin_record_audio.ctp:39
+msgid "Enregistrement"
+msgstr "Recording"
+
+#: /View/Agents/admin_record_audio.ctp:43 /View/Elements/admin_read_mail.ctp:19
+#: /View/Elements/read_mail.ctp:13
+msgid "Télécharger"
+msgstr "Download"
+
+#: /View/Agents/admin_record_audio.ctp:52
+msgid "Supprimer définitivement l'enregistrement audio ?"
+msgstr "Permanently delete the audio recording ?"
+
+#: /View/Agents/admin_valid_audio.ctp:2
+msgid "Validation des présentations audio"
+msgstr "Validation of audio presentations"
+
+#: /View/Agents/admin_valid_audio.ctp:13
+msgid "Présentations audio en attente"
+msgstr "Pending audio presentation"
+
+#: /View/Agents/admin_valid_audio.ctp:22
+msgid "Aucune présentation audio en attente."
+msgstr "No audio presentation pending"
+
+#: /View/Agents/admin_valid_audio.ctp:24 /View/Elements/agent_media.ctp:70
+msgid "Présentation audio en attente"
+msgstr "No audio presentation pending"
+
+#: /View/Agents/admin_valid_audio.ctp:24
+msgid "Présentation audio actuelle"
+msgstr "Present audio presentation"
+
+#: /View/Agents/admin_valid_audio.ctp:27 /View/Agents/admin_valid_info.ctp:34
+#: /View/Agents/admin_valid_info_view.ctp:55
+#: /View/Agents/admin_valid_photo.ctp:27
+#: /View/Agents/admin_valid_presentation.ctp:28
+#: /View/Reviews/admin_index.ctp:99;107
+msgid "Accepter"
+msgstr "Accept"
+
+#: /View/Agents/admin_valid_audio.ctp:31
+msgid ""
+"Voulez-vous vraiment accepter la présentation audio ? L'agent en sera "
+"informé par mail."
+msgstr ""
+"Do you really want to accept the audio presentation?The agent will be "
+"informed by mail."
+
+#: /View/Agents/admin_valid_audio.ctp:33 /View/Agents/admin_valid_info.ctp:40
+#: /View/Agents/admin_valid_info_view.ctp:60
+#: /View/Agents/admin_valid_photo.ctp:33
+#: /View/Agents/admin_valid_presentation.ctp:34
+#: /View/Reviews/admin_index.ctp:91;114
+msgid "Refuser"
+msgstr "Decline"
+
+#: /View/Agents/admin_valid_info.ctp:2
+msgid "Validation des données"
+msgstr "Validation of datas"
+
+#: /View/Agents/admin_valid_info.ctp:13
+#: /View/Agents/admin_valid_info_view.ctp:21;40 /View/Agents/profil.ctp:59
+#: /View/Helper/MetronicHelper.php:279
+msgid "Données en attente"
+msgstr "Datas pending"
+
+#: /View/Agents/admin_valid_info.ctp:22
+msgid "Aucune donnée en attente."
+msgstr "No data pending"
+
+#: /View/Agents/admin_valid_info.ctp:25 /View/Elements/account_infos.ctp:27;48
+#: /View/Elements/agent_infos.ctp:40
+msgid "Date de naissance"
+msgstr "Date of birth"
+
+#: /View/Agents/admin_valid_info.ctp:25 /View/Elements/agent_infos.ctp:28
+msgid "Sexe"
+msgstr "Sex"
+
+#: /View/Agents/admin_valid_info.ctp:26
+msgid "Siret"
+msgstr "Siret"
+
+#: /View/Agents/admin_valid_info.ctp:29
+msgid "Comparer"
+msgstr "Compare"
+
+#: /View/Agents/admin_valid_info.ctp:38
+msgid ""
+"Voulez-vous vraiment accepter la modification ? L'agent en sera informé par "
+"mail."
+msgstr ""
+"Do you really want to accept the modification ? The agent will be informed "
+"by mail."
+
+#: /View/Agents/admin_valid_info_view.ctp:3 /View/Agents/admin_view.ctp:3
+msgid "Données de l'agent"
+msgstr "Agent's datas"
+
+#: /View/Agents/admin_valid_info_view.ctp:32
+msgid "Comparaison des données"
+msgstr "Data's comparing"
+
+#: /View/Agents/admin_valid_info_view.ctp:39 /View/Agents/profil.ctp:57
+msgid "Données actuelles"
+msgstr "Current datas"
+
+#: /View/Agents/admin_valid_photo.ctp:2
+msgid "Validation des photos"
+msgstr "Pictures validation "
+
+#: /View/Agents/admin_valid_photo.ctp:13
+msgid "Photos en attente"
+msgstr "Pending pictures "
+
+#: /View/Agents/admin_valid_photo.ctp:22
+msgid "Aucune photo en attente."
+msgstr "No picture pending"
+
+#: /View/Agents/admin_valid_photo.ctp:24
+msgid "Photo en attente"
+msgstr "Pending picture"
+
+#: /View/Agents/admin_valid_photo.ctp:24
+msgid "Photo actuelle"
+msgstr "Current picture"
+
+#: /View/Agents/admin_valid_photo.ctp:31
+msgid ""
+"Voulez-vous vraiment accepter la photo ? L'agent en sera informé par mail."
+msgstr ""
+"Do you really want to accept the picture? The agent will be informed by mail."
+
+#: /View/Agents/admin_valid_presentation.ctp:2
+#: /View/Helper/MetronicHelper.php:255
+msgid "Présentations"
+msgstr "Presentations"
+
+#: /View/Agents/admin_valid_presentation.ctp:13
+msgid "Présentations en attente"
+msgstr "Pending presentations"
+
+#: /View/Agents/admin_valid_presentation.ctp:22
+msgid "Aucune présentation en attente."
+msgstr "No presentation pending"
+
+#: /View/Agents/admin_valid_presentation.ctp:24
+#: /View/Category/admin_create.ctp:30;52 /View/Layouts/default.ctp:103
+#: /View/Layouts/user_novalid.ctp:87 /View/Pages/admin_create.ctp:33;79
+#: /View/Pages/admin_create_category.ctp:26;39 /View/Phones/admin_create.ctp:30
+#: /View/Phones/admin_list.ctp:31 /View/Products/admin_create.ctp:29;43
+msgid "Langue"
+msgstr "Language"
+
+#: /View/Agents/admin_valid_presentation.ctp:24
+#: /View/Agents/presentations.ctp:65 /View/Elements/agent_media.ctp:27
+msgid "Présentation actuelle"
+msgstr "Current presentation"
+
+#: /View/Agents/admin_valid_presentation.ctp:25;46
+msgid "Présentation en attente"
+msgstr "pending presentation"
+
+#: /View/Agents/admin_valid_presentation.ctp:32
+msgid ""
+"Voulez-vous vraiment accepter la modification de la présentation ? L'agent "
+"en sera informé par mail."
+msgstr ""
+"Do you really want to accept the presentation modification? The agent will "
+"be informed by mail."
+
+#: /View/Agents/admin_view.ctp:119
+msgid "Fichier audio introuvable"
+msgstr "Audio file not found"
+
+#: /View/Agents/admin_view.ctp:142
+msgid "Activer enregistrement téléphonique"
+msgstr "Activate phone recording"
+
+#: /View/Agents/admin_view.ctp:146
+msgid "Voulez-vous vraiment activer l'enregistrement téléphonique de l'agent ?"
+msgstr "Do you really want to activate the phone recording of the agent ?"
+
+#: /View/Agents/admin_view.ctp:150
+msgid "Désactiver enregistrement téléphonique"
+msgstr "Deactivate the phone recording"
+
+#: /View/Agents/admin_view.ctp:154
+msgid ""
+"Voulez-vous vraiment désactiver l'enregistrement téléphonique de l'agent ?"
+msgstr "Do you really want to deactivate the phone recording of the agent?"
+
+#: /View/Agents/admin_view.ctp:165
+msgid ""
+"Voulez-vous vraiment désactiver le compte de l'agent ? Il n'aura plus accès "
+"au site."
+msgstr ""
+"Do you really want to deactivate the agent's account? He will not have "
+"access to the site anymore."
+
+#: /View/Agents/admin_view.ctp:173
+msgid "Voulez-vous activer le compte ?"
+msgstr "Do you want to activate the account?"
+
+#: /View/Agents/admin_view.ctp:184 /View/Elements/agent_options.ctp:40
+#: /View/Helper/MetronicHelper.php:135
+msgid "Univers"
+msgstr "Universe"
+
+#: /View/Agents/admin_view.ctp:190 /View/Elements/agent_media.ctp:3
+#: /View/Elements/agent_presentations.ctp:8
+msgid "Présentation"
+msgstr "Presentation"
+
+#: /View/Agents/admin_view.ctp:208
+msgid " dernières communications"
+msgstr "Last communications"
+
+#: /View/Agents/appointments.ctp:41
+msgid "Vos rendez-vous"
+msgstr "Your appointments"
+
+#: /View/Agents/appointments.ctp:43
+msgid "Vous n'avez aucune demande de consultation."
+msgstr "You have no consulting request."
+
+#: /View/Agents/appointments.ctp:58
+msgid "souhaite vous rencontrer le"
+msgstr "Wish to meet you the"
+
+#: /View/Agents/chat_history.ctp:47
+msgid "Vous n'avez eu aucune consultation par chat."
+msgstr "You have no chat consulting."
+
+#: /View/Agents/display.ctp:6
+msgid "L'expert "
+msgstr "The expert"
+
+#: /View/Agents/display.ctp:6
+msgid " sur "
+msgstr "on"
+
+#: /View/Agents/display.ctp:70 /View/Elements/agentslist.ctp:133
+msgid "parlé couramment"
+msgstr "speak fluently"
+
+#: /View/Agents/display.ctp:77
+msgid "EXPERT"
+msgstr "EXPERT"
+
+#: /View/Agents/display.ctp:79
+msgid "code d'accès"
+msgstr "Access code"
+
+#: /View/Agents/display.ctp:84
+msgid "ses compétences"
+msgstr "His skills"
+
+#: /View/Agents/display.ctp:134
+msgid "AVIS CLIENTS"
+msgstr "CLIENTS COMMENTS"
+
+#: /View/Agents/display.ctp:137
+msgid "Consultations : "
+msgstr "Consultings:"
+
+#: /View/Agents/display.ctp:140
+msgid "- de 100 consultations"
+msgstr "Less than 100 consultings"
+
+#: /View/Agents/display.ctp:142
+msgid " consultations"
+msgstr "consultings"
+
+#: /View/Agents/display.ctp:147
+msgid "Avis positifs : "
+msgstr "Positiv comments:"
+
+#: /View/Agents/display.ctp:151
+msgid "Satisfaction clients : "
+msgstr "Customer satisfaction :"
+
+#: /View/Agents/display.ctp:175
+msgid "Alertes disponibilité"
+msgstr "Availability alerts"
+
+#: /View/Agents/display.ctp:185
+msgid "Favoris"
+msgstr "Favourites"
+
+#: /View/Agents/display.ctp:225
+msgid "Par Téléphone"
+msgstr "By phone"
+
+#: /View/Agents/display.ctp:226
+msgid "Contactez"
+msgstr "Please contact"
+
+#: /View/Agents/display.ctp:226
+msgid "depuis la France"
+msgstr "From France"
+
+#: /View/Agents/display.ctp:229
+msgid "Code d'accès"
+msgstr "Access code"
+
+#: /View/Agents/display.ctp:233
+msgid "Votre code perso"
+msgstr "Your personal code"
+
+#: /View/Agents/display.ctp:240;241
+msgid "Inscrivez-vous"
+msgstr "Please register"
+
+#: /View/Agents/display.ctp:248;282
+msgid "Par téléphone surtaxé"
+msgstr "By premium rate number"
+
+#: /View/Agents/display.ctp:259;287;311
+#: /View/Elements/agentslist.ctp:322;337;344;357;365
+msgid "/min"
+msgstr "/min"
+
+#: /View/Agents/display.ctp:306
+msgid "Paiement par carte bancaire"
+msgstr "Payment by bank card"
+
+#: /View/Agents/display.ctp:331;362
+msgid "Consultez"
+msgstr "Please consult"
+
+#: /View/Agents/display.ctp:331
+msgid "par chat"
+msgstr "By chat"
+
+#: /View/Agents/display.ctp:332;364
+msgid "au tarif de"
+msgstr "At the price of"
+
+#: /View/Agents/display.ctp:332
+msgid "crédit(s) par minute (décomptés dès la première réponse de l'agent)"
+msgstr "credit(s) per minute ( charged as soon as the agent replies)"
+
+#: /View/Agents/display.ctp:361
+msgid "Par E-MAIL"
+msgstr "By E-MAIL"
+
+#: /View/Agents/display.ctp:362
+msgid "par e-mail"
+msgstr "By e-mail"
+
+#: /View/Agents/display.ctp:364
+msgid "crédits la réponse (décomptés de votre compte pré-crédité)"
+msgstr "credit the answer ( billed from your pre-credited account)"
+
+#: /View/Agents/display.ctp:387
+msgid "Présentation de l'expert"
+msgstr "Expert's presentation"
+
+#: /View/Agents/display.ctp:392
+msgid "L'expert n'a pas renseigné de présentation pour cette langue."
+msgstr "The expert has not given a presentation in that language."
+
+#: /View/Agents/display.ctp:400
+msgid "Planning de l'expert"
+msgstr "Expert's planning  "
+
+#: /View/Agents/display.ctp:401
+msgid ""
+"Le planning n'est qu'à titre informatif. L'expert est libre de se connecter "
+"quand bon lui semble."
+msgstr ""
+"The planning is for information only. The expert is free to connect in his/"
+"her own good time."
+
+#: /View/Agents/display.ctp:515 /View/Agents/planning.ctp:120
+msgid "Je suis disponible"
+msgstr "I am available"
+
+#: /View/Agents/display.ctp:519 /View/Agents/planning.ctp:124
+msgid "Je suis indisponible"
+msgstr "I am unavailable"
+
+#: /View/Agents/display.ctp:523 /View/Agents/planning.ctp:128
+msgid "Demande de consultation"
+msgstr "Consultation request"
+
+#: /View/Agents/display.ctp:529
+msgid "Les membres"
+msgstr "The members"
+
+#: /View/Agents/display.ctp:529
+msgid "ayant fait appel à"
+msgstr "Having turned to"
+
+#: /View/Agents/display.ctp:529
+msgid "ont aussi consulté les profils de :"
+msgstr "Have also consulted the profils of :"
+
+#: /View/Agents/display.ctp:578
+msgid "Cet expert n'a pas encore d'avis."
+msgstr "This expert has no comments as yet."
+
+#: /View/Agents/display.ctp:580
+msgid "Les "
+msgstr "The"
+
+#: /View/Agents/display.ctp:585 /View/Reviews/admin_index.ctp:43
+msgid "Note"
+msgstr "Note"
+
+#: /View/Agents/display.ctp:586
+msgid "Commentaire"
+msgstr "Comment"
+
+#: /View/Agents/display.ctp:606
+msgid "Veuillez vous connecter avec votre compte client ou inscrivez-vous."
+msgstr ""
+"Please connect yourself with your customer's account or please register."
+
+#: /View/Agents/display.ctp:611
+msgid "Déposer votre avis sur "
+msgstr "Leave your comment on"
+
+#: /View/Agents/display.ctp:648
+msgid "Vous n'avez jamais été ou récemment en communication avec "
+msgstr "You have never been or recently been in communication with"
+
+#: /View/Agents/display.ctp:649
+msgid "Il est nécessaire d'avoir eu une communication avec "
+msgstr "Itis necessary to have been in communication with"
+
+#: /View/Agents/display.ctp:660
+msgid "Veuillez-vous connecter avec votre compte client ou inscrivez-vous."
+msgstr ""
+"Please connect yourself with your customer's account or please register."
+
+#: /View/Agents/display.ctp:664
+msgid "Laissez un message pour"
+msgstr "Leave a message for"
+
+#: /View/Agents/display.ctp:700
+msgid "Dénoncer un abus lors de votre consultation avec"
+msgstr "Report an abuse during your consultation with"
+
+#: /View/Agents/display.ctp:715
+msgid "Date de la consultation"
+msgstr "Consultation's date"
+
+#: /View/Agents/display.ctp:724
+msgid "Indiquez le problème rencontré avec"
+msgstr "Indicate the encountered problem with"
+
+#: /View/Agents/history.ctp:50
+msgid "Vous n'avez eu aucune communication avec un client."
+msgstr "You have had no communication with a Customer."
+
+#: /View/Agents/index.ctp:33
+msgid "Ma photo"
+msgstr "My picture"
+
+#: /View/Agents/index.ctp:37
+msgid "Mon pseudo"
+msgstr "My pseudo"
+
+#: /View/Agents/index.ctp:41
+msgid "Mon code"
+msgstr "My code"
+
+#: /View/Agents/index.ctp:62
+msgid "Mes univers"
+msgstr "My universe"
+
+#: /View/Agents/index.ctp:73
+msgid "Voir ma fiche expert"
+msgstr "See my expert record"
+
+#: /View/Agents/planning.ctp:38
+msgid ""
+"Veuillez indiquer vos plages horaires de disponibilité pour être consulté :"
+msgstr "Please indicate your availability timeslot to be consulted :"
+
+#: /View/Agents/planning.ctp:133
+msgid "Erreur dans le chargement de votre planning. Veuillez cliquez "
+msgstr "Error in the loading of your planning. Please click"
+
+#: /View/Agents/presentations.ctp:68
+msgid "Vous n'avez aucune présentation pour cette langue"
+msgstr "You have no presentation in this language"
+
+#: /View/Agents/presentations.ctp:77
+msgid "La présentation suivante est en attente de validation."
+msgstr "The following presentation is pending validation."
+
+#: /View/Agents/profil.ctp:47
+msgid "Modifier votre profil"
+msgstr "Modify your profil"
+
+#: /View/Agents/profil.ctp:48
+msgid "Modifier vos options"
+msgstr "Modify your options"
+
+#: /View/Agents/profil.ctp:49
+msgid "Photo/Audio"
+msgstr "Picture/Audio"
+
+#: /View/Agents/profil.ctp:59
+msgid "Les données sont soumises à un examen."
+msgstr "The datas undergo checks."
+
+#: /View/Alerts/setnew.ctp:12
+msgid "Veuillez vous connecter avec un compte client."
+msgstr "Please connect yourself to a customer's account."
+
+#: /View/Alerts/setnew.ctp:51
+msgid "Je choisis de recevoir une alerte"
+msgstr "I chose to receive an alert"
+
+#: /View/Alerts/setnew.ctp:58
+msgid "Par E-mail"
+msgstr "By E-mail"
+
+#: /View/Alerts/setnew.ctp:66
+msgid "Confirmez votre E-mail"
+msgstr "Please confirm your E-mail"
+
+#: /View/Alerts/setnew.ctp:82
+msgid "Je souhaite recevoir cette alerte lorsque"
+msgstr "I wish to receive this E-mail when"
+
+#: /View/Alerts/setnew.ctp:82
+msgid "sera :"
+msgstr "will be:"
+
+#: /View/Alerts/setnew.ctp:86
+msgid "Aucune alerte"
+msgstr "No alert"
+
+#: /View/Alerts/setnew.ctp:88
+msgid "fois par jour maximum"
+msgstr "Times maximum per day"
+
+#: /View/Alerts/setnew.ctp:93
+msgid "Disponible par téléphone"
+msgstr "Available by phone"
+
+#: /View/Alerts/setnew.ctp:95
+msgid "Disponible par chat"
+msgstr "Available by chat"
+
+#: /View/Alerts/setnew.ctp:97
+msgid "Disponible par e-mail"
+msgstr "Available by e-mail"
+
+#: /View/Alerts/setnew.ctp:131
+msgid "Par SMS"
+msgstr "By TEXT"
+
+#: /View/Alerts/setnew.ctp:141
+msgid "Et/ou je souhaite recevoir une alerte par sms lorsque"
+msgstr "And/or I wish to receive a text alert when"
+
+#: /View/Alerts/setnew.ctp:141
+msgid "sera disponible."
+msgstr "will be available"
+
+#: /View/Alerts/setnew.ctp:142
+msgid "(Un sms par jour)"
+msgstr "(one text per day)"
+
+#: /View/Category/admin_create.ctp:2;8;50 /View/Category/admin_edit.ctp:2
+msgid "Catégories"
+msgstr "Categories"
+
+#: /View/Category/admin_create.ctp:31 /View/Helper/MetronicHelper.php:992;1052
+#: /View/Pages/admin_create.ctp:34
+msgid "Lien réécrit"
+msgstr "rewritten link"
+
+#: /View/Category/admin_create.ctp:32 /View/Helper/MetronicHelper.php:991;1056
+#: /View/Pages/admin_create.ctp:32
+msgid "Méta titre"
+msgstr "Meta title"
+
+#: /View/Category/admin_create.ctp:32;33;34
+#: /View/Helper/MetronicHelper.php:946;991;993;994;1056;1057;1058
+msgid "Nombre de caractère recommandé : "
+msgstr "Recommended number of characters"
+
+#: /View/Category/admin_create.ctp:33 /View/Helper/MetronicHelper.php:993;1057
+#: /View/Pages/admin_create.ctp:35
+msgid "Méta mots-clés"
+msgstr "Meta key words"
+
+#: /View/Category/admin_create.ctp:34 /View/Helper/MetronicHelper.php:994;1058
+#: /View/Pages/admin_create.ctp:36
+msgid "Méta description"
+msgstr "Meta description"
+
+#: /View/Category/admin_create.ctp:52
+msgid "Nombre d'agents"
+msgstr "Number of agents"
+
+#: /View/Category/admin_create.ctp:52 /View/Columns/admin_list.ctp:35
+#: /View/Pages/admin_create.ctp:78 /View/Pages/admin_create_category.ctp:39
+#: /View/Products/admin_create.ctp:44 /View/Slides/admin_list.ctp:34
+#: /View/Vouchers/admin_index.ctp:41
+msgid "Etat"
+msgstr "State"
+
+#: /View/Category/admin_create.ctp:65 /View/Pages/admin_create_category.ctp:65
+msgid "Voulez-vous vraiment désactiver la catégorie "
+msgstr "Do you really want to deactivate the category"
+
+#: /View/Category/admin_create.ctp:71 /View/Pages/admin_create_category.ctp:72
+msgid "Voulez-vous vraiment activer la catégorie "
+msgstr "Do you really want to activate the category"
+
+#: /View/Category/admin_create.ctp:75 /View/Pages/admin_create_category.ctp:106
+msgid "Nouvelle catégorie"
+msgstr "New category"
+
+#: /View/Category/admin_edit.ctp:2 /View/Pages/admin_edit.ctp:15
+msgid "Edition de"
+msgstr "Editing of"
+
+#: /View/Category/admin_edit.ctp:8 /View/Helper/MetronicHelper.php:173
+#: /View/Pages/admin_create.ctp:30;64;77 /View/Pages/admin_edit.ctp:64
+msgid "Catégorie"
+msgstr "Category"
+
+#: /View/Category/display_univers.ctp:19
+msgid "Revenir à la page précédente"
+msgstr "Go back to previous page"
+
+#: /View/Columns/admin_create.ctp:3 /View/Columns/admin_edit.ctp:3
+#: /View/Columns/admin_list.ctp:2;10 /View/Helper/MetronicHelper.php:552
+msgid "Colonne"
+msgstr "Column"
+
+#: /View/Columns/admin_create.ctp:3 /View/Columns/admin_edit.ctp:3
+msgid "Création d'un élément"
+msgstr "Element creation"
+
+#: /View/Columns/admin_create.ctp:11 /View/Columns/admin_edit.ctp:11
+msgid "Ajouter un élément"
+msgstr "Add an element"
+
+#: /View/Columns/admin_create.ctp:23
+msgid "Ajout d'un élément"
+msgstr "Addition of an element"
+
+#: /View/Columns/admin_create.ctp:42 /View/Columns/admin_edit.ctp:55
+msgid "Position de l'élément"
+msgstr "Element's position"
+
+#: /View/Columns/admin_create.ctp:44 /View/Columns/admin_edit.ctp:57
+#: /View/Columns/admin_list.ctp:33 /View/Slides/admin_create.ctp:44
+#: /View/Slides/admin_edit.ctp:57 /View/Slides/admin_list.ctp:32
+#: /View/Vouchers/admin_create.ctp:56 /View/Vouchers/admin_index.ctp:39
+msgid "Début de validité"
+msgstr "Validity start"
+
+#: /View/Columns/admin_create.ctp:48;55 /View/Columns/admin_edit.ctp:61;68
+#: /View/Slides/admin_create.ctp:48;55 /View/Slides/admin_edit.ctp:61;68
+msgid "JJ-MM-AAAA"
+msgstr "DD-MM-YYYY"
+
+#: /View/Columns/admin_create.ctp:52 /View/Columns/admin_edit.ctp:65
+#: /View/Columns/admin_list.ctp:34 /View/Slides/admin_create.ctp:52
+#: /View/Slides/admin_edit.ctp:65 /View/Slides/admin_list.ctp:33
+#: /View/Vouchers/admin_create.ctp:67 /View/Vouchers/admin_index.ctp:40
+msgid "Fin de validité"
+msgstr "Validity start"
+
+#: /View/Columns/admin_create.ctp:56 /View/Columns/admin_edit.ctp:69
+#: /View/Slides/admin_create.ctp:56 /View/Slides/admin_edit.ctp:69
+msgid "Si le champ n'est pas renseigné, alors durée illimitée"
+msgstr "If the field is not filled in, then unlimited time"
+
+#: /View/Columns/admin_create.ctp:62 /View/Columns/admin_edit.ctp:79
+msgid "Sélectionner les domaines où l'élément sera visible"
+msgstr "Select the domains where the element will be visible"
+
+#: /View/Columns/admin_create.ctp:66 /View/Columns/admin_edit.ctp:83
+#: /View/Slides/admin_create.ctp:67 /View/Slides/admin_edit.ctp:83
+#: /View/Vouchers/admin_create.ctp:144;200
+msgid "Tous"
+msgstr "All"
+
+#: /View/Columns/admin_create.ctp:90
+#: /View/Elements/admin_footer_form_block_link.ctp:44
+#: /View/Elements/admin_footer_form_link.ctp:53
+#: /View/Elements/admin_form_block_link.ctp:44
+#: /View/Elements/admin_form_link.ctp:53 /View/Elements/admin_menu_link.ctp:37
+#: /View/Helper/MetronicHelper.php:121;146;160;193;449;473;515;539;563;594;620
+#: /View/Pages/admin_create_category.ctp:31 /View/Slides/admin_create.ctp:91
+msgid "Créer"
+msgstr "Create"
+
+#: /View/Columns/admin_list.ctp:2;21
+msgid "Les éléments de la colonne"
+msgstr "The column's elements"
+
+#: /View/Columns/admin_list.ctp:25
+msgid "Aucun élément"
+msgstr "No element"
+
+#: /View/Columns/admin_list.ctp:30
+msgid "Elément"
+msgstr "Element"
+
+#: /View/Columns/admin_list.ctp:32 /View/Slides/admin_list.ctp:31
+msgid "Position"
+msgstr "Position"
+
+#: /View/Columns/admin_list.ctp:42
+msgid "Element"
+msgstr "Element"
+
+#: /View/Columns/admin_list.ctp:49 /View/Slides/admin_list.ctp:47
+msgid "Sans limite."
+msgstr "No limit."
+
+#: /View/Contacts/answer.ctp:42 /View/Contacts/index.ctp:49
+msgid "Votre adresse ip : "
+msgstr "Your ip address :"
+
+#: /View/Elements/account_compte.ctp:13
+msgid "Modifier votre e-mail"
+msgstr "Modify your e-mail address"
+
+#: /View/Elements/account_compte.ctp:20
+msgid "Confirmez votre Email"
+msgstr "Please confirm your E-mail"
+
+#: /View/Elements/account_compte.ctp:22 /View/Users/newpasswd.ctp:37
+msgid "Nouveau mot de passe"
+msgstr "New password"
+
+#: /View/Elements/account_compte.ctp:23 /View/Elements/agent_compte.ctp:14
+msgid "(8 caractères min.)"
+msgstr "(minimum 8 characters)"
+
+#: /View/Elements/account_details.ctp:7
+msgid "Informations complémentaires"
+msgstr "Additional information"
+
+#: /View/Elements/account_details.ctp:31
+#: /View/Elements/account_subscribe.ctp:27 /View/Layouts/default.ctp:104
+#: /View/Phones/admin_create.ctp:29 /View/Phones/admin_list.ctp:30
+#: /View/Products/admin_create.ctp:26 /View/Products/admin_edit.ctp:25
+msgid "Pays"
+msgstr "Country"
+
+#: /View/Elements/account_details.ctp:33
+msgid "Recevoir les offres exclusives de "
+msgstr "Receive the exclusive offers of"
+
+#: /View/Elements/account_infos.ctp:5
+msgid "Erreur dans la récupération de vos données"
+msgstr "Error during your datas recovery"
+
+#: /View/Elements/account_infos.ctp:20;41
+msgid "Informations générales"
+msgstr "General information"
+
+#: /View/Elements/account_subscribe.ctp:3
+msgid "Veuillez saisir votre numéro de téléphone."
+msgstr "Please fill in your phone number."
+
+#: /View/Elements/account_subscribe.ctp:4
+msgid "Veuillez renseigner l'indicatif pays de votre numéro de téléphone."
+msgstr "Please indicate a country dialling code for your phone number."
+
+#: /View/Elements/account_subscribe.ctp:20
+msgid "Votre prénom ou pseudo"
+msgstr "Your first name or pseudo"
+
+#: /View/Elements/account_subscribe.ctp:39
+msgid "Champs obligatoires"
+msgstr "Compulsory fields"
+
+#: /View/Elements/account_subscribe.ctp:43
+msgid "Je souhaite recevoir les offres exclusives de "
+msgstr "I wish to receive the exclusive offers of "
+
+#: /View/Elements/account_subscribe.ctp:52 /View/Elements/login_modal.ctp:27
+#: /View/Users/login.ctp:34 /View/Users/subscribe_agent.ctp:93
+msgid "S'inscrire"
+msgstr "Register "
+
+#: /View/Elements/admin_answer_mail.ctp:2 /View/Elements/answer_mail.ctp:73;91
+msgid "Votre réponse"
+msgstr "Your answer"
+
+#: /View/Elements/admin_block_link_action.ctp:7
+#: /View/Elements/admin_footer_block_link_action.ctp:7
+msgid "Voulez-vous vraiment supprimer le bloc de lien ?"
+msgstr "Do you really want to delete the block of link ?"
+
+#: /View/Elements/admin_edit.ctp:2 /View/Elements/admin_refuse.ctp:2
+#: /View/Reviews/display.ctp:46
+msgid "Note : "
+msgstr "Note /"
+
+#: /View/Elements/admin_footer_form_block_link.ctp:17;23
+#: /View/Elements/admin_footer_form_link.ctp:17;24
+#: /View/Elements/admin_form_block_link.ctp:17;23
+#: /View/Elements/admin_form_link.ctp:17;24
+#: /View/Elements/admin_menu_link.ctp:17
+#: /View/Helper/MetronicHelper.php:861;902 /View/Pages/admin_create.ctp:59
+#: /View/Vouchers/admin_create.ctp:54 /View/Vouchers/admin_index.ctp:37
+msgid "Titre"
+msgstr "Title"
+
+#: /View/Elements/admin_footer_form_link.ctp:18;29
+#: /View/Elements/admin_form_link.ctp:18;29
+#: /View/Elements/admin_menu_link.ctp:18
+msgid "Url"
+msgstr "URL"
+
+#: /View/Elements/admin_footer_form_link.ctp:45
+#: /View/Elements/admin_form_link.ctp:45 /View/Elements/admin_menu_link.ctp:30
+msgid "Nouvel onglet"
+msgstr "New tab"
+
+#: /View/Elements/admin_footer_link_action.ctp:7
+#: /View/Elements/admin_link_action.ctp:7
+msgid "Voulez-vous vraiment supprimer le lien ?"
+msgstr "Do you really want to delete the link ?"
+
+#: /View/Elements/admin_footer_select_block_link.ctp:6
+#: /View/Elements/admin_select_block_link.ctp:7
+msgid "Bloc de lien :"
+msgstr "Block of link"
+
+#: /View/Elements/admin_footer_select_block_link.ctp:9
+#: /View/Elements/admin_select_block_link.ctp:10
+msgid "Sélectionner un bloc de lien"
+msgstr "Select of block of link"
+
+#: /View/Elements/admin_footer_select_link.ctp:8
+#: /View/Elements/admin_select_link.ctp:9
+msgid "Lien :"
+msgstr "Link :"
+
+#: /View/Elements/admin_footer_select_link.ctp:11
+#: /View/Elements/admin_select_link.ctp:12
+msgid "Sélectionner un lien"
+msgstr "Select a link"
+
+#: /View/Elements/admin_modal.ctp:14 /View/Elements/admin_refuse_modal.ctp:18
+#: /View/Elements/loading_modal.ctp:13
+msgid "Traitement en cours..."
+msgstr "Processing ..."
+
+#: /View/Elements/admin_read_mail.ctp:3
+msgid "Marquer comme non lue"
+msgstr "Marked as unread"
+
+#: /View/Elements/admin_read_mail.ctp:35
+#: /View/Elements/agent_box_appointment.ctp:7;14
+#: /View/Elements/read_mail.ctp:29 /View/Helper/FrontblockHelper.php:848;852
+msgid "à"
+msgstr "to"
+
+#: /View/Elements/admin_refuse.ctp:1 /View/Elements/admin_refuse_modal.ctp:10
+msgid "Vous pouvez ajouter un motif pour le refus"
+msgstr "You can add a reason for the refusal"
+
+#: /View/Elements/agent_box_appointment.ctp:5
+msgid "Prenez rendez-vous avec"
+msgstr "Please take an appointment with"
+
+#: /View/Elements/agent_box_appointment.ctp:6
+msgid "PAR TELEPHONE"
+msgstr "BY PHONE"
+
+#: /View/Elements/agent_box_appointment.ctp:7
+msgid "(rdv sans engagement)"
+msgstr "(non-binding appointment )"
+
+#: /View/Elements/agent_box_appointment.ctp:10
+msgid "Un client a déjà réservé cette date."
+msgstr "A Customer has already booked this date."
+
+#: /View/Elements/agent_box_appointment.ctp:12
+msgid "Annuler votre demande de consultation par téléphone avec"
+msgstr "Cancel your phone consultation request with"
+
+#: /View/Elements/agent_compte.ctp:12
+msgid "Mon Compte"
+msgstr "My account"
+
+#: /View/Elements/agent_compte.ctp:13
+msgid "Confirmer votre Email"
+msgstr "Please confirm your E-mail"
+
+#: /View/Elements/agent_filters.ctp:9
+msgid "Type de consultation :"
+msgstr "Consultation's type"
+
+#: /View/Elements/agent_filters.ctp:21
+msgid "Trier par"
+msgstr "Sort by"
+
+#: /View/Elements/agent_filters.ctp:29
+msgid "Filtrer par"
+msgstr "Filter by"
+
+#: /View/Elements/agent_filters.ctp:38;39;40
+msgid "Rechercher un expert"
+msgstr "Search for an expert"
+
+#: /View/Elements/agent_filters.ctp:41
+msgid "Veuillez saisir le nom d'un expert puis cliquer sur Ok"
+msgstr "Please write the name of an expert then click on OK"
+
+#: /View/Elements/agent_filters.ctp:42 /View/Helper/FrontblockHelper.php:800
+#: /View/Pages/admin_tinymce_upload.ctp:37
+msgid "OK"
+msgstr "OK"
+
+#: /View/Elements/agent_infos.ctp:6
+msgid "Informations personnelles"
+msgstr "Personal information"
+
+#: /View/Elements/agent_infos.ctp:11
+msgid "Vos prénom et nom ne seront pas diffusés sur le site :"
+msgstr "Your first name and surname are not showing on the site :"
+
+#: /View/Elements/agent_infos.ctp:13
+msgid "Prenom"
+msgstr "First name"
+
+#: /View/Elements/agent_infos.ctp:52
+msgid ""
+"Vos consultations clients vous seront transmises sur ce premier numéro de "
+"téléphone :"
+msgstr ""
+"Your customers consultations will be transmited to you on this first phone "
+"number :"
+
+#: /View/Elements/agent_infos.ctp:66
+msgid "Opérateur téléphonique"
+msgstr "Phone operator"
+
+#: /View/Elements/agent_infos.ctp:73
+msgid ""
+"Ce 2ème numéro de téléphone est réservé aux tâches secondaires, vous ne "
+"recevrez pas d'appels client sur celui-ci."
+msgstr ""
+"This second phone number is reserved for secondary tasks, you will not "
+"receive customers calls on this one."
+
+#: /View/Elements/agent_infos.ctp:76
+msgid "Numéro de téléphone (secondaire)"
+msgstr "Phone number (secoundary)"
+
+#: /View/Elements/agent_infos.ctp:114
+msgid "SIRET"
+msgstr "SIRET"
+
+#: /View/Elements/agent_media.ctp:18;80
+msgid "Présentation audio (.mp3 max: 2Mo)"
+msgstr "Audio presentation (.mp3 2Mo max)"
+
+#: /View/Elements/agent_media.ctp:22;86
+msgid ""
+"Enregistrez une présentation audio afin de vous présenter auprès des "
+"internautes."
+msgstr ""
+"Please record an audio presentation in order to introduce yourself to the "
+"web users."
+
+#: /View/Elements/agent_media.ctp:29
+msgid "Photo"
+msgstr "Picture"
+
+#: /View/Elements/agent_media.ctp:32;33
+msgid "Photo manquante"
+msgstr "Missing picture"
+
+#: /View/Elements/agent_media.ctp:40 /View/Elements/agentslist.ctp:176
+msgid "Présentation audio"
+msgstr "Audio presentation "
+
+#: /View/Elements/agent_media.ctp:49
+msgid "Modifier votre présentation"
+msgstr "Modify your presentation"
+
+#: /View/Elements/agent_media.ctp:79
+msgid "Nouvelle présentation audio (.mp3 max: 2Mo)"
+msgstr "New audio presentation (.mp3 2Mo max)"
+
+#: /View/Elements/agent_navbar.ctp:6
+msgid "Profil"
+msgstr "Profil"
+
+#: /View/Elements/agent_navbar.ctp:12
+msgid "Planning"
+msgstr "Planning"
+
+#: /View/Elements/agent_navbar.ctp:21
+msgid "Avis reçus"
+msgstr "Comments received"
+
+#: /View/Elements/agent_navbar.ctp:28
+msgid "Déposer votre avis"
+msgstr "Leave your comment "
+
+#: /View/Elements/agent_navbar.ctp:35
+msgid "Envoyer un message privé"
+msgstr "Send a private message"
+
+#: /View/Elements/agent_navbar.ctp:43
+msgid "Dénoncer un abus"
+msgstr "Report an abuse"
+
+#: /View/Elements/agent_options.ctp:13
+msgid "Options Experts"
+msgstr "Experts options"
+
+#: /View/Elements/agent_options.ctp:14
+msgid "Langues parlées couramment"
+msgstr "Languages spoken fluently"
+
+#: /View/Elements/agent_options.ctp:25
+msgid "Être visible sur les sites"
+msgstr "Be visible on the sites"
+
+#: /View/Elements/agent_options.ctp:76
+msgid "Consultation par"
+msgstr "Consultation by"
+
+#: /View/Elements/agent_presentations.ctp:13
+msgid "Sera diffusé sur le site"
+msgstr "Will be shown on the site"
+
+#: /View/Elements/agentslist.ctp:10
+msgid "Il n'y a aucun expert"
+msgstr "There is no expert"
+
+#: /View/Elements/agentslist.ctp:145
+msgid "appels"
+msgstr "calls"
+
+#: /View/Elements/agentslist.ctp:147
+msgid "- de 100 appels"
+msgstr "Less than 100 calls"
+
+#: /View/Elements/agentslist.ctp:149
+msgid "+ de 50.000 appels"
+msgstr "more than 50 000 calls"
+
+#: /View/Elements/agentslist.ctp:172
+msgid "Voir la fiche"
+msgstr "See the record"
+
+#: /View/Elements/agentslist.ctp:219;229
+msgid "Mail"
+msgstr "E-mail"
+
+#: /View/Elements/agentslist.ctp:262
+msgid "depuis"
+msgstr "since"
+
+#: /View/Elements/agentslist.ctp:272;298
+msgid "Recevez une alerte dès que l'expert est disponible"
+msgstr "Receive an alert as soon as the expert is available"
+
+#: /View/Elements/agentslist.ctp:274;300
+msgid "Recevoir une alerte"
+msgstr "Receive an alert"
+
+#: /View/Elements/agentslist.ctp:374
+msgid "Code expert"
+msgstr "Expert's code"
+
+#: /View/Elements/agentslist.ctp:380
+msgid "Code perso"
+msgstr "Personal code"
+
+#: /View/Elements/agentslist.ctp:387
+msgid "Votre expert est actuellement disponible par : "
+msgstr "Your expert is currently available by :"
+
+#: /View/Elements/agentslist.ctp:412 /View/Helper/FrontblockHelper.php:1390
+#: /View/Helper/MetronicHelper.php:735;756 /View/Reviews/display.ctp:59
+msgid "Début"
+msgstr "Start"
+
+#: /View/Elements/agentslist.ctp:417 /View/Pages/admin_edit.ctp:21
+#: /View/Reviews/display.ctp:64
+msgid "Page"
+msgstr "Page"
+
+#: /View/Elements/agentslist.ctp:419 /View/Helper/FrontblockHelper.php:1395
+#: /View/Helper/MetronicHelper.php:739;740;763;766 /View/Reviews/display.ctp:66
+msgid "Suivant"
+msgstr "Next"
+
+#: /View/Elements/agentslist.ctp:422 /View/Helper/FrontblockHelper.php:1397
+#: /View/Helper/MetronicHelper.php:741;767 /View/Reviews/display.ctp:69
+msgid "Fin"
+msgstr "End"
+
+#: /View/Elements/already_chat.ctp:2
+msgid "La consultation par "
+msgstr "The consultation by"
+
+#: /View/Elements/already_chat.ctp:2
+msgid "impossible."
+msgstr "impossible"
+
+#: /View/Elements/already_chat.ctp:3
+msgid ""
+"Vous ne pouvez pas avoir plusieurs consultations par chat simultanément."
+msgstr "You can not have several simultaneous consultation by chat."
+
+#: /View/Elements/answer_mail.ctp:44
+msgid "crédits seront prélévés pour le message"
+msgstr "credit will be taken for this message"
+
+#: /View/Elements/answer_mail.ctp:60
+msgid ""
+"C'est une discussion privée, les discussions privées ne sont pas facturées. "
+"Dans votre intérêt, ne faites pas de consultation dans une discussion privée."
+msgstr ""
+"This is a private conversation, private conversations are not billed. In "
+"your interest, do not consult while in a private conversation."
+
+#: /View/Elements/answer_mail.ctp:87
+msgid ""
+"Vous n'avez pas assez de crédit pour répondre à ce message. Veuillez "
+"recharger votre compte"
+msgstr ""
+"You do not have enough credit to answer this message. Please credit your "
+"account"
+
+#: /View/Elements/cart_products.ctp:6
+msgid ""
+"Veuillez vous inscrire ou vous connecter ci-dessous afin de créditer votre "
+"compte."
+msgstr "Please register or connect yourself  in order to credit your account."
+
+#: /View/Elements/cart_products.ctp:33
+msgid "Connectez-vous à votre compte client ou inscrivez-vous :"
+msgstr "Please connect yourself on your customer account or please register :"
+
+#: /View/Elements/cart_products.ctp:56
+msgid "Si vous disposez d'un code PROMO, indiquez le ci-dessous :"
+msgstr "If you have a discount VOUCHER, please indicate it below :"
+
+#: /View/Elements/cart_products.ctp:90
+msgid "Vous devez accepter nos Conditions Générales d'Utilisation"
+msgstr "You must accept our terms and conditions of use"
+
+#: /View/Elements/categoryDescription.ctp:30 /View/Pages/display.ctp:57
+msgid "Lire la suite"
+msgstr "Read the following"
+
+#: /View/Elements/footer.ctp:6
+msgid "Tous droits réservés"
+msgstr "All rights reserved"
+
+#: /View/Elements/leftcolumn.ctp:5
+msgid "Inscription gratuite !"
+msgstr "Free registration"
+
+#: /View/Elements/leftcolumn.ctp:11
+msgid "Les meilleurs experts"
+msgstr "The best experts"
+
+#: /View/Elements/leftcolumn.ctp:12
+msgid "sélectionnés parmi des dizaines de candidatures"
+msgstr "Selected  amongts dozens of applicants"
+
+#: /View/Elements/leftcolumn.ctp:18
+msgid "Avis clients vérifiés"
+msgstr "Verified costumer reviews "
+
+#: /View/Elements/leftcolumn.ctp:19
+msgid "Nous ne publions que de vrais avis"
+msgstr "We only publish real reviews"
+
+#: /View/Elements/leftcolumn.ctp:25
+msgid "Actuellement"
+msgstr "Currently"
+
+#: /View/Elements/leftcolumn.ctp:25
+msgid "experts en consultation"
+msgstr "Experts consulting"
+
+#: /View/Elements/login_modal.ctp:24 /View/Users/login.ctp:31
+msgid " ou "
+msgstr "or"
+
+#: /View/Elements/mails.ctp:3
+msgid "Aucun message"
+msgstr "No message"
+
+#: /View/Elements/mails.ctp:8
+msgid "Discussion avec"
+msgstr "Conversation with"
+
+#: /View/Elements/mails.ctp:58
+msgid "Ouvrir la discussion"
+msgstr "Open the conversation"
+
+#: /View/Elements/mails.ctp:68
+msgid "Clôturer"
+msgstr "Close"
+
+#: /View/Elements/mails.ctp:73
+msgid ""
+"Voulez-vous vraiment archiver cette discussion ? Vous ne recevrez plus de "
+"messages pour cette discussion."
+msgstr ""
+"Do you really want to store this conversation? You will not receive messages "
+"for this conversation anymore."
+
+#: /View/Elements/not_enough_credit.ctp:2
+msgid "Vous n'avez pas assez de crédit pour une consultation par "
+msgstr "You do not have enough credit for a consultation by"
+
+#: /View/Elements/not_enough_credit.ctp:4
+msgid "Pensez à"
+msgstr "Think about"
+
+#: /View/Elements/not_enough_credit.ctp:4
+msgid "Recharger votre crédit"
+msgstr "Credit your account"
+
+#: /View/Elements/not_enough_credit.ctp:10
+msgid "Il faut"
+msgstr "You need"
+
+#: /View/Elements/not_enough_credit.ctp:10
+msgid "crédits minimum pour une consultation par "
+msgstr "minimum credit for a consultation by"
+
+#: /View/Elements/reviewbox.ctp:6
+msgid "Derniers avis clients"
+msgstr "Last customer's comment"
+
+#: /View/Elements/reviewbox.ctp:26
+msgid "Voir tous les avis clients"
+msgstr "See all customers comments"
+
+#: /View/Elements/template_chat.ctp:14
+msgid "Votre temps sera décompté dès la première réponse de l'agent"
+msgstr "Your time will be billed as soon as the agent answers"
+
+#: /View/Elements/template_chat.ctp:55
+msgid "Quitter le chat"
+msgstr "Quit chat"
+
+#: /View/Emails/html/admin_accept.ctp:4 /View/Emails/html/admin_refuse.ctp:4
+#: /View/Emails/html/new_mail.ctp:4 /View/Emails/html/reinit_pass.ctp:4
+#: /View/Emails/text/admin_accept.ctp:3 /View/Emails/text/admin_refuse.ctp:3
+#: /View/Emails/text/alert_available.ctp:4 /View/Emails/text/new_mail.ctp:3
+#: /View/Emails/text/reinit_pass.ctp:3 /View/Helper/FrontblockHelper.php:646
+msgid "Bonjour"
+msgstr "Hello"
+
+#: /View/Emails/html/admin_accept.ctp:6 /View/Emails/html/admin_refuse.ctp:11
+#: /View/Emails/html/answer_guest.ctp:12 /View/Emails/html/answer_mail.ctp:18
+#: /View/Emails/html/edit_mail.ctp:10 /View/Emails/html/end_consult.ctp:14
+#: /View/Emails/html/mail_confirm.ctp:10 /View/Emails/html/new_mail.ctp:8
+#: /View/Emails/html/reinit_pass.ctp:10 /View/Emails/html/reload_credit.ctp:9
+#: /View/Emails/html/subscribe_admin.ctp:9 /View/Emails/text/admin_accept.ctp:5
+#: /View/Emails/text/admin_refuse.ctp:10
+#: /View/Emails/text/alert_available.ctp:20
+#: /View/Emails/text/answer_guest.ctp:11 /View/Emails/text/answer_mail.ctp:18
+#: /View/Emails/text/edit_mail.ctp:9 /View/Emails/text/end_consult.ctp:13
+#: /View/Emails/text/mail_confirm.ctp:9 /View/Emails/text/new_mail.ctp:7
+#: /View/Emails/text/reinit_pass.ctp:9 /View/Emails/text/reload_credit.ctp:8
+#: /View/Emails/text/subscribe_admin.ctp:9
+msgid "A très vite sur"
+msgstr "See you soon on"
+
+#: /View/Emails/html/admin_refuse.ctp:7 /View/Emails/text/admin_refuse.ctp:6
+msgid "Pour le motif suivant"
+msgstr "For the following reason"
+
+#: /View/Emails/html/admin_refuse.ctp:9 /View/Emails/text/admin_refuse.ctp:8
+msgid "Pour toutes réclamations, contactez"
+msgstr "For any claims, please contact"
+
+#: /View/Emails/html/answer_guest.ctp:4 /View/Emails/html/answer_mail.ctp:4;9
+#: /View/Emails/html/edit_mail.ctp:4 /View/Emails/html/end_consult.ctp:4
+#: /View/Emails/html/mail_confirm.ctp:4 /View/Emails/text/answer_guest.ctp:3
+#: /View/Emails/text/answer_mail.ctp:4;9 /View/Emails/text/edit_mail.ctp:3
+#: /View/Emails/text/end_consult.ctp:3 /View/Emails/text/mail_confirm.ctp:3
+msgid "Bonjour,"
+msgstr "Hello,"
+
+#: /View/Emails/html/answer_guest.ctp:5 /View/Emails/text/answer_guest.ctp:4
+msgid "Un administrateur a répondu à votre message."
+msgstr "An administrator has answered your message."
+
+#: /View/Emails/html/answer_guest.ctp:9 /View/Emails/text/answer_guest.ctp:8
+msgid "Cliquez-ici pour répondre à ce message"
+msgstr "Click here to reply to this message"
+
+#: /View/Emails/html/answer_mail.ctp:5 /View/Emails/text/answer_mail.ctp:5
+msgid "a répondu à un de vos messages."
+msgstr "Has replied to one of your messages."
+
+#: /View/Emails/html/answer_mail.ctp:6 /View/Emails/text/answer_mail.ctp:6
+msgid "La réponse est disponible dans votre messagerie."
+msgstr "The reply is available in your mailbox."
+
+#: /View/Emails/html/answer_mail.ctp:10 /View/Emails/text/answer_mail.ctp:10
+msgid "Vous avez reçu un message de la part d'un administrateur."
+msgstr "Youhave received a message from an administrator."
+
+#: /View/Emails/html/answer_mail.ctp:11 /View/Emails/html/new_mail.ctp:6
+#: /View/Emails/text/answer_mail.ctp:11 /View/Emails/text/new_mail.ctp:5
+msgid "Le message est disponible dans votre messagerie."
+msgstr "The message is available inyour mailbox."
+
+#: /View/Emails/html/answer_mail.ctp:15 /View/Emails/text/answer_mail.ctp:15
+msgid "Cliquez-ici pour consulter votre message"
+msgstr "Click here to read your message"
+
+#: /View/Emails/html/edit_mail.ctp:5 /View/Emails/text/edit_mail.ctp:4
+msgid "Vous avez modifié votre adresse mail."
+msgstr "You have changed your e-mail address."
+
+#: /View/Emails/html/edit_mail.ctp:6 /View/Emails/text/edit_mail.ctp:5
+msgid ""
+"Pour confirmer votre nouvelle adresse mail, un simple clique sur le lien "
+"suivant suffit : "
+msgstr ""
+"To confirm your new e-mail address, please click on this following link:"
+
+#: /View/Emails/html/edit_mail.ctp:8 /View/Emails/html/mail_confirm.ctp:8
+#: /View/Emails/html/reinit_pass.ctp:6 /View/Emails/html/subscribe_admin.ctp:5
+#: /View/Emails/text/edit_mail.ctp:7 /View/Emails/text/mail_confirm.ctp:7
+#: /View/Emails/text/reinit_pass.ctp:5 /View/Emails/text/subscribe_admin.ctp:5
+msgid "Votre identifiant est"
+msgstr "Your login is"
+
+#: /View/Emails/html/end_consult.ctp:6 /View/Emails/text/end_consult.ctp:5
+msgid "Vous venez de communiquer avec"
+msgstr "You just communicated with"
+
+#: /View/Emails/html/end_consult.ctp:6 /View/Emails/text/end_consult.ctp:5
+msgid "pendant"
+msgstr "During"
+
+#: /View/Emails/html/end_consult.ctp:6 /View/Emails/text/end_consult.ctp:5
+msgid "min"
+msgstr "min"
+
+#: /View/Emails/html/end_consult.ctp:8 /View/Emails/text/end_consult.ctp:7
+msgid "Laissez un avis sur cette communication et sur"
+msgstr "Please leave a comment on this communication and on"
+
+#: /View/Emails/html/end_consult.ctp:10 /View/Emails/text/end_consult.ctp:9
+msgid ""
+"Pour cela rendez-vous dans votre profil, dans la rubrique \"Votre avis sur "
+"un expert\""
+msgstr ""
+"For this, go to your profil, in the section \"your opinion on an expert\""
+
+#: /View/Emails/html/end_consult.ctp:12 /View/Emails/text/end_consult.ctp:11
+msgid "Cliquez sur le lien suivant pour accéder à cette rubrique : "
+msgstr "Click on the following link to access this section :"
+
+#: /View/Emails/html/mail_confirm.ctp:5 /View/Emails/text/mail_confirm.ctp:4
+msgid "Vous n'avez toujours pas confirmé votre adresse mail"
+msgstr "You have not confirmed your e-mail address as yet"
+
+#: /View/Emails/html/mail_confirm.ctp:6 /View/Emails/text/mail_confirm.ctp:5
+msgid ""
+"Pour confirmer votre adresse mail, un simple clique sur le lien suivant "
+"suffit : "
+msgstr "To confirm your e-mail address, please click on the following link  :"
+
+#: /View/Emails/html/new_mail.ctp:5 /View/Emails/text/new_mail.ctp:4
+msgid "Vous avez reçu un nouveau message."
+msgstr "You have received a new message."
+
+#: /View/Emails/html/reinit_pass.ctp:5 /View/Emails/text/reinit_pass.ctp:4
+msgid "Vous avez demandé à réinitialiser votre mot de passe."
+msgstr "You have requested a reset for your password."
+
+#: /View/Emails/html/reinit_pass.ctp:8 /View/Emails/text/reinit_pass.ctp:7
+msgid ""
+"Pour réinitialiser votre mot de passe, veuillez cliquer sur le lien suivant"
+msgstr "To reset your password, please click on the following link"
+
+#: /View/Emails/html/reload_credit.ctp:4 /View/Emails/text/reload_credit.ctp:3
+msgid "a tenté de répondre à une de vos questions."
+msgstr "has attempted to reply to one of your questions."
+
+#: /View/Emails/html/reload_credit.ctp:5 /View/Emails/text/reload_credit.ctp:4
+msgid "Mais il n'a pas pu, car vous n'avez pas assez de crédit."
+msgstr ""
+"But he has not been able to do so, because you do not have enough credit."
+
+#: /View/Emails/html/reload_credit.ctp:7 /View/Emails/text/reload_credit.ctp:6
+msgid ""
+"Pensez à recharger votre crédit, pour avoir une réponse dans les meilleurs "
+"délais."
+msgstr ""
+"Please think about crediting your account, to get a reply as soon as "
+"possible."
+
+#: /View/Emails/html/subscribe_admin.ctp:3
+#: /View/Emails/text/subscribe_admin.ctp:3
+msgid "Bienvenue sur"
+msgstr "Wellcome on"
+
+#: /View/Emails/html/subscribe_admin.ctp:4
+#: /View/Emails/text/subscribe_admin.ctp:4
+msgid "Votre compte administrateur a été crée."
+msgstr "Your administrators account has been created."
+
+#: /View/Emails/html/subscribe_admin.ctp:6
+#: /View/Emails/text/subscribe_admin.ctp:6
+msgid "Votre mot de passe est"
+msgstr "Your password is"
+
+#: /View/Emails/html/subscribe_admin.ctp:8
+#: /View/Emails/text/subscribe_admin.ctp:8
+msgid ""
+"Il est vivement conseillé de modifier votre mot de passe lors de vote "
+"première connexion."
+msgstr ""
+"It is strongly advised to change your password on your first connection."
+
+#: /View/Emails/text/alert_available.ctp:5
+msgid "L'expert"
+msgstr "The expert"
+
+#: /View/Emails/text/alert_available.ctp:7
+msgid "Il est disponible pour une consultation par :"
+msgstr "He is available for a consultation by :"
+
+#: /View/Emails/text/alert_available.ctp:16
+msgid ""
+"Nous vous invitons à le consulter dès maintenant avant qu'il ne soit occupé !"
+msgstr "We are inviting you to consult him as of now before he is busy again !"
+
+#: /View/Emails/text/alert_available.ctp:18
+msgid "Pour cela, connectez-vous dès maintenant sur notre site !"
+msgstr "For this, connect yourself as of now on our site !"
+
+#: /View/Footers/admin_footer.ctp:9 /View/Helper/MetronicHelper.php:505;1129
+msgid "Footer"
+msgstr "Footer"
+
+#: /View/Footers/admin_footer.ctp:17
+msgid "Le footer"
+msgstr "The footer"
+
+#: /View/Footers/admin_footer.ctp:119 /View/Menus/admin_menu.ctp:106
+msgid "Les liens"
+msgstr "The links"
+
+#: /View/Footers/admin_footer.ctp:126 /View/Menus/admin_menu.ctp:113
+msgid "Créer un lien"
+msgstr "Create a link"
+
+#: /View/Footers/admin_footer.ctp:146 /View/Menus/admin_menu.ctp:133
+msgid "Les blocs de liens"
+msgstr "The links blocks"
+
+#: /View/Footers/admin_footer.ctp:153 /View/Menus/admin_menu.ctp:140
+msgid "Créer un bloc de lien"
+msgstr "Create a link block"
+
+#: /View/Helper/FrontblockHelper.php:199
+msgid "Vous êtes :"
+msgstr "You are:"
+
+#: /View/Helper/FrontblockHelper.php:224
+msgid "Consultation par :"
+msgstr "Consultation by :"
+
+#: /View/Helper/FrontblockHelper.php:349;451
+msgid "Mon compte"
+msgstr "My account"
+
+#: /View/Helper/FrontblockHelper.php:355
+msgid "Mes mails"
+msgstr "My e-mails"
+
+#: /View/Helper/FrontblockHelper.php:355
+msgid "Mes consultations écrites"
+msgstr "My written consultations"
+
+#: /View/Helper/FrontblockHelper.php:356;459
+msgid "Mes chats"
+msgstr "My chats"
+
+#: /View/Helper/FrontblockHelper.php:358
+msgid "Mes experts préférés"
+msgstr "My favourite experts"
+
+#: /View/Helper/FrontblockHelper.php:359
+msgid "Votre avis sur un expert"
+msgstr "Your opinion on an expert"
+
+#: /View/Helper/FrontblockHelper.php:360
+msgid "Mes paiements"
+msgstr "My payments"
+
+#: /View/Helper/FrontblockHelper.php:362
+msgid "Mes limites"
+msgstr "My limits"
+
+#: /View/Helper/FrontblockHelper.php:435;516;666
+#: /View/Layouts/admin_layout.ctp:63
+msgid "Déconnexion"
+msgstr "Disconnection"
+
+#: /View/Helper/FrontblockHelper.php:453
+msgid "Ma présentation"
+msgstr "My presentation"
+
+#: /View/Helper/FrontblockHelper.php:454
+msgid "Historique"
+msgstr "Historic"
+
+#: /View/Helper/FrontblockHelper.php:458
+msgid "Consultations mail"
+msgstr "Consultations mail"
+
+#: /View/Helper/FrontblockHelper.php:458
+msgid "Ma messagerie"
+msgstr "My mailbox"
+
+#: /View/Helper/FrontblockHelper.php:461
+msgid "Mon planning"
+msgstr "My planning"
+
+#: /View/Helper/FrontblockHelper.php:461
+msgid "Mon calendrier"
+msgstr "My calendar"
+
+#: /View/Helper/FrontblockHelper.php:462
+msgid "Mes RDV"
+msgstr "My appointments"
+
+#: /View/Helper/FrontblockHelper.php:613
+msgid "Crédits : "
+msgstr "Crédits :"
+
+#: /View/Helper/FrontblockHelper.php:613
+msgid "soit "
+msgstr "either"
+
+#: /View/Helper/FrontblockHelper.php:651
+msgid "Code personnel :"
+msgstr "Personal code"
+
+#: /View/Helper/FrontblockHelper.php:692
+msgid "Devenir membre ?"
+msgstr "Become a member ?"
+
+#: /View/Helper/FrontblockHelper.php:799
+msgid "Rechercher :"
+msgstr "Look for :"
+
+#: /View/Helper/FrontblockHelper.php:799
+msgid "Votre recherche ..."
+msgstr "Your research..."
+
+#: /View/Helper/FrontblockHelper.php:835
+msgid "L'expert est indisponible"
+msgstr "The expert is unavailable"
+
+#: /View/Helper/FrontblockHelper.php:842;844;847;851
+msgid "Retour prévu :"
+msgstr "Expected return :"
+
+#: /View/Helper/FrontblockHelper.php:844
+msgid "Demain à"
+msgstr "Tomorrow at"
+
+#: /View/Helper/FrontblockHelper.php:1135
+msgid "Voir les experts"
+msgstr "See the experts"
+
+#: /View/Helper/FrontblockHelper.php:1392
+#: /View/Helper/MetronicHelper.php:736;737
+msgid "Précedent"
+msgstr "Previous"
+
+#: /View/Helper/FrontblockHelper.php:1446
+msgid "Indicatif pays"
+msgstr "Country dialling code"
+
+#: /View/Helper/MetronicHelper.php:183
+msgid "CMS"
+msgstr "CMS"
+
+#: /View/Helper/MetronicHelper.php:199;455;479;521;545;569;600;626
+msgid "Liste"
+msgstr "List"
+
+#: /View/Helper/MetronicHelper.php:216
+msgid "Contenus"
+msgstr "Content"
+
+#: /View/Helper/MetronicHelper.php:227
+msgid "Les Agents"
+msgstr "The agents"
+
+#: /View/Helper/MetronicHelper.php:239
+msgid "Validation en attente"
+msgstr "Pending validation"
+
+#: /View/Helper/MetronicHelper.php:248
+msgid "Informations"
+msgstr "Information"
+
+#: /View/Helper/MetronicHelper.php:262
+msgid "Photos"
+msgstr "Pictures"
+
+#: /View/Helper/MetronicHelper.php:269
+msgid "Présentations audio"
+msgstr "Audio presentation"
+
+#: /View/Helper/MetronicHelper.php:298
+msgid "Agents (experts)"
+msgstr "Agents (experts)"
+
+#: /View/Helper/MetronicHelper.php:312
+msgid "Les clients"
+msgstr "The customers"
+
+#: /View/Helper/MetronicHelper.php:345
+msgid "Avis en publié"
+msgstr "Published comments"
+
+#: /View/Helper/MetronicHelper.php:352
+msgid "Avis en attente"
+msgstr "Pending comments"
+
+#: /View/Helper/MetronicHelper.php:360
+msgid "Avis refusés"
+msgstr "Declined comments"
+
+#: /View/Helper/MetronicHelper.php:368
+msgid "Avis clients"
+msgstr "Customers comments"
+
+#: /View/Helper/MetronicHelper.php:383
+msgid "Virements en attente"
+msgstr "pending transfer"
+
+#: /View/Helper/MetronicHelper.php:391
+msgid "Virements validés"
+msgstr "validated transfer"
+
+#: /View/Helper/MetronicHelper.php:399
+msgid "Paiements"
+msgstr "payments"
+
+#: /View/Helper/MetronicHelper.php:411
+msgid "Communication agents"
+msgstr "agents communication"
+
+#: /View/Helper/MetronicHelper.php:417
+msgid "Communication clients"
+msgstr "Customers communication"
+
+#: /View/Helper/MetronicHelper.php:423
+msgid "Achat de crédit"
+msgstr "credit purchase"
+
+#: /View/Helper/MetronicHelper.php:438
+msgid "Stats / Supervision"
+msgstr "Stats / Supervision"
+
+#: /View/Helper/MetronicHelper.php:462 /View/Products/admin_create.ctp:2;8;41
+#: /View/Products/admin_edit.ctp:2
+msgid "Produits"
+msgstr "Products"
+
+#: /View/Helper/MetronicHelper.php:486 /View/Vouchers/admin_create.ctp:5
+#: /View/Vouchers/admin_use_voucher.ctp:2
+msgid "Bon de réduction"
+msgstr "Discount voucher"
+
+#: /View/Helper/MetronicHelper.php:496
+msgid "Top Menu"
+msgstr "Top Menu"
+
+#: /View/Helper/MetronicHelper.php:528 /View/Slides/admin_create.ctp:3
+#: /View/Slides/admin_edit.ctp:3 /View/Slides/admin_list.ctp:2;10;30;41
+msgid "Slide"
+msgstr "Slide"
+
+#: /View/Helper/MetronicHelper.php:607 /View/Horoscopes/admin_edit.ctp:8
+msgid "Horoscope"
+msgstr "Horoscope"
+
+#: /View/Helper/MetronicHelper.php:659 /View/Translate/admin_index.ctp:2;10
+msgid "Traductions"
+msgstr "Translations"
+
+#: /View/Helper/MetronicHelper.php:778;808;844;885;926;1026
+msgid "Erreur dans la création du formulaire"
+msgstr "Error in the form creation"
+
+#: /View/Helper/MetronicHelper.php:863;904
+msgid "Lien"
+msgstr "Link"
+
+#: /View/Helper/MetronicHelper.php:864;905
+msgid "Image (.jpg .jpeg)"
+msgstr "Picture (.jpg .jpeg)"
+
+#: /View/Helper/MetronicHelper.php:864
+msgid "Largeur conseillée de l'image"
+msgstr "advised size of the picture"
+
+#: /View/Helper/MetronicHelper.php:946
+msgid "Objet du mail"
+msgstr "Mail's object"
+
+#: /View/Home/advantage.ctp:5
+msgid "Vos avantages sur"
+msgstr "Your advantages on"
+
+#: /View/Home/clairvoyance_quality.ctp:5
+msgid "Le meilleur de la voyance à votre service"
+msgstr "The best clairvoyance at your service"
+
+#: /View/Home/index.ctp:49
+msgid "Choose your country"
+msgstr "Chose your country"
+
+#: /View/Home/media_phone.ctp:9
+msgid "Code d'accès :"
+msgstr "Access code :"
+
+#: /View/Home/media_phone.ctp:49
+msgid "Votre code perso : "
+msgstr "Your personal code :"
+
+#: /View/Home/media_phone.ctp:50
+msgid "Votre crédit : "
+msgstr "Your credit :"
+
+#: /View/Home/media_phone.ctp:51
+msgid "(Pensez à recharger ICI)"
+msgstr "(think about crediting HERE)"
+
+#: /View/Horoscopes/admin_create.ctp:2;8;97 /View/Horoscopes/admin_edit.ctp:2
+msgid "Horoscopes"
+msgstr "Horoscopes"
+
+#: /View/Horoscopes/admin_create.ctp:46;65 /View/Horoscopes/admin_edit.ctp:43
+msgid "Date de publication"
+msgstr "Publishing date"
+
+#: /View/Horoscopes/admin_create.ctp:47
+msgid "Signe"
+msgstr "Sign"
+
+#: /View/Horoscopes/admin_create.ctp:56
+msgid "Les horoscopes"
+msgstr "The horoscopes"
+
+#: /View/Horoscopes/admin_create.ctp:60
+msgid "Pas d'horoscope"
+msgstr "No horoscope"
+
+#: /View/Horoscopes/admin_create.ctp:64
+msgid "Signe du zodiaque"
+msgstr "Sign of the zodiac"
+
+#: /View/Horoscopes/admin_create.ctp:75 /View/Pages/admin_create.ctp:97
+#: /View/Pages/admin_edit.ctp:71
+msgid "Voir la page"
+msgstr "See the page"
+
+#: /View/Horoscopes/admin_create.ctp:101
+msgid "Nouvel horoscope"
+msgstr "New horoscope"
+
+#: /View/Horoscopes/admin_edit.ctp:2
+msgid "Edition d'un horoscope"
+msgstr "Editing of an horoscope"
+
+#: /View/Horoscopes/display.ctp:81
+msgid "Votre horoscope du jour"
+msgstr "Your horoscope of the day"
+
+#: /View/Horoscopes/index.ctp:17
+msgid "Accéder à votre horoscope gratuitement"
+msgstr "Access your horoscope for free"
+
+#: /View/Horoscopes/index.ctp:18
+msgid "Veuillez sélectionner votre signe."
+msgstr "Please select your sign"
+
+#: /View/Layouts/admin_layout.ctp:5 /View/Layouts/login_admin.ctp:5
+msgid "Administration "
+msgstr "Administration"
+
+#: /View/Layouts/admin_layout.ctp:70
+msgid "Google Doc"
+msgstr "Google doc"
+
+#: /View/Layouts/admin_layout.ctp:79
+msgid "Google Analytics"
+msgstr "Google analytics"
+
+#: /View/Layouts/admin_layout.ctp:88
+msgid "Google Gmail"
+msgstr "Google Gmail"
+
+#: /View/Layouts/admin_layout.ctp:97
+msgid "Google Agenda"
+msgstr "Google agenda"
+
+#: /View/Layouts/admin_layout.ctp:107
+msgid "Voir le site"
+msgstr "See the site"
+
+#: /View/Menus/admin_menu.ctp:10
+msgid "Top menu"
+msgstr "Top menu"
+
+#: /View/Menus/admin_menu.ctp:10
+msgid "Menu"
+msgstr "Menu"
+
+#: /View/Menus/admin_menu.ctp:18
+msgid "Le menu"
+msgstr "The menu"
+
+#: /View/Pages/admin_create.ctp:2;8;165 /View/Pages/admin_create_category.ctp:2
+#: /View/Pages/admin_edit.ctp:15 /View/Pages/admin_edit_category.ctp:2
+msgid "Pages"
+msgstr "Pages"
+
+#: /View/Pages/admin_create.ctp:32;35;36
+msgid "Nombre de caractères recommandé : "
+msgstr "Recommended number of characters"
+
+#: /View/Pages/admin_create.ctp:55
+msgid "Les pages CMS"
+msgstr "The CMS pages"
+
+#: /View/Pages/admin_create.ctp:127
+msgid "Voulez-vous vraiment désactiver la page "
+msgstr "Do you really want to deactivate the page"
+
+#: /View/Pages/admin_create.ctp:134
+msgid "Voulez-vous vraiment activer la page "
+msgstr "Do you really want to activate the page"
+
+#: /View/Pages/admin_create.ctp:145
+msgid "Voulez-vous vraiment supprimer définitivement la page "
+msgstr "Do you really want to permanently delete the page"
+
+#: /View/Pages/admin_create.ctp:169
+msgid "Nouvelle page"
+msgstr "New page"
+
+#: /View/Pages/admin_create_category.ctp:2
+msgid "Catégories des pages CMS"
+msgstr "CMS pages categories"
+
+#: /View/Pages/admin_create_category.ctp:8
+msgid "Categories CMS"
+msgstr "CMS categories"
+
+#: /View/Pages/admin_create_category.ctp:37
+msgid "Catégories CMS"
+msgstr "CMS categories"
+
+#: /View/Pages/admin_create_category.ctp:39
+msgid "Dans le footer"
+msgstr "In the footer"
+
+#: /View/Pages/admin_create_category.ctp:39
+msgid "Nombre de pages"
+msgstr "Pages number"
+
+#: /View/Pages/admin_create_category.ctp:48
+msgid "Voir les pages"
+msgstr "See the pages"
+
+#: /View/Pages/admin_edit.ctp:5;11
+msgid "Template e-mail"
+msgstr "E-mail template"
+
+#: /View/Pages/admin_edit_category.ctp:2
+msgid "Edition de la catégorie"
+msgstr "Category editing"
+
+#: /View/Pages/admin_edit_category.ctp:8
+msgid "Catégorie CMS"
+msgstr "CMS category"
+
+#: /View/Pages/display.ctp:37
+msgid "Réduire"
+msgstr "Reduce"
+
+#: /View/Payment/admin_index.ctp:2;8;19
+msgid "Paiements par "
+msgstr "Payment by"
+
+#: /View/Payment/admin_index.ctp:24
+msgid "Pas de paiement"
+msgstr "No payment"
+
+#: /View/Payment/admin_index.ctp:29
+msgid "#"
+msgstr "#"
+
+#: /View/Payment/admin_index.ctp:30
+msgid "Référence"
+msgstr "Reference"
+
+#: /View/Payment/admin_index.ctp:36
+msgid "Mode réduction"
+msgstr "saving mode"
+
+#: /View/Payment/admin_index.ctp:38
+msgid "Réduction"
+msgstr "Saving"
+
+#: /View/Payment/admin_index.ctp:42
+msgid "Valide"
+msgstr "Valid"
+
+#: /View/Payment/admin_index.ctp:60
+msgid "Montant"
+msgstr "Amount"
+
+#: /View/Payment/admin_index.ctp:61
+msgid "Remise %"
+msgstr "Discount %"
+
+#: /View/Payment/admin_index.ctp:63
+msgid "Aucune"
+msgstr "None"
+
+#: /View/Payment/admin_index.ctp:90
+msgid "Valider le virement"
+msgstr "Validate the transfer"
+
+#: /View/Payment/admin_index.ctp:93
+msgid "Voulez-vous vraiment valider le virement \""
+msgstr "Do you really want to validate the transfer \""
+
+#: /View/Payment/Bankwire/index.ctp:13
+msgid "Règlement par Virement Bancaire"
+msgstr "Payment by bank transfer"
+
+#: /View/Phones/admin_create.ctp:2 /View/Phones/admin_edit.ctp:2
+#: /View/Phones/admin_list.ctp:2
+msgid "Contenu"
+msgstr "Content"
+
+#: /View/Phones/admin_create.ctp:2 /View/Phones/admin_edit.ctp:2
+#: /View/Phones/admin_list.ctp:2;21
+msgid "Les numéros"
+msgstr "The numbers"
+
+#: /View/Phones/admin_create.ctp:10 /View/Phones/admin_edit.ctp:10
+#: /View/Phones/admin_list.ctp:10
+msgid "Numéro"
+msgstr "Number"
+
+#: /View/Phones/admin_create.ctp:21
+msgid "Ajout d'un numéro"
+msgstr "Number adding"
+
+#: /View/Phones/admin_create.ctp:31 /View/Phones/admin_edit.ctp:34
+#: /View/Phones/admin_list.ctp:32
+msgid "Téléphone surtaxé"
+msgstr "Premium rate number"
+
+#: /View/Phones/admin_create.ctp:32 /View/Phones/admin_edit.ctp:35
+msgid "Coût de la minute surtaxée"
+msgstr "Cost of premium rate number "
+
+#: /View/Phones/admin_create.ctp:33 /View/Phones/admin_edit.ctp:36
+#: /View/Phones/admin_list.ctp:34
+msgid "Téléphone prépayé"
+msgstr "prepaid phone"
+
+#: /View/Phones/admin_create.ctp:34 /View/Phones/admin_edit.ctp:37
+msgid "Coût de la minute prépayée"
+msgstr "prepaid minute's cost"
+
+#: /View/Phones/admin_create.ctp:35 /View/Phones/admin_edit.ctp:38
+#: /View/Phones/admin_list.ctp:36
+msgid "Nombre de secondes pour un crédit"
+msgstr "Number of minutes for a credit"
+
+#: /View/Phones/admin_create.ctp:37 /View/Phones/admin_edit.ctp:43
+msgid "Mention légale (num. 1)"
+msgstr "Legal mention (num.1)"
+
+#: /View/Phones/admin_create.ctp:38 /View/Phones/admin_edit.ctp:44
+msgid "Mention légale (num. 2)"
+msgstr "Legal mention (num.2)"
+
+#: /View/Phones/admin_edit.ctp:21
+msgid "Edition du numéro"
+msgstr "Editing of the number"
+
+#: /View/Phones/admin_edit.ctp:40
+msgid "3ème numéro de tél"
+msgstr "Third phone number"
+
+#: /View/Phones/admin_edit.ctp:41
+msgid "3ème num, coût minute"
+msgstr "Third number, cost per min"
+
+#: /View/Phones/admin_edit.ctp:45
+msgid "Mention légale (num. 3)"
+msgstr "Legal mention (num. 3)"
+
+#: /View/Phones/admin_list.ctp:25
+msgid "Aucun numéro"
+msgstr "No number"
+
+#: /View/Phones/admin_list.ctp:33
+msgid "Coût de la minute surtaxé"
+msgstr "Premium minute's cost"
+
+#: /View/Phones/admin_list.ctp:35
+msgid "Coût de la minute prépayé"
+msgstr "Prepaid minute's cost"
+
+#: /View/Products/admin_create.ctp:43
+msgid "Date de création"
+msgstr "Date of creation"
+
+#: /View/Products/admin_create.ctp:57
+msgid "Voulez-vous vraiment désactiver le produit"
+msgstr "Do you really want to deactivate the product"
+
+#: /View/Products/admin_create.ctp:63
+msgid "Voulez-vous vraiment activer le produit"
+msgstr "Do you really want to activate the product"
+
+#: /View/Products/admin_create.ctp:67
+msgid "Nouveau produit"
+msgstr "New product"
+
+#: /View/Products/admin_edit.ctp:2
+msgid "Editer \""
+msgstr "Edit \""
+
+#: /View/Products/admin_edit.ctp:39
+msgid "Le produit"
+msgstr "The product"
+
+#: /View/Products/tarif.ctp:8
+msgid "Nos tarifs par carte bancaire."
+msgstr "Our tarifs by bank card."
+
+#: /View/Reviews/admin_index.ctp:2;42
+msgid "Avis"
+msgstr "Comments"
+
+#: /View/Reviews/admin_index.ctp:2
+msgid "Liste des avis clients"
+msgstr "Customers comments list"
+
+#: /View/Reviews/admin_index.ctp:25
+msgid "Avis des clients refusés"
+msgstr "Declined customers comments "
+
+#: /View/Reviews/admin_index.ctp:27
+msgid "Liste des avis clients publiés"
+msgstr "Published customers comments list"
+
+#: /View/Reviews/admin_index.ctp:29
+msgid "Liste des avis clients en attente"
+msgstr "Pending customers comments list"
+
+#: /View/Reviews/admin_index.ctp:35
+msgid "Aucun avis en attente"
+msgstr "No pending comments"
+
+#: /View/Reviews/admin_index.ctp:73
+msgid "Modifier l'avis"
+msgstr "Change the comment"
+
+#: /View/Reviews/admin_index.ctp:95;118
+msgid "Voulez-vous vraiment rejeter l'avis ?"
+msgstr "Do you really want to reject the comment?"
+
+#: /View/Reviews/admin_index.ctp:103
+msgid ""
+"Cet avis a été refusé, voulez-vous vraiment l'accepter ? Un email sera "
+"envoyé au client."
+msgstr ""
+"This comment has been rejected, do you really want to accept it? An e-mail "
+"will be send to the Customer."
+
+#: /View/Reviews/admin_index.ctp:111
+msgid ""
+"Voulez-vous vraiment valider cet avis ? Le client en sera informé par mail."
+msgstr ""
+"Do you really want to validate this comment ? The Customer will be informed "
+"by e-mail."
+
+#: /View/Reviews/admin_index.ctp:127
+msgid "Voulez-vous supprimer définitivement cet avis ?"
+msgstr "Do you want to cancel this comment permanently ?"
+
+#: /View/Reviews/display.ctp:5
+msgid "Tous les avis clients"
+msgstr "All customers comments"
+
+#: /View/Reviews/display.ctp:8
+msgid "Il n'y a pas encore d'avis"
+msgstr "There are no comments as yet"
+
+#: /View/Reviews/display.ctp:44
+msgid "Avis donné par "
+msgstr "Comments given by"
+
+#: /View/Slides/admin_create.ctp:3 /View/Slides/admin_edit.ctp:3
+msgid "Création d'un slide"
+msgstr "Creation of a slide"
+
+#: /View/Slides/admin_create.ctp:11 /View/Slides/admin_edit.ctp:11
+msgid "Ajouter un slide"
+msgstr "Add a slide"
+
+#: /View/Slides/admin_create.ctp:23
+msgid "Ajout d'un slide"
+msgstr "Adding of a slide"
+
+#: /View/Slides/admin_create.ctp:42 /View/Slides/admin_edit.ctp:55
+msgid "Position du slide"
+msgstr "Slide's position"
+
+#: /View/Slides/admin_create.ctp:42 /View/Slides/admin_edit.ctp:55
+msgid "Plus le nombre est petit plus il sera en tête de liste"
+msgstr "The more the number is small, the more it will be top of the list"
+
+#: /View/Slides/admin_create.ctp:62 /View/Slides/admin_edit.ctp:79
+msgid "Sélectionner les domaines où le slide sera visible"
+msgstr "Select the domains where the slides will be visible"
+
+#: /View/Slides/admin_list.ctp:2;21
+msgid "Les slides"
+msgstr "The slides"
+
+#: /View/Slides/admin_list.ctp:25
+msgid "Aucun slide"
+msgstr "No slide"
+
+#: /View/Translate/admin_index.ctp:2
+msgid "Les traductions"
+msgstr "The translations"
+
+#: /View/Translate/admin_index.ctp:90
+msgid "Fichier .po correspondant"
+msgstr "corresponding .po file"
+
+#: /View/Translate/admin_index.ctp:99
+msgid "Importer"
+msgstr "Import"
+
+#: /View/Users/confirmation.ctp:17
+msgid "Suite à une erreur, l'activation de votre compte a échoué"
+msgstr "Following an error,the activation of your account has failed"
+
+#: /View/Users/login.ctp:6;79
+msgid "Connexion à votre compte"
+msgstr "Connection to your account"
+
+#: /View/Users/login.ctp:71 /View/Users/subscribe.ctp:11
+msgid "Devenir membre"
+msgstr "To become a member"
+
+#: /View/Users/login_agent.ctp:5
+msgid "Connexion à votre compte expert"
+msgstr "Connection to your expert account"
+
+#: /View/Users/newpasswd.ctp:21
+msgid "Créez votre nouveau mot de passe."
+msgstr "create your new password"
+
+#: /View/Users/passwdforget.ctp:14
+msgid "Mot de passe oublié (client)"
+msgstr "Forgotten password (Customer)"
+
+#: /View/Users/passwdforget.ctp:16
+msgid "Mot de passe oublié (expert)"
+msgstr "Forgotten password (expert)"
+
+#: /View/Users/passwdforget.ctp:27
+msgid "Vous ne pourrez initialiser votre mot de passe que "
+msgstr "You will be able to initialize your password only if"
+
+#: /View/Users/passwdforget.ctp:32
+msgid ""
+"Saisissez l'adresse mail de votre compte client pour réinitialiser votre mot "
+"de passe."
+msgstr ""
+"Please enter your Customer account e-mail address in order to reset your "
+"password"
+
+#: /View/Users/passwdforget.ctp:34
+msgid ""
+"Saisissez l'adresse mail de votre compte expert pour réinitialiser votre mot "
+"de passe."
+msgstr ""
+"Please enter your Customer account e-mail address in order to reset "
+"yourpassword"
+
+#: /View/Users/subscribe.ctp:26
+msgid ""
+"Votre inscription a été enregistrée. Vous allez recevoir un email dans "
+"quelques instants pour confirmer votre inscription."
+msgstr ""
+"Your registration has been recorded. You are going to receive an e-mail in a "
+"few moments to confirm your registration."
+
+#: /View/Users/subscribe_agent.ctp:28
+msgid "Devenir Expert"
+msgstr "Becoming an Expert"
+
+#: /View/Users/subscribe_agent.ctp:72
+msgid "Parcours professionnel"
+msgstr "Career path"
+
+#: /View/Users/subscribe_agent.ctp:76;86
+msgid "Ne sera pas diffusé sur le site"
+msgstr "Will not be shown on the site"
+
+#: /View/Users/subscribe_agent.ctp:82
+msgid "Votre profil"
+msgstr "Your profile"
+
+#: /View/Users/subscribe_agent.ctp:103
+msgid ""
+"Votre inscription est enregistrée. Vous allez recevoir un email dans "
+"quelques instants pour confirmer votre inscription."
+msgstr ""
+"Your registration is recorded.You are going the receive an e-mail in a few "
+"minutes to confirm your registration."
+
+#: /View/Vouchers/admin_create.ctp:5
+msgid "Editer un bon de réduction"
+msgstr "Edit a discount voucher"
+
+#: /View/Vouchers/admin_create.ctp:5
+msgid "Créer un bon de réduction"
+msgstr "Create a discount voucher"
+
+#: /View/Vouchers/admin_create.ctp:14
+msgid "Editer le coupon"
+msgstr "Edit the voucher"
+
+#: /View/Vouchers/admin_create.ctp:15
+msgid "Ajouter un coupon"
+msgstr "Add a voucher"
+
+#: /View/Vouchers/admin_create.ctp:32
+msgid "Edition du coupon"
+msgstr "Editing of the voucher"
+
+#: /View/Vouchers/admin_create.ctp:33
+msgid "Ajout d'un coupon"
+msgstr "Adding of a voucher"
+
+#: /View/Vouchers/admin_create.ctp:53 /View/Vouchers/admin_index.ctp:38
+#: /View/Vouchers/admin_use_voucher.ctp:33
+msgid "Code"
+msgstr "Code"
+
+#: /View/Vouchers/admin_create.ctp:60;71
+msgid "JJ-MM-AAAA HH:MM"
+msgstr "DD-MM-YYYY HH:MM"
+
+#: /View/Vouchers/admin_create.ctp:79
+msgid "Ou montant remise"
+msgstr "or discount amount"
+
+#: /View/Vouchers/admin_create.ctp:84
+msgid "Ou pourcentage"
+msgstr "Or percentage"
+
+#: /View/Vouchers/admin_create.ctp:89
+msgid "Utilisation"
+msgstr "Use"
+
+#: /View/Vouchers/admin_create.ctp:93;100
+msgid "0 = Illimité"
+msgstr "0 = illimited"
+
+#: /View/Vouchers/admin_create.ctp:96
+msgid "Utilisation par client"
+msgstr "Use by customer"
+
+#: /View/Vouchers/admin_create.ctp:119
+msgid "Utilisateurs pouvant utiliser ce code"
+msgstr "Users able to use this code"
+
+#: /View/Vouchers/admin_create.ctp:122
+msgid "Ex: 1111 ou 1111,2222,...."
+msgstr "Ex: 1111 or 1111,2222,...."
+
+#: /View/Vouchers/admin_create.ctp:133
+msgid "Valable pour les produits :"
+msgstr "Valid for the products :"
+
+#: /View/Vouchers/admin_create.ctp:189
+msgid "Valable pour les pays :"
+msgstr "Valid for the Countries :"
+
+#: /View/Vouchers/admin_index.ctp:2
+msgid "Bon de réductions"
+msgstr "Discount vouchers"
+
+#: /View/Vouchers/admin_index.ctp:2
+msgid "Les bons"
+msgstr "The Vouchers"
+
+#: /View/Vouchers/admin_index.ctp:10
+msgid "Les coupons"
+msgstr "The vouchers"
+
+#: /View/Vouchers/admin_index.ctp:28
+msgid "Les bons de réduction"
+msgstr "The discount vouchers"
+
+#: /View/Vouchers/admin_index.ctp:32
+msgid "Aucun bon de réduction"
+msgstr "No discount voucher"
+
+#: /View/Vouchers/admin_index.ctp:42
+msgid "Nombre de crédit"
+msgstr "Number of credit"
+
+#: /View/Vouchers/admin_index.ctp:43
+msgid "Remise"
+msgstr "Discount"
+
+#: /View/Vouchers/admin_index.ctp:44
+msgid "Clients pouvant l'utiliser"
+msgstr "Customers able to use it"
+
+#: /View/Vouchers/admin_index.ctp:45
+msgid "Nombre d'utilisation"
+msgstr "Number of use"
+
+#: /View/Vouchers/admin_index.ctp:46
+msgid "Nbre d'utilisation/client"
+msgstr "Number of use/customer"
+
+#: /View/Vouchers/admin_index.ctp:76
+msgid "Tout les clients"
+msgstr "All the customers"
+
+#: /View/Vouchers/admin_index.ctp:80;85
+msgid "Illimité"
+msgstr "Illimited"
+
+#: /View/Vouchers/admin_use_voucher.ctp:36
+msgid "Utiliser"
+msgstr "Use"
+
+#~ msgid "Disponible par "
+#~ msgstr "Available by"
+
+#~ msgid "Mot de passe oublié ("
+#~ msgstr "Forgotten password ("
+
+#~ msgid "Saisissez l'adresse mail de votre compte "
+#~ msgstr "please enter your account's e-mail address"

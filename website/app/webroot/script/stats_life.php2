@@ -1,0 +1,819 @@
+<?php
+ini_set('display_errors', 1); 
+error_reporting(E_ALL); 
+
+$mysqli = new mysqli($dbb_head['host'], "spiriteo", "m3UFeJ9382rPQ9m8tQPqM4es", "spiriteo");
+
+echo '<h1>durée de vie avec au moins une conso</h1>';
+echo '<h2>TOTAL SANS INTERET ( client avec au moins un achat mais pas forcement deuxieme )</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	$index = $row['users_id'];
+	if($row['users_id'] == 286 || $row['users_id'] == 3630 || $row['users_id'] == 3631 || $row['users_id'] == 3632 || $row['users_id'] == 3633 || $row['users_id'] == 3634 || $row['users_id'] == 3635 || $row['users_id'] == 3636 || $row['users_id'] == 3637 || $row['users_id'] == 3638){
+		$index = $row['phone_number'];
+	}
+	
+	if(!isset($date_debut[$index])){
+		$date_debut[$index] = $row['date_start'];
+	}else{
+		$date_fin[$index] = $row['date_start'];
+	}
+	
+	
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+		$fin = $date_fin[$client];
+	}else{
+		$fin = $debut;//date('Y-m-d H:i:s');
+	}
+		$start = strtotime($debut);
+		$end = strtotime($fin);
+		$delay = ceil(abs($end - $start) / 86400)-1;
+
+		//if($delay <= 365){
+			$nb_client ++;
+			$duree += $delay;
+			if($delay > $duree_max)$duree_max=$delay;
+			if($delay < $duree_min)$duree_min=$delay;
+		//}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.($nb_client - 183);
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+
+echo '<h2>TOTAL SANS CONTRAINTE ( client avec au moins deux achats peut importe durée entre les deux )</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	$index = $row['users_id'];
+	if($row['users_id'] == 286 || $row['users_id'] == 3630 || $row['users_id'] == 3631 || $row['users_id'] == 3632 || $row['users_id'] == 3633 || $row['users_id'] == 3634 || $row['users_id'] == 3635 || $row['users_id'] == 3636 || $row['users_id'] == 3637 || $row['users_id'] == 3638){
+		$index = $row['phone_number'];
+	}
+	
+	if(!isset($date_debut[$index])){
+		$date_debut[$index] = $row['date_start'];
+	}else{
+		$date_fin[$index] = $row['date_start'];
+	}
+	
+	
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+		$fin = $date_fin[$client];
+
+		$start = strtotime($debut);
+		$end = strtotime($fin);
+		$delay = ceil(abs($end - $start) / 86400)-1;
+
+		//if($delay <= 365){
+			$nb_client ++;
+			$duree += $delay;
+			if($delay > $duree_max)$duree_max=$delay;
+			if($delay < $duree_min)$duree_min=$delay;
+		//}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>FRANCE</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 286 && $row['users_id'] != 3630 && $row['users_id'] != 3631 && $row['users_id'] != 3632 && $row['users_id'] != 3633 && $row['users_id'] != 3634 && $row['users_id'] != 3635 && $row['users_id'] != 3636 && $row['users_id'] != 3637 && $row['users_id'] != 3638){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+	
+		if($row2['domain_id'] == 19){
+			$index = $row['users_id'];
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	//else
+	//$fin = date("Y-m-d H:i:s");
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	//if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	//}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>BELGIQUE</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 3630 && $row['users_id'] != 3633 && $row['users_id'] != 3634 && $row['users_id'] != 3635 && $row['users_id'] != 3636 && $row['users_id'] != 3637 && $row['users_id'] != 3638){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+		
+		$index = '';
+		if($row2['domain_id'] == 11)
+			$index = $row['users_id'];
+		
+	
+		if($row['users_id'] == 3631 || $row['users_id'] == 3632){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '90755456'){
+			$index = $row['phone_number'];
+		}
+		
+		if($index){
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	//if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	//}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>SUISSE</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 3631 && $row['users_id'] != 3632 && $row['users_id'] != 3633 && $row['users_id'] != 3634 && $row['users_id'] != 3635 && $row['users_id'] != 3636 && $row['users_id'] != 3637 && $row['users_id'] != 3638){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+		
+		$index = '';
+		if($row2['domain_id'] == 13)
+			$index = $row['users_id'];
+		
+	
+		if($row['users_id'] == 3630){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '901801885'){
+			$index = $row['phone_number'];
+		}
+		
+		if($index){
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	//if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	//}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>LUXEMBOURG</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 3631 && $row['users_id'] != 3632 && $row['users_id'] != 3630 && $row['users_id'] != 3634 && $row['users_id'] != 3635 && $row['users_id'] != 3636 && $row['users_id'] != 3637 && $row['users_id'] != 3638){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+		
+		$index = '';
+		if($row2['domain_id'] == 22)
+			$index = $row['users_id'];
+		
+	
+		if($row['users_id'] == 3633){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '90128222'){
+			$index = $row['phone_number'];
+		}
+		
+		if($index){
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	//if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	//}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>CANADA</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 3631 && $row['users_id'] != 3632 && $row['users_id'] != 3630 && $row['users_id'] != 3633 ){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+		
+		$index = '';
+		if($row2['domain_id'] == 29)
+			$index = $row['users_id'];
+		
+	
+		if($row['users_id'] == 3634 || $row['users_id'] == 3635 || $row['users_id'] == 3636 || $row['users_id'] == 3637 || $row['users_id'] == 3638 ){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '19007884466'){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '4466'){
+			$index = $row['phone_number'];
+		}
+		
+		if($index){
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	//if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	//}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+
+
+
+echo '<h2>TOTAL ( client avec au moins deux achats et une durée max entre les deux de 365jrs )</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	$index = $row['users_id'];
+	if($row['users_id'] == 286 || $row['users_id'] == 3630 || $row['users_id'] == 3631 || $row['users_id'] == 3632 || $row['users_id'] == 3633 || $row['users_id'] == 3634 || $row['users_id'] == 3635 || $row['users_id'] == 3636 || $row['users_id'] == 3637 || $row['users_id'] == 3638){
+		$index = $row['phone_number'];
+	}
+	
+	if(!isset($date_debut[$index])){
+		$date_debut[$index] = $row['date_start'];
+	}else{
+		$date_fin[$index] = $row['date_start'];
+	}
+	
+	
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+		$fin = $date_fin[$client];
+
+
+		$start = strtotime($debut);
+		$end = strtotime($fin);
+		$delay = ceil(abs($end - $start) / 86400)-1;
+
+		if($delay <= 365){
+			$nb_client ++;
+			$duree += $delay;
+			if($delay > $duree_max)$duree_max=$delay;
+			if($delay < $duree_min)$duree_min=$delay;
+		}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>FRANCE</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 286 && $row['users_id'] != 3630 && $row['users_id'] != 3631 && $row['users_id'] != 3632 && $row['users_id'] != 3633 && $row['users_id'] != 3634 && $row['users_id'] != 3635 && $row['users_id'] != 3636 && $row['users_id'] != 3637 && $row['users_id'] != 3638){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+	
+		if($row2['domain_id'] == 19){
+			$index = $row['users_id'];
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	//else
+	//$fin = date("Y-m-d H:i:s");
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>BELGIQUE</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 3630 && $row['users_id'] != 3633 && $row['users_id'] != 3634 && $row['users_id'] != 3635 && $row['users_id'] != 3636 && $row['users_id'] != 3637 && $row['users_id'] != 3638){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+		
+		$index = '';
+		if($row2['domain_id'] == 11)
+			$index = $row['users_id'];
+		
+	
+		if($row['users_id'] == 3631 || $row['users_id'] == 3632){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '90755456'){
+			$index = $row['phone_number'];
+		}
+		
+		if($index){
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>SUISSE</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 3631 && $row['users_id'] != 3632 && $row['users_id'] != 3633 && $row['users_id'] != 3634 && $row['users_id'] != 3635 && $row['users_id'] != 3636 && $row['users_id'] != 3637 && $row['users_id'] != 3638){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+		
+		$index = '';
+		if($row2['domain_id'] == 13)
+			$index = $row['users_id'];
+		
+	
+		if($row['users_id'] == 3630){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '901801885'){
+			$index = $row['phone_number'];
+		}
+		
+		if($index){
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>LUXEMBOURG</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 3631 && $row['users_id'] != 3632 && $row['users_id'] != 3630 && $row['users_id'] != 3634 && $row['users_id'] != 3635 && $row['users_id'] != 3636 && $row['users_id'] != 3637 && $row['users_id'] != 3638){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+		
+		$index = '';
+		if($row2['domain_id'] == 22)
+			$index = $row['users_id'];
+		
+	
+		if($row['users_id'] == 3633){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '90128222'){
+			$index = $row['phone_number'];
+		}
+		
+		if($index){
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+echo '<h2>CANADA</h2>';
+$date_debut = array();
+$date_fin = array();
+
+$result = $mysqli->query("SELECT * from user_credit_last_histories order by date_start");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] != 3631 && $row['users_id'] != 3632 && $row['users_id'] != 3630 && $row['users_id'] != 3633 ){
+	
+		$result2 = $mysqli->query("SELECT domain_id from users where id = '".$row['users_id']."'");
+		$row2 = $result2->fetch_array(MYSQLI_ASSOC);
+		
+		$index = '';
+		if($row2['domain_id'] == 29)
+			$index = $row['users_id'];
+		
+	
+		if($row['users_id'] == 3634 || $row['users_id'] == 3635 || $row['users_id'] == 3636 || $row['users_id'] == 3637 || $row['users_id'] == 3638 ){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '19007884466'){
+			$index = $row['phone_number'];
+		}
+		if($row['users_id'] == 286 && $row['called_number'] == '4466'){
+			$index = $row['phone_number'];
+		}
+		
+		if($index){
+			if(!isset($date_debut[$index])){
+				$date_debut[$index] = $row['date_start'];
+			}else{
+				$date_fin[$index] = $row['date_start'];
+			}
+		}
+	}
+}
+
+$duree_min = 365;
+$duree_max = 0;
+$nb_client = 0;
+$duree = 0;
+
+foreach($date_debut as $client => $debut){
+	
+	if(isset($date_fin[$client])){
+	$fin = $date_fin[$client];
+	
+	
+	$start = strtotime($debut);
+	$end = strtotime($fin);
+	$delay = ceil(abs($end - $start) / 86400)-1;
+	
+	if($delay <= 365){
+		$nb_client ++;
+		$duree += $delay;
+		if($delay > $duree_max)$duree_max=$delay;
+		if($delay < $duree_min)$duree_min=$delay;
+	}
+	}
+}
+
+$moy = $duree / $nb_client;
+$moy = number_format($moy,0);
+
+echo 'Nb clients '.$nb_client;
+echo '</br >';
+echo 'Moyenne vie en Jours : '.$moy;
+echo '</br >';
+
+
+		

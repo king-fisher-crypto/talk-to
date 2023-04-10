@@ -1,0 +1,63 @@
+#planning {
+    table-layout:auto;
+	width:100%
+}
+#planning td {
+    cursor: pointer;
+    font-size: 0;
+    height: 21px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+}
+#planning td.date_label {
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    width: 35px;
+}
+#planning [type=checkbox] { display:none; }
+#planning tbody td.date_checkbox:hover {
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+
+}
+#planning tbody td.date_checked:hover,#planning td.date_checked { background: #a9db80; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a9db80 0%, #96c56f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9db80), color-stop(100%,#96c56f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a9db80 0%,#96c56f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a9db80 0%,#96c56f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a9db80 0%,#96c56f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a9db80 0%,#96c56f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); /* IE6-9 */
+}
+#planning thead tr th.date_column { cursor: pointer;
+    font-size: 10px;
+    padding: 0;
+    text-align: center;
+    width: 20px; }
+#planning tr.alternate { background-color:#EEE; }
+
+#planning .appointment { background-color: #002a80; border-color: #000066; }
+
+.planning-legend { font-size: 11px;margin-top:10px;padding-right:10px; }
+.planning-legend .hour {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    height: 13px;
+    margin: 2px 1px 0 10px;
+    overflow: hidden;
+    padding: 0;
+    width: 11px;
+    z-index: 100;
+    float: right;
+}
+.planning-legend .hour.selected { background-color: #88be14; border-color: #bbffb2; }
+.planning-legend .hour.appointment { background-color: #002a80; border-color: #000066; }

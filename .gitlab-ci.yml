@@ -1,0 +1,21 @@
+
+before_script:
+  - apt-get update -qq
+  - apt-get install -qq git
+  # Setup SSH deploy keys
+  - 'which ssh-agent || ( apt-get install -qq openssh-client )'
+  - eval $(ssh-agent -s)
+  - ssh-add <(echo "$DEV_SSH_PRIVATE_KEY")
+  - mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+    
+deploy_staging:
+  type: deploy
+  environment:
+    name: staging
+    url: talkappdev.com/
+  script:
+    - ssh $DEV_DEPLOY_TARGET "cd ~/.ssh && ls"
+    - ssh $DEV_DEPLOY_TARGET "cd /var/www/testdeploy && git pull origin master && exit"
+  only:
+    - master

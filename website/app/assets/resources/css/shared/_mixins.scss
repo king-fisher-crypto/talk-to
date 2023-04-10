@@ -1,0 +1,65 @@
+@import "functions";
+@import "variables";
+
+@mixin transition($transition...) {
+  @if $enable-transitions {
+    @if length($transition) == 0 {
+      transition: $transition-base;
+    } @else {
+      transition: $transition;
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+// Other mixins
+// #####################################################################
+
+@mixin button($transition: $btn-transition) {
+	display: inline-block;
+
+	box-sizing: border-box;
+	vertical-align: middle;
+
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none 0 transparent;
+	border: none 0 transparent;
+	appearance: none;
+
+	@include not-selectable();
+	@if ($transition) {
+		@include transition($transition);
+	}
+}
+
+@mixin clearfix() {
+	&::after {
+		font-size: 0;
+		line-height: 0;
+
+		display: block;
+		visibility: hidden;
+		clear: both;
+		overflow: hidden;
+
+		width: 0;
+		height: 0;
+
+		content: '.';
+		speak: none;
+	}
+}
+
+@mixin not-selectable() {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}

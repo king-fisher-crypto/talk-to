@@ -1,0 +1,215 @@
+.chatbox .cb_pseudo .msg{
+	font-size:10px !important;	
+}
+.phonebox {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-radius: 5px 5px 0 0;
+    border-style: solid solid none;
+    border-width: 0;
+    padding-bottom: 10px;
+    bottom: 0;
+    box-shadow: -1px -1px 10px #666;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    right: 20px;
+    width: 398px;
+    z-index:2009;
+}
+
+
+
+.phonebox .cb_time { background-color: #eee;  font-family: arial, helvetica, sans-serif; font-size:11px  }
+.phonebox .cb_pseudo {
+    background-color: #330066;
+    display: block;
+    font-weight: bold;
+    height: 50px;
+    padding: 10px;
+}
+.phonebox .cb_pseudo .action { color: #ffffff;  float: right; }
+.phonebox .cb_pseudo .action .cb_close { cursor: pointer; font-size:28px }
+.phonebox .cb_pseudo .action span { font-family: arial,verdana;
+    font-size: 11px; }
+.phonebox .cb_time_left { padding: 5px 10px; background-color: #fff; }
+.phonebox .cb_time_left.warning { background-color: #ffA500; color:#000; font-weight:bold }
+.phonebox .cb_time_left.danger { background-color:#FF0000; color: #fff;  font-weight:bold  }
+.phonebox .cb_pseudo p{
+
+}
+.phonebox .cb_pseudo .name{
+
+    color: #ffffd5;
+    font-family: oswald;
+    font-size: 16px;
+    font-weight: bold;
+    height: 20px;
+    margin: 0 0 5px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.phonebox .cb_pseudo .msg{
+    color: #ffffff;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 14px;
+}
+.phonebox .cb_history {
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12px;
+    max-height: 230px;
+    min-height: 100px;
+    overflow: auto;
+    padding: 10px;
+    position: relative;
+}
+.phonebox .cb_history ul li span {
+    color: #000;
+    font-weight:bold;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.phonebox .cb_history ul li span:after { content: " :"; }
+.phonebox .cb_history ul li.new { display: none; }
+.phonebox .event{ color: #8699a4; margin: inherit; }
+
+.phonebox .submit { margin: 0 5px;
+    padding: 5px 0; text-align:right }
+.phonebox .submit input { background-color: #330066;
+    border: 0 none;
+    border-radius: 0;
+    color: #fff;
+    font-family: oswald;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: uppercase; }
+.phonebox .submit input:hover { background-color:#7a5b9a; }
+
+.phonebox .cb_notes, .chatbox .cb_notes{
+	cursor:pointer;	
+}
+
+.phonebox .cb_notes:hover, .chatbox .cb_notes:hover{
+	color:#ccc;
+}
+
+.phoneboxnote {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: #ccc #ccc -moz-use-text-color;
+    border-image: none;
+    border-radius: 5px 5px 0 0;
+    border-style: solid solid none;
+    border-width: 0;
+    padding-bottom: 10px;
+    top: 0;
+    box-shadow: -1px -1px 10px #666;
+    display: block;
+    overflow: hidden;
+    position: fixed;
+    right: 20px;
+    width: 398px;
+    z-index:2008;
+}
+
+.phoneboxtext{
+	font-weight:bold;
+	font-size:13px;	
+}
+
+.phoneboxnote .cb_time { background-color: #eee;  font-family: arial, helvetica, sans-serif; font-size:11px  }
+.phoneboxnote .cb_pseudo {
+    background-color: #ffd014;
+    display: block;
+    font-weight: bold;
+    height: 50px;
+    padding: 10px;
+}
+.phoneboxnote .cb_pseudo .action { color: #ffffff;  float: right; }
+.phoneboxnote .cb_pseudo .action .cb_close { cursor: pointer; font-size:28px }
+.phoneboxnote .cb_pseudo .action span { font-family: arial,verdana;
+    font-size: 11px; }
+.phoneboxnote .cb_time_left { padding: 5px 10px;  }
+.phoneboxnote .cb_time_left.warning { background-color: #ffA500; color:#000; font-weight:bold }
+.phoneboxnote .cb_time_left.danger { background-color:#FF0000; color: #fff;  font-weight:bold  }
+.phoneboxnote .cb_pseudo p{
+
+}
+.phoneboxnote .cb_pseudo .name{
+
+    color: #777;
+    font-family: oswald;
+    font-size: 16px;
+    font-weight: bold;
+    height: 20px;
+    margin: 0 0 5px;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.phoneboxnote .content{
+    color: #000;
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+	min-height:200px;
+	padding:0px 10px;
+	width:100%;
+	border:none;
+	background-image: -moz-linear-gradient(top , transparent, transparent 23px,#E7EFF8 0px); 
+    background-image: -webkit-linear-gradient(top , transparent, transparent 23px,#E7EFF8 0);
+    -webkit-background-size:  100% 24px;
+    background-size: 100% 24px;
+	resize: none;
+}
+
+.phoneboxnote .content::-webkit-input-placeholder {
+   color: #b7b6b5;
+}
+
+.phoneboxnote .content:-moz-placeholder { /* Firefox 18- */
+   color: #b7b6b5;  
+}
+
+.phoneboxnote .content::-moz-placeholder {  /* Firefox 19+ */
+   color: #b7b6b5;  
+}
+
+.phoneboxnote .content::-ms-input-placeholder {  
+   color: #b7b6b5;  
+}
+
+.phoneboxnote .cb_history ul li span:after { content: " :"; }
+.phoneboxnote .cb_history ul li.new { display: none; }
+.phoneboxnote .event{ color: #8699a4; margin: inherit; }
+
+.phoneboxnote .submit { margin: 0 5px;
+    padding: 5px 0; text-align:right }
+.phoneboxnote .submit input { background-color: #330066;
+    border: 0 none;
+    border-radius: 0;
+    color: #fff;
+    font-family: oswald;
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: uppercase; }
+.phoneboxnote .submit input:hover { background-color:#7a5b9a; }
+
+.phonenote_edit{
+	cursor:pointer;	
+}
+.phonenote_edit{
+	cursor:pointer;	
+}
+.phonenote_edit:hover{
+	color:#ccc;
+}

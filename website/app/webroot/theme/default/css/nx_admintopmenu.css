@@ -1,0 +1,21 @@
+#container-drag {
+    padding:10px;
+    background-color: #3f3f3f;
+}
+.headline {
+    background-color:#888;
+    text-align:center;
+    margin:5px 0px 5px 0px;
+}
+
+.html_element { display:block; clear:both; border:solid 1px #EEE; border-radius:3px; margin-bottom:2px; cursor:pointer }
+.html_element.he_disabled { background-color:#EEE; color:#666; font-style: italic; cursor:default }
+.html_element.he_enabled:hover { background-color:#66afe9; color:#FFF }
+.html_element.he_enabled:hover .he_btns .btn { background-color:#444444; color:#FFF }
+.html_element .he_title { float: left;
+    line-height: 24px;
+    padding-left: 10px;}
+.html_element .he_btns { float:right;}
+.html_element .he_btns .btn { font-size:10px; padding:2px 5px}
+.elements_block .portlet-body { max-height:300px; overflow:auto }
+#menu_elements .portlet-body { max-height: inherit !important}

@@ -1,0 +1,1254 @@
+<?php
+ini_set('display_errors', 1); 
+error_reporting(E_ALL); 
+
+$mysqli = new mysqli($dbb_head['host'], "spiriteo", "m3UFeJ9382rPQ9m8tQPqM4es", "spiriteo");
+echo '<h1>clients prepayé + clients audiotel "actifs" chronologie de leur achat</h1>';
+echo '<h2>TOTAL</h2>';
+$nb_inscrit = 0;
+$nb_achat_0 = 0;
+$nb_achat_1 = 0;
+$nb_achat_7 = 0;
+$nb_achat_15 = 0;
+$nb_achat_30 = 0;
+$nb_achat_60 = 0;
+$nb_achat_90 = 0;
+$nb_achat_120 = 0;
+$nb_achat_180 = 0;
+$nb_achat_365 = 0;
+$nb_achat_545 = 0;
+$nb_achat_supp = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client'  order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		
+		$result_order = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add asc limit 1");
+		$row_order = $result_order->fetch_array(MYSQLI_ASSOC);
+		
+		if($row_order){
+			$nb_inscrit ++;
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 0 day');
+			$delai_max = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add >= '".$row_order['date_add']."' and date_add < '".$delai_max."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_0++;
+			}
+			
+			/*$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 1 day');
+			$delai_max1 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max."' and date_add < '".$delai_max1."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_1++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 7 day');
+			$delai_max2 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max1."' and date_add < '".$delai_max2."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_7++;
+			}*/
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 15 day');
+			$delai_max3 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max."' and date_add < '".$delai_max3."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_15++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 30 day');
+			$delai_max4 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max3."' and date_add < '".$delai_max4."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_30++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 60 day');
+			$delai_max5 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max4."' and date_add < '".$delai_max5."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_60++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 90 day');
+			$delai_max6 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max5."' and date_add < '".$delai_max6."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_90++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 120 day');
+			$delai_max7 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max6."' and date_add < '".$delai_max7."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_120++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 180 day');
+			$delai_max8 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max7."' and date_add < '".$delai_max8."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_180++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 365 day');
+			$delai_max9 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max8."' and date_add < '".$delai_max9."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_365++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 545 day');
+			$delai_max10 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max9."' and date_add < '".$delai_max10."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_545++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 546 day');
+			$delai_max11 = $dt->format('Y-m-d 00:00:00');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max11."'order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_supp++;
+			}
+			
+		}
+	}
+}
+
+$result = $mysqli->query("SELECT user_credit_last_history, date_start,phone_number from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) group by phone_number order by date_start asc");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	$nb_inscrit ++;
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 0 day');
+			$delai_max = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start >= '".$row['date_start']."' and date_start < '".$delai_max."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_0++;
+			}
+			
+			/*$dt = new DateTime($row_order['date_start']);
+			$dt->modify('+ 1 day');
+			$delai_max1 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max."' and date_start < '".$delai_max1."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_1++;
+			}
+			
+			$dt = new DateTime($row_order['date_start']);
+			$dt->modify('+ 7 day');
+			$delai_max2 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max1."' and date_start < '".$delai_max2."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_7++;
+			}*/
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 15 day');
+			$delai_max3 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max."' and date_start < '".$delai_max3."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_15++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 30 day');
+			$delai_max4 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max3."' and date_start < '".$delai_max4."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_30++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 60 day');
+			$delai_max5 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max4."' and date_start < '".$delai_max5."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_60++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 90 day');
+			$delai_max6 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max5."' and date_start < '".$delai_max6."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_90++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 120 day');
+			$delai_max7 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max6."' and date_start < '".$delai_max7."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_120++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 180 day');
+			$delai_max8 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max7."' and date_start < '".$delai_max8."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_180++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 365 day');
+			$delai_max9 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max8."' and date_start < '".$delai_max9."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_365++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 545 day');
+			$delai_max10 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max9."' and date_start < '".$delai_max10."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_545++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 546 day');
+			$delai_max11 = $dt->format('Y-m-d 00:00:00');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max10."' and date_start < '".$delai_max11."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_supp++;
+			}
+			
+	
+}
+
+$nb_achat_0 = $nb_achat_0 -164;
+echo 'Nb clients ayant acheté un forfait ou appellé: '.($nb_inscrit - 164);
+echo '</br >';
+//$pourcent = number_format($nb_achat_0 * 100 / $nb_inscrit,2);
+//echo 'Achat 0 jour '.$nb_achat_0. ' (100%)';
+//echo '</br >';
+/*$pourcent = number_format($nb_achat_1 * 100 / $nb_inscrit,2);
+echo 'Achat 1 jour '.$nb_achat_1. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_7 * 100 / $nb_inscrit,2);
+echo 'Achat 1 à 7 jour '.$nb_achat_7. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_15 * 100 / $nb_inscrit,2);
+echo 'Achat 1 à 15 jour '.$nb_achat_15. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_30 * 100 / $nb_inscrit,2);
+echo 'Achat 15 à 30 jour '.$nb_achat_30. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_60 * 100 / $nb_inscrit,2);
+echo 'Achat 30 à 60 jour '.$nb_achat_60. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_90 * 100 / $nb_inscrit,2);
+echo 'Achat 60 à 90 jour '.$nb_achat_90. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_120 * 100 / $nb_inscrit,2);
+echo 'Achat 90 à 120 jour '.$nb_achat_120. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_180 * 100 / $nb_inscrit,2);
+echo 'Achat 120 à 180 jour '.$nb_achat_180. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_365 * 100 / $nb_inscrit,2);
+echo 'Achat 180 à 365 jour '.$nb_achat_365. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_545 * 100 / $nb_inscrit,2);
+echo 'Achat 365 à 545 jour '.$nb_achat_545. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_supp * 100 / $nb_inscrit,2);
+echo 'Achat > 545 jour '.$nb_achat_supp. ' ('.$pourcent.'%)';
+echo '</br >';
+*/
+
+echo '<h1>clients prepayé + clients audiotel "actifs" chronologie de leur achat avec juste 1 achat</h1>';
+echo '<h2>TOTAL</h2>';
+$nb_inscrit = 0;
+$nb_achat_0 = 0;
+$nb_achat_1 = 0;
+$nb_achat_7 = 0;
+$nb_achat_15 = 0;
+$nb_achat_30 = 0;
+$nb_achat_60 = 0;
+$nb_achat_90 = 0;
+$nb_achat_120 = 0;
+$nb_achat_180 = 0;
+$nb_achat_365 = 0;
+$nb_achat_545 = 0;
+$nb_achat_supp = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client'  order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		$result_order99 = $mysqli->query("SELECT count(date_add) as nb from orders WHERE valid = '1' and user_id = '".$row['id']."' ");
+		$row_order99 = $result_order99->fetch_array(MYSQLI_ASSOC);
+		if($row_order99['nb'] && $row_order99['nb']<2){
+		$nb_inscrit ++;
+		$result_order = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add asc limit 1");
+		$row_order = $result_order->fetch_array(MYSQLI_ASSOC);
+		
+		if($row_order){
+			
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 0 day');
+			$delai_max = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add >= '".$row_order['date_add']."' and date_add < '".$delai_max."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_0++;
+			}
+			
+			/*$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 1 day');
+			$delai_max1 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max."' and date_add < '".$delai_max1."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_1++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 7 day');
+			$delai_max2 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max1."' and date_add < '".$delai_max2."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_7++;
+			}*/
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 15 day');
+			$delai_max3 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max."' and date_add < '".$delai_max3."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_15++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 30 day');
+			$delai_max4 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max3."' and date_add < '".$delai_max4."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_30++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 60 day');
+			$delai_max5 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max4."' and date_add < '".$delai_max5."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_60++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 90 day');
+			$delai_max6 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max5."' and date_add < '".$delai_max6."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_90++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 120 day');
+			$delai_max7 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max6."' and date_add < '".$delai_max7."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_120++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 180 day');
+			$delai_max8 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max7."' and date_add < '".$delai_max8."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_180++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 365 day');
+			$delai_max9 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max8."' and date_add < '".$delai_max9."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_365++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 545 day');
+			$delai_max10 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max9."' and date_add < '".$delai_max10."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_545++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 546 day');
+			$delai_max11 = $dt->format('Y-m-d 00:00:00');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max11."'order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_supp++;
+			}
+			
+		}
+	}
+	}
+}
+
+$result = $mysqli->query("SELECT user_credit_last_history, date_start,phone_number from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) group by phone_number order by date_start asc");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	$result_order99 = $mysqli->query("SELECT count(user_credit_last_history) as nb from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and phone_number = '".$row['phone_number']."' ");
+		$row_order99 = $result_order99->fetch_array(MYSQLI_ASSOC);
+		if($row_order99['nb'] && $row_order99['nb']<2){
+	
+	$nb_inscrit ++;
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 0 day');
+			$delai_max = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start >= '".$row['date_start']."' and date_start < '".$delai_max."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_0++;
+			}
+			
+			/*$dt = new DateTime($row_order['date_start']);
+			$dt->modify('+ 1 day');
+			$delai_max1 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max."' and date_start < '".$delai_max1."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_1++;
+			}
+			
+			$dt = new DateTime($row_order['date_start']);
+			$dt->modify('+ 7 day');
+			$delai_max2 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max1."' and date_start < '".$delai_max2."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_7++;
+			}*/
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 15 day');
+			$delai_max3 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max."' and date_start < '".$delai_max3."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_15++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 30 day');
+			$delai_max4 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max3."' and date_start < '".$delai_max4."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_30++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 60 day');
+			$delai_max5 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max4."' and date_start < '".$delai_max5."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_60++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 90 day');
+			$delai_max6 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max5."' and date_start < '".$delai_max6."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_90++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 120 day');
+			$delai_max7 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max6."' and date_start < '".$delai_max7."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_120++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 180 day');
+			$delai_max8 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max7."' and date_start < '".$delai_max8."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_180++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 365 day');
+			$delai_max9 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max8."' and date_start < '".$delai_max9."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_365++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 545 day');
+			$delai_max10 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max9."' and date_start < '".$delai_max10."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_545++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 546 day');
+			$delai_max11 = $dt->format('Y-m-d 00:00:00');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max10."' and date_start < '".$delai_max11."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_supp++;
+			}
+		}
+	
+}
+
+$nb_achat_0 = $nb_achat_0 -164;
+echo 'Nb clients ayant acheté un seul forfait ou appellé 1 fois: '.($nb_inscrit - 780);
+echo '</br >';
+//$pourcent = number_format($nb_achat_0 * 100 / $nb_inscrit,2);
+//echo 'Achat 0 jour '.$nb_achat_0. ' (100%)';
+//echo '</br >';
+/*$pourcent = number_format($nb_achat_1 * 100 / $nb_inscrit,2);
+echo 'Achat 1 jour '.$nb_achat_1. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_7 * 100 / $nb_inscrit,2);
+echo 'Achat 1 à 7 jour '.$nb_achat_7. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_15 * 100 / $nb_inscrit,2);
+echo 'Achat 1 à 15 jour '.$nb_achat_15. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_30 * 100 / $nb_inscrit,2);
+echo 'Achat 15 à 30 jour '.$nb_achat_30. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_60 * 100 / $nb_inscrit,2);
+echo 'Achat 30 à 60 jour '.$nb_achat_60. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_90 * 100 / $nb_inscrit,2);
+echo 'Achat 60 à 90 jour '.$nb_achat_90. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_120 * 100 / $nb_inscrit,2);
+echo 'Achat 90 à 120 jour '.$nb_achat_120. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_180 * 100 / $nb_inscrit,2);
+echo 'Achat 120 à 180 jour '.$nb_achat_180. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_365 * 100 / $nb_inscrit,2);
+echo 'Achat 180 à 365 jour '.$nb_achat_365. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_545 * 100 / $nb_inscrit,2);
+echo 'Achat 365 à 545 jour '.$nb_achat_545. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_supp * 100 / $nb_inscrit,2);
+echo 'Achat > 545 jour '.$nb_achat_supp. ' ('.$pourcent.'%)';
+echo '</br >';
+*/
+
+echo '<h1>clients prepayé + clients audiotel "actifs" chronologie de leur achat avec au moins 2 achats</h1>';
+echo '<h2>TOTAL</h2>';
+$nb_inscrit = 0;
+$nb_achat_0 = 0;
+$nb_achat_1 = 0;
+$nb_achat_7 = 0;
+$nb_achat_15 = 0;
+$nb_achat_30 = 0;
+$nb_achat_60 = 0;
+$nb_achat_90 = 0;
+$nb_achat_120 = 0;
+$nb_achat_180 = 0;
+$nb_achat_365 = 0;
+$nb_achat_545 = 0;
+$nb_achat_supp = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client'  order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		$result_order99 = $mysqli->query("SELECT count(date_add) as nb from orders WHERE valid = '1' and user_id = '".$row['id']."' ");
+		$row_order99 = $result_order99->fetch_array(MYSQLI_ASSOC);
+		if($row_order99['nb']>1){
+		
+		$result_order = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add asc limit 1");
+		$row_order = $result_order->fetch_array(MYSQLI_ASSOC);
+		
+		if($row_order){
+			$nb_inscrit ++;
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 0 day');
+			$delai_max = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add >= '".$row_order['date_add']."' and date_add < '".$delai_max."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_0++;
+			}
+			
+			/*$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 1 day');
+			$delai_max1 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max."' and date_add < '".$delai_max1."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_1++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 7 day');
+			$delai_max2 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max1."' and date_add < '".$delai_max2."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_7++;
+			}*/
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 15 day');
+			$delai_max3 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max."' and date_add < '".$delai_max3."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_15++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 30 day');
+			$delai_max4 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max3."' and date_add < '".$delai_max4."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_30++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 60 day');
+			$delai_max5 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max4."' and date_add < '".$delai_max5."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_60++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 90 day');
+			$delai_max6 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max5."' and date_add < '".$delai_max6."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_90++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 120 day');
+			$delai_max7 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max6."' and date_add < '".$delai_max7."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_120++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 180 day');
+			$delai_max8 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max7."' and date_add < '".$delai_max8."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_180++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 365 day');
+			$delai_max9 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max8."' and date_add < '".$delai_max9."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_365++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 545 day');
+			$delai_max10 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max9."' and date_add < '".$delai_max10."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_545++;
+			}
+			
+			$dt = new DateTime($row_order['date_add']);
+			$dt->modify('+ 546 day');
+			$delai_max11 = $dt->format('Y-m-d 00:00:00');
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add > '".$delai_max11."'order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_supp++;
+			}
+			
+		}
+	}
+	}
+}
+
+$result = $mysqli->query("SELECT user_credit_last_history, date_start,phone_number from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) group by phone_number order by date_start asc");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	$result_order99 = $mysqli->query("SELECT count(user_credit_last_history) as nb from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and phone_number = '".$row['phone_number']."' ");
+		$row_order99 = $result_order99->fetch_array(MYSQLI_ASSOC);
+		if($row_order99['nb']>1){
+	
+	$nb_inscrit ++;
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 0 day');
+			$delai_max = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start >= '".$row['date_start']."' and date_start < '".$delai_max."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_0++;
+			}
+			
+			/*$dt = new DateTime($row_order['date_start']);
+			$dt->modify('+ 1 day');
+			$delai_max1 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max."' and date_start < '".$delai_max1."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_1++;
+			}
+			
+			$dt = new DateTime($row_order['date_start']);
+			$dt->modify('+ 7 day');
+			$delai_max2 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max1."' and date_start < '".$delai_max2."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_7++;
+			}*/
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 15 day');
+			$delai_max3 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max."' and date_start < '".$delai_max3."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_15++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 30 day');
+			$delai_max4 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max3."' and date_start < '".$delai_max4."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_30++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 60 day');
+			$delai_max5 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max4."' and date_start < '".$delai_max5."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_60++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 90 day');
+			$delai_max6 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max5."' and date_start < '".$delai_max6."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_90++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 120 day');
+			$delai_max7 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max6."' and date_start < '".$delai_max7."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_120++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 180 day');
+			$delai_max8 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max7."' and date_start < '".$delai_max8."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_180++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 365 day');
+			$delai_max9 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max8."' and date_start < '".$delai_max9."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_365++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 545 day');
+			$delai_max10 = $dt->format('Y-m-d 23:59:59');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max9."' and date_start < '".$delai_max10."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_545++;
+			}
+			
+			$dt = new DateTime($row['date_start']);
+			$dt->modify('+ 546 day');
+			$delai_max11 = $dt->format('Y-m-d 00:00:00');
+			$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start > '".$delai_max10."' and date_start < '".$delai_max11."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			if($row_order2){
+				$nb_achat_supp++;
+			}
+		}
+	
+}
+
+$nb_achat_0 = $nb_achat_0 +616;
+$nb_achat_15 = $nb_achat_15 + 616;
+echo 'Nb clients ayant acheté un forfait ou appellé 2X: '.($nb_inscrit + 616);
+echo '</br >';
+$pourcent = number_format($nb_achat_0 * 100 / $nb_inscrit,2);
+echo 'Achat 0 jour '.$nb_achat_0. ' (100%)';
+echo '</br >';
+/*$pourcent = number_format($nb_achat_1 * 100 / $nb_inscrit,2);
+echo 'Achat 1 jour '.$nb_achat_1. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_7 * 100 / $nb_inscrit,2);
+echo 'Achat 1 à 7 jour '.$nb_achat_7. ' ('.$pourcent.'%)';
+echo '</br >';*/
+$pourcent = number_format($nb_achat_15 * 100 / $nb_inscrit,2);
+echo 'Achat 1 à 15 jour '.$nb_achat_15. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_30 * 100 / $nb_inscrit,2);
+echo 'Achat 15 à 30 jour '.$nb_achat_30. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_60 * 100 / $nb_inscrit,2);
+echo 'Achat 30 à 60 jour '.$nb_achat_60. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_90 * 100 / $nb_inscrit,2);
+echo 'Achat 60 à 90 jour '.$nb_achat_90. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_120 * 100 / $nb_inscrit,2);
+echo 'Achat 90 à 120 jour '.$nb_achat_120. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_180 * 100 / $nb_inscrit,2);
+echo 'Achat 120 à 180 jour '.$nb_achat_180. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_365 * 100 / $nb_inscrit,2);
+echo 'Achat 180 à 365 jour '.$nb_achat_365. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_545 * 100 / $nb_inscrit,2);
+echo 'Achat 365 à 545 jour '.$nb_achat_545. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_supp * 100 / $nb_inscrit,2);
+echo 'Achat > 545 jour '.$nb_achat_supp. ' ('.$pourcent.'%)';
+echo '</br >';
+
+exit;
+
+echo '<h2>FRANCE</h2>';
+$nb_inscrit = 0;
+$nb_achat_nop_12 = 0;
+$nb_achat_nop_18 = 0;
+$nb_achat_nop_supp = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client' and domain_id = 19 order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		$result_order = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add asc limit 1");
+		$row_order = $result_order->fetch_array(MYSQLI_ASSOC);
+		
+		if($row_order){
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add != '".$row_order['date_add']."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			
+			$nb_inscrit ++;
+			$start = strtotime($row_order['date_add']);
+			if(!$row_order2['date_add'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_add']);
+			$delay_payment = ceil(abs($end - $start) / 86400)-1;
+			
+			if($delay_payment==12)
+			$nb_achat_nop_12++;
+			
+			if($delay_payment>12 && $delay_payment<=18)
+			$nb_achat_nop_18++;
+			
+			if($delay_payment>18)
+			$nb_achat_nop_supp++;
+		}
+	}
+}
+
+
+
+echo 'Nb clients '.$nb_inscrit;
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_12 * 100 / $nb_inscrit,2);
+echo 'Nb no buy since 12 month '.$nb_achat_nop_12. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_18 * 100 / $nb_inscrit,2);
+echo 'Nb no buy between 12 and 18 month '.$nb_achat_nop_18. ' ('.$pourcent.'%)';
+echo '<br />';
+$pourcent = number_format($nb_achat_nop_supp * 100 / $nb_inscrit,2);
+echo 'Nb no buy since over 18 month '.$nb_achat_nop_supp. ' ('.$pourcent.'%)';
+
+echo '<h2>BELGIQUE</h2>';
+$nb_inscrit = 0;
+$nb_achat_nop_12 = 0;
+$nb_achat_nop_18 = 0;
+$nb_achat_nop_supp = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client' and domain_id = 11 order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		$result_order = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add asc limit 1");
+		$row_order = $result_order->fetch_array(MYSQLI_ASSOC);
+		
+		if($row_order){
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add != '".$row_order['date_add']."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			$nb_inscrit ++;
+			$start = strtotime($row_order['date_add']);
+			if(!$row_order2['date_add'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_add']);
+			$delay_payment = ceil(abs($end - $start) / 86400)-1;
+			
+			if($delay_payment==12)
+			$nb_achat_nop_12++;
+			
+			if($delay_payment>12 && $delay_payment<=18)
+			$nb_achat_nop_18++;
+			
+			if($delay_payment>18)
+			$nb_achat_nop_supp++;
+		}
+	}
+}
+
+$result = $mysqli->query("SELECT users_id, date_start,called_number,phone_number from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3631,3632) group by phone_number order by date_start asc");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] == 3631 || $row['users_id'] == 3632 || ($row['users_id'] == 286 && $row['called_number'] == '90755456')){
+		$nb_inscrit ++;
+		$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start != '".$row['date_start']."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+	$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+				$start = strtotime($row['date_start']);
+				if(!$row_order2['date_start'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_start']);
+				$delay_payment = ceil(abs($end - $start) / 86400)-1;
+
+				if($delay_payment==12)
+				$nb_achat_nop_12++;
+
+				if($delay_payment>12 && $delay_payment<=18)
+				$nb_achat_nop_18++;
+
+				if($delay_payment>18)
+				$nb_achat_nop_supp++;
+
+	}
+}
+	
+echo 'Nb clients '.$nb_inscrit;
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_12 * 100 / $nb_inscrit,2);
+echo 'Nb no buy since 12 month '.$nb_achat_nop_12. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_18 * 100 / $nb_inscrit,2);
+echo 'Nb no buy between 12 and 18 month '.$nb_achat_nop_18. ' ('.$pourcent.'%)';
+echo '<br />';
+$pourcent = number_format($nb_achat_nop_supp * 100 / $nb_inscrit,2);
+echo 'Nb no buy since over 18 month '.$nb_achat_nop_supp. ' ('.$pourcent.'%)';
+
+echo '<h2>SUISSE</h2>';
+$nb_inscrit = 0;
+$nb_achat_nop_12 = 0;
+$nb_achat_nop_18 = 0;
+$nb_achat_nop_supp = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client' and domain_id = 13 order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		$result_order = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add asc limit 1");
+		$row_order = $result_order->fetch_array(MYSQLI_ASSOC);
+		
+		if($row_order){
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add != '".$row_order['date_add']."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			$nb_inscrit ++;
+			$start = strtotime($row_order['date_add']);
+			if(!$row_order2['date_add'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_add']);
+			$delay_payment = ceil(abs($end - $start) / 86400)-1;
+			
+			if($delay_payment==12)
+			$nb_achat_nop_12++;
+			
+			if($delay_payment>12 && $delay_payment<=18)
+			$nb_achat_nop_18++;
+			
+			if($delay_payment>18)
+			$nb_achat_nop_supp++;
+		}
+	}
+}
+$result = $mysqli->query("SELECT users_id, date_start,called_number,phone_number from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630) group by phone_number order by date_start asc");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] == 3630 || ($row['users_id'] == 286 && $row['called_number'] == '901801885')){
+		$nb_inscrit ++;
+		$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start != '".$row['date_start']."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+	$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+				$start = strtotime($row['date_start']);
+				if(!$row_order2['date_start'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_start']);
+				$delay_payment = ceil(abs($end - $start) / 86400)-1;
+
+				if($delay_payment==12)
+				$nb_achat_nop_12++;
+
+				if($delay_payment>12 && $delay_payment<=18)
+				$nb_achat_nop_18++;
+
+				if($delay_payment>18)
+				$nb_achat_nop_supp++;
+
+	}
+}
+
+
+echo 'Nb clients '.$nb_inscrit;
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_12 * 100 / $nb_inscrit,2);
+echo 'Nb no buy since 12 month '.$nb_achat_nop_12. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_18 * 100 / $nb_inscrit,2);
+echo 'Nb no buy between 12 and 18 month '.$nb_achat_nop_18. ' ('.$pourcent.'%)';
+echo '<br />';
+$pourcent = number_format($nb_achat_nop_supp * 100 / $nb_inscrit,2);
+echo 'Nb no buy since over 18 month '.$nb_achat_nop_supp. ' ('.$pourcent.'%)';
+
+echo '<h2>LUXEMBOURG</h2>';
+$nb_inscrit = 0;
+$nb_achat_nop_12 = 0;
+$nb_achat_nop_18 = 0;
+$nb_achat_nop_supp = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client' and domain_id = 22 order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		$result_order = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add asc limit 1");
+		$row_order = $result_order->fetch_array(MYSQLI_ASSOC);
+		
+		if($row_order){
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add != '".$row_order['date_add']."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			$nb_inscrit ++;
+			$start = strtotime($row_order['date_add']);
+			if(!$row_order2['date_add'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_add']);
+			$delay_payment = ceil(abs($end - $start) / 86400)-1;
+			
+			if($delay_payment==12)
+			$nb_achat_nop_12++;
+			
+			if($delay_payment>12 && $delay_payment<=18)
+			$nb_achat_nop_18++;
+			
+			if($delay_payment>18)
+			$nb_achat_nop_supp++;
+		}
+	}
+}
+
+$result = $mysqli->query("SELECT users_id, date_start,called_number,phone_number from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3633) group by phone_number order by date_start asc");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] == 3633 || ($row['users_id'] == 286 && $row['called_number'] == '90128222')){
+		$nb_inscrit ++;
+		$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start != '".$row['date_start']."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+	$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+				$start = strtotime($row['date_start']);
+				if(!$row_order2['date_start'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_start']);
+				$delay_payment = ceil(abs($end - $start) / 86400)-1;
+
+				if($delay_payment==12)
+				$nb_achat_nop_12++;
+
+				if($delay_payment>12 && $delay_payment<=18)
+				$nb_achat_nop_18++;
+
+				if($delay_payment>18)
+				$nb_achat_nop_supp++;
+
+	}
+}
+
+echo 'Nb clients '.$nb_inscrit;
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_12 * 100 / $nb_inscrit,2);
+echo 'Nb no buy since 12 month '.$nb_achat_nop_12. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_18 * 100 / $nb_inscrit,2);
+echo 'Nb no buy between 12 and 18 month '.$nb_achat_nop_18. ' ('.$pourcent.'%)';
+echo '<br />';
+$pourcent = number_format($nb_achat_nop_supp * 100 / $nb_inscrit,2);
+echo 'Nb no buy since over 18 month '.$nb_achat_nop_supp. ' ('.$pourcent.'%)';
+
+
+echo '<h2>CANADA</h2>';
+$nb_inscrit = 0;
+$nb_achat_nop_12 = 0;
+$nb_achat_nop_18 = 0;
+$nb_achat_nop_supp = 0;
+
+$result = $mysqli->query("SELECT id, valid, date_add from users WHERE role = 'client' and domain_id = 29 order by id");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	if($row['valid']){
+		
+		
+		$result_order = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' order by date_add asc limit 1");
+		$row_order = $result_order->fetch_array(MYSQLI_ASSOC);
+		
+		if($row_order){
+			$result_order2 = $mysqli->query("SELECT date_add from orders WHERE valid = '1' and user_id = '".$row['id']."' and date_add != '".$row_order['date_add']."' order by date_add desc limit 1");
+			$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+			$nb_inscrit ++;
+			$start = strtotime($row_order['date_add']);
+			if(!$row_order2['date_add'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_add']);
+			$delay_payment = ceil(abs($end - $start) / 86400)-1;
+			
+			if($delay_payment==12)
+			$nb_achat_nop_12++;
+			
+			if($delay_payment>12 && $delay_payment<=18)
+			$nb_achat_nop_18++;
+			
+			if($delay_payment>18)
+			$nb_achat_nop_supp++;
+		}
+	}
+}
+$result = $mysqli->query("SELECT users_id, date_start,called_number,phone_number from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3633) group by phone_number order by date_start asc");
+while($row = $result->fetch_array(MYSQLI_ASSOC)){
+	
+	if($row['users_id'] == 3634 || $row['users_id'] == 3635 || $row['users_id'] == 3636 || $row['users_id'] == 3637 || $row['users_id'] == 3638 || ($row['users_id'] == 286 && $row['called_number'] == '19007884466') || ($row['users_id'] == 286 && $row['called_number'] == '4466')){
+		$result_order2 = $mysqli->query("SELECT user_credit_last_history, date_start from user_credit_last_histories WHERE media = 'phone' and users_id IN (286,3630,3631,3632,3633,3634,3635,3636,3637,3638) and date_start != '".$row['date_start']."' and phone_number = '".$row['phone_number']."' order by date_start desc");
+	$row_order2 = $result_order2->fetch_array(MYSQLI_ASSOC);
+		$nb_inscrit ++;
+				$start = strtotime($row['date_start']);
+				if(!$row_order2['date_start'])
+				$end = strtotime(date('Y-m-d H:i:s'));//date('Y-m-d H:i:s')
+			else
+				$end = strtotime($row_order2['date_start']);
+				$delay_payment = ceil(abs($end - $start) / 86400)-1;
+
+				if($delay_payment==12)
+				$nb_achat_nop_12++;
+
+				if($delay_payment>12 && $delay_payment<=18)
+				$nb_achat_nop_18++;
+
+				if($delay_payment>18)
+				$nb_achat_nop_supp++;
+
+	}
+}
+
+
+echo 'Nb clients '.$nb_inscrit;
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_12 * 100 / $nb_inscrit,2);
+echo 'Nb no buy since 12 month '.$nb_achat_nop_12. ' ('.$pourcent.'%)';
+echo '</br >';
+$pourcent = number_format($nb_achat_nop_18 * 100 / $nb_inscrit,2);
+echo 'Nb no buy between 12 and 18 month '.$nb_achat_nop_18. ' ('.$pourcent.'%)';
+echo '<br />';
+$pourcent = number_format($nb_achat_nop_supp * 100 / $nb_inscrit,2);
+echo 'Nb no buy since over 18 month '.$nb_achat_nop_supp. ' ('.$pourcent.'%)';

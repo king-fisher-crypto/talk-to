@@ -1,0 +1,1249 @@
+@media screen and (max-width: 1024px) {
+
+  
+
+  
+  .utilities .popup {
+    width: auto;
+  }
+
+  #modal-confirmation.custom-modal,
+  #modal-appointment-confirmation.custom-modal {
+    width: 50%;
+  }
+
+  /*—————————————————————————————————
+        BEGIN TABLE COMPONENT
+  —————————————————————————————————*/
+
+  .agent_cadre_table .table-picker-container {
+    width: calc(622px * var(--coef));
+    margin: auto;
+  }
+
+  .agent_cadre_table td {
+    font-size: calc(16px * var(--coef));
+  }
+
+  .agent_cadre_table tr {
+    font-size: calc(22px * var(--coef));
+  }
+
+  .agent_cadre_table .cadre_table {
+    padding: calc(30px * var(--coef)) calc(16px * var(--coef))
+      calc(30px * var(--coef)) calc(31px * var(--coef));
+    position: relative;
+  }
+
+  .agent_cadre_table .cadre_table .arrow_right {
+    top: calc(31.4% + 50px);
+    z-index: 10;
+    right: -20px;
+    display: block;
+  }
+
+  .agent_cadre_table table.stries td,
+  table.stries th {
+    height: calc(10px * var(--coef));
+  }
+
+  .agent_cadre_table th.agent {
+    padding-left: calc(10px * var(--coef));
+    padding-right: calc(140px * var(--coef));
+  }
+
+  .agent_cadre_table th.date {
+    padding-right: calc(99px * var(--coef));
+  }
+
+  .agent_cadre_table td.montant,
+  .agent_cadre_table th.montant {
+    padding-left: calc(69px * var(--coef));
+  }
+
+  .agent_cadre_table .table-picker-container .stries-table-container {
+    overflow-x: auto;
+  }
+
+  /*—————————————————————————————————
+          END TABLE COMPONENT
+    —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        SOCIAL NETWORKS
+  —————————————————————————————————*/
+  .social_networks-page {
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(18px * var(--coef));
+    line-height: calc(22px * var(--coef));
+  }
+
+  .social_networks-page .article-header {
+    margin-bottom: calc(10px * var(--coef));
+    font-size: calc(28px * var(--coef));
+    line-height: calc(33px * var(--coef));
+  }
+
+  .marg180.social_link {
+    width: 100%;
+  }
+
+  .social_networks-page .save-btn {
+    margin-top: 0px;
+  }
+
+  .social_networks-page .header-section p {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .social_networks-page .header-section {
+    margin-bottom: calc(72px * var(--coef));
+  }
+
+  .social_networks-page .header-section p {
+    max-width: calc(622px * var(--coef));
+  }
+
+  .social_networks-page.page.jswidth.marg180 .btns.social-bloc {
+    gap: 0px;
+  }
+
+  .social_networks-page .save-btn button {
+    width: calc(147px * var(--coef));
+    height: calc(47px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .container .marg180.social-bloc {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .social_networks-page .social-media {
+    width: calc(189px * var(--coef));
+    height: calc(40px * var(--coef));
+    padding: calc(10px * var(--coef)) calc(45px * var(--coeff));
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #878787;
+    font-size: calc(18px * var(--coef));
+    opacity: 1;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #878787;
+    font-size: calc(14px * var(--coef));
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #878787;
+    font-size: calc(14px * var(--coef));
+  }
+
+  .social_networks-page .social-media img {
+    height: calc(var(--coef) * 25px);
+    width: calc(var(--coef) * 25px);
+    margin-left: calc(var(--coef) * 12px);
+  }
+
+  .social-media h2,
+  .social_networks-page .social-bloc div a {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .social_networks-page .social {
+    margin-bottom: calc(20px * var(--coef));
+  }
+
+  .social_networks-page .social:last-child {
+    margin-bottom: calc(36px * var(--coef));
+  }
+
+  .social_networks-page .row-social {
+    margin: calc(22px * var(--coef)) 0 0 0;
+  }
+
+  .social_networks-page .social-media h2 {
+    margin-left: calc(25px * var(--coef)) !important;
+  }
+
+  .social_networks-page .table-social-icon {
+    height: calc(36px * var(--coef));
+    width: calc(82px * var(--coef));
+  }
+
+  .social_networks-page .link-div {
+    width: calc(114px * var(--coef));
+    height: calc(23px * var(--coef));
+  }
+
+  .social_networks-page .link-div a {
+    font-family: "Roboto";
+    font-style: normal;
+    font-size: calc(var(--coef) * 18px);
+    line-height: calc(var(--coef) * 21px);
+  }
+
+  .social_networks-page .table-social-icon img {
+    width: calc(22px * var(--coef));
+    height: calc(22px * var(--coef));
+    padding: calc(7px * var(--coef));
+  }
+
+  .social_networks-page .table-social-icon h2 {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(21px * var(--coef));
+    margin-left: calc(9px * var(--coef));
+    min-width: calc(82px * var(--coef));
+  }
+
+  .social_networks-page .text-description {
+    height: calc(23px * var(--coef));
+  }
+
+  .social_networks-page .desc-link input {
+    width: calc(261px * var(--coef));
+    height: calc(23px * var(--coef));
+    font-size: calc(14px * var(--coef));
+  }
+
+  .social_networks-page .desc-abonner {
+    width: calc(183px * var(--coef));
+    font-size: calc(14px * var(--coef));
+    height: calc(22px * var(--coef));
+    margin-left: 0px;
+  }
+
+  .desc-abonner {
+    width: 100%;
+    height: calc(22px * var(--coef));
+  }
+
+  .desc-abonner.text {
+    height: fit-content;
+    line-height: calc(16px * var(--coef));
+    margin-right: calc(15px * var(--coef));
+  }
+
+  .desc-abonner img {
+    height: calc(12px * var(--coef));
+    width: calc(19px * var(--coef));
+  }
+
+  .row-social input {
+    font-size: calc(14px * var(--coef));
+  }
+
+  .social_networks-page .desc-link {
+    width: calc(271px * var(--coef));
+    font-size: calc(14px * var(--coef));
+    margin-left: calc(12px * var(--coef));
+    height: calc(22px * var(--coef));
+    line-height: calc(16px * var(--coef));
+  }
+
+  .social_networks-page .link-desc {
+    margin-left: calc(30px * var(--coef));
+    height: calc(22px * var(--coef));
+    width: calc(261px * var(--coef));
+  }
+
+  .social_networks-page .text-description .desc-link {
+    margin-right: calc(46px * var(--coef));
+    margin-left: 0px;
+  }
+
+  .social_networks-page .desc-link span {
+    font-size: calc(14px * var(--coef));
+    line-height: calc(var(--coef) * 16px);
+  }
+
+  .social_networks-page .save-btn button {
+    height: calc(47px * var(--coef));
+    width: calc(171px * var(--coef));
+    margin-top: calc(40px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        END SOCIAL NETWORKS
+  —————————————————————————————————*/
+  /*—————————————————————————————————
+        Begin my-sales
+  —————————————————————————————————*/
+  .my-sales.title {
+    margin-top: calc(20px * var(--coef));
+    max-width: calc(622px * var(--coef));
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .my-sales.title h1 {
+    font-size: calc(28px * var(--coef));
+    margin-bottom: 0px;
+  }
+
+  .my-sales.title p {
+    font-size: calc(18px * var(--coef));
+    margin-top: calc(10px * var(--coef));
+  }
+
+  .my-sales .table-picker-container {
+    width: calc(622px * var(--coef));
+    margin: auto;
+  }
+
+  .my-sales .btns .btn.spe1 {
+    margin-top: 0px;
+    margin-left: calc(-23px * var(--coef));
+  }
+
+  .my-sales td {
+    font-size: calc(16px * var(--coef));
+  }
+
+  .my-sales tr {
+    font-size: calc(22px * var(--coef));
+  }
+
+  .my-sales .cadre_table {
+    padding: calc(30px * var(--coef)) calc(16px * var(--coef))
+      calc(30px * var(--coef)) calc(31px * var(--coef));
+    position: relative;
+  }
+
+  .my-sales.page {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .my-sales .facturation {
+    margin-top: calc(30px * var(--coef));
+  }
+
+  .my-sales .facturation a {
+    color: var(--blue);
+    font-size: calc(16px * var(--coef));
+  }
+
+  .my-sales .cadre_table .arrow_right {
+    top: calc(31.4% + 50px);
+    z-index: 10;
+    right: -20px;
+    display: block !important;
+  }
+
+  .my-sales .overflow.jswidth {
+    max-width: 534.536px;
+  }
+
+  .my-sales .overflow {
+    overflow-x: auto;
+  }
+
+  .my-sales table.stries td,
+  table.stries th {
+    height: calc(10px * var(--coef));
+  }
+
+  .my-sales th.agent {
+    padding-left: calc(10px * var(--coef));
+    padding-right: calc(140px * var(--coef));
+  }
+
+  .my-sales th.date {
+    padding-right: calc(99px * var(--coef));
+  }
+
+  .my-sales td.montant,
+  .my-sales th.montant {
+    padding-left: calc(69px * var(--coef));
+  }
+
+  .my-sales .table-picker-container .stries-table-container {
+    overflow-x: auto;
+  }
+
+  /*—————————————————————————————————
+        Begin comment_communication
+  —————————————————————————————————*/
+  .comment_communication.page .first-bloc {
+    max-width: calc(622px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .comment_communication.page .second-bloc {
+    max-width: calc(620px * var(--coef));
+  }
+
+  .comment_communication.page .first-bloc h1 {
+    font-size: calc(28px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .comment_communication.page .first-bloc p {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(22.26px * var(--coef));
+  }
+
+  .comment_communication.page .second-bloc h1 {
+    font-size: calc(22px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .comment_communication.page .second-bloc h1 {
+    font-size: calc(22px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .comment_communication.page .second-bloc p {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .comment_communication.page .first-bloc,
+  .raise-activity.page .second-bloc {
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        End comment_communication
+  —————————————————————————————————*/
+  /*—————————————————————————————————
+        Begin comment_general
+  —————————————————————————————————*/
+  .comment_general.page .first-bloc {
+    max-width: calc(622px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .comment_general.page .second-bloc {
+    max-width: calc(620px * var(--coef));
+  }
+
+  .comment_general.page .first-bloc h1 {
+    font-size: calc(28px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .comment_general.page .first-bloc p {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(22.26px * var(--coef));
+  }
+
+  .comment_general.page .second-bloc h1 {
+    font-size: calc(22px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .comment_general.page .second-bloc h1 {
+    font-size: calc(22px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        End comment_general
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin cgu
+  —————————————————————————————————*/
+  .cgu.page .first-bloc {
+    max-width: calc(622px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .cgu.page .second-bloc {
+    max-width: calc(620px * var(--coef));
+  }
+
+  .cgu.page .first-bloc h1 {
+    font-size: calc(28px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .cgu.page .first-bloc p {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(22.26px * var(--coef));
+  }
+
+  .cgu.page .second-bloc h1 {
+    font-size: calc(22px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .cgu.page .second-bloc p {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .cgu.page .second-bloc h1 {
+    font-size: calc(22px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        end cgu
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin gain
+  —————————————————————————————————*/
+
+  .gain.page .first-bloc {
+    max-width: calc(622px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .gain.page .second-bloc {
+    max-width: calc(620px * var(--coef));
+  }
+
+  .gain.page .first-bloc h1 {
+    font-size: calc(28px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .gain.page .first-bloc p {
+    font-size: calc(18px * var(--coef));
+    line-height: calc(22.26px * var(--coef));
+  }
+
+  .gain.page .second-bloc h1 {
+    font-size: calc(22px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .gain.page .second-bloc p {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .gain.page .second-bloc h1 {
+    font-size: calc(22px * var(--coef));
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        end gain
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin my-billing
+  —————————————————————————————————*/
+  .my-billing.page .facturation-bloc {
+    max-width: calc(622px * var(--coef));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my-billing.page .facturation-bloc h1 {
+    font-size: calc(28px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .my-billing.page .btn.spe1 img {
+    margin-right: calc(31px * var(--coef));
+    font-size: calc(24px * var(--coef));
+  }
+
+  .my-billing.page .bills-bloc {
+    max-width: calc(622px * var(--coef));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .my-billing.page .btn.spe1 {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .my-billing.page .facturation-bloc p {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .my-billing.page .transaction-container {
+    margin-top: calc(20px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details {
+    margin-bottom: calc(9px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details {
+    padding: 0 calc(20px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details h3 {
+    width: calc(338px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    font-weight: 500;
+    margin-top: calc(5px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details p {
+    width: calc(173px * var(--coef));
+    margin-top: calc(5px * var(--coef));
+    font-size: calc(17px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+  }
+
+  .my-billing.page .transaction-details span {
+    margin-top: calc(5px * var(--coef));
+    width: calc(178px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    margin-bottom: calc(5px * var(--coef));
+  }
+
+  .my-billing.page .additional-sales h3 {
+    font-size: calc(17px * var(--coef));
+  }
+
+  .my-billing.page .affiliation-details {
+    padding: 0 calc(20px * var(--coef));
+  }
+
+  .my-billing.page .affiliation-details h3 {
+    font-size: calc(18px * var(--coef));
+    margin: calc(5px * var(--coef)) 0px;
+  }
+
+  .my-billing.page .affiliation-message {
+    padding: 0 calc(20px * var(--coef));
+  }
+
+  .my-billing.page .affiliation-details span {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .my-billing.page .payment {
+    margin-top: calc(7px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .my-billing.page .payment h3 {
+    font-size: calc(18px * var(--coef));
+    font-weight: 500;
+    font-family: "Roboto";
+    margin-bottom: 0px;
+    margin-top: calc(0px * var(--coef));
+  }
+
+  .my-billing.page .payment span {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .my-billing.page .description {
+    margin-top: calc(4px * var(--coef));
+    margin-bottom: calc(10px * var(--coef));
+  }
+
+  .my-billing.page .description p {
+    margin: 0px;
+    font-size: calc(15px * var(--coef));
+  }
+
+  .my-billing.page .payment-btn button {
+    width: calc(230px * var(--coef));
+    height: calc(55px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .my-billing.page .next-payment p {
+    font-size: calc(var(--coef) * 18px);
+  }
+
+  .my-billing.page .affiliation {
+    margin-top: calc(80px * var(--coef));
+  }
+
+  .my-billing.page .affiliation-details,
+  .my-billing.page .transaction-details,
+  .my-billing.page .affiliation-message {
+    margin-bottom: calc(5px * var(--coef));
+  }
+
+  .my-billing.page .additional-sales {
+    margin-top: calc(40px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        End my-billing
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        Begin mails-relance
+  —————————————————————————————————*/
+
+  .mails-relance.page .first-bloc {
+    max-width: calc(622px * var(--coef));
+  }
+
+  .mails-relance.page .first-bloc h1 {
+    margin-bottom: calc(10px * var(--coef));
+    font-size: calc(28px * var(--coef));
+  }
+
+  .mails-relance.page .first-bloc p {
+    font-size: calc(18px * var(--coef));
+  }
+
+  .mails-relance.page .title-input {
+    margin-top: calc(40px * var(--coef));
+  }
+
+  .mails-relance.page .first-bloc p {
+    color: #878787;
+    font-weight: 400;
+    font-size: calc(18px * var(--coef));
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .mails-relance.page .message-input {
+    position: relative;
+    margin-top: calc(20px * var(--coef));
+  }
+
+  .mails-relance.page .title-input {
+    width: calc(450px * var(--coef));
+    height: calc(50px * var(--coef));
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .mails-relance.page input {
+    font-size: calc(15px * var(--coef));
+  }
+
+  .mails-relance.page .message-input textarea {
+    width: calc(592px * var(--coef));
+  }
+
+  .mails-relance .search_container .search_modal .search_input {
+    border: solid 2px var(--blue);
+    border-radius: 15px;
+    padding-left: calc(5px * var(--coef));
+    width: calc(262px * var(--coef));
+  }
+
+  .mails-relance_search {
+    justify-content: center;
+  }
+
+  .mails-relance .search_container button {
+    height: calc(41px * var(--coef));
+    margin-top: calc(5px * var(--coef));
+    width: calc(143px * var(--coef));
+    padding: 0px;
+    font-size: calc(16px * var(--coef));
+  }
+
+  .mails-relance .submitBtn {
+    margin: calc(30px * var(--coef)) auto;
+  }
+
+  .mails-relance .submitBtn button {
+    width: calc(180px * var(--coef));
+    height: calc(50px * var(--coef));
+    padding: 0px;
+    font-size: calc(21px * var(--coef));
+  }
+
+  .mails-relance .search_container {
+    display: flex;
+    align-items: center;
+    gap: calc(9px * var(--coef));
+  }
+
+  .mails-relance.page .message-input .send-icon-container {
+    width: fit-content;
+    position: absolute;
+    right: 4%;
+    bottom: 7%;
+    height: fit-content;
+  }
+
+  .mails-relance_search {
+    margin-top: calc(50px * var(--coef));
+    margin-bottom: calc(50px * var(--coef));
+  }
+
+  .mails-relance.page.page .submitBtn {
+    max-width: calc(622px * var(--coef));
+  }
+
+  .mails-relance .search_input a img {
+    margin-top: calc(7px * var(--coef));
+    margin-right: calc(7px * var(--coef));
+  }
+
+  .mails-relance_search .search_container {
+    display: flex;
+    gap: calc(16px * var(--coef));
+    align-items: center;
+    height: calc(46px * var(--coef));
+  }
+
+  .mails-relance.page td,
+  .mails-relance.page th {
+    padding-left: calc(20px * var(--coef));
+  }
+  .mails-relance.page.agent_cadre_table th.date {
+    padding-right: calc(25px * var(--coef));
+  }
+  .mails-relance.page.agent_cadre_table th.agent {
+    padding-right: calc(100px * var(--coef));
+  }
+  .mails-relance.page table.stries thead th {
+    line-height: calc(20px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    padding-bottom: calc(20px * var(--coef));
+  }
+
+  .mails-relance.page .cadre_table .arrow_right {
+    display: none !important;
+  }
+  /*—————————————————————————————————
+        end mails-relance
+  —————————————————————————————————*/
+
+  /*—————————————————————————————————
+        BEGIN PLANNING
+  —————————————————————————————————*/
+
+  .planning-page {
+    margin-left: 0px !important;
+    width: 100%;
+    margin: auto;
+  }
+
+  .planning-page .second-title h1 {
+    font-size: calc(22px * var(--coef)) !important;
+  }
+
+  .planning-page .cs-selecteur-horaires-timepicker .cs-time-sg {
+    max-width: calc(90px * var(--coef));
+    display: flex;
+  }
+  .planning-page .second-title p {
+    font-size: calc(18px * var(--coef)) !important;
+  }
+
+  .planning-page .second-title p {
+    font-size: calc(16px * var(--coef)) !important;
+    max-width: calc(603px * var(--coef));
+    line-height: calc(24px * var(--coef));
+  }
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__btn-cal-prev {
+    font-size: calc(60px * var(--coef));
+    top: 4%;
+  }
+  .planning-page .title.p-container {
+    margin-top: calc(50px * var(--coef));
+  }
+
+  .planning-page .slider-small .cs-mon-calendrier-section {
+    max-width: calc(490px * var(--coef));
+    margin-top: calc(0px * var(--coef));
+  }
+
+  .planning-page #cs-mon-calendrier .dcalendarpicker .dudp__cal-container {
+    width: calc(435px * var(--coef));
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__weekdays
+    span {
+    font-size: calc(20px * var(--coef));
+    font-weight: 500;
+    width: calc(61px * var(--coef));
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date {
+    width: calc(61px * var(--coef));
+  }
+
+  .planning-page .slider-small .cs-mon-calendrier-section {
+    width: calc(490px * var(--coef));
+  }
+
+  .planning-page .slider-small .title h1 {
+    font-size: calc(28px * var(--coef)) !important;
+    line-height: calc(23px * var(--coef)) !important;
+  }
+
+  .planning-page .slider-small .title p {
+    font-size: calc(18px * var(--coef)) !important;
+    margin-top: calc(10px * var(--coef));
+    margin-bottom: 0px;
+    line-height: calc(28px * var(--coef)) !important;
+  }
+
+  .planning-page .slider-small .title {
+    width: 100%;
+    height: auto;
+  }
+  .planning-page .block2 {
+    width: calc(622px * var(--coef));
+  }
+  .planning-page .slider-small .title p {
+    font-size: calc(24px * var(--coef));
+    line-height: calc(28px * var(--coef));
+    font-weight: 400;
+    color: #878787;
+    max-width: calc(622px * var(--coef));
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date {
+    width: calc(63px * var(--coef)) !important;
+  }
+
+  .planning-page .dcalendarpicker .dudp__wrapper {
+    flex-direction: column;
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__weekdays
+    span {
+    font-size: calc(20px * var(--coef)) !important;
+
+    width: calc(63px * var(--coef)) !important;
+  }
+
+  .planning-page #cs-mon-calendrier .dcalendarpicker .dudp__cal-container {
+    width: calc(445px * var(--coef)) !important;
+  }
+
+  .planning-page .cs-selecteur-horaires-body {
+    flex-direction: row;
+    justify-content: start !important;
+  }
+
+  .planning-page .cs-selecteur-horaires-timepicker {
+    width: calc(380px * var(--coef));
+    margin-left: 0px;
+  }
+
+  .planning-page .cs-selecteur-horaires-options {
+    width: fit-content;
+    margin-left: calc(50px * var(--coef));
+  }
+
+  .planning-page .cs-status-option {
+    flex-direction: row;
+    gap: 0px calc(15px * var(--coef));
+    max-width: calc(160px * var(--coef));
+  }
+
+  .planning-page .cs-status-options {
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    width: fit-content;
+    /* justify-content: space-between; */
+  }
+  .planning-page .second-title {
+    margin-top: calc(30px * var(--coef));
+  }
+
+  .planning-page .cs-selecteur-horaires-header > p,
+  .planning-page .cs-selecteur-horaires-header .cs-current-utc {
+    font-weight: 400;
+    font-size: calc(18px * var(--coef));
+  }
+
+  .planning-page .block2 .cs-selecteur-horaires {
+    padding-left: calc(20px * var(--coef));
+    padding-right: calc(20px * var(--coef));
+  }
+
+  .planning-page .block2 .cs-selecteur-horaires {
+    padding: 0px;
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__calendar-header
+    .dudp__sel-year {
+    font-size: calc(16px * var(--coef));
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__cal-week
+    .dudp__date {
+    font-size: calc(16px * var(--coef));
+    margin-bottom: calc(17px * var(--coef));
+  }
+
+  .planning-page .cs-mon-calendrier-bottom > p > span:last-child {
+    font-size: calc(15px * var(--coef));
+  }
+
+  .planning-page .cs-mon-calendrier-bottom > p {
+    align-items: center;
+  }
+
+  .planning-page .cs-mon-calendrier-bottom > p > span:first-child {
+    width: calc(20px * var(--coef));
+    height: calc(20px * var(--coef));
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: calc(15px * var(--coef));
+    position: relative;
+    top: 0;
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__btn-cal-prev {
+    font-size: calc(48px * var(--coef));
+    top: 3%;
+  }
+
+  .planning-page .cs-mon-calendrier-container {
+    max-width: calc(622px * var(--coef));
+  }
+
+  .planning-page #cs-mon-calendrier .cs_dudp__btn-cal-next {
+    display: block;
+    text-align: center;
+    font-size: calc(43px * var(--coef));
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__btn-cal-next {
+    font-weight: 300;
+    font-size: calc(48px * var(--coef));
+    top: 3%;
+  }
+
+  .planning-page
+    #cs-mon-calendrier
+    .dcalendarpicker
+    .dudp__cal-container
+    .dudp__calendar
+    .dudp__cal-month-year
+    .cal-month {
+    font-size: calc(22px * var(--coef));
+  }
+
+  .planning-page #cs-mon-calendrier .cs_dudp__btn-cal-prev,
+  #cs-mon-calendrier .cs_dudp__btn-cal-next {
+    display: block;
+    text-align: center;
+    font-size: calc(42px * var(--coef));
+  }
+
+  .planning-page .cs-selecteur-horaires-timepicker .cs-time-sg {
+    max-width: calc(66px * var(--coef)) !important;
+  }
+
+  .planning-page .cs-status-option > span {
+    font-size: calc(14px * var(--coef)) !important;
+  }
+
+  .planning-page .cs-status-options {
+    margin: 0px;
+  }
+
+  .planning-page .cs-status-option > span {
+    font-size: calc(16px * var(--coef));
+  }
+  .planning-page .cs-status-options .cs-status-delete {
+    width: calc(157px * var(--coef));
+    font-size: calc(15px * var(--coef));
+    line-height: calc(30px * var(--coef));
+  }
+
+  .planning-page .cs-selecteur-horaires-timepicker .cs-time-sg {
+    max-width: calc(81px * var(--coef));
+    display: flex;
+    margin: calc(7px * var(--coef)) calc(7px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .planning-page .planning-btn-container button {
+    width: calc(170px * var(--coef));
+    font-size: calc(18px * var(--coef));
+    height: calc(47px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        Begin appointments
+  —————————————————————————————————*/
+  .appointments-page .btn-group {
+    justify-content: center;
+  }
+  /*—————————————————————————————————
+        Begin appointments
+  —————————————————————————————————*/
+  .appointments-page .btn-group {
+    justify-content: center;
+  }
+
+  /*—————————————————————————————————
+        Begin appointments
+  —————————————————————————————————*/
+  .appointments-page .btn-group {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .appointments-page .cadre_table {
+    margin-bottom: calc(30px * var(--coef));
+  }
+
+  .appointments-page article {
+    margin-bottom: calc(40px * var(--coef));
+  }
+
+  .appointments-page {
+    max-width: calc(622px * var(--coef));
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .appointments-page .btn-group .btn,
+  #modal-appointment.modal .btn.validate {
+    text-transform: uppercase;
+    width: calc(222px * var(--coef));
+    height: calc(52px * var(--coef));
+    border: none;
+    font-weight: 500;
+  }
+  .modal#modal-appointment {
+    height: 100vh;
+    margin-left: calc(0px * var(--coef));
+  }
+
+  .appointments-page .cadre_table .arrow_right {
+    display: none !important;
+  }
+
+  .appointments-page th.agent {
+    padding-right: calc(90px * var(--coef));
+  }
+
+  /*—————————————————————————————————
+        BEGIN DASHBOARD
+  —————————————————————————————————*/
+  .dashboard-page {
+    max-width: 100%;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .dashboard-page .title h2 {
+    font-weight: 500;
+    font-size: calc(28px * var(--coef));
+    line-height: calc(33px * var(--coef));
+  }
+
+  .dashboard-page .notification-container .notification-block__header h2 {
+    font-weight: 500;
+    font-size: calc(20px * var(--coef));
+    line-height: calc(23px * var(--coef));
+    margin-top: calc(40px * var(--coef));
+  }
+
+  .dashboard-page .notification-container {
+    margin-top: calc(40px * var(--coef));
+  }
+
+  .dashboard-page .notification-container .notification-block__header {
+    margin-left: calc(20px * var(--coef));
+  }
+  .dashboard-page .notification-container .notification-block__table {
+    margin-left: calc(20px * var(--coef));
+    margin-top: calc(0px * var(--coef));
+    vertical-align: top;
+  }
+
+  .dashboard-page .notification-container .notification-block__table a {
+    margin-bottom: calc(0px * var(--coef));
+    padding-bottom: 5px;
+  }
+  .checkbox-wrapper-19 .check-box {
+    border-color: #4cbbec !important;
+    margin-bottom: calc(2px * var(--coef));
+    margin-top: calc(10px * var(--coef));
+  }
+
+  .dashboard-page .dashboard-options {
+    width: 100%;
+    gap: 0px calc(0px * var(--coef));
+  }
+  .dashboard-page .dashboard-options .dashboard-options__item {
+    width: calc(193px * var(--coef));
+    height: calc(175px * var(--coef));
+    margin-top: 25px;
+  }
+
+  .dashboard-page td {
+    padding-bottom: calc(20px * var(--coef));
+    font-size: calc(18px * var(--coef));
+  }
+
+  .dashboard-page .dashboard-options .dashboard-options__item h2 {
+    font-weight: 600;
+    font-size: calc(20px * var(--coef));
+    line-height: calc(21.8px * var(--coef));
+  }
+
+  .dashboard-page .dashboard-options .dashboard-options__item p {
+    font-size: calc(16px * var(--coef));
+    padding-left: calc(5px * var(--coef));
+    padding-right: calc(5px * var(--coef));
+  }
+
+  .dashboard-page .dashboard-options .dashboard-options__item-empty {
+    width: calc(193px * var(--coef));
+    height: calc(175px * var(--coef));
+  }
+
+  #modal-confirmation.custom-modal, #modal-refusal.custom-modal, #modal-warning.custom-modal, #modal-appointment-confirmation.custom-modal {
+    width: 60%;
+}
+  /*—————————————————————————————————
+        END DASHBOARD
+  —————————————————————————————————*/
+}

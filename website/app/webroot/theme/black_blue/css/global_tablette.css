@@ -1,0 +1,389 @@
+/* ONLY iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px)  and (max-width : 1024px)  {
+    /* Styles */
+    
+}
+
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape) {
+    /* Styles */   
+}
+
+
+
+
+/* iPads (portrait) ----------- */
+@media only screen  and (max-width : 1024px) and (orientation : portrait) {
+}
+
+
+/* tablets ----------- */
+@media only screen and (max-width : 1024px) {
+
+
+
+/*—————————————————————————————————
+		HISTORY PAGE
+  —————————————————————————————————*/
+
+.cadre_table{
+   padding: calc(22px*var(--coef)) calc(20px*var(--coef)) calc(20px*var(--coef)) calc(20px*var(--coef));
+   border-radius: calc(15px*var(--coef));
+   
+}
+
+
+
+.history-page .btns .btn.spe1{
+    margin-left: calc(15px*var(--coef));
+    padding: 0 calc(27px*var(--coef)) 0 calc(15px*var(--coef));
+   
+}
+
+.history-page .btns .btn.spe2{
+   display:none;
+}
+
+.history-page table{
+    margin-top: calc(20px*var(--coef));
+}
+
+table img.rounded{
+    height: calc(35px*var(--coef));
+    width: calc(35px*var(--coef));
+    margin-right: calc(8px*var(--coef));
+   
+}
+
+ table img.redirection{
+    height: calc(20px*var(--coef));
+    width: calc(20px*var(--coef));
+}
+
+ table img.croix{
+    height: calc(16px*var(--coef));
+    width: calc(15px*var(--coef));
+}
+
+
+
+/*—————————————————————————————————
+		MES CODES PROMO
+  —————————————————————————————————*/
+.promo_codes-page.page article .btns{
+    margin-top: calc(49px*var(--coef));
+    justify-content: center;
+}
+
+
+
+/*—————————————————————————————————
+		APPOINTMENTS PAGE (Mes rdez vous LIVI)
+  —————————————————————————————————*/
+.promo_codes-page.page article .btns .btn.chercher{    padding-top: 0.7px;    }
+
+
+.appointments-page  input[type="checkbox"].square_radio {
+ width:calc(20px*var(--coef));;
+ height: calc(20px*var(--coef));;
+}
+  
+/*—————————————————————————————————
+		MES ACHATS MASTERCLASS
+  —————————————————————————————————*/  
+.masterclass-page .btns {
+     display: none;
+}
+
+
+/*—————————————————————————————————
+		MES PHOTOS ON DEMAND
+  —————————————————————————————————*/
+.photos_od-page  .btns,  
+.videos_od-page  .btns, 
+.pdf_od-page .btns,
+.subscription-page .btns,
+.payment_request-page .btns
+{
+  margin-top: 0;
+  margin-bottom: calc(30px*var(--coef));
+  margin-left: calc(10px*var(--coef));
+}
+
+/*—————————————————————————————————
+		Mes Versements Affiliation
+  —————————————————————————————————*/
+.affiliate_payment-page .txt_bas{
+        margin-top: calc(31px*var(--coef));
+        font-size: calc(18px*var(--coef));
+        line-height: calc(21px*var(--coef));        
+}
+
+
+/*—————————————————————————————————
+		MY FAVORITES
+  —————————————————————————————————*/
+.docs_pdf-page   .btns,
+.favorites-page   .btns
+{
+     margin-top: calc(27px*var(--coef));
+     margin-bottom: calc(50px*var(--coef));                      
+}
+
+.favorites-page table{
+    margin-top: calc(15px*var(--coef));
+}
+
+.docs_pdf-page .arrow_right,
+.favorites-page .arrow_right 
+{visibility: hidden}
+
+
+
+
+/*—————————————————————————————————
+		Mes dépôts/crédits
+  —————————————————————————————————*/
+.buycredits-page .btns2{
+    margin-top:calc(40px*var(--coef));
+}
+
+
+.buycredits-page .btns2 .txt{
+        font-size: calc(24px*var(--coef));
+        line-height: calc(28px*var(--coef));     
+}
+
+
+.buycredits-page .btn.credits{
+   padding: 0 calc(172px*var(--coef)) 0 calc(40px*var(--coef));
+}
+
+
+
+/*—————————————————————————————————
+       Mes messages privés / account/my_private_messages
+  —————————————————————————————————*/
+
+
+.my_private_messages-page .cadre_table{
+     padding: calc(32px*var(--coef)) calc(20px*var(--coef)) calc(43px*var(--coef))  calc(20px*var(--coef));
+     box-shadow: 0px 3px 35px 0px #00000014;
+     margin-left: calc(-80px*var(--coef));
+     margin-right: calc(-80px*var(--coef));
+  
+}
+
+.my_private_messages-page .links{
+     margin-left:0;
+     margin-bottom:calc(25px*var(--coef));
+    
+}
+
+.my_private_messages-page .nbre_msg{
+    width:calc(22px*var(--coef));
+    height:calc(22px*var(--coef));
+    top:1px;
+}
+
+
+.my_private_messages-page .links a:not(:first-child) {
+    margin-left:calc(15px*var(--coef)) 
+}
+
+.my_private_messages-page .div_msg{
+    gap: calc(10px*var(--coef)) 
+}
+
+
+.my_private_messages-page .left_col{
+    width:45%;
+}
+
+.my_private_messages-page  .message_bloc:not(:first-child){
+   margin-top: calc(20px*var(--coef));
+ }
+
+
+.my_private_messages-page .left_col .div_search_client{
+    margin:calc(12px*var(--coef)) 0 0 calc(12px*var(--coef));
+}
+
+
+.my_private_messages-page .search_client{
+    width:  calc(200px*var(--coef));
+    padding: calc(6px*var(--coef)) calc(30px*var(--coef))  calc(5px*var(--coef)) calc(10px*var(--coef));
+    display: inline-block;
+}
+
+.my_private_messages-page .loupe{
+    display: inline-block;
+    left:calc(-35px*var(--coef));
+    top: calc(3px*var(--coef));
+    width:calc(20px*var(--coef)) ;
+    height:calc(20px*var(--coef)) ;
+    position: relative;
+    
+}
+
+
+
+.my_private_messages-page .list_echanges{
+    margin-top:calc(24px*var(--coef));
+    padding: 0 calc(20px*var(--coef)) 1px calc(12px*var(--coef));   
+}
+
+
+
+.my_private_messages-page  .echange_bloc{
+    padding: calc(12px*var(--coef)) calc(8px*var(--coef))  calc(25px*var(--coef)) calc(12px*var(--coef));
+    margin-bottom: calc(24px*var(--coef))
+}
+
+.my_private_messages-page  .echange_bloc .txt{
+    height:calc(40px*var(--coef));
+}
+
+.my_private_messages-page .img_title img{
+    width:calc(34px*var(--coef));
+    height:calc(34px*var(--coef));
+    margin-right: calc(8px*var(--coef));
+}
+
+.my_private_messages-page table img.rounded {
+    margin-right: calc(8px*var(--coef));
+}
+
+
+.my_private_messages-page .left_col .date{
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.my_private_messages-page  .echange_bloc .txt{
+    padding-top: calc(13px*var(--coef));
+}
+
+
+.my_private_messages-page  .right_col{
+    width:52%;
+    padding: calc(13px*var(--coef))calc(30px*var(--coef))  calc(8px*var(--coef)) calc(30px*var(--coef));
+
+}
+
+
+
+.my_private_messages-page  .voir_tout .img_txt img{
+    width:calc(24px*var(--coef)) ;
+    heigth:calc(17px*var(--coef)) ;
+    margin-right: calc(19px*var(--coef)) ;
+    
+}
+
+.my_private_messages-page  .voir_tout .txt{
+    width:calc(200px*var(--coef)) ;
+}
+
+.my_private_messages-page  .voir_tout  .close{
+    width:calc(20px*var(--coef)) ;
+    heigth:calc(20px*var(--coef)) ; 
+}
+
+.my_private_messages-page  .right_col > .vignette{
+    margin-top: calc(50px*var(--coef));
+    margin-bottom: calc(50px*var(--coef));
+}
+
+
+.my_private_messages-page  .right_col .vignette img{
+    width:calc(70px*var(--coef));
+    height:calc(70px*var(--coef)) !important;  
+    margin-right: calc(17px*var(--coef));
+}
+
+
+.my_private_messages-page  .message_bloc .lus img{
+    width:calc(19px*var(--coef));
+    height:calc(19px*var(--coef));  
+    margin-right: calc(4px*var(--coef));   
+}
+
+
+.my_private_messages-page  .message_bloc .bloc_txt{
+   padding-top:  calc(17px*var(--coef));
+   padding-bottom:  calc(59px*var(--coef));
+ 
+}
+
+.my_private_messages-page  .message_bloc.envoi .bloc_txt{
+   padding-bottom:  0;
+ 
+}
+
+
+
+.my_private_messages-page  .message_bloc .bloc_txt .date{
+    padding-right:calc(20px*var(--coef)); 
+ }
+  
+.my_private_messages-page  .message_bloc .bloc_txt .txt{
+     padding: calc(18px*var(--coef)) calc(20px*var(--coef))  calc(15px*var(--coef)) calc(20px*var(--coef));
+}
+
+
+.my_private_messages-page  .message_bloc .bloc_txt .files img{
+    margin-right: calc(36px*var(--coef));
+    width:calc(19px*var(--coef));
+    height:calc(26px*var(--coef)); 
+}
+
+.my_private_messages-page .send_msg
+{
+    margin-top: calc(46px*var(--coef)); 
+
+    padding: calc(15px*var(--coef)) calc(26px*var(--coef))  calc(14px*var(--coef)) calc(26px*var(--coef));
+    width:calc( 100% - calc(56px*var(--coef)) );  
+}
+
+.my_private_messages-page .send_msg textarea
+{
+    width:100%;
+}
+
+
+.my_private_messages-page .send_msg img
+{
+    width:calc(20px*var(--coef));
+    height:calc(20px*var(--coef)); 
+}
+
+@-webkit-keyframes anim_extend_send_msg {
+  0% {
+  
+  }
+  100% {
+    width: calc(100% - 56px*var(--coef)) ;
+    height:calc(120px*var(--coef));
+  }
+}
+
+
+@-webkit-keyframes anim_contract_send_msg {
+0% {
+  
+  }
+  
+100% {
+    width:calc( 100% - calc(56px*var(--coef)) );  
+    height: calc(30px*var(--coef));
+  }
+}
+
+
+
+ /*——————— FIN @media only screen and (max-width : 1024px)———————————————*/
+}
+
+
