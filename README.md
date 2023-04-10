@@ -1,9 +1,6 @@
 # Setup
 
-## Clone the repo
 ```shell
-git clone git@gitlab.com:yann-srt/call_to.git
-cd call_to
 docker compose up -d
 ```
 
